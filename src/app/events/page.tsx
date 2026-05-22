@@ -1,0 +1,90 @@
+import { PublicEventsCalendar } from "@/components/events/public-events-calendar";
+import { SiteFooter } from "@/components/page-blocks/site-footer";
+import { SiteHeader } from "@/components/page-blocks/site-header";
+import { ButtonLink } from "@/components/widgets/button-link";
+import { PixelIcon } from "@/components/widgets/pixel-icon";
+import { loadPublicCalendar, type PublicCalendarEvent } from "@/lib/events-calendar";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Events | Digital Ground Game",
+  description: "Join Digital Ground Game events and organize with our community.",
+  openGraph: {
+    images: [
+      {
+        url: "/events-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Digital Ground Game Events",
+      },
+    ],
+  },
+};
+
+export default async function EventsPage() {
+  const now = new Date();
+  const initialRangeStart = new Date(now);
+  const initialRangeEnd = new Date(now);
+  initialRangeStart.setUTCDate(initialRangeStart.getUTCDate() - 45);
+  initialRangeEnd.setUTCFullYear(initialRangeEnd.getUTCFullYear() + 1);
+
+  let initialEvents: PublicCalendarEvent[] = [];
+  let initialLoadSucceeded = false;
+
+  try {
+    initialEvents = await loadPublicCalendar(initialRangeStart, initialRangeEnd);
+    initialLoadSucceeded = true;
+  } catch (error) {
+    console.error("Unable to preload public events calendar", error);
+  }
+
+  return (
+    <div className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
+      <SiteHeader />
+      <main className="flex-1">
+        <section className="py-8 sm:py-10">
+          <div className="mx-auto flex max-w-3xl flex-col items-center px-6 text-center sm:px-12 lg:px-20">
+            <div className="flex items-center justify-center gap-4 sm:gap-5">
+              <PixelIcon
+                className="h-12 w-12 shrink-0 sm:h-14 sm:w-14"
+                name="interface-essential-calendar-appointment"
+              />
+              <h1 className="type-hero uppercase">Events</h1>
+            </div>
+            <p className="type-body mt-5">
+              Join Digital Ground Game meetings, workshops, community events,
+              and organizing opportunities. Select an event for details and its
+              Discord link.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-10 w-full max-w-[1440px] px-6">
+            <PublicEventsCalendar
+              initialDate={now.toISOString().slice(0, 10)}
+              initialEvents={initialEvents}
+              initialLoadSucceeded={initialLoadSucceeded}
+            />
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <ButtonLink
+                href="https://calendar.google.com/calendar/u/0/r?cid=c_558b7955537810ad93b69f714c889e6a5773ae520471dcfea3d84bf233bd6d28%40group.calendar.google.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Add to Google Calendar
+              </ButtonLink>
+              <ButtonLink
+                href="https://calendar.google.com/calendar/ical/c_558b7955537810ad93b69f714c889e6a5773ae520471dcfea3d84bf233bd6d28%40group.calendar.google.com/public/basic.ics"
+                primaryHover="black-blue"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Add to Apple Calendar
+              </ButtonLink>
+            </div>
+          </div>
+        </section>
+      </main>
+      <SiteFooter />
+    </div>
+  );
+}
