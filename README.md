@@ -67,7 +67,7 @@ Stop it:
 docker compose down
 ```
 
-The container listens on port 3000 for the platform proxy.
+The container listens on internal port 3000 for the platform proxy. Coolify discovers that target through the `expose` entry in `docker-compose.yaml`.
 
 ## Content
 

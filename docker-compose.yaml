@@ -12,6 +12,9 @@ services:
       NODE_ENV: production
       NEXT_TELEMETRY_DISABLED: "1"
       PORT: "3000"
+      HOSTNAME: 0.0.0.0
+    expose:
+      - "3000"
     healthcheck:
       test: ["CMD-SHELL", "node -e \"require('node:http').get('http://127.0.0.1:3000/', (res) => process.exit(res.statusCode < 500 ? 0 : 1)).on('error', () => process.exit(1))\""]
       interval: 30s
