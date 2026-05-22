@@ -6,9 +6,12 @@ services:
     image: dgg-frontpage:latest
     restart: unless-stopped
     environment:
+      GITHUB_CLIENT_ID: ${GITHUB_CLIENT_ID:?Set GITHUB_CLIENT_ID}
+      GITHUB_CLIENT_SECRET: ${GITHUB_CLIENT_SECRET:?Set GITHUB_CLIENT_SECRET}
+      DECAP_GITHUB_SCOPE: ${DECAP_GITHUB_SCOPE:-repo,user}
       NODE_ENV: production
       NEXT_TELEMETRY_DISABLED: "1"
       PORT: "3000"
-      HOSTNAME: 0.0.0.0
+      HOSTNAME: ${HOST:-0.0.0.0}
     ports:
       - "3000:3000"
