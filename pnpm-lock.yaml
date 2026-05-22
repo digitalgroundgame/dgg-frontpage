@@ -11,6 +11,9 @@ importers:
       decap-cms:
         specifier: ^3.12.2
         version: 3.12.2(@types/hoist-non-react-statics@3.3.7(@types/react@19.2.15))(@types/node@20.19.41)(@types/react@19.2.15)(decap-cms-lib-util@3.5.0(immutable@3.8.3)(lodash@4.18.1))(graphql@15.10.2)(immer@10.2.0)(scheduler@0.27.0)(use-sync-external-store@1.4.0(react@19.2.4))(webpack@5.107.1)
+      gray-matter:
+        specifier: ^4.0.3
+        version: 4.0.3
       next:
         specifier: 16.2.6
         version: 16.2.6(@babel/core@7.29.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)

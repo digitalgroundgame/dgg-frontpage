@@ -1,0 +1,10 @@
+.git
+.next
+node_modules
+npm-debug.log*
+pnpm-debug.log*
+Dockerfile
+docker-compose.yaml
+.env*
+!.env.example
+README.md
