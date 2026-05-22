@@ -47,6 +47,30 @@ pnpm lint
 pnpm build
 ```
 
+## Production Docker
+
+Create a `.env` file with the GitHub OAuth values:
+
+```bash
+cp .env.example .env
+```
+
+Build and run the production image:
+
+```bash
+docker compose up --build -d
+```
+
+Stop it:
+
+```bash
+docker compose down
+```
+
+The container serves the Next.js app on [http://localhost:3000](http://localhost:3000).
+
+On Coolify, `HOSTNAME` is populated from Coolify's `HOST` runtime variable so Next binds to the right interface. Public site information is exposed separately from Coolify's entered domains through `PUBLIC_URL=${COOLIFY_URL}` and `PUBLIC_HOSTNAME=${COOLIFY_FQDN}`.
+
 ## Content
 
 Decap CMS is mounted from `public/admin`. Starter content lives in `content/pages` and `content/posts`.
@@ -69,9 +93,9 @@ Set the OAuth app values in `.env`:
 ```bash
 GITHUB_CLIENT_ID=...
 GITHUB_CLIENT_SECRET=...
-DECAP_GITHUB_SCOPE=repo,user
+DECAP_GITHUB_SCOPE=public_repo,user
 ```
 
-Use `public_repo,user` instead of `repo,user` if the repository is public and the CMS should not request private repository access.
+Use `repo,user` instead if the repository is made private again.
 
 The target GitHub repo is `digitalgroundgame/dgg-frontpage` and is configured in `public/admin/config.js`.
