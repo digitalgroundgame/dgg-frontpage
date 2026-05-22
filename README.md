@@ -69,8 +69,6 @@ docker compose down
 
 The container serves the Next.js app on [http://localhost:3000](http://localhost:3000).
 
-On Coolify, public site information is exposed from entered domains through `PUBLIC_URL=${COOLIFY_URL}` and `PUBLIC_HOSTNAME=${COOLIFY_FQDN}`.
-
 ## Content
 
 Decap CMS is mounted from `public/admin`. Starter content lives in `content/pages` and `content/posts`.
