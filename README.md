@@ -67,7 +67,7 @@ Stop it:
 docker compose down
 ```
 
-The container serves the Next.js app on [http://localhost:3000](http://localhost:3000).
+The container listens on port 3000 for the platform proxy.
 
 ## Content
 
