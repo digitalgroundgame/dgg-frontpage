@@ -69,7 +69,7 @@ docker compose down
 
 The container serves the Next.js app on [http://localhost:3000](http://localhost:3000).
 
-On Coolify, `HOSTNAME` is populated from Coolify's `HOST` runtime variable so Next binds to the right interface. Public site information is exposed separately from Coolify's entered domains through `PUBLIC_URL=${COOLIFY_URL}` and `PUBLIC_HOSTNAME=${COOLIFY_FQDN}`.
+On Coolify, public site information is exposed from entered domains through `PUBLIC_URL=${COOLIFY_URL}` and `PUBLIC_HOSTNAME=${COOLIFY_FQDN}`.
 
 ## Content
 

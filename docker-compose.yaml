@@ -14,7 +14,6 @@ services:
       PORT: "3000"
       PUBLIC_URL: ${COOLIFY_URL:-http://localhost:3000}
       PUBLIC_HOSTNAME: ${COOLIFY_FQDN:-localhost:3000}
-      HOSTNAME: ${HOST:-0.0.0.0}
     ports:
       - "3000:3000"
     healthcheck:
