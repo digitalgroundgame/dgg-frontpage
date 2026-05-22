@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { getPublicOrigin } from "@/lib/request-origin";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -47,7 +48,7 @@ export function GET(request: NextRequest) {
     return popupError(`Unsupported OAuth provider: ${provider}`);
   }
 
-  const origin = request.nextUrl.origin;
+  const origin = getPublicOrigin(request);
   const scope =
     request.nextUrl.searchParams.get("scope") ??
     process.env.DECAP_GITHUB_SCOPE ??

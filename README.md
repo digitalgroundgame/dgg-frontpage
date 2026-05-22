@@ -97,3 +97,5 @@ DECAP_GITHUB_SCOPE=public_repo,user
 Use `repo,user` instead if the repository is made private again.
 
 The target GitHub repo is `digitalgroundgame/dgg-frontpage` and is configured in `public/admin/config.js`.
+
+The OAuth route builds its GitHub callback URL from forwarded proxy headers, so production deploys must preserve `x-forwarded-host` and `x-forwarded-proto`.
