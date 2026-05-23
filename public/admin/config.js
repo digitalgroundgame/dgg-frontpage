@@ -12,22 +12,6 @@ window.CMS.init({
     public_folder: "/uploads",
     collections: [
       {
-        name: "pages",
-        label: "Pages",
-        files: [
-          {
-            name: "home",
-            label: "Home Page",
-            file: "content/pages/home.md",
-            fields: [
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Intro", name: "intro", widget: "text" },
-              { label: "Body", name: "body", widget: "markdown" },
-            ],
-          },
-        ],
-      },
-      {
         name: "posts",
         label: "Posts",
         folder: "content/posts",

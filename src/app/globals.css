@@ -2,28 +2,32 @@
 
 :root {
   --color-brand-blue: #1144ff;
+  --color-dark-blue: #123ede;
   --color-near-white-blue: #eef2ff;
   --color-accent-red: #ff0f43;
-  --color-red: #d61332;
   --color-charcoal: #242424;
+  --color-light-charcoal: #333333;
+  --color-black: #000000;
   --background: var(--color-near-white-blue);
   --foreground: var(--color-charcoal);
 }
 
 @theme inline {
   --color-brand-blue: var(--color-brand-blue);
+  --color-dark-blue: var(--color-dark-blue);
   --color-near-white-blue: var(--color-near-white-blue);
   --color-accent-red: var(--color-accent-red);
-  --color-red: var(--color-red);
   --color-charcoal: var(--color-charcoal);
+  --color-light-charcoal: var(--color-light-charcoal);
+  --color-black: var(--color-black);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-roboto);
-  --font-mono: var(--font-roboto);
+  --font-sans: var(--font-roboto-condensed);
+  --font-mono: var(--font-roboto-condensed);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
+  font-family: var(--font-roboto-condensed), Arial, Helvetica, sans-serif;
 }
