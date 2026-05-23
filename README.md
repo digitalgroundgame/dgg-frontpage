@@ -2,8 +2,6 @@
 
 A Next.js 16 and Decap CMS frontpage project running on Node 24.
 
-The CMS writes content to `digitalgroundgame/dgg-frontpage`.
-
 ## Requirements
 
 - Node 24
@@ -49,16 +47,10 @@ pnpm build
 
 ## Production Docker
 
-Create a `.env` file with the GitHub OAuth values:
-
-```bash
-cp .env.example .env
-```
-
 Build and run the production image:
 
 ```bash
-docker compose up --build -d
+docker compose up --build
 ```
 
 Stop it:
@@ -67,15 +59,13 @@ Stop it:
 docker compose down
 ```
 
-The container listens on internal port 3000 for the platform proxy. Coolify discovers that target through the `expose` entry in `docker-compose.yaml`.
-
 ## Content
 
-Decap CMS is mounted from `public/admin`. Starter content lives in `content/pages` and `content/posts`.
+Decap CMS is mounted from `public/admin`. 
 
 ## GitHub CMS Backend
 
-The CMS uses Decap's GitHub backend for production and Decap's local backend for local file edits.
+The CMS uses Decap's GitHub backend for production.
 
 Create a GitHub OAuth app with these callback URLs:
 
@@ -84,18 +74,12 @@ http://localhost:3000/api/cms/callback
 https://YOUR_PRODUCTION_DOMAIN/api/cms/callback
 ```
 
-Set the OAuth app homepage URL to the matching site origin, for example `http://localhost:3000` locally or the production domain for the deployed app.
-
-Set the OAuth app values in `.env`:
+Set the OAuth app values in the environment:
 
 ```bash
 GITHUB_CLIENT_ID=...
 GITHUB_CLIENT_SECRET=...
 DECAP_GITHUB_SCOPE=public_repo,user
 ```
-
-Use `repo,user` instead if the repository is made private again.
-
-The target GitHub repo is `digitalgroundgame/dgg-frontpage` and is configured in `public/admin/config.js`.
 
 The OAuth route builds its GitHub callback URL from forwarded proxy headers, so production deploys must preserve `x-forwarded-host` and `x-forwarded-proto`.

@@ -2,12 +2,9 @@
 
 This project is a Next.js 16 App Router site with Decap CMS content stored in the repository.
 
-## Environment
+## Styles
 
-- Use Node 24.
-- Use pnpm, not npm or yarn.
-- The pinned package manager is declared in `package.json`.
-- Run `pnpm install` after dependency changes.
+@STYLING_GUIDE.md
 
 ## Commands
 
@@ -15,13 +12,10 @@ This project is a Next.js 16 App Router site with Decap CMS content stored in th
 - `pnpm cms` starts the Decap local backend proxy for local content editing.
 - `pnpm lint` runs ESLint.
 - `pnpm build` creates the production Next.js build.
-- `docker compose up --build -d` builds and runs the production container.
-- `docker compose down` stops the production container.
 
 ## Next.js
 
 - This uses Next.js 16 with the App Router under `src/app`.
-- Read the installed Next docs in `node_modules/next/dist/docs/` before relying on older Next.js conventions.
 - The production Docker image depends on `output: "standalone"` in `next.config.ts`.
 - API routes live under `src/app/api`.
 
@@ -37,17 +31,9 @@ This project is a Next.js 16 App Router site with Decap CMS content stored in th
   - `GITHUB_CLIENT_SECRET`
   - `DECAP_GITHUB_SCOPE`
 
-## Content
-
-- Page content lives under `content/pages`.
-- Post content lives under `content/posts`.
-- Posts are Markdown files with YAML frontmatter.
-- The homepage reads posts through `src/lib/posts.ts`.
-- If adding richer Markdown rendering, keep parsing/rendering in the Next app. Decap edits content but does not render the site.
-
 ## Verification
 
-Before handing off code changes, run:
+If code change is risky run:
 
 ```bash
 pnpm lint
