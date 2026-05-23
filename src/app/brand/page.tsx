@@ -60,22 +60,68 @@ const colors = [
   },
 ];
 
+const typography = [
+  {
+    name: "Hero",
+    className: "type-hero",
+    sample: "Vote Loud, Lead Louder",
+  },
+  {
+    name: "Statement",
+    className: "type-statement",
+    sample: "Practical, action-oriented organizing.",
+  },
+  {
+    name: "Kicker",
+    className: "type-kicker",
+    sample: "2026 Canvassing",
+  },
+  {
+    name: "Section title",
+    className: "type-section-title",
+    sample: "Building Lasting Political Power",
+  },
+  {
+    name: "Subtitle",
+    className: "type-subtitle",
+    sample:
+      "A national, community-driven movement dedicated to defending democracy.",
+  },
+  {
+    name: "Body",
+    className: "type-body",
+    sample:
+      "Use this for primary prose in page sections where the copy needs emphasis and easy scanning.",
+  },
+  {
+    name: "Small body",
+    className: "type-small-body",
+    sample:
+      "Use this for compact supporting copy, cards, and dense explanatory text.",
+  },
+  {
+    name: "Label",
+    className: "type-label",
+    sample: "What you will gain",
+  },
+];
+
 export default function BrandPage() {
   return (
     <main className="min-h-screen bg-near-white-blue text-charcoal">
       <SiteHeader />
 
-      <section className="mx-auto w-full max-w-6xl px-6 py-16 sm:px-10">
-        <h1 className="text-5xl font-black leading-tight md:text-7xl">
+      <section className="mx-auto w-full max-w-6xl px-8 py-16 sm:px-12">
+        <h1 className="type-hero">
           Brand Palette
         </h1>
-        <p className="mt-6 max-w-3xl text-xl leading-9">
+        <p className="type-small-body mt-6 max-w-3xl">
           Use these colors for the DGG frontpage. New colors should be rare and
           intentional.
         </p>
       </section>
 
-      <section className="mx-auto grid w-full max-w-6xl gap-5 px-6 pb-16 sm:px-10 md:grid-cols-2 lg:grid-cols-3">
+      <section className="mx-auto grid w-full max-w-6xl gap-5 px-8 pb-16 sm:px-12 md:grid-cols-2 lg:grid-cols-3">
         {colors.map((color) => (
           <article className="bg-charcoal p-4 text-near-white-blue" key={color.name}>
             <div className={`${color.sampleClass} min-h-44 p-5`}>
@@ -106,11 +152,36 @@ export default function BrandPage() {
         ))}
       </section>
 
-      <section className="bg-brand-blue px-6 py-14 text-near-white-blue sm:px-10">
+      <section className="bg-near-white-blue px-8 pb-16 sm:px-12">
+        <div className="mx-auto w-full max-w-6xl">
+          <h2 className="type-section-title">Typography</h2>
+          <p className="type-small-body mt-4 max-w-3xl">
+            Compose page type from these classes before reaching for one-off
+            font size, weight, or line-height utilities.
+          </p>
+          <div className="mt-8 grid gap-5">
+            {typography.map((item) => (
+              <article className="bg-charcoal p-5 text-near-white-blue" key={item.className}>
+                <div className="grid gap-3 md:grid-cols-[14rem_1fr] md:items-start">
+                  <div>
+                    <h3 className="font-black">{item.name}</h3>
+                    <p className="mt-1 font-bold text-accent-red">
+                      .{item.className}
+                    </p>
+                  </div>
+                  <p className={item.className}>{item.sample}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-brand-blue px-8 py-14 text-near-white-blue sm:px-12">
         <div className="mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-2">
           <div>
-            <h2 className="text-4xl font-black">Usage</h2>
-            <p className="mt-5 text-lg leading-8">
+            <h2 className="type-section-title">Usage</h2>
+            <p className="type-small-body mt-5">
               Brand blue and near-white blue should carry most layouts. Darker
               blue pairs with brand blue on layered surfaces. Charcoal, lighter
               charcoal, and black are for grounding sections, footer surfaces,

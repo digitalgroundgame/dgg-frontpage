@@ -26,7 +26,7 @@ export function SiteHeader() {
     <header className="bg-near-white-blue">
       <nav
         aria-label="Primary"
-        className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-5 px-6 py-5 sm:px-10"
+        className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-5 px-8 py-5 sm:px-12 min-[960px]:justify-between"
       >
         <Link
           aria-label="Digital Ground Game home"
@@ -72,37 +72,83 @@ export function SiteHeader() {
           </div>
         </div>
 
-        <details className="relative min-[960px]:hidden">
-          <summary className="cursor-pointer list-none bg-brand-blue px-5 py-3 text-xl font-bold text-near-white-blue transition hover:bg-dark-blue [&::-webkit-details-marker]:hidden">
-            Menu
+        <details className="group fixed right-6 top-6 z-50 min-[960px]:hidden">
+          <summary className="relative z-50 flex cursor-pointer list-none items-center justify-center bg-brand-blue p-2 text-near-white-blue group-open:[animation:menu-color-ramp_650ms_ease-in-out] [&::-webkit-details-marker]:hidden">
+            <span className="sr-only">Menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              id="Interface-Essential-Navigation-Menu-3--Streamline-Pixel"
+              height={32}
+              width={32}
+              aria-hidden="true"
+            >
+              <desc>
+                Interface Essential Navigation Menu 3 Streamline Icon:
+                https://streamlinehq.com
+              </desc>
+              <title>interface-essential-navigation-menu-3</title>
+              <g>
+                <path d="M29.71 3.81h1.53v24.38h-1.53Z" fill="currentColor" strokeWidth={1} />
+                <path d="M28.19 28.19h1.52v1.52h-1.52Z" fill="currentColor" strokeWidth={1} />
+                <path d="M28.19 2.28h1.52v1.53h-1.52Z" fill="currentColor" strokeWidth={1} />
+                <path d="M3.81 29.71h24.38v1.53H3.81Z" fill="currentColor" strokeWidth={1} />
+                <path d="m25.14 20.57 -18.28 0 0 1.52 -1.53 0 0 3.05 1.53 0 0 -1.52 18.28 0 0 1.52 1.53 0 0 -3.05 -1.53 0 0 -1.52z" fill="currentColor" strokeWidth={1} />
+                <path d="m25.14 12.95 -18.28 0 0 1.52 -1.53 0 0 3.05 1.53 0 0 -1.52 18.28 0 0 1.52 1.53 0 0 -3.05 -1.53 0 0 -1.52z" fill="currentColor" strokeWidth={1} />
+                <path d="m25.14 5.33 -18.28 0 0 1.52 -1.53 0 0 3.05 1.53 0 0 -1.52 18.28 0 0 1.52 1.53 0 0 -3.05 -1.53 0 0 -1.52z" fill="currentColor" strokeWidth={1} />
+                <path d="M6.86 25.14h18.28v1.52H6.86Z" fill="currentColor" strokeWidth={1} />
+                <path d="M6.86 17.52h18.28v1.52H6.86Z" fill="currentColor" strokeWidth={1} />
+                <path d="M6.86 9.9h18.28v1.53H6.86Z" fill="currentColor" strokeWidth={1} />
+                <path d="M3.81 0.76h24.38v1.52H3.81Z" fill="currentColor" strokeWidth={1} />
+                <path d="M2.29 28.19h1.52v1.52H2.29Z" fill="currentColor" strokeWidth={1} />
+                <path d="M2.29 2.28h1.52v1.53H2.29Z" fill="currentColor" strokeWidth={1} />
+                <path d="M0.76 3.81h1.53v24.38H0.76Z" fill="currentColor" strokeWidth={1} />
+              </g>
+            </svg>
           </summary>
-          <div className="absolute left-0 z-10 mt-3 grid w-72 gap-5 bg-light-charcoal p-5 text-near-white-blue">
-            <div className="grid gap-3 text-xl font-bold">
-              {primaryNavItems.map((item) => (
-                <Link
-                  className="transition hover:text-accent-red"
-                  href={item.href}
-                  key={item.label}
+          <div className="fixed inset-0 z-40 grid min-h-dvh content-center gap-10 overflow-y-auto bg-light-charcoal px-6 py-28 text-near-white-blue">
+            <div className="mx-auto grid w-full max-w-md gap-8">
+              <div className="grid gap-5 text-4xl font-black uppercase leading-none">
+                {primaryNavItems.map((item) => (
+                  <Link
+                    className="transition hover:text-accent-red"
+                    href={item.href}
+                    key={item.label}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+              <div className="grid gap-3 text-2xl font-bold">
+                {regionItems.map((item) => (
+                  <Link
+                    className="transition hover:text-accent-red"
+                    href={item.href}
+                    key={item.label}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+              <div className="grid gap-3 pt-2 text-2xl font-bold">
+                <a
+                  className="bg-brand-blue px-5 py-4 text-center text-near-white-blue transition hover:bg-dark-blue"
+                  href="https://discord.gg/digitalgroundgame"
                 >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-            <div className="grid gap-2 text-lg">
-              {regionItems.map((item) => (
-                <Link
-                  className="transition hover:text-accent-red"
-                  href={item.href}
-                  key={item.label}
+                  Get Involved
+                </a>
+                <a
+                  className="bg-accent-red px-5 py-4 text-center text-near-white-blue transition hover:bg-black"
+                  href="https://secure.actblue.com/donate/dgg"
                 >
-                  {item.label}
-                </Link>
-              ))}
+                  Donate
+                </a>
+              </div>
             </div>
           </div>
         </details>
 
-        <div className="flex shrink-0 flex-wrap gap-3">
+        <div className="flex w-full shrink-0 flex-wrap justify-center gap-3 min-[960px]:w-auto min-[960px]:justify-start">
           <a
             className="bg-brand-blue px-5 py-3 text-xl font-bold text-near-white-blue transition hover:bg-dark-blue"
             href="https://discord.gg/digitalgroundgame"
