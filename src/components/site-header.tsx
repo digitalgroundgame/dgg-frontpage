@@ -107,6 +107,8 @@ export function SiteHeader() {
                 <a
                   className="type-button inline-flex items-center justify-center gap-2 bg-brand-blue px-5 py-4 text-center text-near-white-blue transition hover:bg-dark-blue"
                   href="https://discord.gg/digitalgroundgame"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <PixelIcon className="h-5 w-5 shrink-0" name="hierarchy" />
                   Join In
@@ -114,6 +116,8 @@ export function SiteHeader() {
                 <a
                   className="type-button inline-flex items-center justify-center gap-2 bg-accent-red px-5 py-4 text-center text-near-white-blue transition hover:bg-black"
                   href="https://secure.actblue.com/donate/dgg"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <PixelIcon className="h-5 w-5 shrink-0" name="money-bag" />
                   Donate
@@ -127,6 +131,8 @@ export function SiteHeader() {
           <a
             className="type-button inline-flex items-center gap-2 bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-dark-blue"
             href="https://discord.gg/digitalgroundgame"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             <PixelIcon className="h-5 w-5 shrink-0" name="hierarchy" />
             Join In
@@ -134,6 +140,8 @@ export function SiteHeader() {
           <a
             className="type-button inline-flex items-center gap-2 bg-accent-red px-5 py-3 text-near-white-blue transition hover:bg-black"
             href="https://secure.actblue.com/donate/dgg"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             <PixelIcon className="h-5 w-5 shrink-0" name="money-bag" />
             Donate

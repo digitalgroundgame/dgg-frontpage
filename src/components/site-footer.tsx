@@ -20,6 +20,8 @@ export function SiteFooter() {
           <a
             className="type-button mt-5 inline-flex bg-accent-red px-4 py-2 transition hover:bg-black"
             href="https://secure.actblue.com/donate/dgg"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             Donate Now
           </a>
@@ -33,6 +35,8 @@ export function SiteFooter() {
               <a
                 className="transition hover:text-accent-red"
                 href="https://discord.gg/digitalgroundgame"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Discord
               </a>
@@ -54,7 +58,12 @@ export function SiteFooter() {
           <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
             {followLinks.map((item) => (
               <li key={item.label}>
-                <a className="transition hover:text-accent-red" href={item.href}>
+                <a
+                  className="transition hover:text-accent-red"
+                  href={item.href}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   {item.label}
                 </a>
               </li>

@@ -6,6 +6,10 @@ This project is a Next.js 16 App Router site with Decap CMS content stored in th
 
 @STYLING_GUIDE.md
 
+## Links
+
+- External links must open in a new tab with `target="_blank"` and `rel="noopener noreferrer"`.
+
 ## Commands
 
 - `pnpm dev` starts the Next.js dev server.

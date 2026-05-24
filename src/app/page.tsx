@@ -59,6 +59,8 @@ export default function Home() {
             <a
               className="type-button bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
               href="https://discord.gg/digitalgroundgame"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               Become a Volunteer
             </a>
@@ -80,6 +82,8 @@ export default function Home() {
             <a
               className="type-button inline-flex items-center gap-2 bg-charcoal px-6 py-3 text-near-white-blue transition hover:bg-accent-red"
               href="https://docs.google.com/forms/d/e/1FAIpQLSdZmxO4SWAD0ARyjik9jFxJsh2ioHgIGKwRVkLSifv2RgFZQQ/viewform"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <PixelIcon
                 className="h-7 w-7 shrink-0"
@@ -128,6 +132,8 @@ export default function Home() {
             aria-label="Photo credit: Andi on Instagram"
             className="type-button absolute bottom-4 left-4 z-10 inline-flex items-center gap-2 bg-near-white-blue px-3 py-2 text-charcoal transition hover:bg-accent-red hover:text-near-white-blue"
             href="https://www.instagram.com/photos.andi/"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             <PixelIcon className="h-6 w-6 shrink-0" name="camera-circle" />
             <span>Andi @photos.andi</span>
@@ -169,6 +175,8 @@ export default function Home() {
             <a
               className="type-button mt-8 inline-flex bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
               href="https://discord.gg/digitalgroundgame"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               Join Discord
             </a>
@@ -218,7 +226,7 @@ export default function Home() {
             <h2 className="text-5xl font-black leading-tight">
               Organizing for Real
             </h2>
-            <p className="mt-3 bg-accent-red px-5 py-4 text-5xl font-black leading-tight">
+            <p className="mt-3 text-5xl font-black leading-tight">
               Political Impact
             </p>
           </div>
