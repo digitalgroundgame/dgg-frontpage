@@ -25,7 +25,7 @@ export function SiteFooter() {
           </a>
         </div>
         <div>
-          <h3 className="font-black uppercase tracking-[0.18em] text-accent-red">
+          <h3 className="font-black uppercase tracking-[0.18em] text-near-white-blue">
             Connect with us
           </h3>
           <ul className="mt-4 grid gap-2">
@@ -45,10 +45,15 @@ export function SiteFooter() {
                 info@digitalgroundgame.org
               </a>
             </li>
+            <li>
+              <a className="transition hover:text-accent-red" href="/admin">
+                Admin Login
+              </a>
+            </li>
           </ul>
         </div>
         <div>
-          <h3 className="font-black uppercase tracking-[0.18em] text-accent-red">
+          <h3 className="font-black uppercase tracking-[0.18em] text-near-white-blue">
             Follow us
           </h3>
           <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2">

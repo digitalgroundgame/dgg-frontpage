@@ -1,25 +1,26 @@
+import { PixelIcon, type PixelIconName } from "@/components/pixel-icon";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import Image from "next/image";
 
-const gains = [
-  "Real political impact",
-  "Leadership development",
-  "Evidence-based action",
+const gains: { label: string; icon: PixelIconName }[] = [
+  { label: "Real political impact", icon: "hand-like" },
+  { label: "Leadership development", icon: "star" },
+  { label: "Evidence-based action", icon: "search-check" },
 ];
 
 const initiatives = [
   {
-    value: "4",
+    value: "5",
     label: "Regional squads",
     description:
-      "Organized teams across the West, South, Midwest, and Northeast regions of the US.",
+      "Organized teams across the West, South, Midwest, Northeast, and International regions.",
   },
   {
     value: "6+",
     label: "Specialized teams",
     description:
-      "Media Communication, Research, Software Development, and more driving our mission forward.",
+      "Media, Research, Outreach, Software Development, and more driving our mission forward.",
   },
   {
     value: "100%",
@@ -65,20 +66,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-linear-to-br from-near-white-blue to-brand-blue px-8 py-16 text-charcoal sm:px-12">
-        <div className="mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-[1fr_minmax(260px,0.35fr)] md:items-center">
-          <div>
-            <p className="type-kicker">2026 Canvassing</p>
-            <h2 className="type-section-title mt-4 max-w-4xl">
+      <section className="bg-near-white-blue px-8 py-16 text-charcoal sm:px-12">
+        <div className="mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-[minmax(0,42rem)_1fr] md:items-center">
+          <div className="max-w-2xl">
+            <p className="type-kicker text-light-charcoal">
+              2026 <span className="text-black">Canvassing</span>
+            </p>
+            <h2 className="type-section-title mt-4 max-w-4xl text-light-charcoal">
               Register your interest in joining the program.
             </h2>
           </div>
-          <a
-            className="type-button inline-flex justify-self-center bg-charcoal px-6 py-3 text-near-white-blue transition hover:bg-black"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdZmxO4SWAD0ARyjik9jFxJsh2ioHgIGKwRVkLSifv2RgFZQQ/viewform"
-          >
-            Interest Form
-          </a>
+          <div className="flex justify-center md:h-full md:items-center">
+            <a
+              className="type-button inline-flex items-center gap-2 bg-charcoal px-6 py-3 text-near-white-blue transition hover:bg-accent-red"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdZmxO4SWAD0ARyjik9jFxJsh2ioHgIGKwRVkLSifv2RgFZQQ/viewform"
+            >
+              <PixelIcon
+                className="h-7 w-7 shrink-0"
+                name="business-product-check"
+              />
+              Interest Form
+            </a>
+          </div>
         </div>
       </section>
 
@@ -120,193 +129,7 @@ export default function Home() {
             className="type-button absolute bottom-4 left-4 z-10 inline-flex items-center gap-2 bg-near-white-blue px-3 py-2 text-charcoal transition hover:bg-accent-red hover:text-near-white-blue"
             href="https://www.instagram.com/photos.andi/"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              id="Photography-Taking-Pictures-Circle-Alternate--Streamline-Pixel"
-              height={32}
-              width={32}
-              aria-hidden="true"
-              className="h-6 w-6 shrink-0"
-            >
-              <desc>
-                Photography Taking Pictures Circle Alternate Streamline Icon:
-                https://streamlinehq.com
-              </desc>
-              <title>photography-taking-pictures-circle-alternate</title>
-              <g>
-                <path
-                  d="M30.48 12.19H32v7.62h-1.52Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M28.96 19.81h1.52v3.05h-1.52Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M28.96 9.15h1.52v3.04h-1.52Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M27.43 22.86h1.53v3.05h-1.53Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M27.43 6.1h1.53v3.05h-1.53Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M25.91 25.91h1.52v1.52h-1.52Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M25.91 4.58h1.52V6.1h-1.52Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M24.39 12.19h1.52v10.67h-1.52Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M22.86 27.43h3.05v1.53h-3.05Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M22.86 3.05h3.05v1.53h-3.05Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M7.62 22.86h16.77v1.52H7.62Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M21.34 13.72h1.52v1.52h-1.52Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M19.81 28.96h3.05v1.52h-3.05Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M19.81 10.67h4.58v1.52h-4.58Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M19.81 1.53h3.05v1.52h-3.05Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="m18.29 18.29 -1.52 0 0 -1.52 -1.53 0 0 -1.53 3.05 0 0 -1.52 -4.57 0 0 1.52 -1.52 0 0 4.57 1.52 0 0 1.53 4.57 0 0 -1.53 1.52 0 0 -4.57 -1.52 0 0 3.05z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M18.29 9.15h1.52v1.52h-1.52Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M12.2 30.48h7.61V32H12.2Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M13.72 7.62h4.57v1.53h-4.57Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M12.2 0h7.61v1.53H12.2Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M12.2 9.15h1.52v1.52H12.2Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M9.15 28.96h3.05v1.52H9.15Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M9.15 1.53h3.05v1.52H9.15Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M7.62 10.67h4.58v1.52H7.62Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M6.1 27.43h3.05v1.53H6.1Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M6.1 3.05h3.05v1.53H6.1Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M6.1 12.19h1.52v10.67H6.1Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M4.58 25.91H6.1v1.52H4.58Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M4.58 4.58H6.1V6.1H4.58Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M3.05 22.86h1.53v3.05H3.05Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M3.05 6.1h1.53v3.05H3.05Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M1.53 19.81h1.52v3.05H1.53Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M1.53 9.15h1.52v3.04H1.53Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-                <path
-                  d="M0 12.19h1.53v7.62H0Z"
-                  fill="currentColor"
-                  strokeWidth={1}
-                />
-              </g>
-            </svg>
+            <PixelIcon className="h-6 w-6 shrink-0" name="camera-circle" />
             <span>Andi @photos.andi</span>
           </a>
         </div>
@@ -329,33 +152,47 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-charcoal px-8 py-16 text-near-white-blue sm:px-12">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="type-section-title">
-            Defending democracy, one action at a time.
-          </h2>
-          <p className="type-body mt-5">
-            Join us in the fight for democracy, reason, and progress. The fight
-            isn&apos;t over - it&apos;s ours to win.
-          </p>
+      <section className="relative overflow-hidden px-8 py-16 text-near-white-blue sm:px-12">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-charcoal [clip-path:polygon(0_0,100%_0,100%_67%,0_100%)]"
+        />
+        <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-[minmax(0,1fr)_minmax(20rem,24rem)] md:items-start">
+          <div className="max-w-2xl">
+            <h2 className="type-section-title">
+              Defending democracy, one action at a time.
+            </h2>
+            <p className="type-body mt-5">
+              Join us in the fight for democracy, reason, and progress. The
+              fight isn&apos;t over - it&apos;s ours to win.
+            </p>
+            <a
+              className="type-button mt-8 inline-flex bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
+              href="https://discord.gg/digitalgroundgame"
+            >
+              Join Discord
+            </a>
+          </div>
+          <div className="grid w-full max-w-sm place-items-center bg-near-white-blue p-6 text-charcoal">
+            <div className="w-fit max-w-full">
+              <h3 className="type-label text-2xl text-accent-red">
+                What you will gain
+              </h3>
+              <ul className="mt-5 grid gap-3 text-xl font-black text-charcoal">
+                {gains.map((gain) => (
+                  <li
+                    className="flex items-center gap-3 uppercase tracking-[0.04em]"
+                    key={gain.label}
+                  >
+                    <PixelIcon className="h-7 w-7 shrink-0" name={gain.icon} />
+                    {gain.label}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
-        <div className="mt-14 text-center">
-          <h3 className="type-label text-accent-red">What you will gain</h3>
-          <ul className="mt-6 flex flex-col justify-center gap-x-10 gap-y-4 text-xl font-black text-near-white-blue sm:flex-row sm:flex-wrap">
-            {gains.map((gain) => (
-              <li className="uppercase tracking-[0.04em]" key={gain}>
-                {gain}
-              </li>
-            ))}
-          </ul>
-          <a
-            className="type-button mt-8 inline-flex bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
-            href="https://discord.gg/digitalgroundgame"
-          >
-            Join Discord
-          </a>
-        </div>
-        <div className="mx-auto mt-14 grid w-full max-w-6xl gap-5 md:grid-cols-3">
+        <div className="relative z-10 mx-auto mt-14 grid w-full max-w-6xl gap-5 md:grid-cols-3">
           {initiatives.map((initiative) => (
             <article
               className="bg-near-white-blue p-5 text-charcoal"
@@ -400,9 +237,13 @@ export default function Home() {
               dedicated to finding pragmatic results that move us forward.
             </p>
             <a
-              className="type-button mt-6 inline-flex bg-near-white-blue px-5 py-3 text-brand-blue transition hover:bg-charcoal hover:text-near-white-blue"
+              className="type-button mt-6 inline-flex items-center gap-2 bg-near-white-blue px-5 py-3 text-brand-blue transition hover:bg-charcoal hover:text-near-white-blue"
               href="mailto:info@digitalgroundgame.org"
             >
+              <PixelIcon
+                className="h-5 w-5 shrink-0"
+                name="email-envelope-close"
+              />
               Email Us
             </a>
           </div>
