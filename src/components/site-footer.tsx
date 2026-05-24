@@ -45,11 +45,6 @@ export function SiteFooter() {
                 info@digitalgroundgame.org
               </a>
             </li>
-            <li>
-              <a className="transition hover:text-accent-red" href="/admin">
-                Admin Login
-              </a>
-            </li>
           </ul>
         </div>
         <div>
