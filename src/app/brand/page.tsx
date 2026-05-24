@@ -104,6 +104,12 @@ const typography = [
     className: "type-label",
     sample: "What you will gain",
   },
+  {
+    name: "Button",
+    className: "type-button",
+    sample: "Become a Volunteer",
+    note: "Uses --font-button-active; switch between Press Start 2P and Pixel Operator in globals.css.",
+  },
 ];
 
 export default function BrandPage() {
@@ -168,6 +174,9 @@ export default function BrandPage() {
                     <p className="mt-1 font-bold text-accent-red">
                       .{item.className}
                     </p>
+                    {"note" in item ? (
+                      <p className="type-small-body mt-3">{item.note}</p>
+                    ) : null}
                   </div>
                   <p className={item.className}>{item.sample}</p>
                 </div>

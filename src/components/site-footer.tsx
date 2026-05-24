@@ -1,10 +1,11 @@
 const followLinks = [
-  { label: "Discord", href: "https://discord.gg/digitalgroundgame" },
   { label: "Facebook", href: "https://www.facebook.com/digitalgroundgame" },
   { label: "X", href: "https://x.com/digitalgroundg/" },
   { label: "YouTube", href: "https://www.youtube.com/@DigitalGroundGame" },
   { label: "Instagram", href: "https://www.instagram.com/digitalgroundgame" },
   { label: "TikTok", href: "https://www.tiktok.com/@digitalgroundgame" },
+  { label: "LinkedIn", href: "https://digitalgroundgame.org/website/social/linkedin" },
+  { label: "Threads", href: "https://www.threads.com/@digitalgroundgame" },
 ];
 
 export function SiteFooter() {
@@ -17,7 +18,7 @@ export function SiteFooter() {
             Defending democracy, one action at a time.
           </p>
           <a
-            className="mt-5 inline-flex bg-accent-red px-4 py-2 text-lg font-bold transition hover:bg-black"
+            className="type-button mt-5 inline-flex bg-accent-red px-4 py-2 transition hover:bg-black"
             href="https://secure.actblue.com/donate/dgg"
           >
             Donate Now
@@ -29,8 +30,11 @@ export function SiteFooter() {
           </h3>
           <ul className="mt-4 grid gap-2">
             <li>
-              <a className="transition hover:text-accent-red" href="/contact-us">
-                Contact us
+              <a
+                className="transition hover:text-accent-red"
+                href="https://discord.gg/digitalgroundgame"
+              >
+                Discord
               </a>
             </li>
             <li>

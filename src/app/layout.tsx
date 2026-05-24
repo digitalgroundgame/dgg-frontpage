@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Roboto_Condensed } from "next/font/google";
+import { Press_Start_2P, Roboto_Condensed } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const robotoCondensed = Roboto_Condensed({
@@ -7,6 +8,18 @@ const robotoCondensed = Roboto_Condensed({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
   style: ["normal", "italic"],
+});
+
+const pressStart2P = Press_Start_2P({
+  variable: "--font-press-start-2p",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const pixelOperator = localFont({
+  src: "../../public/fonts/PixelOperatorHBSC.ttf",
+  variable: "--font-pixel-operator",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +33,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${robotoCondensed.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${robotoCondensed.variable} ${pressStart2P.variable} ${pixelOperator.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

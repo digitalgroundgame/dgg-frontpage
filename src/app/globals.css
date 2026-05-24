@@ -10,6 +10,9 @@
     --color-black: #000000;
     --background: var(--color-near-white-blue);
     --foreground: var(--color-charcoal);
+    --font-button-active: var(--font-press-start-2p);
+    /* Swap the line above with this one to compare button fonts. */
+    /* --font-button-active: var(--font-pixel-operator); */
 }
 
 @theme inline {
@@ -20,10 +23,11 @@
     --color-charcoal: var(--color-charcoal);
     --color-light-charcoal: var(--color-light-charcoal);
     --color-black: var(--color-black);
-    --color-background: var(--background);
-    --color-foreground: var(--foreground);
-    --font-sans: var(--font-roboto-condensed);
-    --font-mono: var(--font-roboto-condensed);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-roboto-condensed);
+  --font-mono: var(--font-roboto-condensed);
+  --font-button: var(--font-button-active);
 }
 
 body {
@@ -74,10 +78,18 @@ body {
 }
 
 .type-label {
-    font-size: 1.25rem;
-    font-weight: 900;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.type-button {
+  font-family: var(--font-button-active), var(--font-roboto-condensed), Arial,
+    Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 @media (min-width: 40rem) {
@@ -99,6 +111,10 @@ body {
 @media (min-width: 64rem) {
     .type-hero {
         font-size: 4.5rem;
+    }
+
+    .type-button {
+        font-size: 0.875rem;
     }
 }
 

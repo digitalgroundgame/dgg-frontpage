@@ -132,13 +132,13 @@ export function SiteHeader() {
               </div>
               <div className="grid gap-3 pt-2 text-2xl font-bold">
                 <a
-                  className="bg-brand-blue px-5 py-4 text-center text-near-white-blue transition hover:bg-dark-blue"
+                  className="type-button bg-brand-blue px-5 py-4 text-center text-near-white-blue transition hover:bg-dark-blue"
                   href="https://discord.gg/digitalgroundgame"
                 >
                   Get Involved
                 </a>
                 <a
-                  className="bg-accent-red px-5 py-4 text-center text-near-white-blue transition hover:bg-black"
+                  className="type-button bg-accent-red px-5 py-4 text-center text-near-white-blue transition hover:bg-black"
                   href="https://secure.actblue.com/donate/dgg"
                 >
                   Donate
@@ -150,13 +150,13 @@ export function SiteHeader() {
 
         <div className="flex w-full shrink-0 flex-wrap justify-center gap-3 min-[960px]:w-auto min-[960px]:justify-start">
           <a
-            className="bg-brand-blue px-5 py-3 text-xl font-bold text-near-white-blue transition hover:bg-dark-blue"
+            className="type-button bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-dark-blue"
             href="https://discord.gg/digitalgroundgame"
           >
             Get Involved
           </a>
           <a
-            className="bg-accent-red px-5 py-3 text-xl font-bold text-near-white-blue transition hover:bg-black"
+            className="type-button bg-accent-red px-5 py-3 text-near-white-blue transition hover:bg-black"
             href="https://secure.actblue.com/donate/dgg"
           >
             Donate
