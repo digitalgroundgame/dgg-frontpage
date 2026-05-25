@@ -10,8 +10,8 @@ const followLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="bg-charcoal text-near-white-blue">
-      <div className="mx-auto grid w-full max-w-6xl gap-8 px-8 py-10 sm:grid-cols-2 sm:px-12 lg:grid-cols-3">
+    <footer className="bg-charcoal px-8 text-near-white-blue sm:px-12">
+      <div className="mx-auto grid w-full max-w-6xl gap-8 py-10 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <h2 className="text-xl font-black">Digital Ground Game</h2>
           <p className="mt-3 leading-7">
@@ -71,7 +71,7 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-      <div className="bg-charcoal px-8 py-4 text-center text-sm">
+      <div className="mx-auto w-full max-w-6xl py-4 text-center text-sm">
         Copyright © Digital Ground Game
       </div>
     </footer>
