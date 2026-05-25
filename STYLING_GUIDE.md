@@ -16,7 +16,8 @@ Avoid introducing new colors unless there is a specific content or accessibility
 
 ## Typography
 
-- Use Roboto Condensed for all text.
+- Use Roboto Condensed for headings and decorative text.
+- Use Roboto Medium as the default for all normal paragraph body copy (including `.type-body` and `.type-small-body` text) to ensure high readability.
 - Headings should be heavy and direct, usually `font-black`.
 - Body copy should stay readable with generous line height.
 

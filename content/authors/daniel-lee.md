@@ -1,4 +1,4 @@
 ---
 name: Daniel Lee
-bio: West Region Dispatch contributor for Digital Ground Game.
+bio: West Region Lead for Digital Ground Game
 ---

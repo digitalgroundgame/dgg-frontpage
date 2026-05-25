@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Press_Start_2P, Roboto_Condensed } from "next/font/google";
+import { Press_Start_2P, Roboto_Condensed, Roboto } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -7,6 +7,13 @@ const robotoCondensed = Roboto_Condensed({
   variable: "--font-roboto-condensed",
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
+  style: ["normal", "italic"],
+});
+
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"],
+  weight: ["400", "500"],
   style: ["normal", "italic"],
 });
 
@@ -35,7 +42,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${robotoCondensed.variable} ${pressStart2P.variable} ${pixelOperator.variable} h-full antialiased`}
+      className={`${robotoCondensed.variable} ${roboto.variable} ${pressStart2P.variable} ${pixelOperator.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

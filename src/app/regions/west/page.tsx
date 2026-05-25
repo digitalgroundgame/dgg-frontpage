@@ -48,7 +48,7 @@ export default function WestRegionPage() {
                     </div>
 
                     <div className="text-charcoal">
-                      <p className="text-xl font-black">
+                      <p className="type-label">
                         {entry.author?.name ?? entry.authorSlug}
                       </p>
                       {entry.author?.bio ? (

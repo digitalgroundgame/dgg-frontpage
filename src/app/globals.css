@@ -28,27 +28,36 @@
   --font-sans: var(--font-roboto-condensed);
   --font-mono: var(--font-roboto-condensed);
   --font-button: var(--font-button-active);
+  --font-roboto: var(--font-roboto);
 }
 
 body {
     background: var(--background);
     color: var(--foreground);
-    font-family: var(--font-roboto-condensed), Arial, Helvetica, sans-serif;
+    font-family: var(--font-roboto-condensed), Helvetica, sans-serif;
+}
+
+p {
+    font-family: var(--font-roboto), sans-serif;
+    font-weight: 400;
 }
 
 .type-hero {
+    font-family: var(--font-roboto-condensed), Helvetica, sans-serif;
     font-size: 3rem;
     font-weight: 900;
     line-height: 1.1;
 }
 
 .type-statement {
+    font-family: var(--font-roboto-condensed), Helvetica, sans-serif;
     font-size: 2.25rem;
     font-weight: 600;
     line-height: 1.1;
 }
 
 .type-kicker {
+    font-family: var(--font-roboto-condensed), Helvetica, sans-serif;
     font-size: 3rem;
     font-weight: 900;
     line-height: 1.1;
@@ -56,28 +65,35 @@ body {
 }
 
 .type-section-title {
+    font-family: var(--font-roboto-condensed), Helvetica, sans-serif;
     font-size: 2.25rem;
     font-weight: 900;
     line-height: 1.1;
 }
 
 .type-subtitle {
+    font-family: var(--font-roboto-condensed), Helvetica, sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 2.25rem;
 }
 
 .type-body {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-family: var(--font-roboto), sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
 }
 
 .type-small-body {
+    font-family: var(--font-roboto), sans-serif;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 1.75rem;
 }
 
 .type-label {
+  font-family: var(--font-roboto-condensed), Helvetica, sans-serif;
   font-size: 1.25rem;
   font-weight: 900;
   letter-spacing: 0.04em;
@@ -85,7 +101,7 @@ body {
 }
 
 .type-button {
-  font-family: var(--font-button-active), var(--font-roboto-condensed), Arial,
+  font-family: var(--font-button-active), var(--font-roboto-condensed),
     Helvetica, sans-serif;
   font-size: 0.75rem;
   font-weight: 400;

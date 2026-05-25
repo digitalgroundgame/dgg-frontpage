@@ -224,11 +224,8 @@ export default function Home() {
         <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-start">
           <div>
             <h2 className="text-5xl font-black leading-tight">
-              Organizing for Real
+              Organizing for Real Political Impact
             </h2>
-            <p className="mt-3 text-5xl font-black leading-tight">
-              Political Impact
-            </p>
           </div>
           <div>
             <h3 className="text-2xl font-black">

@@ -91,7 +91,7 @@ const typography = [
     name: "Body",
     className: "type-body",
     sample:
-      "Use this for primary prose in page sections where the copy needs emphasis and easy scanning.",
+      "Use this for normal prose in page sections, not where the copy needs heavy emphasis.",
   },
   {
     name: "Small body",
