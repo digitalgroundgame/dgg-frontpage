@@ -16,7 +16,6 @@ export type WestRegionDispatchEntry = {
   authorSlug: string;
   author?: DispatchAuthor;
   body: string;
-  excerpt: string;
 };
 
 const dispatchDirectory = path.join(
@@ -71,7 +70,6 @@ function toDispatchEntry(
     authorSlug,
     author: authorsBySlug.get(authorSlug),
     body: content.trim(),
-    excerpt: content.trim().split(/\n{2,}/)[0] ?? "",
   };
 }
 
@@ -83,6 +81,12 @@ export function getWestRegionDispatchEntries(): WestRegionDispatchEntry[] {
   return readMarkdownFiles(dispatchDirectory)
     .map((filename) => toDispatchEntry(filename, authorsBySlug))
     .sort((a, b) => b.date.localeCompare(a.date));
+}
+
+export function getWestRegionDispatchEntryBySlug(
+  slug: string,
+): WestRegionDispatchEntry | undefined {
+  return getWestRegionDispatchEntries().find((entry) => entry.slug === slug);
 }
 
 export function formatDispatchDate(date: string): string {

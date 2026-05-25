@@ -1,3 +1,4 @@
+import { BlogCardPreview } from "@/components/blog-card-preview";
 import { BlogMarkdown } from "@/components/blog-markdown";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -5,10 +6,57 @@ import { WestRegionMap } from "@/components/west-region-map";
 import {
   formatDispatchDate,
   getWestRegionDispatchEntries,
+  type WestRegionDispatchEntry,
 } from "@/lib/west-region-dispatch";
+import Link from "next/link";
+
+const DISPATCH_LIST_HREF = "/regions/west/dispatch";
+
+function dispatchPreviewProps(entry: WestRegionDispatchEntry) {
+  return {
+    title: entry.title,
+    date: entry.date,
+    formattedDate: formatDispatchDate(entry.date),
+    slug: entry.slug,
+    authorName: entry.author?.name ?? entry.authorSlug,
+    readMoreHref: `${DISPATCH_LIST_HREF}/${entry.slug}`,
+  };
+}
+
+function DispatchArticle({ entry }: { entry: WestRegionDispatchEntry }) {
+  return (
+    <article className="text-charcoal">
+      <header className="grid gap-4 md:grid-cols-[minmax(0,1fr)_minmax(14rem,18rem)] md:items-start">
+        <div>
+          <time className="type-label text-light-charcoal" dateTime={entry.date}>
+            {formatDispatchDate(entry.date)}
+          </time>
+          <h2 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
+            {entry.title}
+          </h2>
+        </div>
+
+        <div className="text-charcoal">
+          <p className="type-label">
+            {entry.author?.name ?? entry.authorSlug}
+          </p>
+          {entry.author?.bio ? (
+            <p className="type-small-body mt-2">{entry.author.bio}</p>
+          ) : null}
+        </div>
+      </header>
+
+      <div className="mt-8">
+        {entry.body ? <BlogMarkdown>{entry.body}</BlogMarkdown> : null}
+      </div>
+    </article>
+  );
+}
 
 export default function WestRegionPage() {
   const dispatchEntries = getWestRegionDispatchEntries();
+  const latestDispatch = dispatchEntries[0];
+  const olderDispatches = dispatchEntries.slice(1, 4);
 
   return (
     <main className="min-h-screen bg-near-white-blue text-charcoal">
@@ -21,7 +69,12 @@ export default function WestRegionPage() {
           <div className="grid gap-4">
             <div>
               <h1 className="type-kicker text-light-charcoal">
-                West Region Dispatch
+                <Link
+                  className="transition hover:text-brand-blue"
+                  href={DISPATCH_LIST_HREF}
+                >
+                  West Region Dispatch
+                </Link>
               </h1>
             </div>
             <p className="type-body max-w-2xl">
@@ -30,43 +83,39 @@ export default function WestRegionPage() {
             </p>
           </div>
 
-          {dispatchEntries.length > 0 ? (
-            <div className="mt-10 grid gap-6">
-              {dispatchEntries.map((entry) => (
-                <article className="text-charcoal" key={entry.slug}>
-                  <header className="grid gap-4 md:grid-cols-[minmax(0,1fr)_minmax(14rem,18rem)] md:items-start">
-                    <div>
-                      <time
-                        className="type-label text-light-charcoal"
-                        dateTime={entry.date}
-                      >
-                        {formatDispatchDate(entry.date)}
-                      </time>
-                      <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
-                        {entry.title}
-                      </h1>
-                    </div>
+          {latestDispatch ? (
+            <>
+              <div className="mt-10">
+                <DispatchArticle entry={latestDispatch} />
+              </div>
 
-                    <div className="text-charcoal">
-                      <p className="type-label">
-                        {entry.author?.name ?? entry.authorSlug}
-                      </p>
-                      {entry.author?.bio ? (
-                        <p className="type-small-body mt-2">
-                          {entry.author.bio}
-                        </p>
-                      ) : null}
-                    </div>
-                  </header>
-
-                  <div className="mt-8">
-                    {entry.body ? (
-                      <BlogMarkdown>{entry.body}</BlogMarkdown>
-                    ) : null}
+              {olderDispatches.length > 0 ? (
+                <div className="mt-16">
+                  <h2 className="type-section-title text-light-charcoal">
+                    Previous dispatches
+                  </h2>
+                  <div className="mt-8 grid gap-8 sm:grid-cols-2">
+                    {olderDispatches.map((entry) => (
+                      <BlogCardPreview
+                        key={entry.slug}
+                        {...dispatchPreviewProps(entry)}
+                      />
+                    ))}
                   </div>
-                </article>
-              ))}
-            </div>
+                </div>
+              ) : null}
+
+              {dispatchEntries.length > 1 ? (
+                <div className="mt-12">
+                  <Link
+                    className="type-button inline-flex bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
+                    href={DISPATCH_LIST_HREF}
+                  >
+                    View all dispatches
+                  </Link>
+                </div>
+              ) : null}
+            </>
           ) : (
             <div className="mt-10 bg-charcoal p-6 text-near-white-blue">
               <p className="type-body">

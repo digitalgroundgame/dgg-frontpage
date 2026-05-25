@@ -3,9 +3,17 @@ import remarkGfm from "remark-gfm";
 
 type BlogMarkdownProps = {
   children: string;
+  invert?: boolean;
 };
 
-export function BlogMarkdown({ children }: BlogMarkdownProps) {
+export function BlogMarkdown({ children, invert = false }: BlogMarkdownProps) {
+  const listMarkerClass = invert
+    ? "marker:text-near-white-blue"
+    : "marker:text-charcoal";
+  const linkClass = invert
+    ? "text-near-white-blue underline decoration-brand-blue underline-offset-2 transition hover:text-brand-blue"
+    : "text-brand-blue transition hover:text-charcoal";
+
   return (
     <div className="font-roboto">
       <ReactMarkdown
@@ -30,19 +38,23 @@ export function BlogMarkdown({ children }: BlogMarkdownProps) {
             <p className="mt-4 text-lg leading-7">{children}</p>
           ),
           ul: ({ children }) => (
-            <ul className="mt-3 list-disc space-y-2 pl-6 text-lg leading-7 marker:text-charcoal">
+            <ul
+              className={`mt-3 list-disc space-y-2 pl-6 text-lg leading-7 ${listMarkerClass}`}
+            >
               {children}
             </ul>
           ),
           ol: ({ children }) => (
-            <ol className="mt-3 list-decimal space-y-2 pl-6 text-lg leading-7 marker:text-charcoal">
+            <ol
+              className={`mt-3 list-decimal space-y-2 pl-6 text-lg leading-7 ${listMarkerClass}`}
+            >
               {children}
             </ol>
           ),
           li: ({ children }) => <li>{children}</li>,
           a: ({ children, href }) => (
             <a
-              className="text-brand-blue transition hover:text-charcoal"
+              className={linkClass}
               href={href}
               rel="noopener noreferrer"
               target="_blank"
