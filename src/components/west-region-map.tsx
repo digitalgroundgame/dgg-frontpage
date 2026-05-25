@@ -48,14 +48,14 @@ function StateRow({
   return (
     <ul
       className={[
-        "mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-6 gap-y-2 px-8 text-center sm:px-12",
+        "mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-3 gap-y-0 px-4 text-center sm:gap-x-5 sm:gap-y-0.5 sm:px-12 md:gap-x-6",
         className,
       ].join(" ")}
     >
       {states.map((state) => (
         <li key={state.id}>
           <button
-            className="type-label px-1 py-1 text-charcoal"
+            className="font-sans text-xl font-black uppercase tracking-[0.04em] text-charcoal px-1 py-0 max-[27rem]:text-xs max-[27rem]:tracking-[0.02em] max-[27rem]:px-0.5"
             onBlur={() => setActiveStateId(null)}
             onFocus={() => setActiveStateId(state.id)}
             onMouseEnter={() => setActiveStateId(state.id)}
@@ -105,7 +105,7 @@ export function WestRegionMap() {
           <h1 className="type-hero">West Region</h1>
         </div>
 
-        <div className="-mt-10 overflow-x-clip overflow-y-visible px-3 pb-10 pt-2 sm:px-8">
+        <div className="overflow-x-clip overflow-y-visible px-3 pb-10 pt-2 sm:-mt-10 sm:px-8">
           <div className="mx-auto max-w-5xl min-w-0 [perspective-origin:center_12%] [perspective:1400px]">
             <svg
               aria-labelledby="west-region-map-title"
