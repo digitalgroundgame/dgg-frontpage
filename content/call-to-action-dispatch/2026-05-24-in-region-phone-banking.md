@@ -4,11 +4,16 @@ date: 2026-05-24T00:00:00.000-07:00
 author: daniel-lee
 ---
 
+
+
+
 ## Phone Bank for Democrats!
 
 With the Midterms fast approaching now is the time to start getting involved within your local, state, and regional elections. Phone banking is an inexpensive way to engage with potential voters in ways that can both help you learn about communities you aren't a part of, and grow the Democratic party's base!
 
 [Click here to join the Discord!](https://discord.gg/digitalgroundgame)
+
+![](/uploads/pxl_20260524_175414288.webp)
 
 ## Discover New Opportunities In your own region!
 
