@@ -36,7 +36,7 @@ export function WestRegionDispatchPreviewGrid({
   return (
     <div className="mx-auto w-full max-w-6xl">
       <h2 className="type-section-title text-light-charcoal">{title}</h2>
-      <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {entries.map((entry) => (
           <BlogCardPreview
             key={entry.slug}

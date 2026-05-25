@@ -1,4 +1,5 @@
 import { BlogMarkdown } from "@/components/blog-markdown";
+import { PixelIcon } from "@/components/pixel-icon";
 import { WestRegionDispatchPreviewGrid } from "@/components/west-region-dispatch-preview-grid";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -53,7 +54,22 @@ export default function WestRegionPage() {
 
       <WestRegionMap />
 
-      <section className="px-8 py-16 sm:px-12" id="west-region-dispatch">
+      <section className="px-8 pb-12 sm:px-12">
+        <div className="mx-auto flex w-full max-w-4xl justify-center">
+          <a
+            className="type-button flex w-full max-w-xs items-center justify-center gap-2 bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
+            href="mailto:west-squad@digitalgroundgame.org"
+          >
+            <PixelIcon
+              className="h-5 w-5 shrink-0"
+              name="email-envelope-close"
+            />
+            West Squad Email
+          </a>
+        </div>
+      </section>
+
+      <section className="px-8 pb-16 sm:px-12" id="west-region-dispatch">
         <div className="mx-auto w-full max-w-4xl">
           <div className="grid gap-4">
             <div>
