@@ -54,7 +54,7 @@ export default function WestRegionPage() {
 
       <WestRegionMap />
 
-      <section className="px-8 pb-12 sm:px-12">
+      <section className="px-8 pb-20 sm:px-12">
         <div className="mx-auto flex w-full max-w-4xl justify-center">
           <a
             className="type-button flex w-full max-w-xs items-center justify-center gap-2 bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
@@ -69,8 +69,8 @@ export default function WestRegionPage() {
         </div>
       </section>
 
-      <section className="px-8 pb-16 sm:px-12" id="west-region-dispatch">
-        <div className="mx-auto w-full max-w-4xl">
+      <section className="px-8 pt-8 pb-16 sm:px-12" id="west-region-dispatch">
+        <div className="mx-auto w-full max-w-3xl">
           <div className="grid gap-4">
             <div>
               <h1 className="type-kicker text-light-charcoal">
