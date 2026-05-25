@@ -1,34 +1,44 @@
 import { BlogCardPreview } from "@/components/blog-card-preview";
-import {
-  formatDispatchDate,
-  type WestRegionDispatchEntry,
-} from "@/lib/west-region-dispatch";
 import Link from "next/link";
 
-const DISPATCH_BASE_HREF = "/regions/west/dispatch";
-
-function dispatchPreviewProps(entry: WestRegionDispatchEntry) {
-  return {
-    title: entry.title,
-    date: entry.date,
-    formattedDate: formatDispatchDate(entry.date),
-    slug: entry.slug,
-    authorName: entry.author?.name ?? entry.authorSlug,
-    readMoreHref: `${DISPATCH_BASE_HREF}/${entry.slug}`,
-  };
-}
-
-type WestRegionDispatchPreviewGridProps = {
+export type DispatchPreviewEntry = {
+  slug: string;
   title: string;
-  entries: WestRegionDispatchEntry[];
+  date: string;
+  authorSlug: string;
+  author?: { name: string };
+};
+
+type DispatchPreviewGridProps = {
+  title: string;
+  entries: DispatchPreviewEntry[];
+  baseHref: string;
+  formatDate: (date: string) => string;
   showViewAllLink?: boolean;
 };
 
-export function WestRegionDispatchPreviewGrid({
+function dispatchPreviewProps(
+  entry: DispatchPreviewEntry,
+  baseHref: string,
+  formatDate: (date: string) => string,
+) {
+  return {
+    title: entry.title,
+    date: entry.date,
+    formattedDate: formatDate(entry.date),
+    slug: entry.slug,
+    authorName: entry.author?.name ?? entry.authorSlug,
+    readMoreHref: `${baseHref}/${entry.slug}`,
+  };
+}
+
+export function DispatchPreviewGrid({
   title,
   entries,
+  baseHref,
+  formatDate,
   showViewAllLink = false,
-}: WestRegionDispatchPreviewGridProps) {
+}: DispatchPreviewGridProps) {
   if (entries.length === 0) {
     return null;
   }
@@ -40,7 +50,7 @@ export function WestRegionDispatchPreviewGrid({
         {entries.map((entry) => (
           <BlogCardPreview
             key={entry.slug}
-            {...dispatchPreviewProps(entry)}
+            {...dispatchPreviewProps(entry, baseHref, formatDate)}
           />
         ))}
       </div>
@@ -48,7 +58,7 @@ export function WestRegionDispatchPreviewGrid({
         <div className="mt-12">
           <Link
             className="type-button inline-flex bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
-            href={DISPATCH_BASE_HREF}
+            href={baseHref}
           >
             View all dispatches
           </Link>

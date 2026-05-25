@@ -12,6 +12,27 @@ window.CMS.init({
     public_folder: "/uploads",
     collections: [
       {
+        name: "call_to_action_dispatch",
+        label: "Call to Action Dispatch",
+        folder: "content/call-to-action-dispatch",
+        create: true,
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+        fields: [
+          { label: "Title", name: "title", widget: "string" },
+          { label: "Publish Date", name: "date", widget: "datetime" },
+          {
+            label: "Author",
+            name: "author",
+            widget: "relation",
+            collection: "authors",
+            search_fields: ["name"],
+            value_field: "{{slug}}",
+            display_fields: ["name"],
+          },
+          { label: "Body", name: "body", widget: "markdown" },
+        ],
+      },
+      {
         name: "west_region_dispatch",
         label: "West Region Dispatch",
         folder: "content/west-region-dispatch",

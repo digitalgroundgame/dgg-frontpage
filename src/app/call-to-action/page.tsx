@@ -1,19 +1,18 @@
 import { BlogMarkdown } from "@/components/blog-markdown";
-import { PixelIcon } from "@/components/pixel-icon";
 import { DispatchPreviewGrid } from "@/components/dispatch-preview-grid";
+import { PixelIcon } from "@/components/pixel-icon";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { WestRegionMap } from "@/components/west-region-map";
 import {
   formatDispatchDate,
-  getWestRegionDispatchEntries,
-  type WestRegionDispatchEntry,
-} from "@/lib/west-region-dispatch";
+  getCallToActionDispatchEntries,
+  type CallToActionDispatchEntry,
+} from "@/lib/call-to-action-dispatch";
 import Link from "next/link";
 
-const DISPATCH_LIST_HREF = "/regions/west/dispatch";
+const DISPATCH_LIST_HREF = "/call-to-action/dispatch";
 
-function DispatchArticle({ entry }: { entry: WestRegionDispatchEntry }) {
+function DispatchArticle({ entry }: { entry: CallToActionDispatchEntry }) {
   return (
     <article className="text-charcoal">
       <header className="grid gap-4 md:grid-cols-[minmax(0,1fr)_minmax(14rem,18rem)] md:items-start">
@@ -43,8 +42,8 @@ function DispatchArticle({ entry }: { entry: WestRegionDispatchEntry }) {
   );
 }
 
-export default function WestRegionPage() {
-  const dispatchEntries = getWestRegionDispatchEntries();
+export default function CallToActionPage() {
+  const dispatchEntries = getCallToActionDispatchEntries();
   const latestDispatch = dispatchEntries[0];
   const olderDispatches = dispatchEntries.slice(1, 4);
 
@@ -52,52 +51,59 @@ export default function WestRegionPage() {
     <main className="min-h-screen bg-near-white-blue text-charcoal">
       <SiteHeader />
 
-      <WestRegionMap />
+      <section className="bg-near-white-blue text-charcoal">
+        <div className="mx-auto w-full max-w-7xl py-10 lg:py-14">
+          <div className="mx-auto max-w-4xl px-8 text-center sm:px-12">
+            <h1 className="type-hero">Call to Action</h1>
+            <p className="type-body mx-auto mt-6 max-w-2xl text-light-charcoal">
+              Weekly actions and practical ways to participate in Digital
+              Ground Game.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="px-8 pb-20 sm:px-12">
         <div className="mx-auto flex w-full max-w-4xl justify-center">
           <a
             className="type-button flex w-full max-w-xs items-center justify-center gap-2 bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
-            href="mailto:west-squad@digitalgroundgame.org"
+            href="https://discord.gg/digitalgroundgame"
+            rel="noopener noreferrer"
+            target="_blank"
           >
-            <PixelIcon
-              className="h-5 w-5 shrink-0"
-              name="email-envelope-close"
-            />
-            West Squad Email
+            <PixelIcon className="h-5 w-5 shrink-0" name="hierarchy" />
+            Join on Discord
           </a>
         </div>
       </section>
 
-      <section className="px-8 pt-8 pb-16 sm:px-12" id="west-region-dispatch">
+      <section className="px-8 pt-8 pb-16 sm:px-12" id="call-to-action-dispatch">
         <div className="mx-auto w-full max-w-3xl">
           <div className="grid gap-4">
             <div>
-              <h1 className="type-kicker text-light-charcoal">
+              <h2 className="type-kicker text-light-charcoal">
                 <Link
                   className="transition hover:text-brand-blue"
                   href={DISPATCH_LIST_HREF}
                 >
-                  West Region Dispatch
+                  Call to Action Dispatch
                 </Link>
-              </h1>
+              </h2>
             </div>
             <p className="type-body max-w-2xl">
-              A running blog for regional updates and practical ways to get
+              A running blog for weekly CTAs, serverwide news, and ways to get
               involved.
             </p>
           </div>
 
           {latestDispatch ? (
-            <>
-              <div className="mt-10">
-                <DispatchArticle entry={latestDispatch} />
-              </div>
-            </>
+            <div className="mt-10">
+              <DispatchArticle entry={latestDispatch} />
+            </div>
           ) : (
             <div className="mt-10 bg-charcoal p-6 text-near-white-blue">
               <p className="type-body">
-                West Region Dispatch entries will appear here once they are
+                Call to Action Dispatch entries will appear here once they are
                 published in the CMS.
               </p>
             </div>

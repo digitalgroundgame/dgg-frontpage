@@ -4,21 +4,21 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
   formatDispatchDate,
-  getWestRegionDispatchEntries,
-  getWestRegionDispatchEntryBySlug,
-} from "@/lib/west-region-dispatch";
+  getCallToActionDispatchEntries,
+  getCallToActionDispatchEntryBySlug,
+} from "@/lib/call-to-action-dispatch";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-const DISPATCH_BASE_HREF = "/regions/west/dispatch";
+const DISPATCH_BASE_HREF = "/call-to-action/dispatch";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
-  return getWestRegionDispatchEntries().map((entry) => ({
+  return getCallToActionDispatchEntries().map((entry) => ({
     slug: entry.slug,
   }));
 }
@@ -27,27 +27,27 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const entry = getWestRegionDispatchEntryBySlug(slug);
+  const entry = getCallToActionDispatchEntryBySlug(slug);
 
   if (!entry) {
     return { title: "Dispatch not found | Digital Ground Game" };
   }
 
   return {
-    title: `${entry.title} | West Region Dispatch`,
-    description: `West Region Dispatch update: ${entry.title}.`,
+    title: `${entry.title} | Call to Action Dispatch`,
+    description: `Call to Action Dispatch: ${entry.title}.`,
   };
 }
 
-export default async function WestRegionDispatchPage({ params }: PageProps) {
+export default async function CallToActionDispatchPage({ params }: PageProps) {
   const { slug } = await params;
-  const entry = getWestRegionDispatchEntryBySlug(slug);
+  const entry = getCallToActionDispatchEntryBySlug(slug);
 
   if (!entry) {
     notFound();
   }
 
-  const otherDispatches = getWestRegionDispatchEntries()
+  const otherDispatches = getCallToActionDispatchEntries()
     .filter((dispatch) => dispatch.slug !== slug)
     .slice(0, 3);
 
@@ -60,9 +60,9 @@ export default async function WestRegionDispatchPage({ params }: PageProps) {
           <p className="type-label text-light-charcoal">
             <Link
               className="transition hover:text-brand-blue"
-              href="/regions/west"
+              href="/call-to-action"
             >
-              West Region
+              Call to Action
             </Link>
             {" / "}
             <Link
