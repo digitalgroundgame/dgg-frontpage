@@ -1,5 +1,5 @@
-import { BlogCardPreview } from "@/components/blog-card-preview";
 import { BlogMarkdown } from "@/components/blog-markdown";
+import { WestRegionDispatchPreviewGrid } from "@/components/west-region-dispatch-preview-grid";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { WestRegionMap } from "@/components/west-region-map";
@@ -11,17 +11,6 @@ import {
 import Link from "next/link";
 
 const DISPATCH_LIST_HREF = "/regions/west/dispatch";
-
-function dispatchPreviewProps(entry: WestRegionDispatchEntry) {
-  return {
-    title: entry.title,
-    date: entry.date,
-    formattedDate: formatDispatchDate(entry.date),
-    slug: entry.slug,
-    authorName: entry.author?.name ?? entry.authorSlug,
-    readMoreHref: `${DISPATCH_LIST_HREF}/${entry.slug}`,
-  };
-}
 
 function DispatchArticle({ entry }: { entry: WestRegionDispatchEntry }) {
   return (
@@ -88,33 +77,6 @@ export default function WestRegionPage() {
               <div className="mt-10">
                 <DispatchArticle entry={latestDispatch} />
               </div>
-
-              {olderDispatches.length > 0 ? (
-                <div className="mt-16">
-                  <h2 className="type-section-title text-light-charcoal">
-                    Previous dispatches
-                  </h2>
-                  <div className="mt-8 grid gap-8 sm:grid-cols-2">
-                    {olderDispatches.map((entry) => (
-                      <BlogCardPreview
-                        key={entry.slug}
-                        {...dispatchPreviewProps(entry)}
-                      />
-                    ))}
-                  </div>
-                </div>
-              ) : null}
-
-              {dispatchEntries.length > 1 ? (
-                <div className="mt-12">
-                  <Link
-                    className="type-button inline-flex bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
-                    href={DISPATCH_LIST_HREF}
-                  >
-                    View all dispatches
-                  </Link>
-                </div>
-              ) : null}
             </>
           ) : (
             <div className="mt-10 bg-charcoal p-6 text-near-white-blue">
@@ -125,6 +87,16 @@ export default function WestRegionPage() {
             </div>
           )}
         </div>
+
+        {olderDispatches.length > 0 ? (
+          <div className="mt-16">
+            <WestRegionDispatchPreviewGrid
+              entries={olderDispatches}
+              showViewAllLink={dispatchEntries.length > 1}
+              title="Previous dispatches"
+            />
+          </div>
+        ) : null}
       </section>
 
       <SiteFooter />

@@ -1,29 +1,17 @@
-import { BlogCardPreview } from "@/components/blog-card-preview";
 import { BlogMarkdown } from "@/components/blog-markdown";
+import { WestRegionDispatchPreviewGrid } from "@/components/west-region-dispatch-preview-grid";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
   formatDispatchDate,
   getWestRegionDispatchEntries,
   getWestRegionDispatchEntryBySlug,
-  type WestRegionDispatchEntry,
 } from "@/lib/west-region-dispatch";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 const DISPATCH_BASE_HREF = "/regions/west/dispatch";
-
-function dispatchPreviewProps(entry: WestRegionDispatchEntry) {
-  return {
-    title: entry.title,
-    date: entry.date,
-    formattedDate: formatDispatchDate(entry.date),
-    slug: entry.slug,
-    authorName: entry.author?.name ?? entry.authorSlug,
-    readMoreHref: `${DISPATCH_BASE_HREF}/${entry.slug}`,
-  };
-}
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -113,19 +101,10 @@ export default async function WestRegionDispatchPage({ params }: PageProps) {
 
       {otherDispatches.length > 0 ? (
         <section className="px-8 py-16 sm:px-12">
-          <div className="mx-auto w-full max-w-6xl">
-            <h2 className="type-section-title text-light-charcoal">
-              More dispatches
-            </h2>
-            <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {otherDispatches.map((dispatch) => (
-                <BlogCardPreview
-                  key={dispatch.slug}
-                  {...dispatchPreviewProps(dispatch)}
-                />
-              ))}
-            </div>
-          </div>
+          <WestRegionDispatchPreviewGrid
+            entries={otherDispatches}
+            title="More dispatches"
+          />
         </section>
       ) : null}
 
