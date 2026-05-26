@@ -7,7 +7,6 @@ import {
   type CallToActionDispatchEntry,
 } from "@/lib/call-to-action-dispatch";
 import type { Metadata } from "next";
-import Link from "next/link";
 
 const DISPATCH_BASE_HREF = "/call-to-action/dispatch";
 
@@ -23,9 +22,9 @@ function dispatchPreviewProps(entry: CallToActionDispatchEntry) {
 }
 
 export const metadata: Metadata = {
-  title: "Call to Action Dispatch | Digital Ground Game",
+  title: "Call to Action | Digital Ground Game",
   description:
-    "All Call to Action Dispatch posts — weekly CTAs, serverwide news, and ways to get involved.",
+    "All Call to Action posts — weekly CTAs, and ways to get involved.",
 };
 
 export default function CallToActionDispatchListPage() {
@@ -38,17 +37,7 @@ export default function CallToActionDispatchListPage() {
       <section className="px-8 py-16 sm:px-12">
         <div className="mx-auto w-full max-w-6xl">
           <div className="grid gap-4">
-            <p className="type-label text-light-charcoal">
-              <Link
-                className="transition hover:text-brand-blue"
-                href="/call-to-action"
-              >
-                Call to Action
-              </Link>
-            </p>
-            <h1 className="type-kicker text-light-charcoal">
-              Call to Action Dispatch
-            </h1>
+            <h1 className="type-kicker text-light-charcoal">Call to Action</h1>
             <p className="type-body max-w-2xl">
               Every dispatch from the Call to Action program.
             </p>
@@ -66,8 +55,8 @@ export default function CallToActionDispatchListPage() {
           ) : (
             <div className="mt-10 bg-charcoal p-6 text-near-white-blue">
               <p className="type-body">
-                Call to Action Dispatch entries will appear here once they are
-                published in the CMS.
+                Call to Action entries will appear here once they are published
+                in the CMS.
               </p>
             </div>
           )}

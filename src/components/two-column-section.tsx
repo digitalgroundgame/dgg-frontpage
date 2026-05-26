@@ -1,6 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { markdownComponents } from "@/lib/markdown-components";
+import Image from "next/image";
 
 type TwoColumnSectionProps = {
   image: string;
@@ -18,11 +19,13 @@ export function TwoColumnSection({
   invert = false,
 }: TwoColumnSectionProps) {
   const imageColumn = (
-    <div>
-      <img
-        src={image}
+    <div className="relative aspect-[4/3] overflow-hidden rounded">
+      <Image
         alt={alt}
-        className="w-full rounded object-cover"
+        className="object-cover"
+        fill
+        sizes="(min-width: 768px) 50vw, 100vw"
+        src={image}
       />
     </div>
   );

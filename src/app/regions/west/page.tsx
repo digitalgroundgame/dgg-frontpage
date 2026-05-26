@@ -1,4 +1,4 @@
-import { BlogMarkdown } from "@/components/blog-markdown";
+import { DispatchArticle } from "@/components/dispatch-article";
 import { PixelIcon } from "@/components/pixel-icon";
 import { DispatchPreviewGrid } from "@/components/dispatch-preview-grid";
 import { SiteFooter } from "@/components/site-footer";
@@ -7,41 +7,10 @@ import { WestRegionMap } from "@/components/west-region-map";
 import {
   formatDispatchDate,
   getWestRegionDispatchEntries,
-  type WestRegionDispatchEntry,
 } from "@/lib/west-region-dispatch";
 import Link from "next/link";
 
 const DISPATCH_LIST_HREF = "/regions/west/dispatch";
-
-function DispatchArticle({ entry }: { entry: WestRegionDispatchEntry }) {
-  return (
-    <article className="text-charcoal">
-      <header className="grid gap-4 md:grid-cols-[minmax(0,1fr)_minmax(14rem,18rem)] md:items-start">
-        <div>
-          <time className="type-label text-light-charcoal" dateTime={entry.date}>
-            {formatDispatchDate(entry.date)}
-          </time>
-          <h2 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
-            {entry.title}
-          </h2>
-        </div>
-
-        <div className="text-charcoal">
-          <p className="type-label">
-            {entry.author?.name ?? entry.authorSlug}
-          </p>
-          {entry.author?.bio ? (
-            <p className="type-small-body mt-2">{entry.author.bio}</p>
-          ) : null}
-        </div>
-      </header>
-
-      <div className="mt-8">
-        {entry.body ? <BlogMarkdown>{entry.body}</BlogMarkdown> : null}
-      </div>
-    </article>
-  );
-}
 
 export default function WestRegionPage() {
   const dispatchEntries = getWestRegionDispatchEntries();
@@ -89,11 +58,16 @@ export default function WestRegionPage() {
           </div>
 
           {latestDispatch ? (
-            <>
-              <div className="mt-10">
-                <DispatchArticle entry={latestDispatch} />
-              </div>
-            </>
+            <div className="mt-10">
+              <DispatchArticle
+                author={latestDispatch.author}
+                authorSlug={latestDispatch.authorSlug}
+                body={latestDispatch.body}
+                dateTime={latestDispatch.date}
+                formattedDate={formatDispatchDate(latestDispatch.date)}
+                title={latestDispatch.title}
+              />
+            </div>
           ) : (
             <div className="mt-10 bg-charcoal p-6 text-near-white-blue">
               <p className="type-body">

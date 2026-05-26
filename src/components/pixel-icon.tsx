@@ -9,7 +9,9 @@ type PixelIconName =
   | "search-check"
   | "star"
   | "navigation-compass"
-  | "content-files-open-book";
+  | "content-files-open-book"
+  | "interface-essential-speaker-announce"
+  | "user-man-love";
 
 const pixelIconPaths: Record<
   PixelIconName,
@@ -356,8 +358,53 @@ const pixelIconPaths: Record<
       "M1.52 8.38h1.53v18.29H1.52Z",
     ],
   },
+  "interface-essential-speaker-announce": {
+    title: "interface-essential-speaker-announce",
+    desc: "Interface Essential Speaker Announce Streamline Icon: https://streamlinehq.com",
+    paths: [
+      "M30.47 5.33H32v18.29h-1.53Z",
+      "M28.95 23.62h1.52v1.52h-1.52Z",
+      "M28.95 3.81h1.52v1.52h-1.52Z",
+      "M27.43 25.14h1.52v1.52h-1.52Z",
+      "M27.43 2.28h1.52v1.53h-1.52Z",
+      "M25.9 20.57h1.53v1.52H25.9Z",
+      "M25.9 6.86h1.53v1.52H25.9Z",
+      "M22.85 26.66h4.58v1.53h-4.58Z",
+      "M24.38 19.05h1.52v1.52h-1.52Z",
+      "M24.38 8.38h1.52V9.9h-1.52Z",
+      "M22.85 0.76h4.58v1.52h-4.58Z",
+      "M22.85 9.9h1.53v9.15h-1.53Z",
+      "M19.81 25.14h3.04v1.52h-3.04Z",
+      "M19.81 2.28h3.04v1.53h-3.04Z",
+      "M16.76 23.62h3.05v1.52h-3.05Z",
+      "M16.76 3.81h3.05v1.52h-3.05Z",
+      "M12.19 22.09h4.57v1.53h-4.57Z",
+      "M12.19 5.33h4.57v1.53h-4.57Z",
+      "M9.14 20.57V8.38h3.05V6.86H4.57v1.52H1.52V9.9H0v9.15h1.52v1.52h3.05v9.14h1.52v-7.62h3.05v7.62h1.52v-7.62h1.53v-1.52Zm-4.57 -9.14H3.05v3.04H1.52v-3.04h1.53V9.9h1.52Z",
+      "M6.09 29.71h3.05v1.53H6.09Z",
+    ],
+  },
+  "user-man-love": {
+    title: "user-man-love",
+    desc: "User Man Love Streamline Icon: https://streamlinehq.com",
+    paths: [
+      "m20.575 7.62 1.52 0 0 1.52 1.52 0 0 1.52 1.53 0 0 -1.52 1.52 0 0 -1.52 1.53 0 0 -1.53 1.52 0 0 -3.05 -1.52 0 0 -1.52 -1.53 0 0 1.52 -1.52 0 0 1.53 -1.53 0 0 -1.53 -1.52 0 0 -1.52 -1.52 0 0 1.52 -1.53 0 0 3.05 1.53 0 0 1.53z",
+      "M14.475 15.23h1.53v9.15h-1.53Z",
+      "M12.955 13.71h1.52v1.52h-1.52Z",
+      "m12.955 18.28 -1.53 0 0 3.05 -4.57 0 0 -3.05 -1.52 0 0 6.1 -1.53 0 0 1.52 1.53 0 0 6.1 3.05 0 0 -4.58 1.52 0 0 4.58 3.05 0 0 -6.1 1.52 0 0 -1.52 -1.52 0 0 -6.1z",
+      "M11.425 12.19h1.53v1.52h-1.53Z",
+      "M11.425 9.14h1.53v1.52h-1.53Z",
+      "M8.385 13.71h1.52v4.57h-1.52Z",
+      "M6.855 10.66h4.57v1.53h-4.57Z",
+      "M5.335 12.19h1.52v1.52h-1.52Z",
+      "M5.335 9.14h1.52v1.52h-1.52Z",
+      "M3.805 13.71h1.53v1.52h-1.53Z",
+      "m6.855 6.09 0 -1.52 4.57 0 0 1.52 1.53 0 0 3.05 1.52 0 0 -6.1 -1.52 0 0 -1.52 -1.53 0 0 -1.52 -4.57 0 0 1.52 -1.52 0 0 1.52 -1.53 0 0 6.1 1.53 0 0 -3.05 1.52 0z",
+      "M2.285 15.23h1.52v9.15h-1.52Z",
+    ],
+  },
 };
-
+ 
 export function PixelIcon({
   className,
   name,

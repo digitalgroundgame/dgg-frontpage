@@ -1,4 +1,4 @@
-import { BlogMarkdown } from "@/components/blog-markdown";
+import { DispatchArticle } from "@/components/dispatch-article";
 import { DispatchPreviewGrid } from "@/components/dispatch-preview-grid";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -73,28 +73,16 @@ export default async function WestRegionDispatchPage({ params }: PageProps) {
             </Link>
           </p>
 
-          <header className="mt-6 grid gap-4 md:grid-cols-[minmax(0,1fr)_minmax(14rem,18rem)] md:items-start">
-            <div>
-              <time className="type-label text-light-charcoal" dateTime={entry.date}>
-                {formatDispatchDate(entry.date)}
-              </time>
-              <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
-                {entry.title}
-              </h1>
-            </div>
-
-            <div className="text-charcoal">
-              <p className="type-label">
-                {entry.author?.name ?? entry.authorSlug}
-              </p>
-              {entry.author?.bio ? (
-                <p className="type-small-body mt-2">{entry.author.bio}</p>
-              ) : null}
-            </div>
-          </header>
-
-          <div className="mt-8">
-            {entry.body ? <BlogMarkdown>{entry.body}</BlogMarkdown> : null}
+          <div className="mt-6">
+            <DispatchArticle
+              author={entry.author}
+              authorSlug={entry.authorSlug}
+              body={entry.body}
+              dateTime={entry.date}
+              formattedDate={formatDispatchDate(entry.date)}
+              headingLevel="h1"
+              title={entry.title}
+            />
           </div>
         </div>
       </article>

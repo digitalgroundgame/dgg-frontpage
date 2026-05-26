@@ -1,48 +1,15 @@
-import { BlogMarkdown } from "@/components/blog-markdown";
+import { DispatchArticle } from "@/components/dispatch-article";
 import { DispatchPreviewGrid } from "@/components/dispatch-preview-grid";
+import { PixelIcon } from "@/components/pixel-icon";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
   formatDispatchDate,
   getCallToActionDispatchEntries,
-  type CallToActionDispatchEntry,
 } from "@/lib/call-to-action-dispatch";
 import Link from "next/link";
 
 const DISPATCH_LIST_HREF = "/call-to-action/dispatch";
-
-function DispatchArticle({ entry }: { entry: CallToActionDispatchEntry }) {
-  return (
-    <article className="text-charcoal">
-      <header>
-        <div>
-          <time
-            className="type-label text-light-charcoal"
-            dateTime={entry.date}
-          >
-            {formatDispatchDate(entry.date)}
-          </time>
-          <h2 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
-            {entry.title}
-          </h2>
-        </div>
-
-        <div className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-1 text-charcoal md:flex-nowrap">
-          <p className="type-label shrink-0">
-            {entry.author?.name ?? entry.authorSlug}
-          </p>
-          {entry.author?.bio ? (
-            <p className="type-small-body">{entry.author.bio}</p>
-          ) : null}
-        </div>
-      </header>
-
-      <div className="mt-8">
-        {entry.body ? <BlogMarkdown>{entry.body}</BlogMarkdown> : null}
-      </div>
-    </article>
-  );
-}
 
 export default function CallToActionPage() {
   const dispatchEntries = getCallToActionDispatchEntries();
@@ -61,28 +28,38 @@ export default function CallToActionPage() {
             <div>
               <h2 className="type-kicker text-light-charcoal">
                 <Link
-                  className="transition hover:text-brand-blue"
+                  className="inline-flex items-center gap-1.5 transition hover:text-brand-blue"
                   href={DISPATCH_LIST_HREF}
                 >
-                  Call to Action Dispatch
+                  Call to Action
+                  <PixelIcon
+                    className="h-16 w-16 shrink-0"
+                    name="interface-essential-speaker-announce"
+                  />
                 </Link>
               </h2>
             </div>
             <p className="type-body">
-              A running blog for weekly CTAs, serverwide news, and ways to get
-              involved.
+              A running blog for weekly CTAs, and ways to get involved.
             </p>
           </div>
 
           {latestDispatch ? (
             <div className="mt-10">
-              <DispatchArticle entry={latestDispatch} />
+              <DispatchArticle
+                author={latestDispatch.author}
+                authorSlug={latestDispatch.authorSlug}
+                body={latestDispatch.body}
+                dateTime={latestDispatch.date}
+                formattedDate={formatDispatchDate(latestDispatch.date)}
+                title={latestDispatch.title}
+              />
             </div>
           ) : (
             <div className="mt-10 bg-charcoal p-6 text-near-white-blue">
               <p className="type-body">
-                Call to Action Dispatch entries will appear here once they are
-                published in the CMS.
+                Call to Action entries will appear here once they are published
+                in the CMS.
               </p>
             </div>
           )}
