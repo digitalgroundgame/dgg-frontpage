@@ -3,6 +3,7 @@ import { feature } from "topojson-client";
 import usAtlas from "us-atlas/states-10m.json";
 import type { Feature, FeatureCollection, Geometry } from "geojson";
 import type { Topology } from "topojson-specification";
+import { PixelIcon } from "@/components/pixel-icon";
 
 const westStateNamesById: Record<string, string> = {
   "02": "Alaska",
@@ -91,7 +92,10 @@ export function WestRegionMap() {
     <section className="bg-near-white-blue text-charcoal">
       <div className="mx-auto w-full max-w-7xl py-10 lg:py-14">
         <div className="mx-auto max-w-4xl px-8 text-center sm:px-12">
-          <h1 className="type-hero">West Region</h1>
+          <h1 className="type-hero inline-flex items-center gap-3">
+            <PixelIcon className="h-16 w-16" name="navigation-compass" />
+            West Region
+          </h1>
         </div>
 
         <div className="overflow-x-clip overflow-y-visible px-3 pb-10 pt-2 sm:-mt-10 sm:px-8">

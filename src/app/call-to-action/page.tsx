@@ -1,6 +1,5 @@
 import { BlogMarkdown } from "@/components/blog-markdown";
 import { DispatchPreviewGrid } from "@/components/dispatch-preview-grid";
-import { PixelIcon } from "@/components/pixel-icon";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
@@ -15,7 +14,7 @@ const DISPATCH_LIST_HREF = "/call-to-action/dispatch";
 function DispatchArticle({ entry }: { entry: CallToActionDispatchEntry }) {
   return (
     <article className="text-charcoal">
-      <header className="grid gap-4 md:grid-cols-[minmax(0,1fr)_minmax(14rem,18rem)] md:items-start">
+      <header>
         <div>
           <time
             className="type-label text-light-charcoal"
@@ -28,10 +27,12 @@ function DispatchArticle({ entry }: { entry: CallToActionDispatchEntry }) {
           </h2>
         </div>
 
-        <div className="text-charcoal">
-          <p className="type-label">{entry.author?.name ?? entry.authorSlug}</p>
+        <div className="mt-4 flex flex-wrap items-baseline gap-x-4 gap-y-1 text-charcoal md:flex-nowrap">
+          <p className="type-label shrink-0">
+            {entry.author?.name ?? entry.authorSlug}
+          </p>
           {entry.author?.bio ? (
-            <p className="type-small-body mt-2">{entry.author.bio}</p>
+            <p className="type-small-body">{entry.author.bio}</p>
           ) : null}
         </div>
       </header>

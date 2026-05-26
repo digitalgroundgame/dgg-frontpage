@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PixelIcon } from "@/components/pixel-icon";
 
 type BlogCardPreviewProps = {
   title: string;
@@ -30,6 +31,11 @@ export function BlogCardPreview({
         <time className="type-label text-near-white-blue/80" dateTime={date}>
           {formattedDate}
         </time>
+        <PixelIcon
+          aria-hidden="true"
+          className="absolute right-3 top-3 text-near-white-blue"
+          name="content-files-open-book"
+        />
         <h2 className="mt-3 flex-1 text-2xl font-black leading-tight">
           {title}
         </h2>
