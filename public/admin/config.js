@@ -21,6 +21,19 @@ window.CMS.init({
           { label: "Title", name: "title", widget: "string" },
           { label: "Publish Date", name: "date", widget: "datetime" },
           {
+            label: "Hero Photo",
+            name: "heroPhoto",
+            widget: "image",
+            required: false,
+          },
+          {
+            label: "Hero Filter",
+            name: "heroFilter",
+            widget: "boolean",
+            required: false,
+            default: true,
+          },
+          {
             label: "Author",
             name: "author",
             widget: "relation",
@@ -41,6 +54,19 @@ window.CMS.init({
         fields: [
           { label: "Title", name: "title", widget: "string" },
           { label: "Publish Date", name: "date", widget: "datetime" },
+          {
+            label: "Hero Photo",
+            name: "heroPhoto",
+            widget: "image",
+            required: false,
+          },
+          {
+            label: "Hero Filter",
+            name: "heroFilter",
+            widget: "boolean",
+            required: false,
+            default: true,
+          },
           {
             label: "Author",
             name: "author",

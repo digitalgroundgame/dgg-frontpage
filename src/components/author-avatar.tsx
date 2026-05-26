@@ -11,18 +11,18 @@ export function AuthorAvatar({ name, picture }: AuthorAvatarProps) {
     return (
       <Image
         alt={name}
-        className="h-10 w-10 shrink-0 rounded-full object-cover"
-        height={40}
+        className="h-12 w-12 shrink-0 rounded-full object-cover"
+        height={48}
         src={picture}
-        width={40}
+        width={48}
       />
     );
   }
 
   return (
-    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-charcoal/10">
+    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-blue">
       <PixelIcon
-        className="h-6 w-6 translate-y-0.5 text-red-600"
+        className="h-7 w-7 translate-x-1 translate-y-0.5 text-near-white-blue"
         name="user-man-love"
       />
     </div>

@@ -13,6 +13,8 @@ export type CallToActionDispatchEntry = {
   slug: string;
   title: string;
   date: string;
+  heroPhoto: string;
+  heroFilter: boolean;
   authorSlug: string;
   author?: DispatchAuthor;
   body: string;
@@ -67,6 +69,8 @@ function toDispatchEntry(
     slug,
     title: String(data.title ?? slug),
     date: String(date ?? ""),
+    heroPhoto: String(data.heroPhoto ?? ""),
+    heroFilter: Boolean(data.heroFilter),
     authorSlug,
     author: authorsBySlug.get(authorSlug),
     body: content.trim(),

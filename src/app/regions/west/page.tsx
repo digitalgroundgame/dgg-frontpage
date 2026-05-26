@@ -65,6 +65,8 @@ export default function WestRegionPage() {
                 body={latestDispatch.body}
                 dateTime={latestDispatch.date}
                 formattedDate={formatDispatchDate(latestDispatch.date)}
+                heroFilter={latestDispatch.heroFilter}
+                heroPhoto={latestDispatch.heroPhoto}
                 title={latestDispatch.title}
               />
             </div>

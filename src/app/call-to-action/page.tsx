@@ -7,7 +7,6 @@ import {
   formatDispatchDate,
   getCallToActionDispatchEntries,
 } from "@/lib/call-to-action-dispatch";
-import Link from "next/link";
 
 const DISPATCH_LIST_HREF = "/call-to-action/dispatch";
 
@@ -27,16 +26,13 @@ export default function CallToActionPage() {
           <div className="grid gap-4">
             <div>
               <h2 className="type-kicker text-light-charcoal">
-                <Link
-                  className="inline-flex items-center gap-1.5 transition hover:text-brand-blue"
-                  href={DISPATCH_LIST_HREF}
-                >
+                <span className="inline-flex items-center gap-1.5">
                   Call to Action
                   <PixelIcon
                     className="h-16 w-16 shrink-0"
                     name="interface-essential-speaker-announce"
                   />
-                </Link>
+                </span>
               </h2>
             </div>
             <p className="type-body">
@@ -52,6 +48,8 @@ export default function CallToActionPage() {
                 body={latestDispatch.body}
                 dateTime={latestDispatch.date}
                 formattedDate={formatDispatchDate(latestDispatch.date)}
+                heroFilter={latestDispatch.heroFilter}
+                heroPhoto={latestDispatch.heroPhoto}
                 title={latestDispatch.title}
               />
             </div>

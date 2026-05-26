@@ -81,6 +81,8 @@ export default async function CallToActionDispatchPage({ params }: PageProps) {
               dateTime={entry.date}
               formattedDate={formatDispatchDate(entry.date)}
               headingLevel="h1"
+              heroFilter={entry.heroFilter}
+              heroPhoto={entry.heroPhoto}
               title={entry.title}
             />
           </div>
