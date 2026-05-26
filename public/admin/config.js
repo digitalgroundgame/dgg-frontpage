@@ -163,6 +163,28 @@ const collections = [
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
     fields: photoFields,
   },
+  {
+    name: "south_people",
+    label: "South > People",
+    files: [
+      {
+        label: "People",
+        name: "people",
+        file: "content/regions/south/people/index.md",
+        fields: peopleFields,
+      },
+    ],
+  },
+  {
+    name: "south_photos",
+    label: "South > Photos",
+    folder: "content/regions/south/photos",
+    create: true,
+    identifier_field: "alt",
+    summary: "{{alt}}",
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+    fields: photoFields,
+  },
 ].sort((a, b) => a.label.localeCompare(b.label));
 
 window.CMS.init({

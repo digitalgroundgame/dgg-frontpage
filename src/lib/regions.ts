@@ -65,6 +65,20 @@ const midwestStateIds = [
   "55",
 ];
 
+const southStateIds = [
+  "01",
+  "05",
+  "12",
+  "13",
+  "22",
+  "28",
+  "37",
+  "40",
+  "45",
+  "47",
+  "48",
+];
+
 export const regions = {
   west: {
     slug: "west",
@@ -96,5 +110,12 @@ export const regions = {
     email: "midwest-squad@digitalgroundgame.org",
     emailLabel: "Midwest Squad Email",
     stateIds: midwestStateIds,
+  },
+  south: {
+    slug: "south",
+    name: "South",
+    email: "south-squad@digitalgroundgame.org",
+    emailLabel: "South Squad Email",
+    stateIds: southStateIds,
   },
 } satisfies Record<string, RegionConfig>;
