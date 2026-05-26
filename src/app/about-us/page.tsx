@@ -139,8 +139,8 @@ export default function AboutUsPage() {
         />
         <div className="relative z-10 mx-auto w-full max-w-6xl">
           <div className="max-w-3xl">
-            <p className="type-kicker text-near-white-blue/80">
-              Our Accomplishments
+            <p className="font-sans text-[2rem] font-black uppercase leading-none text-near-white-blue/80 min-[390px]:text-[2.35rem] sm:text-6xl">
+              Our <span className="block">Accomplishments</span>
             </p>
             <h2 className="type-section-title mt-4">
               Practical organizing with measurable results.
@@ -163,8 +163,12 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      <section className="bg-brand-blue px-8 py-16 text-near-white-blue sm:px-12">
-        <div className="mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-start">
+      <section className="relative overflow-hidden bg-brand-blue px-8 py-16 text-near-white-blue sm:px-12">
+        <div
+          aria-hidden="true"
+          className="absolute -bottom-64 -left-48 aspect-square h-[42rem] rounded-full bg-dark-blue"
+        />
+        <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-start">
           <div>
             <p className="type-kicker text-near-white-blue/80">Our Teams</p>
             <h2 className="mt-4 text-5xl font-black leading-tight">

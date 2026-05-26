@@ -5,8 +5,8 @@ export function markdownComponents(invert = false): Components {
     ? "marker:text-near-white-blue"
     : "marker:text-charcoal";
   const linkClass = invert
-    ? "text-near-white-blue underline decoration-brand-blue underline-offset-2 transition hover:text-brand-blue"
-    : "text-brand-blue transition hover:text-charcoal";
+    ? "overflow-wrap-anywhere text-near-white-blue underline decoration-brand-blue underline-offset-2 transition hover:text-brand-blue"
+    : "overflow-wrap-anywhere text-brand-blue transition hover:text-charcoal";
 
   return {
     h1: ({ children }) => (
@@ -25,18 +25,20 @@ export function markdownComponents(invert = false): Components {
       </h3>
     ),
     p: ({ children }) => (
-      <p className="mt-4 text-lg leading-7">{children}</p>
+      <p className="overflow-wrap-anywhere mt-4 text-lg leading-7">
+        {children}
+      </p>
     ),
     ul: ({ children }) => (
       <ul
-        className={`mt-3 list-disc space-y-2 pl-6 text-lg leading-7 ${listMarkerClass}`}
+        className={`overflow-wrap-anywhere mt-3 list-disc space-y-2 pl-6 text-lg leading-7 ${listMarkerClass}`}
       >
         {children}
       </ul>
     ),
     ol: ({ children }) => (
       <ol
-        className={`mt-3 list-decimal space-y-2 pl-6 text-lg leading-7 ${listMarkerClass}`}
+        className={`overflow-wrap-anywhere mt-3 list-decimal space-y-2 pl-6 text-lg leading-7 ${listMarkerClass}`}
       >
         {children}
       </ol>
