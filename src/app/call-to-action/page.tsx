@@ -67,7 +67,7 @@ export default function CallToActionPage() {
                 </Link>
               </h2>
             </div>
-            <p className="type-body max-w-2xl">
+            <p className="type-body">
               A running blog for weekly CTAs, serverwide news, and ways to get
               involved.
             </p>
