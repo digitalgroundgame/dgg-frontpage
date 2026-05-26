@@ -68,3 +68,65 @@ window.CMS.init({
     ],
   },
 });
+
+CMS.registerEditorComponent({
+  id: "two-column",
+  label: "Two Column Image & Text",
+  fields: [
+    {
+      name: "image",
+      label: "Image",
+      widget: "image",
+    },
+    {
+      name: "alt",
+      label: "Alt Text",
+      widget: "string",
+    },
+    {
+      name: "text",
+      label: "Text Content",
+      widget: "markdown",
+    },
+    {
+      name: "layout",
+      label: "Layout",
+      widget: "select",
+      options: [
+        { label: "Image Left", value: "image-left" },
+        { label: "Image Right", value: "image-right" },
+      ],
+      default: ["image-left"],
+    },
+  ],
+  pattern:
+    /{%\s*two-column\s+image="(.*?)"\s+alt="(.*?)"\s+layout="(.*?)"\s*%}\n?([\s\S]*?)\n?{%\s*\/two-column\s*%}/,
+  fromBlock: function (match) {
+    return {
+      image: match[1],
+      alt: match[2],
+      layout: match[3],
+      text: match[4],
+    };
+  },
+  toBlock: function (data) {
+    return `{% two-column image="${data.image}" alt="${data.alt}" layout="${data.layout}" %}\n${data.text}\n{% /two-column %}`;
+  },
+  toPreview: function (data) {
+    var align = data.layout === "image-right" ? "flex-direction:row-reverse" : "";
+    return (
+      '<div style="display:flex;' +
+      align +
+      ';gap:1rem;align-items:flex-start">' +
+      '<img src="' +
+      data.image +
+      '" alt="' +
+      data.alt +
+      '" style="width:50%;max-width:300px" />' +
+      '<div style="width:50%">' +
+      data.text +
+      "</div>" +
+      "</div>"
+    );
+  },
+});

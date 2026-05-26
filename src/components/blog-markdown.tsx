@@ -1,71 +1,61 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { markdownComponents } from "@/lib/markdown-components";
+import { TwoColumnSection } from "./two-column-section";
+
+const TWO_COLUMN_RE =
+  /{%\s*two-column\s+image="(.*?)"\s+alt="(.*?)"\s+layout="(.*?)"\s*%}\n?([\s\S]*?)\n?{%\s*\/two-column\s*%}/;
 
 type BlogMarkdownProps = {
   children: string;
   invert?: boolean;
 };
 
+function renderMarkdown(markdown: string, invert: boolean) {
+  return (
+    <ReactMarkdown
+      remarkPlugins={[remarkGfm]}
+      components={markdownComponents(invert)}
+    >
+      {markdown}
+    </ReactMarkdown>
+  );
+}
+
 export function BlogMarkdown({ children, invert = false }: BlogMarkdownProps) {
-  const listMarkerClass = invert
-    ? "marker:text-near-white-blue"
-    : "marker:text-charcoal";
-  const linkClass = invert
-    ? "text-near-white-blue underline decoration-brand-blue underline-offset-2 transition hover:text-brand-blue"
-    : "text-brand-blue transition hover:text-charcoal";
+  const parts = children.split(
+    /({%\s*two-column\s+.*?%}[\s\S]*?{%\s*\/two-column\s*%})/,
+  );
+
+  if (parts.length === 1) {
+    return (
+      <div className="font-roboto">
+        {renderMarkdown(children, invert)}
+      </div>
+    );
+  }
 
   return (
     <div className="font-roboto">
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        components={{
-          h1: ({ children }) => (
-            <h1 className="mt-6 text-3xl font-black leading-tight first:mt-4 font-sans">
-              {children}
-            </h1>
-          ),
-          h2: ({ children }) => (
-            <h2 className="mt-8 text-3xl font-black leading-tight font-sans">
-              {children}
-            </h2>
-          ),
-          h3: ({ children }) => (
-            <h3 className="mt-5 text-xl font-black leading-tight font-sans">
-              {children}
-            </h3>
-          ),
-          p: ({ children }) => (
-            <p className="mt-4 text-lg leading-7">{children}</p>
-          ),
-          ul: ({ children }) => (
-            <ul
-              className={`mt-3 list-disc space-y-2 pl-6 text-lg leading-7 ${listMarkerClass}`}
-            >
-              {children}
-            </ul>
-          ),
-          ol: ({ children }) => (
-            <ol
-              className={`mt-3 list-decimal space-y-2 pl-6 text-lg leading-7 ${listMarkerClass}`}
-            >
-              {children}
-            </ol>
-          ),
-          li: ({ children }) => <li>{children}</li>,
-          a: ({ children, href }) => (
-            <a
-              className={linkClass}
-              href={href}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              {children}
-            </a>
-          ),
-        }}
-      >
-        {children}
-      </ReactMarkdown>
+      {parts.map((part, i) => {
+        const match = part.match(TWO_COLUMN_RE);
+        if (match) {
+          return (
+            <TwoColumnSection
+              key={i}
+              image={match[1]}
+              alt={match[2]}
+              layout={match[3] as "image-left" | "image-right"}
+              text={match[4]}
+              invert={invert}
+            />
+          );
+        }
+        if (part.trim()) {
+          return <div key={i}>{renderMarkdown(part, invert)}</div>;
+        }
+        return null;
+      })}
     </div>
   );
 }
