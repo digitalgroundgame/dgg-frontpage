@@ -12,6 +12,11 @@ type PixelIconName =
   | "navigation-compass"
   | "content-files-open-book"
   | "interface-essential-speaker-announce"
+  | "logo-linkedin"
+  | "logo-social-media-facebook-circle"
+  | "logo-social-media-instagram"
+  | "logo-social-media-twitter-circle"
+  | "logo-social-media-youtube"
   | "user-man-love";
 
 const pixelIconPaths: Record<
@@ -76,6 +81,78 @@ const pixelIconPaths: Record<
       "M2.29 28.19h1.52v1.52H2.29Z",
       "M2.29 2.28h1.52v1.53H2.29Z",
       "M0.76 3.81h1.53v24.38H0.76Z",
+    ],
+  },
+  "logo-social-media-youtube": {
+    title: "logo-social-media-youtube",
+    desc: "Logo Social Media Youtube Streamline Icon: https://streamlinehq.com",
+    paths: [
+      "M30.47 9.14H32v13.72h-1.53Z",
+      "M28.95 22.86h1.52v1.52h-1.52Z",
+      "M28.95 7.62h1.52v1.52h-1.52Z",
+      "M27.42 24.38h1.53v1.52h-1.53Z",
+      "M27.42 6.09h1.53v1.53h-1.53Z",
+      "M27.42 7.62H4.57v1.52H3.04v13.72h1.53v1.52h22.85v-1.52h1.53V9.14h-1.53Zm-7.61 9.14h-1.53v1.53h-1.52v1.52h-3.05v1.52h-1.52V10.67h1.52v1.52h3.05v1.52h1.52v1.53h1.53Z",
+      "M4.57 25.9h22.85v1.53H4.57Z",
+      "M4.57 4.57h22.85v1.52H4.57Z",
+      "M3.04 24.38h1.53v1.52H3.04Z",
+      "M3.04 6.09h1.53v1.53H3.04Z",
+      "M1.52 22.86h1.52v1.52H1.52Z",
+      "M1.52 7.62h1.52v1.52H1.52Z",
+      "M0 9.14h1.52v13.72H0Z",
+    ],
+  },
+  "logo-social-media-facebook-circle": {
+    title: "logo-social-media-facebook-circle",
+    desc: "Logo Social Media Facebook Circle Streamline Icon: https://streamlinehq.com",
+    paths: [
+      "m30.47 9.905 -1.52 0 0 -3.05 -1.53 0 0 -1.52 -1.52 0 0 -1.53 -3.05 0 0 -1.52 -3.04 0 0 -1.52 -7.62 0 0 1.52 -3.05 0 0 1.52 -3.05 0 0 1.53 -1.52 0 0 1.52 -1.53 0 0 3.05 -1.52 0 0 3.05 -1.52 0 0 7.61 1.52 0 0 3.05 1.52 0 0 3.05 1.53 0 0 1.52 1.52 0 0 1.53 3.05 0 0 1.52 4.57 0 0 -10.67 -4.57 0 0 -4.57 4.57 0 0 -6.09 1.52 0 0 -1.53 7.62 0 0 4.58 -4.57 0 0 3.04 6.1 0 0 1.53 -1.53 0 0 1.52 -1.52 0 0 1.52 -3.05 0 0 10.67 4.57 0 0 -1.52 3.05 0 0 -1.53 1.52 0 0 -1.52 1.53 0 0 -3.05 1.52 0 0 -3.05 1.53 0 0 -7.61 -1.53 0 0 -3.05z",
+    ],
+  },
+  "logo-social-media-twitter-circle": {
+    title: "logo-social-media-twitter-circle",
+    desc: "Logo Social Media Twitter Circle Streamline Icon: https://streamlinehq.com",
+    paths: [
+      "M1.52 22.86h1.52v3.04h1.53v1.53h1.52v1.52h3.05v1.53h3.05V32h7.62v-1.52h3.04v-1.53h3.05v-1.52h1.52V25.9h1.53v-3.04h1.52v-3.05H32v-7.62h-1.53V9.14h-1.52V6.09h-1.53V4.57H25.9V3.05h-3.05V1.52h-3.04V0h-7.62v1.52H9.14v1.53H6.09v1.52H4.57v1.52H3.04v3.05H1.52v3.05H0v7.62h1.52ZM7.61 9.14h1.53v1.53h1.52v1.52h1.53v1.52h3.04V9.14h1.53V7.62h6.09v1.52h1.53v3.05h3.04v1.52H25.9v1.53h-1.52v4.57h-1.53v3.05h-1.52v1.52h-1.52v1.52H9.14v-1.52h1.52v-1.52h1.53v-1.53h1.52v-1.52h-3.05v-1.52H9.14v-1.53H7.61Z",
+      "M19.81 10.67h3.04v3.04h-3.04Z",
+    ],
+  },
+  "logo-social-media-instagram": {
+    title: "logo-social-media-instagram",
+    desc: "Logo Social Media Instagram Streamline Icon: https://streamlinehq.com",
+    paths: [
+      "M30.47 3.05H32v25.9h-1.53Z",
+      "M28.95 28.95h1.52v1.53h-1.52Z",
+      "M28.95 1.52h1.52v1.53h-1.52Z",
+      "M3.04 30.48h25.91V32H3.04Z",
+      "M27.42 4.57H25.9V3.05H6.09v1.52H4.57v1.52H3.04V25.9h1.53v1.53h1.52v1.52H25.9v-1.52h1.52V25.9h1.53V6.09h-1.53ZM25.9 24.38h-1.52v1.52H7.61v-1.52H6.09V7.62h1.52V6.09h16.77v1.53h1.52Z",
+      "M21.33 7.62h3.05v3.05h-3.05Z",
+      "M21.33 12.19h-1.52v-1.52h-7.62v1.52h-1.53v1.52H9.14v7.62h1.52v1.53h1.53v1.52h7.62v-1.52h1.52v-1.53h1.52v-7.62h-1.52Zm-1.52 7.62h-1.53v1.52h-4.57v-1.52h-1.52v-4.57h1.52v-1.53h4.57v1.53h1.53Z",
+      "M3.04 0h25.91v1.52H3.04Z",
+      "M1.52 28.95h1.52v1.53H1.52Z",
+      "M1.52 1.52h1.52v1.53H1.52Z",
+      "M0 3.05h1.52v25.9H0Z",
+    ],
+  },
+  "logo-linkedin": {
+    title: "logo-linkedin",
+    desc: "Logo Linkedin Streamline Icon: https://streamlinehq.com",
+    paths: [
+      "M30.47 3.05H32v25.9h-1.53Z",
+      "M28.95 28.95h1.52v1.53h-1.52Z",
+      "M28.95 1.52h1.52v1.53h-1.52Z",
+      "M27.42 4.57h1.53v22.86h-1.53Z",
+      "M3.04 30.48h25.91V32H3.04Z",
+      "M4.57 27.43h22.85v1.52H4.57Z",
+      "m22.85 15.24 -1.52 0 0 -1.53 -3.05 0 0 1.53 -1.52 0 0 -1.53 -3.05 0 0 9.15 3.05 0 0 -4.57 1.52 0 0 -1.53 1.53 0 0 1.53 1.52 0 0 4.57 3.05 0 0 -6.1 -1.53 0 0 -1.52z",
+      "M7.61 13.71h3.05v9.15H7.61Z",
+      "M7.61 9.14h3.05v3.05H7.61Z",
+      "M4.57 3.05h22.85v1.52H4.57Z",
+      "M3.04 0h25.91v1.52H3.04Z",
+      "M3.04 4.57h1.53v22.86H3.04Z",
+      "M1.52 28.95h1.52v1.53H1.52Z",
+      "M1.52 1.52h1.52v1.53H1.52Z",
+      "M0 3.05h1.52v25.9H0Z",
     ],
   },
   "hierarchy": {

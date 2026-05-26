@@ -112,6 +112,16 @@ p {
   overflow-wrap: anywhere;
 }
 
+.social-embed-card iframe[src*="tiktok.com"] {
+  display: block !important;
+  height: 480px !important;
+  max-width: 40rem !important;
+  margin-inline: auto !important;
+  position: static !important;
+  visibility: visible !important;
+  width: min(100%, 40rem) !important;
+}
+
 @media (min-width: 40rem) {
     .type-statement {
         font-size: 3rem;

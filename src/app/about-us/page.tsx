@@ -139,7 +139,7 @@ export default function AboutUsPage() {
         />
         <div className="relative z-10 mx-auto w-full max-w-6xl">
           <div className="max-w-3xl">
-            <p className="font-sans text-[2rem] font-black uppercase leading-none text-near-white-blue/80 min-[390px]:text-[2.35rem] sm:text-6xl">
+            <p className="font-sans text-[1.85rem] font-black uppercase leading-none text-near-white-blue/80 min-[390px]:text-[2.15rem] sm:text-5xl md:text-6xl">
               Our <span className="block">Accomplishments</span>
             </p>
             <h2 className="type-section-title mt-4">

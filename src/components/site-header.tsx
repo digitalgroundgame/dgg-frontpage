@@ -1,5 +1,8 @@
+"use client";
+
 import { PixelIcon } from "@/components/pixel-icon";
 import Link from "next/link";
+import { useRef } from "react";
 
 const primaryNavItems = [
   { label: "About Us", href: "/about-us" },
@@ -24,6 +27,14 @@ const regionItems = [
 ];
 
 export function SiteHeader() {
+  const mobileMenuRef = useRef<HTMLDetailsElement>(null);
+
+  function closeMobileMenu() {
+    if (mobileMenuRef.current) {
+      mobileMenuRef.current.open = false;
+    }
+  }
+
   return (
     <header className="bg-near-white-blue">
       <nav
@@ -74,7 +85,10 @@ export function SiteHeader() {
           </div>
         </div>
 
-        <details className="group fixed right-6 top-6 z-50 min-[960px]:hidden">
+        <details
+          className="group fixed right-6 top-6 z-50 min-[960px]:hidden"
+          ref={mobileMenuRef}
+        >
           <summary className="relative z-50 flex cursor-pointer list-none items-center justify-center bg-brand-blue p-2 text-near-white-blue group-open:[animation:menu-color-ramp_650ms_ease-in-out] [&::-webkit-details-marker]:hidden">
             <span className="sr-only">Menu</span>
             <PixelIcon name="navigation-menu" />
@@ -87,6 +101,7 @@ export function SiteHeader() {
                     className="transition hover:text-accent-red"
                     href={item.href}
                     key={item.label}
+                    onClick={closeMobileMenu}
                   >
                     {item.label}
                   </Link>
@@ -98,6 +113,7 @@ export function SiteHeader() {
                     className="transition hover:text-accent-red"
                     href={item.href}
                     key={item.label}
+                    onClick={closeMobileMenu}
                   >
                     {item.label}
                   </Link>

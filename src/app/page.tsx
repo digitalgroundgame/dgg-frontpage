@@ -2,6 +2,7 @@ import { PixelIcon, type PixelIconName } from "@/components/pixel-icon";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import Image from "next/image";
+import Script from "next/script";
 
 const gains: { label: string; icon: PixelIconName }[] = [
   { label: "Real political impact", icon: "hand-like" },
@@ -30,9 +31,46 @@ const initiatives = [
   },
 ];
 
+const socialFeeds = [
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/digitalgroundgame",
+    icon: "logo-social-media-facebook-circle",
+  },
+  {
+    label: "X",
+    href: "https://x.com/digitalgroundg/",
+    icon: "logo-social-media-twitter-circle",
+  },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@DigitalGroundGame",
+    icon: "logo-social-media-youtube",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/digitalgroundgame",
+    icon: "logo-social-media-instagram",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://digitalgroundgame.org/website/social/linkedin",
+    icon: "logo-linkedin",
+  },
+  {
+    label: "Threads",
+    href: "https://www.threads.com/@digitalgroundgame",
+  },
+] satisfies {
+  label: string;
+  href: string;
+  icon?: PixelIconName;
+}[];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-near-white-blue text-charcoal">
+      <Script src="https://www.tiktok.com/embed.js" strategy="lazyOnload" />
       <SiteHeader />
 
       <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:py-24">
@@ -116,6 +154,57 @@ export default function Home() {
             power of markets to drive prosperity through practical,
             action-oriented organizing.
           </p>
+        </div>
+      </section>
+
+      <section className="bg-charcoal px-8 py-16 text-near-white-blue sm:px-12">
+        <div className="mx-auto w-full max-w-6xl">
+          <div className="max-w-2xl">
+            <p className="type-kicker text-near-white-blue/80">
+              What&apos;s New
+            </p>
+            <h2 className="type-section-title mt-4">
+              Follow the latest from Digital Ground Game.
+            </h2>
+          </div>
+
+          <div className="mt-10 grid justify-items-center gap-6">
+            <div className="social-embed-card w-full overflow-hidden">
+              <blockquote
+                cite="https://www.tiktok.com/@digitalgroundgame"
+                className="tiktok-embed"
+                data-embed-type="creator"
+                data-unique-id="digitalgroundgame"
+              >
+                <section>
+                  <a
+                    className="text-brand-blue transition hover:text-charcoal"
+                    href="https://www.tiktok.com/@digitalgroundgame"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    @digitalgroundgame
+                  </a>
+                </section>
+              </blockquote>
+            </div>
+            <div className="flex flex-wrap justify-center gap-3">
+              {socialFeeds.map((feed) => (
+                <a
+                  className="type-button inline-flex items-center gap-2 bg-brand-blue px-4 py-3 text-near-white-blue transition hover:bg-accent-red"
+                  href={feed.href}
+                  key={feed.label}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {feed.icon ? (
+                    <PixelIcon className="h-5 w-5 shrink-0" name={feed.icon} />
+                  ) : null}
+                  {feed.label}
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
