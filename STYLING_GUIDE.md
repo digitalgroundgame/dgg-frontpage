@@ -23,19 +23,12 @@ Avoid introducing new colors unless there is a specific content or accessibility
 
 ## Layout
 
-- Use constrained page content with `max-w-6xl`, `mx-auto`, and responsive horizontal padding.
 - Prefer simple two-column sections on tablet and desktop when the content benefits from comparison or balance.
 
 ## Section Treatment
 
 - Do not use borders to distinguish sections or cards.
 - Distinguish sections with background color changes, solid color bands, and block shapes.
-- Prefer strong section contrast:
-  - `bg-near-white-blue text-charcoal`
-  - `bg-charcoal text-near-white-blue`
-  - `bg-light-charcoal text-near-white-blue`
-  - `bg-brand-blue text-near-white-blue`
-  - `bg-dark-blue text-near-white-blue`
 - Use simple color stripes or offset color blocks when a section needs emphasis.
 - Use darker blue with brand blue when layering blue surfaces.
 
@@ -49,7 +42,7 @@ Avoid introducing new colors unless there is a specific content or accessibility
 
 - Avoid border-only cards.
 - Use filled blocks for cards, callouts, and metrics.
-- Use offset background panels for emphasis, such as an accent red block behind a dark blue callout.
+- Use offset background panels for emphasis.
 - Metric cards should be simple filled panels with a large value, label, and short description.
 
 ## Content Tone
