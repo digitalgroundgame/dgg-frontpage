@@ -1,3 +1,147 @@
+const dispatchFields = [
+  { label: "Title", name: "title", widget: "string" },
+  { label: "Publish Date", name: "date", widget: "datetime" },
+  {
+    label: "Hero Photo",
+    name: "heroPhoto",
+    widget: "image",
+    required: false,
+  },
+  {
+    label: "Hero Filter",
+    name: "heroFilter",
+    widget: "boolean",
+    required: false,
+    default: true,
+  },
+  {
+    label: "Author",
+    name: "author",
+    widget: "relation",
+    collection: "authors",
+    search_fields: ["name"],
+    value_field: "{{slug}}",
+    display_fields: ["name"],
+  },
+  { label: "Body", name: "body", widget: "markdown" },
+];
+
+const peopleFields = [
+  { label: "Title", name: "title", widget: "string" },
+  {
+    label: "Authors",
+    name: "authors",
+    widget: "relation",
+    collection: "authors",
+    search_fields: ["name"],
+    value_field: "{{slug}}",
+    display_fields: ["name"],
+    multiple: true,
+    required: false,
+  },
+];
+
+const photoFields = [
+  { label: "Photo", name: "image", widget: "image" },
+  { label: "Alt Text", name: "alt", widget: "string" },
+  {
+    label: "Caption",
+    name: "caption",
+    widget: "text",
+    required: false,
+  },
+  {
+    label: "Sort Order",
+    name: "order",
+    widget: "number",
+    required: false,
+    default: 0,
+  },
+];
+
+const collections = [
+  {
+    name: "authors",
+    label: "Authors",
+    folder: "content/authors",
+    create: true,
+    slug: "{{slug}}",
+    fields: [
+      { label: "Name", name: "name", widget: "string" },
+      { label: "Picture", name: "picture", widget: "image" },
+      { label: "Bio", name: "bio", widget: "text" },
+    ],
+  },
+  {
+    name: "call_to_action_dispatch",
+    label: "Call to Action Dispatch",
+    folder: "content/call-to-action-dispatch",
+    create: true,
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+    fields: dispatchFields,
+  },
+  {
+    name: "northeast_news",
+    label: "Northeast > Northeast News",
+    folder: "content/regions/northeast/news",
+    create: true,
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+    fields: dispatchFields,
+  },
+  {
+    name: "northeast_people",
+    label: "Northeast > People",
+    files: [
+      {
+        label: "People",
+        name: "people",
+        file: "content/regions/northeast/people/index.md",
+        fields: peopleFields,
+      },
+    ],
+  },
+  {
+    name: "northeast_photos",
+    label: "Northeast > Photos",
+    folder: "content/regions/northeast/photos",
+    create: true,
+    identifier_field: "alt",
+    summary: "{{alt}}",
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+    fields: photoFields,
+  },
+  {
+    name: "west_news",
+    label: "West > West Region Dispatch",
+    folder: "content/regions/west/news",
+    create: true,
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+    fields: dispatchFields,
+  },
+  {
+    name: "west_people",
+    label: "West > People",
+    files: [
+      {
+        label: "People",
+        name: "people",
+        file: "content/regions/west/people/index.md",
+        fields: peopleFields,
+      },
+    ],
+  },
+  {
+    name: "west_photos",
+    label: "West > Photos",
+    folder: "content/regions/west/photos",
+    create: true,
+    identifier_field: "alt",
+    summary: "{{alt}}",
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+    fields: photoFields,
+  },
+].sort((a, b) => a.label.localeCompare(b.label));
+
 window.CMS.init({
   config: {
     local_backend: true,
@@ -10,122 +154,7 @@ window.CMS.init({
     },
     media_folder: "public/uploads",
     public_folder: "/uploads",
-    collections: [
-      {
-        name: "call_to_action_dispatch",
-        label: "Call to Action Dispatch",
-        folder: "content/call-to-action-dispatch",
-        create: true,
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-        fields: [
-          { label: "Title", name: "title", widget: "string" },
-          { label: "Publish Date", name: "date", widget: "datetime" },
-          {
-            label: "Hero Photo",
-            name: "heroPhoto",
-            widget: "image",
-            required: false,
-          },
-          {
-            label: "Hero Filter",
-            name: "heroFilter",
-            widget: "boolean",
-            required: false,
-            default: true,
-          },
-          {
-            label: "Author",
-            name: "author",
-            widget: "relation",
-            collection: "authors",
-            search_fields: ["name"],
-            value_field: "{{slug}}",
-            display_fields: ["name"],
-          },
-          { label: "Body", name: "body", widget: "markdown" },
-        ],
-      },
-      {
-        name: "west_region_dispatch",
-        label: "West Region Dispatch",
-        folder: "content/west-region-dispatch",
-        create: true,
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-        fields: [
-          { label: "Title", name: "title", widget: "string" },
-          { label: "Publish Date", name: "date", widget: "datetime" },
-          {
-            label: "Hero Photo",
-            name: "heroPhoto",
-            widget: "image",
-            required: false,
-          },
-          {
-            label: "Hero Filter",
-            name: "heroFilter",
-            widget: "boolean",
-            required: false,
-            default: true,
-          },
-          {
-            label: "Author",
-            name: "author",
-            widget: "relation",
-            collection: "authors",
-            search_fields: ["name"],
-            value_field: "{{slug}}",
-            display_fields: ["name"],
-          },
-          { label: "Body", name: "body", widget: "markdown" },
-        ],
-      },
-      {
-        name: "northeast_news",
-        label: "Northeast News",
-        folder: "content/northeast-news",
-        create: true,
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-        fields: [
-          { label: "Title", name: "title", widget: "string" },
-          { label: "Publish Date", name: "date", widget: "datetime" },
-          {
-            label: "Hero Photo",
-            name: "heroPhoto",
-            widget: "image",
-            required: false,
-          },
-          {
-            label: "Hero Filter",
-            name: "heroFilter",
-            widget: "boolean",
-            required: false,
-            default: true,
-          },
-          {
-            label: "Author",
-            name: "author",
-            widget: "relation",
-            collection: "authors",
-            search_fields: ["name"],
-            value_field: "{{slug}}",
-            display_fields: ["name"],
-          },
-          { label: "Body", name: "body", widget: "markdown" },
-        ],
-      },
-      {
-        name: "authors",
-        label: "Authors",
-        folder: "content/authors",
-        create: true,
-        slug: "{{slug}}",
-        fields: [
-          { label: "Name", name: "name", widget: "string" },
-          { label: "Picture", name: "picture", widget: "image" },
-          { label: "Bio", name: "bio", widget: "text" },
-        ],
-      },
-    ],
+    collections,
   },
 });
 

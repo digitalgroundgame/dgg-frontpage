@@ -2,8 +2,11 @@ import { DispatchArticle } from "@/components/dispatch-article";
 import { DispatchPreviewGrid } from "@/components/dispatch-preview-grid";
 import { PixelIcon } from "@/components/pixel-icon";
 import { RegionMap } from "@/components/region-map";
+import { RegionPeopleGrid } from "@/components/region-people-grid";
+import { RegionPhotoList } from "@/components/region-photo-list";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { getRegionPeople, getRegionPhotos } from "@/lib/region-content";
 import type { RegionConfig } from "@/lib/regions";
 import {
   formatDispatchDate,
@@ -20,17 +23,19 @@ export function RegionPage({ region }: RegionPageProps) {
   const latestDispatch = dispatchEntries[0];
   const olderDispatches = dispatchEntries.slice(1, 4);
   const dispatchListHref = `/regions/${region.slug}/dispatch`;
+  const people = getRegionPeople(region.slug);
+  const photos = getRegionPhotos(region.slug);
 
   return (
     <main className="min-h-screen bg-near-white-blue text-charcoal">
       <SiteHeader />
 
-      <RegionMap stateIds={region.stateIds} title={region.name} />
+      <RegionMap stateIds={region.stateIds} title={`${region.name} Region`} />
 
       <section className="px-8 pb-20 sm:px-12">
         <div className="mx-auto flex w-full max-w-4xl justify-center">
           <a
-            className="type-button flex w-full max-w-xs items-center justify-center gap-2 bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
+            className="type-button flex w-full max-w-md items-center justify-center gap-2 bg-brand-blue px-5 py-3 text-center text-near-white-blue transition hover:bg-accent-red sm:w-auto sm:min-w-xs sm:max-w-full"
             href={`mailto:${region.email}`}
           >
             <PixelIcon
@@ -41,6 +46,8 @@ export function RegionPage({ region }: RegionPageProps) {
           </a>
         </div>
       </section>
+
+      <RegionPeopleGrid people={people} />
 
       <section
         className="px-8 pt-8 pb-16 sm:px-12"
@@ -98,6 +105,8 @@ export function RegionPage({ region }: RegionPageProps) {
           </div>
         ) : null}
       </section>
+
+      <RegionPhotoList photos={photos} regionName={region.name} />
 
       <SiteFooter />
     </main>

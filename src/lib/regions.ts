@@ -44,24 +44,24 @@ const northeastStateIds = [
 export const regions = {
   west: {
     slug: "west",
-    name: "West Region",
+    name: "West",
     dispatchName: "West Region Dispatch",
     dispatchDescription:
       "A running blog for regional updates and practical ways to get involved.",
     email: "west-squad@digitalgroundgame.org",
     emailLabel: "West Squad Email",
-    contentCollection: "west-region-dispatch",
+    contentCollection: "regions/west/news",
     stateIds: westStateIds,
   },
   northeast: {
     slug: "northeast",
-    name: "Northeast Region",
+    name: "Northeast",
     dispatchName: "Northeast News",
     dispatchDescription:
       "A running blog for regional updates and practical ways to get involved.",
     email: "northeast-squad@digitalgroundgame.org",
     emailLabel: "Northeast Squad Email",
-    contentCollection: "northeast-news",
+    contentCollection: "regions/northeast/news",
     stateIds: northeastStateIds,
   },
 } satisfies Record<string, RegionConfig>;

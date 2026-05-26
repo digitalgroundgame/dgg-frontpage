@@ -50,7 +50,7 @@ export function RegionDispatchListPage({
               {region.dispatchName}
             </h1>
             <p className="type-body max-w-2xl">
-              Every dispatch from the {region.name}.
+              Every dispatch from the {region.name} Region.
             </p>
           </div>
 
