@@ -11,7 +11,7 @@ type PageProps = {
 };
 
 export async function generateStaticParams() {
-  return getRegionDispatchEntries(regions.west.contentCollection).map(
+  return getRegionDispatchEntries(regions.northeast.contentCollection).map(
     (entry) => ({
       slug: entry.slug,
     }),
@@ -23,7 +23,7 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const entry = getRegionDispatchEntryBySlug(
-    regions.west.contentCollection,
+    regions.northeast.contentCollection,
     slug,
   );
 
@@ -32,13 +32,13 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${entry.title} | ${regions.west.dispatchName}`,
-    description: `${regions.west.dispatchName} update: ${entry.title}.`,
+    title: `${entry.title} | ${regions.northeast.dispatchName}`,
+    description: `${regions.northeast.dispatchName} update: ${entry.title}.`,
   };
 }
 
-export default async function WestRegionDispatchPage({ params }: PageProps) {
+export default async function NortheastNewsPage({ params }: PageProps) {
   const { slug } = await params;
 
-  return <RegionDispatchEntryPage region={regions.west} slug={slug} />;
+  return <RegionDispatchEntryPage region={regions.northeast} slug={slug} />;
 }
