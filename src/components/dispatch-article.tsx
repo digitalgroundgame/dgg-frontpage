@@ -28,6 +28,7 @@ export function DispatchArticle({
 }: DispatchArticleProps) {
   const TitleTag = headingLevel;
   const authorName = author?.name ?? authorSlug;
+  const authorTitle = author?.orgTitle ?? author?.bio ?? "";
 
   return (
     <article className="text-charcoal">
@@ -78,9 +79,9 @@ export function DispatchArticle({
             <AuthorAvatar name={authorName} picture={author?.picture} />
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
               <p className="type-label shrink-0">{authorName}</p>
-              {author?.bio ? (
+              {authorTitle ? (
                 <p className="type-small-body text-light-charcoal">
-                  {author.bio}
+                  {authorTitle}
                 </p>
               ) : null}
             </div>

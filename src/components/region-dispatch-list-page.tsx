@@ -6,11 +6,11 @@ import {
   getRegionDispatchEntries,
   type RegionDispatchEntry,
 } from "@/lib/region-dispatch";
-import type { RegionConfig } from "@/lib/regions";
+import type { RegionDispatchConfig } from "@/lib/regions";
 import Link from "next/link";
 
 type RegionDispatchListPageProps = {
-  region: RegionConfig;
+  region: RegionDispatchConfig;
 };
 
 export function RegionDispatchListPage({

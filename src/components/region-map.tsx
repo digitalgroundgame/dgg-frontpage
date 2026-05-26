@@ -65,6 +65,7 @@ type StateFeature = Feature<Geometry, { name?: string }> & {
 
 type RegionMapProps = {
   title: string;
+  tagline?: string;
   stateIds: string[];
 };
 
@@ -124,35 +125,37 @@ function StateRow({
   );
 }
 
-export function RegionMap({ title, stateIds }: RegionMapProps) {
+export function RegionMap({ title, tagline, stateIds }: RegionMapProps) {
   const highlightedIds = new Set(stateIds);
   const highlightedStates = stateIds.map((id) => ({
     id,
     name: stateNamesById[id] ?? id,
   }));
-  const titleId = `${title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-map-title`;
 
   return (
     <section className="bg-near-white-blue text-charcoal">
       <div className="mx-auto w-full max-w-7xl py-10 lg:py-14">
         <div className="mx-auto max-w-4xl px-8 text-center sm:px-12">
-          <h1 className="type-hero inline-flex items-center gap-3">
-            <PixelIcon className="h-16 w-16" name="navigation-compass" />
+          <h1 className="type-hero inline-flex items-center justify-center gap-3">
+            <PixelIcon className="h-16 w-16 shrink-0" name="navigation-compass" />
             {title}
           </h1>
         </div>
 
-        <div className="overflow-x-clip overflow-y-visible px-3 pb-10 pt-2 sm:-mt-10 sm:px-8">
+        {tagline ? (
+          <p className="type-body mx-auto mt-8 max-w-3xl px-8 text-center text-light-charcoal sm:px-12">
+            {tagline}
+          </p>
+        ) : null}
+
+        <div className="overflow-x-clip overflow-y-visible px-3 pb-10 pt-2 sm:-mt-6 sm:px-8">
           <div className="mx-auto max-w-5xl min-w-0 [perspective-origin:center_12%] [perspective:1400px]">
             <svg
-              aria-labelledby={titleId}
+              aria-label={`${title} states highlighted on a United States map`}
               className="block h-auto w-full overflow-visible [filter:drop-shadow(0_40px_40px_rgb(36_36_36_/_0.24))] [transform-origin:center_center] [transform:rotateX(45deg)]"
               role="img"
               viewBox="0 0 960 560"
             >
-              <title id={titleId}>
-                {title} states highlighted on a United States map
-              </title>
               <g>
                 {mapStates.map((state) => (
                   <path

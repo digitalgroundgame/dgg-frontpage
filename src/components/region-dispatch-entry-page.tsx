@@ -7,12 +7,12 @@ import {
   getRegionDispatchEntries,
   getRegionDispatchEntryBySlug,
 } from "@/lib/region-dispatch";
-import type { RegionConfig } from "@/lib/regions";
+import type { RegionDispatchConfig } from "@/lib/regions";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 type RegionDispatchEntryPageProps = {
-  region: RegionConfig;
+  region: RegionDispatchConfig;
   slug: string;
 };
 

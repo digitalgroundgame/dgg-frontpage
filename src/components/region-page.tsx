@@ -19,7 +19,9 @@ type RegionPageProps = {
 };
 
 export function RegionPage({ region }: RegionPageProps) {
-  const dispatchEntries = getRegionDispatchEntries(region.contentCollection);
+  const dispatchEntries = region.contentCollection
+    ? getRegionDispatchEntries(region.contentCollection)
+    : [];
   const latestDispatch = dispatchEntries[0];
   const olderDispatches = dispatchEntries.slice(1, 4);
   const dispatchListHref = `/regions/${region.slug}/dispatch`;
@@ -30,7 +32,11 @@ export function RegionPage({ region }: RegionPageProps) {
     <main className="min-h-screen bg-near-white-blue text-charcoal">
       <SiteHeader />
 
-      <RegionMap stateIds={region.stateIds} title={`${region.name} Region`} />
+      <RegionMap
+        stateIds={region.stateIds}
+        tagline={region.tagline}
+        title={`${region.name} Region`}
+      />
 
       <section className="px-8 pb-20 sm:px-12">
         <div className="mx-auto flex w-full max-w-4xl justify-center">
@@ -49,62 +55,66 @@ export function RegionPage({ region }: RegionPageProps) {
 
       <RegionPeopleGrid people={people} />
 
-      <section
-        className="px-8 pt-8 pb-16 sm:px-12"
-        id={`${region.slug}-dispatch`}
-      >
-        <div className="mx-auto w-full max-w-3xl">
-          <div className="grid gap-4">
-            <div>
-              <h1 className="type-kicker text-light-charcoal">
-                <Link
-                  className="transition hover:text-brand-blue"
-                  href={dispatchListHref}
-                >
-                  {region.dispatchName}
-                </Link>
-              </h1>
-            </div>
-            <p className="type-body max-w-2xl">
-              {region.dispatchDescription}
-            </p>
-          </div>
-
-          {latestDispatch ? (
-            <div className="mt-10">
-              <DispatchArticle
-                author={latestDispatch.author}
-                authorSlug={latestDispatch.authorSlug}
-                body={latestDispatch.body}
-                dateTime={latestDispatch.date}
-                formattedDate={formatDispatchDate(latestDispatch.date)}
-                heroFilter={latestDispatch.heroFilter}
-                heroPhoto={latestDispatch.heroPhoto}
-                title={latestDispatch.title}
-              />
-            </div>
-          ) : (
-            <div className="mt-10 bg-charcoal p-6 text-near-white-blue">
-              <p className="type-body">
-                {region.dispatchName} entries will appear here once they are
-                published in the CMS.
+      {region.contentCollection &&
+      region.dispatchName &&
+      region.dispatchDescription ? (
+        <section
+          className="px-8 pt-8 pb-16 sm:px-12"
+          id={`${region.slug}-dispatch`}
+        >
+          <div className="mx-auto w-full max-w-3xl">
+            <div className="grid gap-4">
+              <div>
+                <h1 className="type-kicker text-light-charcoal">
+                  <Link
+                    className="transition hover:text-brand-blue"
+                    href={dispatchListHref}
+                  >
+                    {region.dispatchName}
+                  </Link>
+                </h1>
+              </div>
+              <p className="type-body max-w-2xl">
+                {region.dispatchDescription}
               </p>
             </div>
-          )}
-        </div>
 
-        {olderDispatches.length > 0 ? (
-          <div className="mt-16">
-            <DispatchPreviewGrid
-              baseHref={dispatchListHref}
-              entries={olderDispatches}
-              formatDate={formatDispatchDate}
-              showViewAllLink={dispatchEntries.length > 1}
-              title="Previous dispatches"
-            />
+            {latestDispatch ? (
+              <div className="mt-10">
+                <DispatchArticle
+                  author={latestDispatch.author}
+                  authorSlug={latestDispatch.authorSlug}
+                  body={latestDispatch.body}
+                  dateTime={latestDispatch.date}
+                  formattedDate={formatDispatchDate(latestDispatch.date)}
+                  heroFilter={latestDispatch.heroFilter}
+                  heroPhoto={latestDispatch.heroPhoto}
+                  title={latestDispatch.title}
+                />
+              </div>
+            ) : (
+              <div className="mt-10 bg-charcoal p-6 text-near-white-blue">
+                <p className="type-body">
+                  {region.dispatchName} entries will appear here once they are
+                  published in the CMS.
+                </p>
+              </div>
+            )}
           </div>
-        ) : null}
-      </section>
+
+          {olderDispatches.length > 0 ? (
+            <div className="mt-16">
+              <DispatchPreviewGrid
+                baseHref={dispatchListHref}
+                entries={olderDispatches}
+                formatDate={formatDispatchDate}
+                showViewAllLink={dispatchEntries.length > 1}
+                title="Previous dispatches"
+              />
+            </div>
+          ) : null}
+        </section>
+      ) : null}
 
       <RegionPhotoList photos={photos} regionName={region.name} />
 

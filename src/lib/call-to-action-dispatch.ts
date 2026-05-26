@@ -6,6 +6,7 @@ export type DispatchAuthor = {
   slug: string;
   name: string;
   picture: string;
+  orgTitle: string;
   bio: string;
 };
 
@@ -46,6 +47,7 @@ function toAuthor(filename: string): DispatchAuthor {
     slug,
     name: String(data.name ?? slug),
     picture: String(data.picture ?? ""),
+    orgTitle: String(data.orgTitle ?? data.bio ?? ""),
     bio: String(data.bio ?? ""),
   };
 }

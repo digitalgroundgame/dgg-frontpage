@@ -69,7 +69,8 @@ const collections = [
     fields: [
       { label: "Name", name: "name", widget: "string" },
       { label: "Picture", name: "picture", widget: "image" },
-      { label: "Bio", name: "bio", widget: "text" },
+      { label: "Org Title", name: "orgTitle", widget: "string" },
+      { label: "Bio", name: "bio", widget: "text", required: false },
     ],
   },
   {
@@ -134,6 +135,28 @@ const collections = [
     name: "west_photos",
     label: "West > Photos",
     folder: "content/regions/west/photos",
+    create: true,
+    identifier_field: "alt",
+    summary: "{{alt}}",
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+    fields: photoFields,
+  },
+  {
+    name: "midwest_people",
+    label: "Midwest > People",
+    files: [
+      {
+        label: "People",
+        name: "people",
+        file: "content/regions/midwest/people/index.md",
+        fields: peopleFields,
+      },
+    ],
+  },
+  {
+    name: "midwest_photos",
+    label: "Midwest > Photos",
+    folder: "content/regions/midwest/photos",
     create: true,
     identifier_field: "alt",
     summary: "{{alt}}",

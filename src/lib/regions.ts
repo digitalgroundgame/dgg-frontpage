@@ -1,12 +1,19 @@
 export type RegionConfig = {
   slug: string;
   name: string;
-  dispatchName: string;
-  dispatchDescription: string;
+  tagline?: string;
+  dispatchName?: string;
+  dispatchDescription?: string;
   email: string;
   emailLabel: string;
-  contentCollection: string;
+  contentCollection?: string;
   stateIds: string[];
+};
+
+export type RegionDispatchConfig = RegionConfig & {
+  dispatchName: string;
+  dispatchDescription: string;
+  contentCollection: string;
 };
 
 const westStateIds = [
@@ -41,6 +48,23 @@ const northeastStateIds = [
   "51",
 ];
 
+const midwestStateIds = [
+  "17",
+  "18",
+  "19",
+  "20",
+  "21",
+  "26",
+  "27",
+  "29",
+  "31",
+  "38",
+  "39",
+  "46",
+  "54",
+  "55",
+];
+
 export const regions = {
   west: {
     slug: "west",
@@ -63,5 +87,14 @@ export const regions = {
     emailLabel: "Northeast Squad Email",
     contentCollection: "regions/northeast/news",
     stateIds: northeastStateIds,
+  },
+  midwest: {
+    slug: "midwest",
+    name: "Midwest",
+    tagline:
+      '"Because it is the Midwest, no one really glitters because no one has to, it\'s more of a dull shine, like frequently used silverware." - Charles Baxter',
+    email: "midwest-squad@digitalgroundgame.org",
+    emailLabel: "Midwest Squad Email",
+    stateIds: midwestStateIds,
   },
 } satisfies Record<string, RegionConfig>;

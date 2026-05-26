@@ -1,5 +1,5 @@
 ---
 name: Shea
 picture: "/uploads/shea.webp"
-bio: Northeast Squad
+orgTitle: Northeast Squad
 ---
