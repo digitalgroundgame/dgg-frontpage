@@ -1,3 +1,4 @@
+import { BrandCtaSection } from "@/components/brand-cta-section";
 import { PixelIcon, type PixelIconName } from "@/components/pixel-icon";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -305,44 +306,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-brand-blue px-8 py-16 text-near-white-blue sm:px-12">
-        <div
-          aria-hidden="true"
-          className="absolute -bottom-2/3 -right-48 aspect-square h-[180%] min-h-[36rem] rounded-full bg-dark-blue"
-        />
-        <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-start">
-          <div>
-            <h2 className="text-5xl font-black leading-tight">
-              Organizing for Real Political Impact
-            </h2>
-          </div>
-          <div>
-            <h3 className="text-2xl font-black">
-              Regional squads, National impact
-            </h3>
-            <p className="type-body mt-4">
-              We organize members into regional &quot;squads&quot; that tackle
-              political initiatives starting from the local level, building the
-              foundation to strengthen national mobilization.
-            </p>
-            <p className="type-body mt-4">
-              Whether it&apos;s showing up to events, mobilizing voters,
-              creating educational resources, or leading projects, we&apos;re
-              dedicated to finding pragmatic results that move us forward.
-            </p>
-            <a
-              className="type-button mt-6 inline-flex items-center gap-2 bg-near-white-blue px-5 py-3 text-brand-blue transition hover:bg-charcoal hover:text-near-white-blue"
-              href="mailto:info@digitalgroundgame.org"
-            >
-              <PixelIcon
-                className="h-5 w-5 shrink-0"
-                name="email-envelope-close"
-              />
-              Email Us
-            </a>
-          </div>
-        </div>
-      </section>
+      <BrandCtaSection
+        body={[
+          'We organize members into regional "squads" that tackle political initiatives starting from the local level, building the foundation to strengthen national mobilization.',
+          "Whether it's showing up to events, mobilizing voters, creating educational resources, or leading projects, we're dedicated to finding pragmatic results that move us forward.",
+        ]}
+        cta={{
+          href: "mailto:info@digitalgroundgame.org",
+          icon: "email-envelope-close",
+          label: "Email Us",
+        }}
+        subtitle="Regional squads, National impact"
+        title="Organizing for Real Political Impact"
+      />
 
       <SiteFooter />
     </main>
