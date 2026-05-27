@@ -12,10 +12,9 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
-  optimize-and-merge:
+  optimize:
     if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
 
@@ -57,11 +56,6 @@ jobs:
 
       - name: Verify uploaded images
         run: pnpm optimize-images:check
-
-      - name: Merge pull request
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh pr merge "${{ github.event.pull_request.number }}" --squash --auto --delete-branch
 
   check:
     if: github.event_name == 'push'
