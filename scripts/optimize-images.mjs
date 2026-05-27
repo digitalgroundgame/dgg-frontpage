@@ -8,7 +8,6 @@ import sharp from "sharp";
 const repoRoot = process.cwd();
 const uploadsDir = path.join(repoRoot, "public", "uploads");
 const checkOnly = process.argv.includes("--check");
-const maxDimension = 2400;
 const supportedExtensions = new Set([".jpg", ".jpeg", ".png", ".webp"]);
 const referenceRoots = ["content", "src", "public/admin"];
 const referenceExtensions = new Set([
@@ -139,14 +138,7 @@ async function optimizeImage(filePath) {
     };
   }
 
-  const pipeline = formatAsWebp(
-    image.resize({
-      width: maxDimension,
-      height: maxDimension,
-      fit: "inside",
-      withoutEnlargement: true,
-    }),
-  );
+  const pipeline = formatAsWebp(image);
 
   const optimized = await pipeline.toBuffer();
 
