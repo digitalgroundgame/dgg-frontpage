@@ -30,8 +30,9 @@ const pixelOperator = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "DGG Frontpage",
-  description: "A Next.js and Decap CMS frontpage project.",
+  title: "Digital Ground Game",
+  description:
+    "Digital Ground Game is a national, community-driven movement defending democracy through practical political action.",
 };
 
 export default function RootLayout({

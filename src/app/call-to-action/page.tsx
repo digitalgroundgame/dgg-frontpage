@@ -7,8 +7,13 @@ import {
   formatDispatchDate,
   getCallToActionDispatchEntries,
 } from "@/lib/call-to-action-dispatch";
+import type { Metadata } from "next";
 
 const DISPATCH_LIST_HREF = "/call-to-action/dispatch";
+
+export const metadata: Metadata = {
+  title: "Call to Action | Digital Ground Game",
+};
 
 export default function CallToActionPage() {
   const dispatchEntries = getCallToActionDispatchEntries();

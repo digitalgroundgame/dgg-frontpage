@@ -2,8 +2,13 @@ import { BrandCtaSection } from "@/components/brand-cta-section";
 import { PixelIcon, type PixelIconName } from "@/components/pixel-icon";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Script from "next/script";
+
+export const metadata: Metadata = {
+  title: "Digital Ground Game",
+};
 
 const gains: { label: string; icon: PixelIconName }[] = [
   { label: "Real political impact", icon: "hand-like" },

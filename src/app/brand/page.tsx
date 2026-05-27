@@ -1,5 +1,10 @@
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Brand Guide | Digital Ground Game",
+};
 
 const colors = [
   {
