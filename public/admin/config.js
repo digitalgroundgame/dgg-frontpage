@@ -190,6 +190,7 @@ const collections = [
 window.CMS.init({
   config: {
     local_backend: true,
+    publish_mode: "editorial_workflow",
     backend: {
       name: "github",
       repo: "digitalgroundgame/dgg-frontpage",

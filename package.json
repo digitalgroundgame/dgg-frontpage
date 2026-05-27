@@ -12,7 +12,9 @@
     "cms": "decap-server",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "optimize-images": "node scripts/optimize-images.mjs",
+    "optimize-images:check": "node scripts/optimize-images.mjs --check"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
@@ -38,6 +40,7 @@
     "decap-server": "^3.7.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
