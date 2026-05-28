@@ -1,11 +1,11 @@
-import { DispatchArticle } from "@/components/dispatch-article";
-import { DispatchPreviewGrid } from "@/components/dispatch-preview-grid";
-import { PixelIcon } from "@/components/pixel-icon";
-import { RegionMap } from "@/components/region-map";
-import { RegionPeopleGrid } from "@/components/region-people-grid";
-import { RegionPhotoList } from "@/components/region-photo-list";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { DispatchArticle } from "@/components/page-blocks/dispatch-article";
+import { DispatchPreviewGrid } from "@/components/page-blocks/dispatch-preview-grid";
+import { PixelIcon } from "@/components/widgets/pixel-icon";
+import { RegionMap } from "@/components/regions/region-map";
+import { PeopleGrid } from "@/components/regions/people-grid";
+import { PhotoList } from "@/components/regions/photo-list";
+import { SiteFooter } from "@/components/page-blocks/site-footer";
+import { SiteHeader } from "@/components/page-blocks/site-header";
 import { getRegionPeople, getRegionPhotos } from "@/lib/region-content";
 import type { RegionConfig } from "@/lib/regions";
 import {
@@ -29,7 +29,7 @@ export function RegionPage({ region }: RegionPageProps) {
   const photos = getRegionPhotos(region.slug);
 
   return (
-    <main className="min-h-screen bg-near-white-blue text-charcoal">
+    <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
       <SiteHeader />
 
       <RegionMap
@@ -53,7 +53,7 @@ export function RegionPage({ region }: RegionPageProps) {
         </div>
       </section>
 
-      <RegionPeopleGrid people={people} />
+      <PeopleGrid people={people} />
 
       {region.contentCollection &&
       region.dispatchName &&
@@ -116,7 +116,7 @@ export function RegionPage({ region }: RegionPageProps) {
         </section>
       ) : null}
 
-      <RegionPhotoList photos={photos} regionName={region.name} />
+      <PhotoList photos={photos} regionName={region.name} />
 
       <SiteFooter />
     </main>

@@ -1,5 +1,5 @@
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/page-blocks/site-footer";
+import { SiteHeader } from "@/components/page-blocks/site-header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -119,7 +119,7 @@ const typography = [
 
 export default function BrandPage() {
   return (
-    <main className="min-h-screen bg-near-white-blue text-charcoal">
+    <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
       <SiteHeader />
 
       <section className="mx-auto w-full max-w-6xl px-8 py-16 sm:px-12 lg:px-20">

@@ -1,8 +1,8 @@
-import { DispatchArticle } from "@/components/dispatch-article";
-import { DispatchPreviewGrid } from "@/components/dispatch-preview-grid";
-import { PixelIcon } from "@/components/pixel-icon";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { DispatchArticle } from "@/components/page-blocks/dispatch-article";
+import { DispatchPreviewGrid } from "@/components/page-blocks/dispatch-preview-grid";
+import { PixelIcon } from "@/components/widgets/pixel-icon";
+import { SiteFooter } from "@/components/page-blocks/site-footer";
+import { SiteHeader } from "@/components/page-blocks/site-header";
 import {
   formatDispatchDate,
   getCallToActionDispatchEntries,
@@ -21,7 +21,7 @@ export default function CallToActionPage() {
   const olderDispatches = dispatchEntries.slice(1, 4);
 
   return (
-    <main className="min-h-screen bg-near-white-blue text-charcoal">
+    <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
       <SiteHeader />
       <section
         className="px-8 pt-8 pb-16 sm:px-12 lg:px-20"

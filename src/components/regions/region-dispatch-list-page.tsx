@@ -1,6 +1,6 @@
-import { BlogCardPreview } from "@/components/blog-card-preview";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { BlogCardPreview } from "@/components/widgets/blog-card-preview";
+import { SiteFooter } from "@/components/page-blocks/site-footer";
+import { SiteHeader } from "@/components/page-blocks/site-header";
 import {
   formatDispatchDate,
   getRegionDispatchEntries,
@@ -32,7 +32,7 @@ export function RegionDispatchListPage({
   }
 
   return (
-    <main className="min-h-screen bg-near-white-blue text-charcoal">
+    <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
       <SiteHeader />
 
       <section className="px-8 py-16 sm:px-12 lg:px-20">

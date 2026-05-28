@@ -1,4 +1,4 @@
-import { PixelIcon } from "@/components/pixel-icon";
+import { PixelIcon } from "@/components/widgets/pixel-icon";
 import Image from "next/image";
 
 type AuthorAvatarProps = {

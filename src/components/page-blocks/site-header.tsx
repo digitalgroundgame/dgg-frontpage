@@ -1,6 +1,6 @@
 "use client";
 
-import { PixelIcon } from "@/components/pixel-icon";
+import { PixelIcon } from "@/components/widgets/pixel-icon";
 import Link from "next/link";
 import { useRef } from "react";
 

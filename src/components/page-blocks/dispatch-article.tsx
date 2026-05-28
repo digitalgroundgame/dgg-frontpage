@@ -1,5 +1,5 @@
-import { AuthorAvatar } from "@/components/author-avatar";
-import { BlogMarkdown } from "@/components/blog-markdown";
+import { AuthorAvatar } from "@/components/widgets/author-avatar";
+import { BlogMarkdown } from "@/components/page-blocks/blog-markdown";
 import type { DispatchAuthor } from "@/lib/call-to-action-dispatch";
 import Image from "next/image";
 

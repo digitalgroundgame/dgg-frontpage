@@ -1,4 +1,4 @@
-import { PixelIcon } from "@/components/pixel-icon";
+import { PixelIcon } from "@/components/widgets/pixel-icon";
 import { geoAlbersUsa, geoPath } from "d3-geo";
 import type { Feature, FeatureCollection, Geometry } from "geojson";
 import { feature } from "topojson-client";

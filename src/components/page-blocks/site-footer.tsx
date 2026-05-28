@@ -10,7 +10,7 @@ const followLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="bg-charcoal px-8 text-near-white-blue sm:px-12 lg:px-20">
+    <footer className="mt-auto bg-charcoal px-8 text-near-white-blue sm:px-12 lg:px-20">
       <div className="mx-auto grid w-full max-w-6xl gap-8 py-10 sm:grid-cols-2 lg:grid-cols-3">
         <div>
           <h2 className="text-xl font-black">Digital Ground Game</h2>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PixelIcon } from "@/components/pixel-icon";
+import { PixelIcon } from "@/components/widgets/pixel-icon";
 
 type BlogCardPreviewProps = {
   title: string;

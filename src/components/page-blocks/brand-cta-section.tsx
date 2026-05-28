@@ -1,4 +1,4 @@
-import { PixelIcon, type PixelIconName } from "@/components/pixel-icon";
+import { PixelIcon, type PixelIconName } from "@/components/widgets/pixel-icon";
 
 type BrandCtaSectionProps = {
   eyebrow?: string;

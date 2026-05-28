@@ -1,7 +1,7 @@
-import { BrandCtaSection } from "@/components/brand-cta-section";
-import { PixelIcon } from "@/components/pixel-icon";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { BrandCtaSection } from "@/components/page-blocks/brand-cta-section";
+import { PixelIcon } from "@/components/widgets/pixel-icon";
+import { SiteFooter } from "@/components/page-blocks/site-footer";
+import { SiteHeader } from "@/components/page-blocks/site-header";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function InternationalRegionPage() {
   return (
-    <main className="min-h-screen bg-near-white-blue text-charcoal">
+    <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
       <SiteHeader />
 
       <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:px-20 lg:py-24">

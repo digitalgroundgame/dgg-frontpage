@@ -1,4 +1,4 @@
-import { ResourcesLandingPage } from "@/components/resources-landing-page";
+import { ResourcesLandingPage } from "@/components/page-blocks/content-landing-page";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
