@@ -1,7 +1,7 @@
-import { DispatchArticle } from "@/components/dispatch-article";
-import { DispatchPreviewGrid } from "@/components/dispatch-preview-grid";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { DispatchArticle } from "@/components/page-blocks/dispatch-article";
+import { DispatchPreviewGrid } from "@/components/page-blocks/dispatch-preview-grid";
+import { SiteFooter } from "@/components/page-blocks/site-footer";
+import { SiteHeader } from "@/components/page-blocks/site-header";
 import {
   formatDispatchDate,
   getRegionDispatchEntries,
@@ -33,7 +33,7 @@ export function RegionDispatchEntryPage({
     .slice(0, 3);
 
   return (
-    <main className="min-h-screen bg-near-white-blue text-charcoal">
+    <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
       <SiteHeader />
 
       <article className="px-8 py-16 sm:px-12 lg:px-20">

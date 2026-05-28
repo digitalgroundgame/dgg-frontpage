@@ -1,4 +1,4 @@
-import { RegionPage } from "@/components/region-page";
+import { RegionPage } from "@/components/regions/region-page";
 import { regions } from "@/lib/regions";
 import type { Metadata } from "next";
 

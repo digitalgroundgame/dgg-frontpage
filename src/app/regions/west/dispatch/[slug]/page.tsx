@@ -1,4 +1,4 @@
-import { RegionDispatchEntryPage } from "@/components/region-dispatch-entry-page";
+import { RegionDispatchEntryPage } from "@/components/regions/region-dispatch-entry-page";
 import {
   getRegionDispatchEntries,
   getRegionDispatchEntryBySlug,

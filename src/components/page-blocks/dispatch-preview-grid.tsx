@@ -1,4 +1,4 @@
-import { BlogCardPreview } from "@/components/blog-card-preview";
+import { BlogCardPreview } from "@/components/widgets/blog-card-preview";
 import Link from "next/link";
 
 export type DispatchPreviewEntry = {

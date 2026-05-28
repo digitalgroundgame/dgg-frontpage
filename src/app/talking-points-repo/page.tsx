@@ -1,4 +1,4 @@
-import { TalkingPointsLandingPage } from "@/components/talking-points-landing-page";
+import { TalkingPointsLandingPage } from "@/components/page-blocks/content-landing-page";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -57,7 +57,7 @@ If the liberal movement wants to embrace truth, it may be necessary to research 
 
 Many have mocked him. Many have called him a liar, a fraud, and an evil person. Deep down, however, all know the truth. Mr. Rogan is actually just an unfunny human being.(11) The Joe Rogan “Experience” is characterized not by the eponymous host, but rather its guests. A viral meme describes the atmosphere of Mr. Rogan’s podcast perfectly (Figure 1).
 
-![Figure 1. Joe Rogan Khan meme](/uploads/rogan.png)
+![Figure 1. Joe Rogan Khan meme](/uploads/rogan.webp)
 
 Figure 1. Posted by Anonymous, September 27, 2020. Meme from KnowYourMeme, Posted May 27, 2021. https://knowyourmeme.com/photos/2110266-joe-rogan.(1)
 

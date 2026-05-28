@@ -1,6 +1,6 @@
-import { BlogMarkdown } from "@/components/blog-markdown";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
+import { BlogMarkdown } from "@/components/page-blocks/blog-markdown";
+import { SiteFooter } from "@/components/page-blocks/site-footer";
+import { SiteHeader } from "@/components/page-blocks/site-header";
 import {
   formatTalkingPointDate,
   getTalkingPointEntries,
@@ -46,7 +46,7 @@ export default async function TalkingPointArticlePage({ params }: PageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-near-white-blue text-charcoal">
+    <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
       <SiteHeader />
 
       <article className="px-8 py-16 sm:px-12 lg:px-20">

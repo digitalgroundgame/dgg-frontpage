@@ -1,4 +1,4 @@
-import { RegionDispatchListPage } from "@/components/region-dispatch-list-page";
+import { RegionDispatchListPage } from "@/components/regions/region-dispatch-list-page";
 import { regions } from "@/lib/regions";
 import type { Metadata } from "next";
 

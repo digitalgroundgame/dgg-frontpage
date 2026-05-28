@@ -1,11 +1,11 @@
 import type { DispatchAuthor } from "@/lib/region-dispatch";
 import Image from "next/image";
 
-type RegionPeopleGridProps = {
+type PeopleGridProps = {
   people: DispatchAuthor[];
 };
 
-export function RegionPeopleGrid({ people }: RegionPeopleGridProps) {
+export function PeopleGrid({ people }: PeopleGridProps) {
   if (people.length === 0) {
     return null;
   }
