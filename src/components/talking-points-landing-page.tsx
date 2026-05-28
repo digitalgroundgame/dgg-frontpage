@@ -97,10 +97,6 @@ export function TalkingPointsLandingPage() {
         <div className="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[1fr_1fr]">
           <div>
             <h2 className="type-section-title">Credits</h2>
-            <p className="type-small-body mt-3 text-light-charcoal">
-              Note that each author will be credited under their respective
-              articles as well.
-            </p>
             <ul className="mt-6 grid gap-3">
               <li className="type-small-body">
                 Talking Points Repository Project Lead: Evan Simonetti
@@ -118,33 +114,6 @@ export function TalkingPointsLandingPage() {
               </li>
               <li className="type-small-body">Other Editors: @marlow_kurtz</li>
             </ul>
-            <div className="mt-8 grid gap-5">
-              <div>
-                <h3 className="type-label text-brand-blue">Immigration</h3>
-                <p className="type-small-body mt-1 text-light-charcoal">
-                  Author: Cameron Tomaino
-                </p>
-              </div>
-              <div>
-                <h3 className="type-label text-brand-blue">
-                  How to Talk to Normies
-                </h3>
-                <p className="type-small-body mt-1 text-light-charcoal">
-                  Authors: Evan Simonetti, @marlow_kurtz, @tseawright
-                </p>
-              </div>
-              <div>
-                <h3 className="type-label text-brand-blue">
-                  Climate Change
-                </h3>
-                <p className="type-small-body mt-1 text-light-charcoal">
-                  Authors: Jack Darko (@drdarko.), Goob (@ubeyy)
-                </p>
-                <p className="type-small-body mt-1 text-light-charcoal">
-                  Editor: Jacob (@elendacil)
-                </p>
-              </div>
-            </div>
           </div>
           <div>
             <h2 className="type-section-title">Acknowledgements</h2>
