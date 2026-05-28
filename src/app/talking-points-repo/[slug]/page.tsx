@@ -6,6 +6,7 @@ import {
   getTalkingPointEntries,
   getTalkingPointEntryBySlug,
 } from "@/lib/talking-points";
+import { getPostImageMetadata } from "@/lib/post-metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,6 +35,7 @@ export async function generateMetadata({
   return {
     title: `${entry.title} | Talking Points Repository`,
     description: `Talking Points Repository article: ${entry.title}.`,
+    ...getPostImageMetadata(entry.heroPhoto, entry.title),
   };
 }
 

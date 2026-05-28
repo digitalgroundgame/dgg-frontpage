@@ -30,7 +30,15 @@ const pixelOperator = localFont({
   weight: "400",
 });
 
+const metadataBase = new URL(
+  process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "https://digitalgroundgame.org"),
+);
+
 export const metadata: Metadata = {
+  metadataBase,
   title: "Digital Ground Game",
   description:
     "Digital Ground Game is a national, community-driven movement defending democracy through practical political action.",

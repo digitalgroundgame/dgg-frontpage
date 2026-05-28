@@ -7,6 +7,7 @@ import {
   getCallToActionDispatchEntries,
   getCallToActionDispatchEntryBySlug,
 } from "@/lib/call-to-action-dispatch";
+import { getPostImageMetadata } from "@/lib/post-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -36,6 +37,7 @@ export async function generateMetadata({
   return {
     title: `${entry.title} | Call to Action Dispatch`,
     description: `Call to Action Dispatch: ${entry.title}.`,
+    ...getPostImageMetadata(entry.heroPhoto, entry.title),
   };
 }
 

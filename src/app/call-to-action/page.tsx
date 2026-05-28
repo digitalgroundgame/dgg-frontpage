@@ -7,13 +7,22 @@ import {
   formatDispatchDate,
   getCallToActionDispatchEntries,
 } from "@/lib/call-to-action-dispatch";
+import { getPostImageMetadata } from "@/lib/post-metadata";
 import type { Metadata } from "next";
 
 const DISPATCH_LIST_HREF = "/call-to-action/dispatch";
 
-export const metadata: Metadata = {
-  title: "Call to Action | Digital Ground Game",
-};
+export function generateMetadata(): Metadata {
+  const latestDispatch = getCallToActionDispatchEntries()[0];
+
+  return {
+    title: "Call to Action | Digital Ground Game",
+    description: "Weekly Digital Ground Game calls to action and ways to get involved.",
+    ...(latestDispatch
+      ? getPostImageMetadata(latestDispatch.heroPhoto, latestDispatch.title)
+      : {}),
+  };
+}
 
 export default function CallToActionPage() {
   const dispatchEntries = getCallToActionDispatchEntries();

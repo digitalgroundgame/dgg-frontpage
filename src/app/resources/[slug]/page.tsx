@@ -6,6 +6,7 @@ import {
   getResourceEntries,
   getResourceEntryBySlug,
 } from "@/lib/resources";
+import { getPostImageMetadata } from "@/lib/post-metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,6 +35,7 @@ export async function generateMetadata({
   return {
     title: `${entry.title} | Resources`,
     description: `Digital Ground Game resource: ${entry.title}.`,
+    ...getPostImageMetadata(entry.heroPhoto, entry.title),
   };
 }
 

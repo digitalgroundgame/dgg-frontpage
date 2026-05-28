@@ -3,6 +3,7 @@ import {
   getRegionDispatchEntries,
   getRegionDispatchEntryBySlug,
 } from "@/lib/region-dispatch";
+import { getPostImageMetadata } from "@/lib/post-metadata";
 import { regions } from "@/lib/regions";
 import type { Metadata } from "next";
 
@@ -34,6 +35,7 @@ export async function generateMetadata({
   return {
     title: `${entry.title} | ${regions.west.dispatchName}`,
     description: `${regions.west.dispatchName} update: ${entry.title}.`,
+    ...getPostImageMetadata(entry.heroPhoto, entry.title),
   };
 }
 
