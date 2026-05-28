@@ -109,7 +109,7 @@ p {
 }
 
 .overflow-wrap-anywhere {
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .social-embed-card iframe[src*="tiktok.com"] {

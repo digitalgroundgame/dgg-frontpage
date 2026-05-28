@@ -47,7 +47,7 @@ export function markdownComponents(invert = false): Components {
     li: ({ children }) => <li>{children}</li>,
     a: ({ children, href }) => (
       <a
-        className={`${linkClass} break-all`}
+        className={linkClass}
         href={href}
         rel="noopener noreferrer"
         target="_blank"
