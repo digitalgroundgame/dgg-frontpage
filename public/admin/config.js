@@ -18,7 +18,7 @@ const dispatchFields = [
     label: "Author",
     name: "author",
     widget: "relation",
-    collection: "authors",
+    collection: "people",
     search_fields: ["name"],
     value_field: "{{slug}}",
     display_fields: ["name"],
@@ -73,10 +73,10 @@ const resourceFields = [
 const peopleFields = [
   { label: "Title", name: "title", widget: "string" },
   {
-    label: "Authors",
+    label: "People",
     name: "authors",
     widget: "relation",
-    collection: "authors",
+    collection: "people",
     search_fields: ["name"],
     value_field: "{{slug}}",
     display_fields: ["name"],
@@ -105,9 +105,9 @@ const photoFields = [
 
 const collections = [
   {
-    name: "authors",
-    label: "Authors",
-    folder: "content/authors",
+    name: "people",
+    label: "People",
+    folder: "content/people",
     create: true,
     slug: "{{slug}}",
     fields: [

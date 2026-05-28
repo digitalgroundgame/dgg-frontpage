@@ -21,7 +21,7 @@ export type RegionDispatchEntry = {
   body: string;
 };
 
-const authorsDirectory = path.join(process.cwd(), "content/authors");
+const authorsDirectory = path.join(process.cwd(), "content/people");
 
 function readMarkdownFiles(directory: string): string[] {
   if (!fs.existsSync(directory)) {
