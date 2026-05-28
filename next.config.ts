@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
         destination: "/admin/index.html",
         permanent: false,
       },
+      {
+        source: "/vote",
+        destination: "https://voteabroad.org/ccJP-DGG-2026",
+        permanent: false,
+      },
     ];
   },
 };
