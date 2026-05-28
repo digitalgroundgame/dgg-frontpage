@@ -109,7 +109,7 @@ function StateRow({
   return (
     <ul
       className={[
-        "mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-3 gap-y-0 px-4 text-center sm:gap-x-5 sm:gap-y-0.5 sm:px-12 md:gap-x-6",
+        "mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-3 gap-y-0 px-4 text-center sm:gap-x-5 sm:gap-y-0.5 sm:px-12 lg:px-20 md:gap-x-6",
         className,
       ].join(" ")}
     >
@@ -135,7 +135,7 @@ export function RegionMap({ title, tagline, stateIds }: RegionMapProps) {
   return (
     <section className="bg-near-white-blue text-charcoal">
       <div className="mx-auto w-full max-w-7xl py-10 lg:py-14">
-        <div className="mx-auto max-w-4xl px-8 text-center sm:px-12">
+        <div className="mx-auto max-w-4xl px-8 text-center sm:px-12 lg:px-20">
           <h1 className="type-hero inline-flex items-center justify-center gap-3">
             <PixelIcon className="h-16 w-16 shrink-0" name="navigation-compass" />
             {title}
@@ -143,7 +143,7 @@ export function RegionMap({ title, tagline, stateIds }: RegionMapProps) {
         </div>
 
         {tagline ? (
-          <p className="type-body mx-auto mt-8 max-w-3xl px-8 text-center text-light-charcoal sm:px-12">
+          <p className="type-body mx-auto mt-8 max-w-3xl px-8 text-center text-light-charcoal sm:px-12 lg:px-20">
             {tagline}
           </p>
         ) : null}

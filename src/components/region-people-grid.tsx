@@ -11,7 +11,7 @@ export function RegionPeopleGrid({ people }: RegionPeopleGridProps) {
   }
 
   return (
-    <section className="px-8 pb-16 sm:px-12">
+    <section className="px-8 pb-16 sm:px-12 lg:px-20">
       <div className="mx-auto w-full max-w-6xl">
         <h2 className="type-kicker text-center text-light-charcoal">
           Meet Our Team

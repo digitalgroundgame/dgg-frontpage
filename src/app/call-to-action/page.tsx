@@ -24,7 +24,7 @@ export default function CallToActionPage() {
     <main className="min-h-screen bg-near-white-blue text-charcoal">
       <SiteHeader />
       <section
-        className="px-8 pt-8 pb-16 sm:px-12"
+        className="px-8 pt-8 pb-16 sm:px-12 lg:px-20"
         id="call-to-action-dispatch"
       >
         <div className="mx-auto w-full max-w-3xl">

@@ -12,7 +12,7 @@ export function RegionPhotoList({ photos, regionName }: RegionPhotoListProps) {
   }
 
   return (
-    <section className="px-8 py-16 sm:px-12">
+    <section className="px-8 py-16 sm:px-12 lg:px-20">
       <div className="mx-auto w-full max-w-6xl">
         <h2 className="type-kicker text-light-charcoal">
           {regionName} Squad In The Wild

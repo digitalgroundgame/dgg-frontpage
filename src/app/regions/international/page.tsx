@@ -16,7 +16,7 @@ export default function InternationalRegionPage() {
     <main className="min-h-screen bg-near-white-blue text-charcoal">
       <SiteHeader />
 
-      <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:py-24">
+      <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:px-20 lg:py-24">
         <div className="mx-auto max-w-4xl">
           <h1 className="type-hero inline-flex max-w-4xl items-center justify-center gap-3">
             <PixelIcon className="h-16 w-16 shrink-0" name="navigation-compass" />
@@ -55,7 +55,7 @@ export default function InternationalRegionPage() {
         title="Are You Registered To Vote?"
       />
 
-      <section className="bg-near-white-blue px-8 py-16 text-charcoal sm:px-12">
+      <section className="bg-near-white-blue px-8 py-16 text-charcoal sm:px-12 lg:px-20">
         <div className="mx-auto w-full max-w-3xl">
           <p className="type-body">
             Politics is a team sport, and Digital Ground Game leans heavily on

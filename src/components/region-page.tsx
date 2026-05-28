@@ -38,7 +38,7 @@ export function RegionPage({ region }: RegionPageProps) {
         title={`${region.name} Region`}
       />
 
-      <section className="px-8 pb-20 sm:px-12">
+      <section className="px-8 pb-20 sm:px-12 lg:px-20">
         <div className="mx-auto flex w-full max-w-4xl justify-center">
           <a
             className="type-button flex w-full max-w-md items-center justify-center gap-2 bg-brand-blue px-5 py-3 text-center text-near-white-blue transition hover:bg-accent-red sm:w-auto sm:min-w-xs sm:max-w-full"
@@ -59,7 +59,7 @@ export function RegionPage({ region }: RegionPageProps) {
       region.dispatchName &&
       region.dispatchDescription ? (
         <section
-          className="px-8 pt-8 pb-16 sm:px-12"
+          className="px-8 pt-8 pb-16 sm:px-12 lg:px-20"
           id={`${region.slug}-dispatch`}
         >
           <div className="mx-auto w-full max-w-3xl">

@@ -49,7 +49,7 @@ export default async function TalkingPointArticlePage({ params }: PageProps) {
     <main className="min-h-screen bg-near-white-blue text-charcoal">
       <SiteHeader />
 
-      <article className="px-8 py-16 sm:px-12">
+      <article className="px-8 py-16 sm:px-12 lg:px-20">
         <div className="mx-auto w-full max-w-3xl">
           <p className="type-label text-light-charcoal">
             <Link

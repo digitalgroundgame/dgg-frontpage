@@ -14,7 +14,7 @@ export default function RegisterPage() {
       <SiteHeader />
       <Script src="https://go.rally.win/embed.js" strategy="afterInteractive" />
 
-      <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:py-24">
+      <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:px-20 lg:py-24">
         <div className="mx-auto max-w-4xl">
           <p className="type-kicker text-light-charcoal">Register To Vote</p>
           <h1 className="type-hero mt-4 max-w-4xl">
@@ -27,7 +27,7 @@ export default function RegisterPage() {
         </div>
       </section>
 
-      <section className="px-8 pb-16 text-charcoal sm:px-12">
+      <section className="px-8 pb-16 text-charcoal sm:px-12 lg:px-20">
         <div className="mx-auto w-full max-w-[600px]">
           <iframe
             allow="web-share; clipboard-write"

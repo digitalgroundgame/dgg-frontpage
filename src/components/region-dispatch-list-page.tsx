@@ -35,7 +35,7 @@ export function RegionDispatchListPage({
     <main className="min-h-screen bg-near-white-blue text-charcoal">
       <SiteHeader />
 
-      <section className="px-8 py-16 sm:px-12">
+      <section className="px-8 py-16 sm:px-12 lg:px-20">
         <div className="mx-auto w-full max-w-6xl">
           <div className="grid gap-4">
             <p className="type-label text-light-charcoal">

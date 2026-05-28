@@ -79,7 +79,7 @@ export default function Home() {
       <Script src="https://www.tiktok.com/embed.js" strategy="lazyOnload" />
       <SiteHeader />
 
-      <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:py-24">
+      <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:px-20 lg:py-24">
         <div className="mx-auto max-w-4xl">
           <h1 className="type-hero max-w-4xl">
             Vote Loud,{" "}
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-near-white-blue px-8 py-16 text-charcoal sm:px-12">
+      <section className="bg-near-white-blue px-8 py-16 text-charcoal sm:px-12 lg:px-20">
         <div className="mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-[minmax(0,42rem)_1fr] md:items-center">
           <div className="max-w-2xl">
             <p className="type-kicker text-light-charcoal">
@@ -153,7 +153,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="bg-near-white-blue px-8 py-16 text-charcoal sm:px-12">
+      <section className="bg-near-white-blue px-8 py-16 text-charcoal sm:px-12 lg:px-20">
         <div className="mx-auto w-full max-w-6xl">
           <p className="type-statement max-w-4xl">
             We are dedicated to free expression, equality under the law, and the
@@ -163,7 +163,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-charcoal px-8 py-16 text-near-white-blue sm:px-12">
+      <section className="bg-charcoal px-8 py-16 text-near-white-blue sm:px-12 lg:px-20">
         <div className="mx-auto w-full max-w-6xl">
           <div className="max-w-2xl">
             <p className="type-kicker text-near-white-blue/80">
@@ -234,7 +234,7 @@ export default function Home() {
             <span>Andi @photos.andi</span>
           </a>
         </div>
-        <div className="px-8 py-20 sm:px-12 md:flex md:items-center">
+        <div className="px-8 py-20 sm:px-12 lg:px-20 md:flex md:items-center">
           <div className="max-w-xl">
             <h2 className="type-section-title">
               Building Lasting Political Power
@@ -253,7 +253,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden px-8 py-16 text-near-white-blue sm:px-12">
+      <section className="relative overflow-hidden px-8 py-16 text-near-white-blue sm:px-12 lg:px-20">
         <div
           aria-hidden="true"
           className="absolute inset-0 bg-charcoal [clip-path:polygon(0_0,100%_0,100%_67%,0_100%)]"

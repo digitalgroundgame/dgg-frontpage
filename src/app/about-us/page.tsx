@@ -68,7 +68,7 @@ export default function AboutUsPage() {
     <main className="min-h-screen bg-near-white-blue text-charcoal">
       <SiteHeader />
 
-      <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:py-24">
+      <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:px-20 lg:py-24">
         <div className="mx-auto max-w-4xl">
           <p className="type-kicker text-light-charcoal">About Us</p>
           <h1 className="type-hero mt-4 max-w-4xl">
@@ -103,7 +103,7 @@ export default function AboutUsPage() {
             src="/about-us-team.webp"
           />
         </div>
-        <div className="px-8 py-20 sm:px-12 md:flex md:items-center">
+        <div className="px-8 py-20 sm:px-12 lg:px-20 md:flex md:items-center">
           <div className="max-w-xl">
             <p className="type-kicker text-light-charcoal">Our Mission</p>
             <h2 className="type-section-title mt-4">
@@ -132,7 +132,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden px-8 py-16 text-near-white-blue sm:px-12">
+      <section className="relative overflow-hidden px-8 py-16 text-near-white-blue sm:px-12 lg:px-20">
         <div
           aria-hidden="true"
           className="absolute inset-0 bg-charcoal [clip-path:polygon(0_0,100%_0,100%_76%,0_100%)]"
@@ -163,7 +163,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-brand-blue px-8 py-16 text-near-white-blue sm:px-12">
+      <section className="relative overflow-hidden bg-brand-blue px-8 py-16 text-near-white-blue sm:px-12 lg:px-20">
         <div
           aria-hidden="true"
           className="absolute -bottom-64 -left-48 aspect-square h-[42rem] rounded-full bg-dark-blue"
@@ -200,7 +200,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      <section className="bg-near-white-blue px-8 py-16 text-charcoal sm:px-12">
+      <section className="bg-near-white-blue px-8 py-16 text-charcoal sm:px-12 lg:px-20">
         <div className="mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-[minmax(0,42rem)_1fr] md:items-center">
           <div>
             <p className="type-kicker text-light-charcoal">Get Involved</p>

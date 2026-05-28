@@ -122,7 +122,7 @@ export default function BrandPage() {
     <main className="min-h-screen bg-near-white-blue text-charcoal">
       <SiteHeader />
 
-      <section className="mx-auto w-full max-w-6xl px-8 py-16 sm:px-12">
+      <section className="mx-auto w-full max-w-6xl px-8 py-16 sm:px-12 lg:px-20">
         <h1 className="type-hero">
           Brand Palette
         </h1>
@@ -132,7 +132,7 @@ export default function BrandPage() {
         </p>
       </section>
 
-      <section className="mx-auto grid w-full max-w-6xl gap-5 px-8 pb-16 sm:px-12 md:grid-cols-2 lg:grid-cols-3">
+      <section className="mx-auto grid w-full max-w-6xl gap-5 px-8 pb-16 sm:px-12 lg:px-20 md:grid-cols-2 lg:grid-cols-3">
         {colors.map((color) => (
           <article className="bg-charcoal p-4 text-near-white-blue" key={color.name}>
             <div className={`${color.sampleClass} min-h-44 p-5`}>
@@ -163,7 +163,7 @@ export default function BrandPage() {
         ))}
       </section>
 
-      <section className="bg-near-white-blue px-8 pb-16 sm:px-12">
+      <section className="bg-near-white-blue px-8 pb-16 sm:px-12 lg:px-20">
         <div className="mx-auto w-full max-w-6xl">
           <h2 className="type-section-title">Typography</h2>
           <p className="type-small-body mt-4 max-w-3xl">
@@ -191,7 +191,7 @@ export default function BrandPage() {
         </div>
       </section>
 
-      <section className="bg-brand-blue px-8 py-14 text-near-white-blue sm:px-12">
+      <section className="bg-brand-blue px-8 py-14 text-near-white-blue sm:px-12 lg:px-20">
         <div className="mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-2">
           <div>
             <h2 className="type-section-title">Usage</h2>

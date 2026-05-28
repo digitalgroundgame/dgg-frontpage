@@ -13,7 +13,7 @@ export default function MerchPage() {
     <main className="min-h-screen bg-near-white-blue text-charcoal">
       <SiteHeader />
 
-      <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:py-24">
+      <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:px-20 lg:py-24">
         <div className="mx-auto max-w-4xl">
           <p className="type-kicker text-light-charcoal">Merch</p>
           <h1 className="type-hero mt-4 max-w-4xl">
@@ -26,7 +26,7 @@ export default function MerchPage() {
         </div>
       </section>
 
-      <section className="bg-brand-blue px-8 py-16 text-near-white-blue sm:px-12">
+      <section className="bg-brand-blue px-8 py-16 text-near-white-blue sm:px-12 lg:px-20">
         <div className="mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-[minmax(0,42rem)_1fr] md:items-center">
           <div>
             <p className="type-kicker text-near-white-blue/80">

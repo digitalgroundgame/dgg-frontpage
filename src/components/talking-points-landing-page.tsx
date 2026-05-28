@@ -19,7 +19,7 @@ export function TalkingPointsLandingPage() {
     <main className="min-h-screen bg-near-white-blue text-charcoal">
       <SiteHeader />
 
-      <section className="px-8 py-16 sm:px-12">
+      <section className="px-8 py-16 sm:px-12 lg:px-20">
         <div className="mx-auto w-full max-w-6xl">
           <p className="type-label text-brand-blue">DGG Research Team</p>
           <h1 className="type-kicker mt-3 text-light-charcoal">
@@ -63,7 +63,7 @@ export function TalkingPointsLandingPage() {
         </div>
       </section>
 
-      <section className="px-8 py-16 sm:px-12">
+      <section className="px-8 py-16 sm:px-12 lg:px-20">
         <div className="mx-auto w-full max-w-6xl">
           <h2 className="type-section-title text-light-charcoal">
             All Talking Points
@@ -93,7 +93,7 @@ export function TalkingPointsLandingPage() {
         </div>
       </section>
 
-      <section className="px-8 py-16 text-charcoal sm:px-12">
+      <section className="px-8 py-16 text-charcoal sm:px-12 lg:px-20">
         <div className="mx-auto grid w-full max-w-6xl gap-10 lg:grid-cols-[1fr_1fr]">
           <div>
             <h2 className="type-section-title">Credits</h2>
