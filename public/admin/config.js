@@ -45,6 +45,31 @@ const talkingPointFields = [
   { label: "Body", name: "body", widget: "markdown" },
 ];
 
+const resourceFields = [
+  { label: "Title", name: "title", widget: "string" },
+  { label: "Publish Date", name: "date", widget: "datetime" },
+  {
+    label: "Hero Photo",
+    name: "heroPhoto",
+    widget: "image",
+    required: false,
+  },
+  {
+    label: "Hero Filter",
+    name: "heroFilter",
+    widget: "boolean",
+    required: false,
+    default: true,
+  },
+  {
+    label: "Author",
+    name: "author",
+    widget: "string",
+    required: false,
+  },
+  { label: "Body", name: "body", widget: "markdown" },
+];
+
 const peopleFields = [
   { label: "Title", name: "title", widget: "string" },
   {
@@ -107,6 +132,14 @@ const collections = [
     create: true,
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
     fields: talkingPointFields,
+  },
+  {
+    name: "resources",
+    label: "Resources",
+    folder: "content/resources",
+    create: true,
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+    fields: resourceFields,
   },
   {
     name: "northeast_news",

@@ -3,8 +3,8 @@ title: How to Talk to Normies
 date: 2026-03-12T00:00:00.000-07:00
 authors:
   - Evan Simonetti
-  - @marlow_kurtz
-  - @tseawright
+  - "@marlow_kurtz"
+  - "@tseawright"
 heroPhoto: ""
 heroFilter: true
 ---
