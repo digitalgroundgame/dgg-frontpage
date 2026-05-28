@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Press_Start_2P, Roboto_Condensed, Roboto } from "next/font/google";
+import Script from "next/script";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -45,6 +46,18 @@ export default function RootLayout({
       lang="en"
       className={`${robotoCondensed.variable} ${roboto.variable} ${pressStart2P.variable} ${pixelOperator.variable} h-full antialiased`}
     >
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-1980CC3Z00"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1980CC3Z00');
+        `}
+      </Script>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
