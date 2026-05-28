@@ -7,7 +7,7 @@ import { useRef } from "react";
 const primaryNavItems = [
   { label: "About Us", href: "/about-us" },
   { label: "Call to Action", href: "/call-to-action" },
-  { label: "Talking Points", href: "/talking-points-repo/introduction" },
+  { label: "Talking Points", href: "/talking-points-repo" },
   { label: "Resources", href: "/resources" },
   { label: "Merch", href: "/merch" },
   { label: "Register to Vote", href: "/register" },

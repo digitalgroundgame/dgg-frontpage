@@ -26,6 +26,25 @@ const dispatchFields = [
   { label: "Body", name: "body", widget: "markdown" },
 ];
 
+const talkingPointFields = [
+  { label: "Title", name: "title", widget: "string" },
+  { label: "Publish Date", name: "date", widget: "datetime" },
+  {
+    label: "Hero Photo",
+    name: "heroPhoto",
+    widget: "image",
+    required: false,
+  },
+  {
+    label: "Hero Filter",
+    name: "heroFilter",
+    widget: "boolean",
+    required: false,
+    default: true,
+  },
+  { label: "Body", name: "body", widget: "markdown" },
+];
+
 const peopleFields = [
   { label: "Title", name: "title", widget: "string" },
   {
@@ -80,6 +99,14 @@ const collections = [
     create: true,
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
     fields: dispatchFields,
+  },
+  {
+    name: "talking_points",
+    label: "Talking Points Repository",
+    folder: "content/talking-points",
+    create: true,
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+    fields: talkingPointFields,
   },
   {
     name: "northeast_news",

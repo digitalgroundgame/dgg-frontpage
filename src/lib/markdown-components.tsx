@@ -1,4 +1,5 @@
 import type { Components } from "react-markdown";
+import Image from "next/image";
 
 export function markdownComponents(invert = false): Components {
   const listMarkerClass = invert
@@ -53,6 +54,15 @@ export function markdownComponents(invert = false): Components {
       >
         {children}
       </a>
+    ),
+    img: ({ alt, src }) => (
+      <Image
+        alt={alt ?? ""}
+        className="mt-6 h-auto w-full border border-charcoal/10"
+        height={643}
+        src={String(src ?? "")}
+        width={680}
+      />
     ),
   };
 }
