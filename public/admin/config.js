@@ -247,17 +247,26 @@ const collections = [
   },
 ].sort((a, b) => a.label.localeCompare(b.label));
 
-window.CMS.init({
-  config: {
-    local_backend: true,
-    publish_mode: "editorial_workflow",
-    backend: {
+const productionHosts = ["digitalgroundgame.org", "beta.digitalgroundgame.org"];
+const isProduction = productionHosts.includes(window.location.hostname);
+
+const backend = isProduction
+  ? {
       name: "github",
       repo: "digitalgroundgame/dgg-frontpage",
       branch: "main",
       base_url: window.location.origin,
       auth_endpoint: "api/cms/auth",
-    },
+    }
+  : {
+      name: "proxy",
+      proxy_url: "http://localhost:8081/api/v1",
+    };
+
+window.CMS.init({
+  config: {
+    ...(isProduction ? { publish_mode: "editorial_workflow" } : {}),
+    backend,
     media_folder: "public/uploads",
     public_folder: "/uploads",
     collections,
@@ -308,7 +317,8 @@ CMS.registerEditorComponent({
     return `{% two-column image="${data.image}" alt="${data.alt}" layout="${data.layout}" %}\n${data.text}\n{% /two-column %}`;
   },
   toPreview: function (data) {
-    var align = data.layout === "image-right" ? "flex-direction:row-reverse" : "";
+    var align =
+      data.layout === "image-right" ? "flex-direction:row-reverse" : "";
     return (
       '<div style="display:flex;' +
       align +
