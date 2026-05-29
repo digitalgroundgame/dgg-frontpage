@@ -1,3 +1,4 @@
+import { BlogMarkdown } from "@/components/page-blocks/blog-markdown";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
 import type { Metadata } from "next";
@@ -117,6 +118,43 @@ const typography = [
   },
 ];
 
+const markdownSample = `# Markdown H1
+
+This paragraph includes **bold text**, _italic text_, ~~struck text~~, \`inline code\`, and an [external link](https://digitalgroundgame.org).
+
+## Markdown H2
+
+> Blockquote test copy with enough length to show the left rule, indentation, wrapping, and spacing against the surrounding body copy.
+
+### Markdown H3
+
+- Unordered list item
+- Unordered list item with a [link](https://example.com)
+  - Nested unordered list item
+
+1. Ordered list item
+2. Ordered list item
+3. Ordered list item
+
+- [x] Completed task
+- [ ] Open task
+
+| Syntax | Rendered result |
+| --- | --- |
+| **Bold** | Strong emphasis |
+| _Italic_ | Light emphasis |
+| \`code\` | Inline code |
+
+\`\`\`tsx
+export function Example() {
+  return <p>Code block test</p>;
+}
+\`\`\`
+
+---
+
+![DGG group photo](/group-wide.webp)`;
+
 export default function BrandPage() {
   return (
     <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
@@ -211,6 +249,15 @@ export default function BrandPage() {
   </a>
 </section>`}</code>
             </pre>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-near-white-blue px-8 py-16 text-charcoal sm:px-12 lg:px-20">
+        <div className="mx-auto w-full max-w-4xl">
+          <h2 className="type-section-title">Markdown Rendering</h2>
+          <div className="mt-8 bg-near-white-blue p-6 text-charcoal">
+            <BlogMarkdown>{markdownSample}</BlogMarkdown>
           </div>
         </div>
       </section>
