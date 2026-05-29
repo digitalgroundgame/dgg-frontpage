@@ -26,7 +26,10 @@ export function RegionDispatchListPage({
       date: entry.date,
       formattedDate: formatDispatchDate(entry.date),
       slug: entry.slug,
-      authorName: entry.author?.name ?? entry.authorSlug,
+      authorName:
+        entry.authors.length > 0
+          ? entry.authors.map((author) => author.name).join(", ")
+          : entry.authorSlugs.join(", "),
       readMoreHref: `${dispatchBaseHref}/${entry.slug}`,
     };
   }

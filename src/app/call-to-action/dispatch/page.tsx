@@ -16,7 +16,10 @@ function dispatchPreviewProps(entry: CallToActionDispatchEntry) {
     date: entry.date,
     formattedDate: formatDispatchDate(entry.date),
     slug: entry.slug,
-    authorName: entry.author?.name ?? entry.authorSlug,
+    authorName:
+      entry.authors.length > 0
+        ? entry.authors.map((author) => author.name).join(", ")
+        : entry.authorSlugs.join(", "),
     readMoreHref: `${DISPATCH_BASE_HREF}/${entry.slug}`,
   };
 }

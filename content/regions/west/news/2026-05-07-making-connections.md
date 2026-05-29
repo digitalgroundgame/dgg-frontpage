@@ -1,7 +1,8 @@
 ---
 title: Making Connections
 date: 2026-05-07T00:00:00.000-07:00
-author: daniel-lee
+authors:
+  - daniel-lee
 ---
 
 # 🌊 West Region Dispatch – Making Connections

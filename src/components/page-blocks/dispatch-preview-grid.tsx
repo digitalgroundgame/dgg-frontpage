@@ -5,8 +5,8 @@ export type DispatchPreviewEntry = {
   slug: string;
   title: string;
   date: string;
-  authorSlug: string;
-  author?: { name: string };
+  authorSlugs: string[];
+  authors: { name: string }[];
 };
 
 type DispatchPreviewGridProps = {
@@ -27,7 +27,10 @@ function dispatchPreviewProps(
     date: entry.date,
     formattedDate: formatDate(entry.date),
     slug: entry.slug,
-    authorName: entry.author?.name ?? entry.authorSlug,
+    authorName:
+      entry.authors.length > 0
+        ? entry.authors.map((author) => author.name).join(", ")
+        : entry.authorSlugs.join(", "),
     readMoreHref: `${baseHref}/${entry.slug}`,
   };
 }

@@ -9,8 +9,8 @@ type DispatchArticleProps = {
   title: string;
   heroPhoto?: string;
   heroFilter?: boolean;
-  authorSlug: string;
-  author?: DispatchAuthor;
+  authorSlugs?: string[];
+  authors?: DispatchAuthor[];
   body: string;
   headingLevel?: "h1" | "h2";
 };
@@ -21,14 +21,22 @@ export function DispatchArticle({
   title,
   heroPhoto,
   heroFilter = false,
-  authorSlug,
-  author,
+  authorSlugs = [],
+  authors = [],
   body,
   headingLevel = "h2",
 }: DispatchArticleProps) {
   const TitleTag = headingLevel;
-  const authorName = author?.name ?? authorSlug;
-  const authorTitle = author?.orgTitle ?? author?.bio ?? "";
+  const fallbackAuthorNames = authorSlugs.join(", ");
+  const authorName =
+    authors.length > 0
+      ? authors.map((displayAuthor) => displayAuthor.name).join(", ")
+      : fallbackAuthorNames;
+  const authorTitle =
+    authors.length === 1
+      ? (authors[0].orgTitle ?? authors[0].bio ?? "")
+      : "";
+  const avatarAuthor = authors[0];
 
   return (
     <article className="text-charcoal">
@@ -76,9 +84,13 @@ export function DispatchArticle({
 
         <div className="relative mt-5">
           <div className="relative flex items-center gap-4 bg-near-white-blue text-charcoal">
-            <AuthorAvatar name={authorName} picture={author?.picture} />
+            {authorName ? (
+              <AuthorAvatar name={authorName} picture={avatarAuthor?.picture} />
+            ) : null}
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <p className="type-label shrink-0">{authorName}</p>
+              {authorName ? (
+                <p className="type-label shrink-0">{authorName}</p>
+              ) : null}
               {authorTitle ? (
                 <p className="type-small-body text-light-charcoal">
                   {authorTitle}

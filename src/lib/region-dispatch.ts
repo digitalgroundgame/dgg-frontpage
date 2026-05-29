@@ -16,8 +16,8 @@ export type RegionDispatchEntry = {
   date: string;
   heroPhoto: string;
   heroFilter: boolean;
-  authorSlug: string;
-  author?: DispatchAuthor;
+  authorSlugs: string[];
+  authors: DispatchAuthor[];
   body: string;
 };
 
@@ -52,6 +52,14 @@ export function getDispatchAuthors(): DispatchAuthor[] {
   return readMarkdownFiles(authorsDirectory).map(toAuthor);
 }
 
+function toStringList(value: unknown): string[] {
+  if (Array.isArray(value)) {
+    return value.map(String).filter(Boolean);
+  }
+
+  return value ? [String(value)] : [];
+}
+
 function toDispatchEntry(
   filename: string,
   directory: string,
@@ -62,7 +70,10 @@ function toDispatchEntry(
   const file = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(file);
   const date = data.date instanceof Date ? data.date.toISOString() : data.date;
-  const authorSlug = String(data.author ?? "");
+  const authorSlugs = toStringList(data.authors);
+  const authors = authorSlugs
+    .map((authorSlug) => authorsBySlug.get(authorSlug))
+    .filter((author): author is DispatchAuthor => Boolean(author));
 
   return {
     slug,
@@ -70,8 +81,8 @@ function toDispatchEntry(
     date: String(date ?? ""),
     heroPhoto: String(data.heroPhoto ?? ""),
     heroFilter: Boolean(data.heroFilter),
-    authorSlug,
-    author: authorsBySlug.get(authorSlug),
+    authorSlugs,
+    authors,
     body: content.trim(),
   };
 }

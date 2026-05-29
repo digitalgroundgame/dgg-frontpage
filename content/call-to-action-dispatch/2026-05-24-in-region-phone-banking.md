@@ -3,7 +3,8 @@ title: The midterms are coming! Do some in-region phone banking!
 date: 2026-05-24T00:00:00.000-07:00
 heroPhoto: /uploads/phonebankcover.webp
 heroFilter: true
-author: ulysses
+authors:
+  - ulysses
 ---
 
 

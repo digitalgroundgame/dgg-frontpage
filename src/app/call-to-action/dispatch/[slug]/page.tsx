@@ -77,8 +77,8 @@ export default async function CallToActionDispatchPage({ params }: PageProps) {
 
           <div className="mt-6">
             <DispatchArticle
-              author={entry.author}
-              authorSlug={entry.authorSlug}
+              authors={entry.authors}
+              authorSlugs={entry.authorSlugs}
               body={entry.body}
               dateTime={entry.date}
               formattedDate={formatDispatchDate(entry.date)}

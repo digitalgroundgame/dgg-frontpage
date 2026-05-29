@@ -58,7 +58,7 @@ function toTalkingPointEntry(filename: string): TalkingPointEntry {
     slug,
     title: String(data.title ?? slug),
     date: String(date ?? ""),
-    authors: toStringArray(data.authors ?? data.author),
+    authors: toStringArray(data.authors),
     heroPhoto: String(data.heroPhoto ?? ""),
     heroFilter: Boolean(data.heroFilter),
     body: content.trim(),

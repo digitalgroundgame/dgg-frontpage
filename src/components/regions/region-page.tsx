@@ -82,8 +82,8 @@ export function RegionPage({ region }: RegionPageProps) {
             {latestDispatch ? (
               <div className="mt-10">
                 <DispatchArticle
-                  author={latestDispatch.author}
-                  authorSlug={latestDispatch.authorSlug}
+                  authors={latestDispatch.authors}
+                  authorSlugs={latestDispatch.authorSlugs}
                   body={latestDispatch.body}
                   dateTime={latestDispatch.date}
                   formattedDate={formatDispatchDate(latestDispatch.date)}
