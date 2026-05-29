@@ -36,7 +36,11 @@ export function DispatchArticle({
     authors.length === 1
       ? (authors[0].orgTitle ?? authors[0].bio ?? "")
       : "";
-  const avatarAuthor = authors[0];
+  const photoAuthors = authors.filter((author) => author.picture);
+  const shouldShowSingleAvatar = authors.length <= 1 && Boolean(authorName);
+  const shouldShowPhotoAuthors = authors.length > 1 && photoAuthors.length > 0;
+  const shouldShowFallbackAvatar =
+    authors.length > 1 && photoAuthors.length === 0 && Boolean(authorName);
 
   return (
     <article className="text-charcoal">
@@ -84,8 +88,23 @@ export function DispatchArticle({
 
         <div className="relative mt-5">
           <div className="relative flex items-center gap-4 bg-near-white-blue text-charcoal">
-            {authorName ? (
-              <AuthorAvatar name={authorName} picture={avatarAuthor?.picture} />
+            {shouldShowSingleAvatar ? (
+              <AuthorAvatar name={authorName} picture={authors[0]?.picture} />
+            ) : null}
+            {shouldShowPhotoAuthors ? (
+              <div className="flex shrink-0 -space-x-3">
+                {photoAuthors.map((author) => (
+                  <div
+                    className="rounded-full ring-2 ring-near-white-blue"
+                    key={author.slug}
+                  >
+                    <AuthorAvatar name={author.name} picture={author.picture} />
+                  </div>
+                ))}
+              </div>
+            ) : null}
+            {shouldShowFallbackAvatar ? (
+              <AuthorAvatar name={authorName} />
             ) : null}
             <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
               {authorName ? (
