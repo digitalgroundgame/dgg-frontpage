@@ -145,12 +145,6 @@ This paragraph includes **bold text**, _italic text_, ~~struck text~~, \`inline 
 | _Italic_ | Light emphasis |
 | \`code\` | Inline code |
 
-\`\`\`tsx
-export function Example() {
-  return <p>Code block test</p>;
-}
-\`\`\`
-
 ---
 
 ![DGG group photo](/group-wide.webp)`;
@@ -161,9 +155,7 @@ export default function BrandPage() {
       <SiteHeader />
 
       <section className="mx-auto w-full max-w-6xl px-8 py-16 sm:px-12 lg:px-20">
-        <h1 className="type-hero">
-          Brand Palette
-        </h1>
+        <h1 className="type-hero">Brand Palette</h1>
         <p className="type-small-body mt-6 max-w-3xl">
           Use these colors for the DGG frontpage. New colors should be rare and
           intentional.
@@ -172,7 +164,10 @@ export default function BrandPage() {
 
       <section className="mx-auto grid w-full max-w-6xl gap-5 px-8 pb-16 sm:px-12 lg:px-20 md:grid-cols-2 lg:grid-cols-3">
         {colors.map((color) => (
-          <article className="bg-charcoal p-4 text-near-white-blue" key={color.name}>
+          <article
+            className="bg-charcoal p-4 text-near-white-blue"
+            key={color.name}
+          >
             <div className={`${color.sampleClass} min-h-44 p-5`}>
               <h2 className="text-3xl font-black">{color.name}</h2>
               <p className="mt-4 text-xl font-bold">{color.hex}</p>
@@ -210,7 +205,10 @@ export default function BrandPage() {
           </p>
           <div className="mt-8 grid gap-5">
             {typography.map((item) => (
-              <article className="bg-charcoal p-5 text-near-white-blue" key={item.className}>
+              <article
+                className="bg-charcoal p-5 text-near-white-blue"
+                key={item.className}
+              >
                 <div className="grid gap-3 md:grid-cols-[14rem_1fr] md:items-start">
                   <div>
                     <h3 className="font-black">{item.name}</h3>
