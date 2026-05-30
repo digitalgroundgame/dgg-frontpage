@@ -2,9 +2,9 @@ import { BrandCtaSection } from "@/components/page-blocks/brand-cta-section";
 import { PixelIcon, type PixelIconName } from "@/components/widgets/pixel-icon";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
+import { TikTokCreatorEmbed } from "@/components/widgets/tiktok-creator-embed";
 import type { Metadata } from "next";
 import Image from "next/image";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Digital Ground Game",
@@ -76,7 +76,6 @@ const socialFeeds = [
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
-      <Script src="https://www.tiktok.com/embed.js" strategy="lazyOnload" />
       <SiteHeader />
 
       <section className="mx-auto w-full max-w-6xl px-8 py-16 text-center sm:px-12 lg:px-20 lg:py-24">
@@ -175,25 +174,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10 grid justify-items-center gap-6">
-            <div className="social-embed-card w-full overflow-hidden">
-              <blockquote
-                cite="https://www.tiktok.com/@digitalgroundgame"
-                className="tiktok-embed"
-                data-embed-type="creator"
-                data-unique-id="digitalgroundgame"
-              >
-                <section>
-                  <a
-                    className="text-brand-blue transition hover:text-charcoal"
-                    href="https://www.tiktok.com/@digitalgroundgame"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    @digitalgroundgame
-                  </a>
-                </section>
-              </blockquote>
-            </div>
+            <TikTokCreatorEmbed />
             <div className="flex flex-wrap justify-center gap-3">
               {socialFeeds.map((feed) => (
                 <a
