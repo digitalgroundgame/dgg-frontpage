@@ -10,7 +10,8 @@ import {
 import { getPostImageMetadata } from "@/lib/post-metadata";
 import type { Metadata } from "next";
 
-const DISPATCH_LIST_HREF = "/call-to-action/dispatch";
+const DISPATCH_LIST_HREF = "/call-to-action/all";
+const CTA_BASE_HREF = "/call-to-action";
 
 export function generateMetadata(): Metadata {
   const latestDispatch = getCallToActionDispatchEntries()[0];
@@ -95,12 +96,13 @@ export default function CallToActionPage() {
         {olderDispatches.length > 0 ? (
           <div className="mt-16">
             <DispatchPreviewGrid
-              baseHref={DISPATCH_LIST_HREF}
+              baseHref={CTA_BASE_HREF}
               entries={olderDispatches}
               formatDate={formatDispatchDate}
               showViewAllLink={dispatchEntries.length > 1}
               title="Previous CTAs"
               viewAllLabel="View all CTAs"
+              viewAllHref={DISPATCH_LIST_HREF}
             />
           </div>
         ) : null}
