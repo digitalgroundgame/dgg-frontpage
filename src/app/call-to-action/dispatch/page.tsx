@@ -8,7 +8,7 @@ import {
 } from "@/lib/call-to-action-dispatch";
 import type { Metadata } from "next";
 
-const DISPATCH_BASE_HREF = "/call-to-action/dispatch";
+const DISPATCH_BASE_HREF = "/call-to-action";
 
 function dispatchPreviewProps(entry: CallToActionDispatchEntry) {
   return {

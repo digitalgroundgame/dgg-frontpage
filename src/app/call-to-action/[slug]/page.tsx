@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-const DISPATCH_BASE_HREF = "/call-to-action/dispatch";
+const DISPATCH_BASE_HREF = "/call-to-action";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -31,17 +31,17 @@ export async function generateMetadata({
   const entry = getCallToActionDispatchEntryBySlug(slug);
 
   if (!entry) {
-    return { title: "Dispatch not found | Digital Ground Game" };
+    return { title: "CTA not found | Digital Ground Game" };
   }
 
   return {
-    title: `${entry.title} | Call to Action Dispatch`,
-    description: `Call to Action Dispatch: ${entry.title}.`,
+    title: `${entry.title} | Call to Action`,
+    description: `Call to Action: ${entry.title}.`,
     ...getPostImageMetadata(entry.heroPhoto, entry.title),
   };
 }
 
-export default async function CallToActionDispatchPage({ params }: PageProps) {
+export default async function CallToActionPage({ params }: PageProps) {
   const { slug } = await params;
   const entry = getCallToActionDispatchEntryBySlug(slug);
 
@@ -65,13 +65,6 @@ export default async function CallToActionDispatchPage({ params }: PageProps) {
               href="/call-to-action"
             >
               Call to Action
-            </Link>
-            {" / "}
-            <Link
-              className="transition hover:text-brand-blue"
-              href={DISPATCH_BASE_HREF}
-            >
-              Dispatch
             </Link>
           </p>
 
@@ -97,7 +90,7 @@ export default async function CallToActionDispatchPage({ params }: PageProps) {
             baseHref={DISPATCH_BASE_HREF}
             entries={otherDispatches}
             formatDate={formatDispatchDate}
-            title="More dispatches"
+            title="More CTAs"
           />
         </section>
       ) : null}
