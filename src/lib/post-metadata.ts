@@ -10,6 +10,7 @@ export function getPostImageMetadata(
 
   return {
     openGraph: {
+      title,
       images: [
         {
           url: heroPhoto,
@@ -19,6 +20,7 @@ export function getPostImageMetadata(
     },
     twitter: {
       card: "summary_large_image",
+      title,
       images: [heroPhoto],
     },
   };

@@ -14,12 +14,28 @@ const DISPATCH_LIST_HREF = "/call-to-action/dispatch";
 
 export function generateMetadata(): Metadata {
   const latestDispatch = getCallToActionDispatchEntries()[0];
+  const latestDispatchTitle = latestDispatch
+    ? `CTA: ${latestDispatch.title}`
+    : undefined;
+  const latestDispatchMetadata = latestDispatch
+    ? getPostImageMetadata(latestDispatch.heroPhoto, latestDispatchTitle)
+    : {};
 
   return {
-    title: "Call to Action | Digital Ground Game",
+    title: latestDispatchTitle ?? "Call to Action | Digital Ground Game",
     description: "Weekly Digital Ground Game calls to action and ways to get involved.",
+    ...latestDispatchMetadata,
     ...(latestDispatch
-      ? getPostImageMetadata(latestDispatch.heroPhoto, latestDispatch.title)
+      ? {
+          openGraph: {
+            ...latestDispatchMetadata.openGraph,
+            title: latestDispatchTitle,
+          },
+          twitter: {
+            ...latestDispatchMetadata.twitter,
+            title: latestDispatchTitle,
+          },
+        }
       : {}),
   };
 }
