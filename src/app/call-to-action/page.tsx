@@ -14,12 +14,11 @@ const DISPATCH_LIST_HREF = "/call-to-action/dispatch";
 
 export function generateMetadata(): Metadata {
   const latestDispatch = getCallToActionDispatchEntries()[0];
-  const latestDispatchTitle = latestDispatch
-    ? `CTA: ${latestDispatch.title}`
-    : undefined;
-  const latestDispatchMetadata = latestDispatch
-    ? getPostImageMetadata(latestDispatch.heroPhoto, latestDispatchTitle)
-    : {};
+  const latestDispatchTitle = latestDispatch && `CTA: ${latestDispatch.title}`;
+  const latestDispatchMetadata =
+    latestDispatch && latestDispatchTitle
+      ? getPostImageMetadata(latestDispatch.heroPhoto, latestDispatchTitle)
+      : {};
 
   return {
     title: latestDispatchTitle ?? "Call to Action | Digital Ground Game",
