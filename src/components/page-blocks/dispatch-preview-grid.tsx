@@ -15,6 +15,7 @@ type DispatchPreviewGridProps = {
   baseHref: string;
   formatDate: (date: string) => string;
   showViewAllLink?: boolean;
+  viewAllLabel?: string;
 };
 
 function dispatchPreviewProps(
@@ -41,6 +42,7 @@ export function DispatchPreviewGrid({
   baseHref,
   formatDate,
   showViewAllLink = false,
+  viewAllLabel = "View all dispatches",
 }: DispatchPreviewGridProps) {
   if (entries.length === 0) {
     return null;
@@ -63,7 +65,7 @@ export function DispatchPreviewGrid({
             className="type-button inline-flex bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
             href={baseHref}
           >
-            View all dispatches
+            {viewAllLabel}
           </Link>
         </div>
       ) : null}

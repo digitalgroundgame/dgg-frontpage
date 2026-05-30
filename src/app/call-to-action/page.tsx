@@ -99,7 +99,8 @@ export default function CallToActionPage() {
               entries={olderDispatches}
               formatDate={formatDispatchDate}
               showViewAllLink={dispatchEntries.length > 1}
-              title="Previous dispatches"
+              title="Previous CTAs"
+              viewAllLabel="View all CTAs"
             />
           </div>
         ) : null}
