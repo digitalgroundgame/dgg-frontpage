@@ -23,7 +23,8 @@ export function generateMetadata(): Metadata {
 
   return {
     title: latestDispatchTitle ?? "Call to Action | Digital Ground Game",
-    description: "Weekly Digital Ground Game calls to action and ways to get involved.",
+    description:
+      "Weekly Digital Ground Game calls to action and ways to get involved.",
     ...latestDispatchMetadata,
     ...(latestDispatch
       ? {
@@ -53,13 +54,13 @@ export default function CallToActionPage() {
         id="call-to-action-dispatch"
       >
         <div className="mx-auto w-full max-w-3xl">
-          <div className="grid gap-4">
+          <div className="mx-auto grid w-fit max-w-full gap-4 text-center md:mx-0 md:text-left">
             <div>
               <h2 className="type-kicker text-light-charcoal">
-                <span className="inline-flex items-center gap-1.5">
+                <span>
                   Call to Action
                   <PixelIcon
-                    className="h-16 w-16 shrink-0"
+                    className="ml-1.5 inline h-16 w-16 align-middle"
                     name="interface-essential-speaker-announce"
                   />
                 </span>
