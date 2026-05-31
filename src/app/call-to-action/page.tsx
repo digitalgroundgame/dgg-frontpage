@@ -1,4 +1,4 @@
-import { DispatchArticle } from "@/components/page-blocks/dispatch-article";
+import { Article } from "@/components/page-blocks/article";
 import { DispatchPreviewGrid } from "@/components/page-blocks/dispatch-preview-grid";
 import { PixelIcon } from "@/components/widgets/pixel-icon";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
@@ -72,7 +72,7 @@ export default function CallToActionPage() {
 
           {latestDispatch ? (
             <div className="mt-10">
-              <DispatchArticle
+              <Article
                 authors={latestDispatch.authors}
                 authorSlugs={latestDispatch.authorSlugs}
                 body={latestDispatch.body}

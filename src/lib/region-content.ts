@@ -2,9 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import {
-  getDispatchAuthors,
-  type DispatchAuthor,
-} from "@/lib/region-dispatch";
+  getAuthors,
+  type Author,
+} from "@/lib/authors";
 
 export type RegionPhoto = {
   slug: string;
@@ -35,7 +35,7 @@ function toStringList(value: unknown): string[] {
   return value.map((item) => String(item)).filter(Boolean);
 }
 
-export function getRegionPeople(regionSlug: string): DispatchAuthor[] {
+export function getRegionPeople(regionSlug: string): Author[] {
   const filePath = path.join(regionsDirectory, regionSlug, "people/index.md");
 
   if (!fs.existsSync(filePath)) {
@@ -45,12 +45,12 @@ export function getRegionPeople(regionSlug: string): DispatchAuthor[] {
   const file = fs.readFileSync(filePath, "utf8");
   const { data } = matter(file);
   const authorsBySlug = new Map(
-    getDispatchAuthors().map((author) => [author.slug, author]),
+    getAuthors().map((author) => [author.slug, author]),
   );
 
   return toStringList(data.authors)
     .map((authorSlug) => authorsBySlug.get(authorSlug))
-    .filter((author): author is DispatchAuthor => Boolean(author));
+    .filter((author): author is Author => Boolean(author));
 }
 
 function toRegionPhoto(filename: string): RegionPhoto {

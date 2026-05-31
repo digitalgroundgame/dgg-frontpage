@@ -2,7 +2,7 @@
 title: Inflection Point
 date: 2026-02-22T00:00:00.000-08:00
 authors:
-  - Digital Ground Game
+  - digital-ground-game
 heroPhoto: ""
 heroFilter: true
 ---

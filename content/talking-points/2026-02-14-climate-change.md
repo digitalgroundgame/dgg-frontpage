@@ -2,8 +2,8 @@
 title: Climate Change
 date: 2026-02-14T00:00:00.000-07:00
 authors:
-  - Jack Darko (@drdarko.)
-  - Goob (@ubeyy)
+  - jack-darko
+  - goob
 heroPhoto: ""
 heroFilter: true
 ---

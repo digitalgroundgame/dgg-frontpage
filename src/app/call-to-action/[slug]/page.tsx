@@ -1,4 +1,4 @@
-import { DispatchArticle } from "@/components/page-blocks/dispatch-article";
+import { Article } from "@/components/page-blocks/article";
 import { DispatchPreviewGrid } from "@/components/page-blocks/dispatch-preview-grid";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
@@ -69,7 +69,7 @@ export default async function CallToActionPage({ params }: PageProps) {
           </p>
 
           <div className="mt-6">
-            <DispatchArticle
+            <Article
               authors={entry.authors}
               authorSlugs={entry.authorSlugs}
               body={entry.body}

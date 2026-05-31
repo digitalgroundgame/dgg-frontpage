@@ -1,12 +1,17 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
+import {
+  type Author,
+  getAuthors,
+} from "@/lib/authors";
 
 export type ResourceEntry = {
   slug: string;
   title: string;
   date: string;
-  authors: string[];
+  authorSlugs: string[];
+  authors: Author[];
   heroPhoto: string;
   heroFilter: boolean;
   body: string;
@@ -50,12 +55,27 @@ function toResourceEntry(filename: string): ResourceEntry {
   const file = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(file);
   const date = data.date instanceof Date ? data.date.toISOString() : data.date;
+  const authorSlugs = toStringArray(data.authors);
+  const allAuthors = getAuthors();
+  const authorsBySlug = new Map(
+    allAuthors.map((author) => [author.slug, author]),
+  );
+  const authorsByName = new Map(
+    allAuthors.map((author) => [author.name, author]),
+  );
+  const authors = authorSlugs
+    .map(
+      (authorSlug) =>
+        authorsBySlug.get(authorSlug) ?? authorsByName.get(authorSlug),
+    )
+    .filter((author): author is Author => Boolean(author));
 
   return {
     slug,
     title: String(data.title ?? slug),
     date: String(date ?? ""),
-    authors: toStringArray(data.authors),
+    authorSlugs,
+    authors,
     heroPhoto: String(data.heroPhoto ?? ""),
     heroFilter: Boolean(data.heroFilter),
     body: content.trim(),

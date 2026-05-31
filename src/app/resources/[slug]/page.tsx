@@ -1,4 +1,4 @@
-import { BlogMarkdown } from "@/components/page-blocks/blog-markdown";
+import { Article } from "@/components/page-blocks/article";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
 import {
@@ -8,7 +8,6 @@ import {
 } from "@/lib/resources";
 import { getPostImageMetadata } from "@/lib/post-metadata";
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -59,53 +58,18 @@ export default async function ResourceArticlePage({ params }: PageProps) {
             </Link>
           </p>
 
-          <header className="mt-6">
-            {entry.heroPhoto ? (
-              <div className="relative aspect-[1200/630] overflow-hidden bg-charcoal">
-                <Image
-                  alt=""
-                  className="object-cover"
-                  fill
-                  priority
-                  sizes="(min-width: 768px) 48rem, 100vw"
-                  src={entry.heroPhoto}
-                />
-                {entry.heroFilter ? (
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-blue via-brand-blue/55 to-transparent" />
-                ) : (
-                  <div className="absolute inset-0 bg-black/45" />
-                )}
-                <div className="absolute inset-x-0 bottom-0 p-5 text-near-white-blue sm:p-6">
-                  <time
-                    className="type-label text-near-white-blue/85"
-                    dateTime={entry.date}
-                  >
-                    {formatResourceDate(entry.date)}
-                  </time>
-                  <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
-                    {entry.title}
-                  </h1>
-                </div>
-              </div>
-            ) : (
-              <>
-                <time className="type-label text-light-charcoal" dateTime={entry.date}>
-                  {formatResourceDate(entry.date)}
-                </time>
-                <h1 className="mt-3 text-4xl font-black leading-tight sm:text-5xl">
-                  {entry.title}
-                </h1>
-              </>
-            )}
-            {entry.authors.length > 0 ? (
-              <p className="type-label mt-5 text-brand-blue">
-                {entry.authors.join(", ")}
-              </p>
-            ) : null}
-          </header>
-
-          <div className="mt-16">
-            {entry.body ? <BlogMarkdown>{entry.body}</BlogMarkdown> : null}
+          <div className="mt-6">
+            <Article
+              authors={entry.authors}
+              authorSlugs={entry.authorSlugs}
+              body={entry.body}
+              dateTime={entry.date}
+              formattedDate={formatResourceDate(entry.date)}
+              headingLevel="h1"
+              heroFilter={entry.heroFilter}
+              heroPhoto={entry.heroPhoto}
+              title={entry.title}
+            />
           </div>
         </div>
       </article>

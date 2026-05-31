@@ -1,14 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
-
-export type DispatchAuthor = {
-  slug: string;
-  name: string;
-  picture: string;
-  orgTitle: string;
-  bio: string;
-};
+import { type Author, getAuthors } from "@/lib/authors";
 
 export type CallToActionDispatchEntry = {
   slug: string;
@@ -17,7 +10,7 @@ export type CallToActionDispatchEntry = {
   heroPhoto: string;
   heroFilter: boolean;
   authorSlugs: string[];
-  authors: DispatchAuthor[];
+  authors: Author[];
   body: string;
 };
 
@@ -25,7 +18,6 @@ const dispatchDirectory = path.join(
   process.cwd(),
   "content/call-to-action-dispatch",
 );
-const authorsDirectory = path.join(process.cwd(), "content/people");
 
 function readMarkdownFiles(directory: string): string[] {
   if (!fs.existsSync(directory)) {
@@ -35,25 +27,6 @@ function readMarkdownFiles(directory: string): string[] {
   return fs
     .readdirSync(directory)
     .filter((filename) => filename.endsWith(".md"));
-}
-
-function toAuthor(filename: string): DispatchAuthor {
-  const slug = filename.replace(/\.md$/, "");
-  const filePath = path.join(authorsDirectory, filename);
-  const file = fs.readFileSync(filePath, "utf8");
-  const { data } = matter(file);
-
-  return {
-    slug,
-    name: String(data.name ?? slug),
-    picture: String(data.picture ?? ""),
-    orgTitle: String(data.orgTitle ?? data.bio ?? ""),
-    bio: String(data.bio ?? ""),
-  };
-}
-
-export function getDispatchAuthors(): DispatchAuthor[] {
-  return readMarkdownFiles(authorsDirectory).map(toAuthor);
 }
 
 function toStringList(value: unknown): string[] {
@@ -66,7 +39,7 @@ function toStringList(value: unknown): string[] {
 
 function toDispatchEntry(
   filename: string,
-  authorsBySlug: Map<string, DispatchAuthor>,
+  authorsBySlug: Map<string, Author>,
 ): CallToActionDispatchEntry {
   const slug = filename.replace(/\.md$/, "");
   const filePath = path.join(dispatchDirectory, filename);
@@ -76,7 +49,7 @@ function toDispatchEntry(
   const authorSlugs = toStringList(data.authors);
   const authors = authorSlugs
     .map((authorSlug) => authorsBySlug.get(authorSlug))
-    .filter((author): author is DispatchAuthor => Boolean(author));
+    .filter((author): author is Author => Boolean(author));
 
   return {
     slug,
@@ -92,7 +65,7 @@ function toDispatchEntry(
 
 export function getCallToActionDispatchEntries(): CallToActionDispatchEntry[] {
   const authorsBySlug = new Map(
-    getDispatchAuthors().map((author) => [author.slug, author]),
+    getAuthors().map((author) => [author.slug, author]),
   );
 
   return readMarkdownFiles(dispatchDirectory)

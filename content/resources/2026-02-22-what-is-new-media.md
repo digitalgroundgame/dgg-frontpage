@@ -2,7 +2,7 @@
 title: What Is New Media
 date: 2026-02-22T00:00:00.000-08:00
 authors:
-  - Jacob Mills
+  - jacob-mills
 heroPhoto: ""
 heroFilter: true
 ---

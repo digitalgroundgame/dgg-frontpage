@@ -1,21 +1,21 @@
 import { AuthorAvatar } from "@/components/widgets/author-avatar";
 import { BlogMarkdown } from "@/components/page-blocks/blog-markdown";
-import type { DispatchAuthor } from "@/lib/call-to-action-dispatch";
+import type { Author } from "@/lib/authors";
 import Image from "next/image";
 
-type DispatchArticleProps = {
+type ArticleProps = {
   dateTime: string;
   formattedDate: string;
   title: string;
   heroPhoto?: string;
   heroFilter?: boolean;
   authorSlugs?: string[];
-  authors?: DispatchAuthor[];
+  authors?: Author[];
   body: string;
   headingLevel?: "h1" | "h2";
 };
 
-export function DispatchArticle({
+export function Article({
   dateTime,
   formattedDate,
   title,
@@ -25,7 +25,7 @@ export function DispatchArticle({
   authors = [],
   body,
   headingLevel = "h2",
-}: DispatchArticleProps) {
+}: ArticleProps) {
   const TitleTag = headingLevel;
   const fallbackAuthorNames = authorSlugs.join(", ");
   const authorName =

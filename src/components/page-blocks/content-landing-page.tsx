@@ -6,10 +6,12 @@ import {
   formatTalkingPointDate,
   getTalkingPointEntries,
 } from "@/lib/talking-points";
+import type { Author } from "@/lib/authors";
 import type { ReactNode } from "react";
 
 type LandingEntry = {
-  authors: string[];
+  authorSlugs: string[];
+  authors: Author[];
   date: string;
   slug: string;
   title: string;
@@ -26,8 +28,14 @@ type ContentLandingPageProps = {
   title: string;
 };
 
-function formatAuthors(authors: string[]) {
-  return authors.length > 0 ? authors.join(", ") : undefined;
+function formatAuthors(entry: LandingEntry) {
+  if (entry.authors.length > 0) {
+    return entry.authors.map((author) => author.name).join(", ");
+  }
+
+  return entry.authorSlugs.length > 0
+    ? entry.authorSlugs.join(", ")
+    : undefined;
 }
 
 function ContentLandingPage({
@@ -62,7 +70,7 @@ function ContentLandingPage({
             <div className="mt-8 grid items-stretch gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {entries.map((entry) => (
                 <BlogCardPreview
-                  authorName={formatAuthors(entry.authors)}
+                  authorName={formatAuthors(entry)}
                   date={entry.date}
                   formattedDate={formatDate(entry.date)}
                   key={entry.slug}

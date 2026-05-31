@@ -1,13 +1,13 @@
+import type { Author } from "@/lib/authors";
 import {
   formatDispatchDate,
   getRegionDispatchEntries,
   getRegionDispatchEntryBySlug,
-  type DispatchAuthor,
   type RegionDispatchEntry,
 } from "@/lib/region-dispatch";
 import { regions } from "@/lib/regions";
 
-export type { DispatchAuthor };
+export type { Author };
 export type WestRegionDispatchEntry = RegionDispatchEntry;
 
 export function getWestRegionDispatchEntries(): RegionDispatchEntry[] {

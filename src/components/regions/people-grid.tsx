@@ -1,8 +1,8 @@
-import type { DispatchAuthor } from "@/lib/region-dispatch";
+import type { Author } from "@/lib/authors";
 import Image from "next/image";
 
 type PeopleGridProps = {
-  people: DispatchAuthor[];
+  people: Author[];
 };
 
 export function PeopleGrid({ people }: PeopleGridProps) {

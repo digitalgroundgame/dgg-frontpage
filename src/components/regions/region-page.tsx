@@ -1,4 +1,4 @@
-import { DispatchArticle } from "@/components/page-blocks/dispatch-article";
+import { Article } from "@/components/page-blocks/article";
 import { DispatchPreviewGrid } from "@/components/page-blocks/dispatch-preview-grid";
 import { PixelIcon } from "@/components/widgets/pixel-icon";
 import { RegionMap } from "@/components/regions/region-map";
@@ -81,7 +81,7 @@ export function RegionPage({ region }: RegionPageProps) {
 
             {latestDispatch ? (
               <div className="mt-10">
-                <DispatchArticle
+                <Article
                   authors={latestDispatch.authors}
                   authorSlugs={latestDispatch.authorSlugs}
                   body={latestDispatch.body}

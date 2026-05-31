@@ -28,57 +28,9 @@ const dispatchFields = [
   { label: "Body", name: "body", widget: "markdown" },
 ];
 
-const talkingPointFields = [
-  { label: "Title", name: "title", widget: "string" },
-  { label: "Publish Date", name: "date", widget: "datetime" },
-  {
-    label: "Hero Photo",
-    name: "heroPhoto",
-    widget: "image",
-    required: false,
-  },
-  {
-    label: "Hero Filter",
-    name: "heroFilter",
-    widget: "boolean",
-    required: false,
-    default: true,
-  },
-  {
-    label: "Authors",
-    name: "authors",
-    widget: "list",
-    field: { label: "Author", name: "author", widget: "string" },
-    required: false,
-  },
-  { label: "Body", name: "body", widget: "markdown" },
-];
+const talkingPointFields = dispatchFields;
 
-const resourceFields = [
-  { label: "Title", name: "title", widget: "string" },
-  { label: "Publish Date", name: "date", widget: "datetime" },
-  {
-    label: "Hero Photo",
-    name: "heroPhoto",
-    widget: "image",
-    required: false,
-  },
-  {
-    label: "Hero Filter",
-    name: "heroFilter",
-    widget: "boolean",
-    required: false,
-    default: true,
-  },
-  {
-    label: "Authors",
-    name: "authors",
-    widget: "list",
-    field: { label: "Author", name: "author", widget: "string" },
-    required: false,
-  },
-  { label: "Body", name: "body", widget: "markdown" },
-];
+const resourceFields = dispatchFields;
 
 const peopleFields = [
   { label: "Title", name: "title", widget: "string" },
