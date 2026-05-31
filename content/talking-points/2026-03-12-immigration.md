@@ -5,6 +5,7 @@ authors:
   - cameron-tomaino
 heroPhoto: ""
 heroFilter: true
+heroTextDark: false
 ---
 
 ## Why is this important?

@@ -9,6 +9,7 @@ export type RegionDispatchEntry = {
   date: string;
   heroPhoto: string;
   heroFilter: boolean;
+  heroTextDark: boolean;
   authorSlugs: string[];
   authors: Author[];
   body: string;
@@ -53,6 +54,7 @@ function toDispatchEntry(
     date: String(date ?? ""),
     heroPhoto: String(data.heroPhoto ?? ""),
     heroFilter: Boolean(data.heroFilter),
+    heroTextDark: Boolean(data.heroTextDark),
     authorSlugs,
     authors,
     body: content.trim(),

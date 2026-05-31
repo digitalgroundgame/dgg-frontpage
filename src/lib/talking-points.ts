@@ -14,6 +14,7 @@ export type TalkingPointEntry = {
   authors: Author[];
   heroPhoto: string;
   heroFilter: boolean;
+  heroTextDark: boolean;
   body: string;
 };
 
@@ -81,6 +82,7 @@ function toTalkingPointEntry(filename: string): TalkingPointEntry {
     authors,
     heroPhoto: String(data.heroPhoto ?? ""),
     heroFilter: Boolean(data.heroFilter),
+    heroTextDark: Boolean(data.heroTextDark),
     body: content.trim(),
   };
 }

@@ -9,6 +9,7 @@ type ArticleProps = {
   title: string;
   heroPhoto?: string;
   heroFilter?: boolean;
+  heroTextDark?: boolean;
   authorSlugs?: string[];
   authors?: Author[];
   body: string;
@@ -21,6 +22,7 @@ export function Article({
   title,
   heroPhoto,
   heroFilter = false,
+  heroTextDark = false,
   authorSlugs = [],
   authors = [],
   body,
@@ -41,12 +43,18 @@ export function Article({
   const shouldShowPhotoAuthors = authors.length > 1 && photoAuthors.length > 0;
   const shouldShowFallbackAvatar =
     authors.length > 1 && photoAuthors.length === 0 && Boolean(authorName);
+  const heroTextClassName = heroTextDark
+    ? "text-charcoal"
+    : "text-near-white-blue";
+  const heroDateClassName = heroTextDark
+    ? "text-light-charcoal"
+    : "text-near-white-blue/85";
 
   return (
     <article className="text-charcoal">
       <header>
         {heroPhoto ? (
-          <div className="relative aspect-[1200/630] overflow-hidden bg-charcoal">
+          <div className="relative -mx-8 aspect-[1200/630] overflow-hidden bg-charcoal sm:-mx-12 md:mx-0">
             <Image
               alt=""
               className="object-cover"
@@ -57,12 +65,12 @@ export function Article({
             />
             {heroFilter ? (
               <div className="absolute inset-0 bg-gradient-to-t from-brand-blue via-brand-blue/55 to-transparent" />
-            ) : (
-              <div className="absolute inset-0 bg-black/45" />
-            )}
-            <div className="absolute inset-x-0 bottom-0 p-5 text-near-white-blue sm:p-6">
+            ) : null}
+            <div
+              className={`absolute inset-x-0 bottom-0 p-5 sm:p-6 ${heroTextClassName}`}
+            >
               <time
-                className="type-label text-near-white-blue/85"
+                className={`type-label ${heroDateClassName}`}
                 dateTime={dateTime}
               >
                 {formattedDate}

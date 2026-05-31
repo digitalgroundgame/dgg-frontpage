@@ -14,6 +14,7 @@ export type ResourceEntry = {
   authors: Author[];
   heroPhoto: string;
   heroFilter: boolean;
+  heroTextDark: boolean;
   body: string;
 };
 
@@ -78,6 +79,7 @@ function toResourceEntry(filename: string): ResourceEntry {
     authors,
     heroPhoto: String(data.heroPhoto ?? ""),
     heroFilter: Boolean(data.heroFilter),
+    heroTextDark: Boolean(data.heroTextDark),
     body: content.trim(),
   };
 }

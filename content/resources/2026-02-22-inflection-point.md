@@ -5,6 +5,7 @@ authors:
   - digital-ground-game
 heroPhoto: ""
 heroFilter: true
+heroTextDark: false
 ---
 
 A New Media Primer Prepared by Digital Ground Game. GenZ's entire media ecosystem has been conceded to illiberal loons. Our young people deserve to hear from the best of us.

@@ -5,6 +5,7 @@ authors:
   - jacob-mills
 heroPhoto: ""
 heroFilter: true
+heroTextDark: false
 ---
 
 This section is designed for people who are largely unfamiliar with the space. If you know what a skibidi toilet is, you can skip it.

@@ -3,6 +3,7 @@ title: Keep on Rallying!
 date: 2026-05-21T00:00:00.000-07:00
 authors:
   - daniel-lee
+heroTextDark: false
 ---
 
 ## 🏛️ Serverwide Updates

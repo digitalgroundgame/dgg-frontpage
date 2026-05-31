@@ -15,6 +15,13 @@ const dispatchFields = [
     default: true,
   },
   {
+    label: "Dark Hero Text",
+    name: "heroTextDark",
+    widget: "boolean",
+    required: false,
+    default: false,
+  },
+  {
     label: "Authors",
     name: "authors",
     widget: "relation",

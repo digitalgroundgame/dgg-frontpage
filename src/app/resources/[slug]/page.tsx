@@ -68,6 +68,7 @@ export default async function ResourceArticlePage({ params }: PageProps) {
               headingLevel="h1"
               heroFilter={entry.heroFilter}
               heroPhoto={entry.heroPhoto}
+              heroTextDark={entry.heroTextDark}
               title={entry.title}
             />
           </div>
