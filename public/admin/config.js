@@ -304,3 +304,43 @@ CMS.registerEditorComponent({
     );
   },
 });
+
+CMS.registerEditorComponent({
+  id: "video",
+  label: "Video Embed",
+  fields: [
+    {
+      name: "url",
+      label: "YouTube URL",
+      widget: "string",
+    },
+    {
+      name: "title",
+      label: "Title",
+      widget: "string",
+      default: "Embedded video",
+    },
+  ],
+  pattern: /{%\s*video\s+url="(.*?)"\s+title="(.*?)"\s*%}/,
+  fromBlock: function (match) {
+    return {
+      url: match[1],
+      title: match[2],
+    };
+  },
+  toBlock: function (data) {
+    return `{% video url="${data.url}" title="${data.title}" %}`;
+  },
+  toPreview: function (data) {
+    return (
+      '<div style="border:1px solid #ccc;padding:1rem">' +
+      "<strong>Video Embed</strong><br />" +
+      '<a href="' +
+      data.url +
+      '" target="_blank" rel="noopener noreferrer">' +
+      data.title +
+      "</a>" +
+      "</div>"
+    );
+  },
+});
