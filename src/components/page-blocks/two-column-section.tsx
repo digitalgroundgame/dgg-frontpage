@@ -22,7 +22,7 @@ export function TwoColumnSection({
     <div className="relative aspect-[4/3] overflow-hidden rounded">
       <Image
         alt={alt}
-        className="object-cover"
+        className="object-contain"
         fill
         sizes="(min-width: 768px) 50vw, 100vw"
         src={image}
