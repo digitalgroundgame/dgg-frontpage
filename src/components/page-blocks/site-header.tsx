@@ -1,5 +1,6 @@
 "use client";
 
+import { Logo } from "@/components/widgets/logo";
 import { PixelIcon } from "@/components/widgets/pixel-icon";
 import Link from "next/link";
 import { useRef } from "react";
@@ -43,9 +44,10 @@ export function SiteHeader() {
       >
         <Link
           aria-label="Digital Ground Game home"
-          className="block h-32 w-[215px] shrink-0 bg-brand-blue [mask-image:url('/dgg-logo-full.svg')] [mask-position:center] [mask-repeat:no-repeat] [mask-size:contain]"
+          className="block h-32 w-[215px] shrink-0 text-brand-blue"
           href="/"
         >
+          <Logo className="h-full w-full" />
           <span className="sr-only">Digital Ground Game</span>
         </Link>
 
