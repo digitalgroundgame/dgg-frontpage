@@ -3,14 +3,14 @@
 import { Logo } from "@/components/widgets/logo";
 import { PixelIcon } from "@/components/widgets/pixel-icon";
 import Link from "next/link";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const primaryNavItems = [
   { label: "About Us", href: "/about-us" },
   { label: "Call to Action", href: "/call-to-action" },
   { label: "Talking Points", href: "/talking-points-repo" },
-  { label: "Resources", href: "/resources" },
   { label: "Merch", href: "/merch" },
+  { label: "Resources", href: "/resources" },
   { label: "Register to Vote", href: "/register" },
 ];
 
@@ -29,6 +29,20 @@ const regionItems = [
 
 export function SiteHeader() {
   const mobileMenuRef = useRef<HTMLDetailsElement>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    function updateScrolledState() {
+      setIsScrolled(window.scrollY > 24);
+    }
+
+    updateScrolledState();
+    window.addEventListener("scroll", updateScrolledState, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", updateScrolledState);
+    };
+  }, []);
 
   function closeMobileMenu() {
     if (mobileMenuRef.current) {
@@ -37,14 +51,18 @@ export function SiteHeader() {
   }
 
   return (
-    <header className="bg-near-white-blue">
+    <header className="sticky top-0 z-40 bg-near-white-blue">
       <nav
         aria-label="Primary"
-        className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-5 px-8 py-5 sm:px-12 lg:px-20 min-[960px]:justify-between"
+        className={`mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-5 px-8 transition-[padding] duration-300 sm:px-12 lg:px-20 min-[960px]:justify-between ${
+          isScrolled ? "py-2" : "py-5"
+        }`}
       >
         <Link
           aria-label="Digital Ground Game home"
-          className="block h-32 w-[215px] shrink-0 text-brand-blue"
+          className={`block w-[215px] shrink-0 text-brand-blue transition-[height,margin] duration-300 ${
+            isScrolled ? "-my-5 h-28" : "h-32"
+          }`}
           href="/"
         >
           <Logo className="h-full w-full" />
@@ -52,10 +70,10 @@ export function SiteHeader() {
         </Link>
 
         <div className="hidden gap-2 min-[960px]:grid min-[960px]:flex-1">
-          <div className="grid gap-1 text-lg font-bold text-charcoal xl:text-xl">
+          <div className="grid text-xl font-bold text-charcoal xl:text-2xl">
             {primaryNavRows.map((row, index) => (
               <div
-                className="grid grid-cols-[max-content_max-content_max-content] gap-x-4 gap-y-1"
+                className="grid grid-cols-[max-content_max-content_max-content] gap-x-7 gap-y-1"
                 key={index}
               >
                 {row.map((item) =>
@@ -74,7 +92,7 @@ export function SiteHeader() {
               </div>
             ))}
           </div>
-          <div className="flex max-w-[315px] flex-wrap gap-x-4 gap-y-2 text-base">
+          <div className="flex flex-nowrap gap-x-7 gap-y-2 whitespace-nowrap text-lg">
             {regionItems.map((item) => (
               <Link
                 className="transition hover:text-brand-blue"
@@ -145,9 +163,9 @@ export function SiteHeader() {
           </div>
         </details>
 
-        <div className="flex w-full shrink-0 flex-wrap justify-center gap-3 min-[960px]:w-auto min-[960px]:justify-start">
+        <div className="grid w-full shrink-0 justify-center gap-3 min-[960px]:w-auto min-[960px]:justify-start">
           <a
-            className="type-button inline-flex items-center gap-2 bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-dark-blue"
+            className="type-button inline-flex items-center justify-center gap-2 bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-dark-blue"
             href="https://discord.gg/digitalgroundgame"
             rel="noopener noreferrer"
             target="_blank"
@@ -156,7 +174,7 @@ export function SiteHeader() {
             Join In
           </a>
           <a
-            className="type-button inline-flex items-center gap-2 bg-accent-red px-5 py-3 text-near-white-blue transition hover:bg-black"
+            className="type-button inline-flex items-center justify-center gap-2 bg-accent-red px-5 py-3 text-near-white-blue transition hover:bg-black"
             href="https://secure.actblue.com/donate/dgg"
             rel="noopener noreferrer"
             target="_blank"
