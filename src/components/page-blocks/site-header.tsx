@@ -52,18 +52,14 @@ export function SiteHeader() {
   }
 
   return (
-    <header className="sticky top-0 z-40 bg-near-white-blue">
+    <header className="relative z-40 bg-near-white-blue">
       <nav
         aria-label="Primary"
-        className={`mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-5 px-8 transition-[padding] duration-300 sm:px-12 lg:px-20 min-[960px]:justify-between ${
-          isScrolled ? "py-0" : "py-5"
-        }`}
+        className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-5 px-8 py-5 sm:px-12 lg:px-20 min-[960px]:justify-between"
       >
         <Link
           aria-label="Digital Ground Game home"
-          className={`flex w-[215px] shrink-0 items-center text-brand-blue transition-[height] duration-300 ${
-            isScrolled ? "h-28" : "h-32"
-          }`}
+          className="flex h-32 w-[215px] shrink-0 items-center text-brand-blue"
           href="/"
         >
           <Logo className="h-[calc(100%-1rem)] w-full" />
@@ -107,7 +103,9 @@ export function SiteHeader() {
         </div>
 
         <details
-          className="group fixed right-6 top-6 z-50 min-[960px]:hidden"
+          className={`group fixed right-6 top-6 z-50 ${
+            isScrolled ? "min-[960px]:block" : "min-[960px]:hidden"
+          }`}
           ref={mobileMenuRef}
         >
           <summary className="relative z-50 flex cursor-pointer list-none items-center justify-center bg-brand-blue p-2 text-near-white-blue group-open:[animation:menu-color-ramp_650ms_ease-in-out] [&::-webkit-details-marker]:hidden">
@@ -167,14 +165,10 @@ export function SiteHeader() {
         </details>
 
         <div
-          className={`hidden w-full shrink-0 justify-stretch transition-[gap,width] duration-300 min-[960px]:grid ${
-            isScrolled ? "gap-2 min-[960px]:w-36" : "gap-3 min-[960px]:w-40"
-          }`}
+          className="hidden w-full shrink-0 justify-stretch gap-3 min-[960px]:grid min-[960px]:w-40"
         >
           <ButtonLink
-            className={`w-full justify-start transition-[padding] duration-300 ${
-              isScrolled ? "!px-4 !py-2" : ""
-            }`}
+            className="w-full justify-start"
             href="https://discord.gg/digitalgroundgame"
             primaryHover="blue-black"
             rel="noopener noreferrer"
@@ -184,9 +178,7 @@ export function SiteHeader() {
             Join In
           </ButtonLink>
           <ButtonLink
-            className={`w-full justify-start transition-[padding] duration-300 ${
-              isScrolled ? "!px-4 !py-2" : ""
-            }`}
+            className="w-full justify-start"
             href="https://secure.actblue.com/donate/dgg"
             primaryHover="red-black"
             rel="noopener noreferrer"
