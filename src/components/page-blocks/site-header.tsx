@@ -61,16 +61,12 @@ export function SiteHeader() {
       >
         <Link
           aria-label="Digital Ground Game home"
-          className={`relative block w-[215px] shrink-0 overflow-visible text-brand-blue transition-[height] duration-300 ${
+          className={`flex w-[215px] shrink-0 items-center text-brand-blue transition-[height] duration-300 ${
             isScrolled ? "h-28" : "h-32"
           }`}
           href="/"
         >
-          <Logo
-            className={`w-full transition-[height] duration-300 ${
-              isScrolled ? "h-full min-[960px]:h-32" : "h-full"
-            }`}
-          />
+          <Logo className="h-[calc(100%-1rem)] w-full" />
           <span className="sr-only">Digital Ground Game</span>
         </Link>
 
