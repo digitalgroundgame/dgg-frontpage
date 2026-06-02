@@ -37,7 +37,9 @@ export function BrandCtaSection({
           </h2>
         </div>
         <div>
-          {subtitle ? <h3 className="text-2xl font-black">{subtitle}</h3> : null}
+          {subtitle ? (
+            <h3 className="text-2xl font-black">{subtitle}</h3>
+          ) : null}
           {body.map((paragraph) => (
             <p className="type-body mt-4 first:mt-0" key={paragraph}>
               {paragraph}
@@ -46,7 +48,7 @@ export function BrandCtaSection({
           <ButtonLink
             className="mt-6"
             href={cta.href}
-            primaryHover="blue-black"
+            primaryHover="black-blue"
             rel={cta.external ? "noopener noreferrer" : undefined}
             target={cta.external ? "_blank" : undefined}
           >
