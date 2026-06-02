@@ -62,7 +62,7 @@ export function SiteHeader() {
         <Link
           aria-label="Digital Ground Game home"
           className={`block w-[215px] shrink-0 text-brand-blue transition-[height,margin] duration-300 ${
-            isScrolled ? "-my-5 h-28" : "h-32"
+            isScrolled ? "h-28 min-[960px]:-my-5" : "h-32"
           }`}
           href="/"
         >
@@ -166,7 +166,7 @@ export function SiteHeader() {
           </div>
         </details>
 
-        <div className="grid w-full shrink-0 justify-stretch gap-3 min-[960px]:w-40">
+        <div className="hidden w-full shrink-0 justify-stretch gap-3 min-[960px]:grid min-[960px]:w-40">
           <ButtonLink
             className="w-full justify-start"
             href="https://discord.gg/digitalgroundgame"
