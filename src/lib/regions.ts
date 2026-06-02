@@ -94,6 +94,7 @@ export const regions = {
   northeast: {
     slug: "northeast",
     name: "Northeast",
+    tagline: "Where the American experiment began, democracy continues.",
     dispatchName: "Northeast News",
     dispatchDescription:
       "A running blog for regional updates and practical ways to get involved.",
