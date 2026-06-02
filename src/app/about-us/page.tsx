@@ -13,7 +13,8 @@ const accomplishments = [
   {
     value: "Ohio",
     label: "Historic canvass",
-    description: "Led the largest independent canvassing event in state history.",
+    description:
+      "Led the largest independent canvassing event in state history.",
   },
   {
     value: "8",
@@ -152,7 +153,7 @@ export default function AboutUsPage() {
                 className="bg-near-white-blue p-5 text-charcoal"
                 key={item.label}
               >
-                <p className="text-5xl font-black text-accent-red">
+                <p className="text-5xl font-black text-brand-blue">
                   {item.value}
                 </p>
                 <h3 className="mt-4 text-xl font-black">{item.label}</h3>
@@ -188,7 +189,7 @@ export default function AboutUsPage() {
                   />
                   <div>
                     <h3 className="text-2xl font-black">{team.name}</h3>
-                    <p className="type-label mt-1 text-accent-red">
+                    <p className="type-label mt-1 text-brand-blue">
                       {team.focus}
                     </p>
                     <p className="type-body mt-3">{team.description}</p>

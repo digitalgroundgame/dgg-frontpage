@@ -249,7 +249,7 @@ export default function Home() {
               fight isn&apos;t over - it&apos;s ours to win.
             </p>
             <a
-              className="type-button mt-8 inline-flex bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
+              className="type-button mt-8 inline-flex bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-brandtext-brand-blue"
               href="https://discord.gg/digitalgroundgame"
               rel="noopener noreferrer"
               target="_blank"
@@ -259,7 +259,7 @@ export default function Home() {
           </div>
           <div className="grid w-full max-w-sm place-items-center bg-near-white-blue p-6 text-charcoal">
             <div className="w-fit max-w-full">
-              <h3 className="type-label text-2xl text-accent-red">
+              <h3 className="type-label text-2xl text-brand-blue">
                 What you will gain
               </h3>
               <ul className="mt-5 grid gap-3 text-xl font-black text-charcoal">
@@ -282,7 +282,7 @@ export default function Home() {
               className="bg-near-white-blue p-5 text-charcoal"
               key={initiative.label}
             >
-              <p className="text-5xl font-black text-accent-red">
+              <p className="text-5xl font-black text-brand-blue">
                 {initiative.value}
               </p>
               <h3 className="mt-4 text-xl font-black">{initiative.label}</h3>
