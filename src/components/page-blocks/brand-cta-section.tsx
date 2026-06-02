@@ -1,3 +1,4 @@
+import { ButtonLink } from "@/components/widgets/button-link";
 import { PixelIcon, type PixelIconName } from "@/components/widgets/pixel-icon";
 
 type BrandCtaSectionProps = {
@@ -42,9 +43,10 @@ export function BrandCtaSection({
               {paragraph}
             </p>
           ))}
-          <a
-            className="type-button mt-6 inline-flex items-center gap-2 bg-near-white-blue px-5 py-3 text-brand-blue transition hover:bg-charcoal hover:text-near-white-blue"
+          <ButtonLink
+            className="mt-6"
             href={cta.href}
+            primaryHover="blue-black"
             rel={cta.external ? "noopener noreferrer" : undefined}
             target={cta.external ? "_blank" : undefined}
           >
@@ -52,7 +54,7 @@ export function BrandCtaSection({
               <PixelIcon className="h-5 w-5 shrink-0" name={cta.icon} />
             ) : null}
             {cta.label}
-          </a>
+          </ButtonLink>
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+import { ButtonLink } from "@/components/widgets/button-link";
 import { PixelIcon } from "@/components/widgets/pixel-icon";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
@@ -37,15 +38,16 @@ export default function MerchPage() {
             </h2>
           </div>
           <div className="flex justify-center md:justify-end">
-            <a
-              className="type-button inline-flex items-center gap-2 bg-accent-red px-6 py-3 text-near-white-blue transition hover:bg-black"
+            <ButtonLink
+              className="px-6"
               href="https://secure.actblue.com/donate/dgg"
+              primaryHover="red-black"
               rel="noopener noreferrer"
               target="_blank"
             >
               <PixelIcon className="h-7 w-7 shrink-0" name="money-bag" />
               Donate
-            </a>
+            </ButtonLink>
           </div>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import { ButtonLink } from "@/components/widgets/button-link";
 import { PixelIcon, type PixelIconName } from "@/components/widgets/pixel-icon";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
@@ -81,14 +82,14 @@ export default function AboutUsPage() {
             prosperity.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a
-              className="type-button bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
+            <ButtonLink
               href="https://discord.gg/digitalgroundgame"
+              primaryHover="blue-black"
               rel="noopener noreferrer"
               target="_blank"
             >
               Become a Volunteer
-            </a>
+            </ButtonLink>
           </div>
         </div>
       </section>
@@ -120,15 +121,16 @@ export default function AboutUsPage() {
               future: building lasting political power and developing the next
               generation of leaders.
             </p>
-            <a
-              className="type-button mt-8 inline-flex items-center gap-2 bg-accent-red px-5 py-3 text-near-white-blue transition hover:bg-black"
+            <ButtonLink
+              className="mt-8"
               href="https://secure.actblue.com/donate/dgg"
+              primaryHover="red-black"
               rel="noopener noreferrer"
               target="_blank"
             >
               <PixelIcon className="h-5 w-5 shrink-0" name="money-bag" />
               Donate Now
-            </a>
+            </ButtonLink>
           </div>
         </div>
       </section>
@@ -210,15 +212,16 @@ export default function AboutUsPage() {
             </h2>
           </div>
           <div className="flex justify-center md:justify-end">
-            <a
-              className="type-button inline-flex items-center gap-2 bg-charcoal px-6 py-3 text-near-white-blue transition hover:bg-accent-red"
+            <ButtonLink
+              className="px-6"
               href="https://discord.gg/digitalgroundgame"
+              primaryHover="black-blue"
               rel="noopener noreferrer"
               target="_blank"
             >
               <PixelIcon className="h-7 w-7 shrink-0" name="hierarchy" />
               Join Discord
-            </a>
+            </ButtonLink>
           </div>
         </div>
       </section>

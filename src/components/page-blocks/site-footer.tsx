@@ -1,3 +1,5 @@
+import { ButtonLink } from "@/components/widgets/button-link";
+
 const followLinks = [
   { label: "Facebook", href: "https://www.facebook.com/digitalgroundgame" },
   { label: "X", href: "https://x.com/digitalgroundg/" },
@@ -17,14 +19,15 @@ export function SiteFooter() {
           <p className="mt-3 leading-7">
             Defending democracy, one action at a time.
           </p>
-          <a
-            className="type-button mt-5 inline-flex bg-accent-red px-4 py-2 transition hover:bg-black"
+          <ButtonLink
+            className="mt-5 px-4 py-2"
             href="https://secure.actblue.com/donate/dgg"
+            primaryHover="red-black"
             rel="noopener noreferrer"
             target="_blank"
           >
             Donate Now
-          </a>
+          </ButtonLink>
         </div>
         <div>
           <h3 className="font-black uppercase tracking-[0.18em] text-near-white-blue">

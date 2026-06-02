@@ -1,5 +1,5 @@
 import { BlogCardPreview } from "@/components/widgets/blog-card-preview";
-import Link from "next/link";
+import { ButtonLink } from "@/components/widgets/button-link";
 
 export type DispatchPreviewEntry = {
   slug: string;
@@ -63,12 +63,9 @@ export function DispatchPreviewGrid({
       </div>
       {showViewAllLink ? (
         <div className="mt-12">
-          <Link
-            className="type-button inline-flex bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
-            href={viewAllHref ?? baseHref}
-          >
+          <ButtonLink href={viewAllHref ?? baseHref} primaryHover="blue-black">
             {viewAllLabel}
-          </Link>
+          </ButtonLink>
         </div>
       ) : null}
     </div>

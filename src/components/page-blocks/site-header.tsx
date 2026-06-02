@@ -1,6 +1,7 @@
 "use client";
 
 import { Logo } from "@/components/widgets/logo";
+import { ButtonLink } from "@/components/widgets/button-link";
 import { PixelIcon } from "@/components/widgets/pixel-icon";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -140,48 +141,52 @@ export function SiteHeader() {
                 ))}
               </div>
               <div className="grid gap-3 pt-2 text-2xl font-bold">
-                <a
-                  className="type-button inline-flex items-center justify-center gap-2 bg-brand-blue px-5 py-4 text-center text-near-white-blue transition hover:bg-dark-blue"
+                <ButtonLink
+                  className="w-full justify-start py-4 text-left"
                   href="https://discord.gg/digitalgroundgame"
+                  primaryHover="blue-black"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <PixelIcon className="h-5 w-5 shrink-0" name="hierarchy" />
                   Join In
-                </a>
-                <a
-                  className="type-button inline-flex items-center justify-center gap-2 bg-accent-red px-5 py-4 text-center text-near-white-blue transition hover:bg-black"
+                </ButtonLink>
+                <ButtonLink
+                  className="w-full justify-start py-4 text-left"
                   href="https://secure.actblue.com/donate/dgg"
+                  primaryHover="red-black"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <PixelIcon className="h-5 w-5 shrink-0" name="money-bag" />
                   Donate
-                </a>
+                </ButtonLink>
               </div>
             </div>
           </div>
         </details>
 
-        <div className="grid w-full shrink-0 justify-center gap-3 min-[960px]:w-auto min-[960px]:justify-start">
-          <a
-            className="type-button inline-flex items-center justify-center gap-2 bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-dark-blue"
+        <div className="grid w-full shrink-0 justify-stretch gap-3 min-[960px]:w-40">
+          <ButtonLink
+            className="w-full justify-start"
             href="https://discord.gg/digitalgroundgame"
+            primaryHover="blue-black"
             rel="noopener noreferrer"
             target="_blank"
           >
             <PixelIcon className="h-5 w-5 shrink-0" name="hierarchy" />
             Join In
-          </a>
-          <a
-            className="type-button inline-flex items-center justify-center gap-2 bg-accent-red px-5 py-3 text-near-white-blue transition hover:bg-black"
+          </ButtonLink>
+          <ButtonLink
+            className="w-full justify-start"
             href="https://secure.actblue.com/donate/dgg"
+            primaryHover="red-black"
             rel="noopener noreferrer"
             target="_blank"
           >
             <PixelIcon className="h-5 w-5 shrink-0" name="money-bag" />
             Donate
-          </a>
+          </ButtonLink>
         </div>
       </nav>
     </header>

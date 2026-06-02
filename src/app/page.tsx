@@ -1,4 +1,5 @@
 import { BrandCtaSection } from "@/components/page-blocks/brand-cta-section";
+import { ButtonLink } from "@/components/widgets/button-link";
 import { PixelIcon, type PixelIconName } from "@/components/widgets/pixel-icon";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
@@ -99,14 +100,14 @@ export default function Home() {
             evidence-based political action.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a
-              className="type-button bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-accent-red"
+            <ButtonLink
               href="https://discord.gg/digitalgroundgame"
+              primaryHover="blue-black"
               rel="noopener noreferrer"
               target="_blank"
             >
               Become a Volunteer
-            </a>
+            </ButtonLink>
           </div>
         </div>
       </section>
@@ -122,9 +123,10 @@ export default function Home() {
             </h2>
           </div>
           <div className="flex justify-center md:h-full md:items-center">
-            <a
-              className="type-button inline-flex items-center gap-2 bg-charcoal px-6 py-3 text-near-white-blue transition hover:bg-accent-red"
+            <ButtonLink
+              className="px-6"
               href="https://docs.google.com/forms/d/e/1FAIpQLSdZmxO4SWAD0ARyjik9jFxJsh2ioHgIGKwRVkLSifv2RgFZQQ/viewform"
+              primaryHover="black-blue"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -133,7 +135,7 @@ export default function Home() {
                 name="business-product-check"
               />
               Interest Form
-            </a>
+            </ButtonLink>
           </div>
         </div>
       </section>
@@ -177,10 +179,11 @@ export default function Home() {
             <TikTokCreatorEmbed />
             <div className="flex flex-wrap justify-center gap-3">
               {socialFeeds.map((feed) => (
-                <a
-                  className="type-button inline-flex items-center gap-2 bg-brand-blue px-4 py-3 text-near-white-blue transition hover:bg-accent-red"
+                <ButtonLink
+                  className="px-4"
                   href={feed.href}
                   key={feed.label}
+                  primaryHover="blue-black"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -188,7 +191,7 @@ export default function Home() {
                     <PixelIcon className="h-5 w-5 shrink-0" name={feed.icon} />
                   ) : null}
                   {feed.label}
-                </a>
+                </ButtonLink>
               ))}
             </div>
           </div>
@@ -204,16 +207,17 @@ export default function Home() {
             sizes="(min-width: 768px) 50vw, 100vw"
             src="/initiative-photo.webp"
           />
-          <a
+          <ButtonLink
             aria-label="Photo credit: Andi on Instagram"
-            className="type-button absolute bottom-4 left-4 z-10 inline-flex items-center gap-2 bg-near-white-blue px-3 py-2 text-charcoal transition hover:bg-accent-red hover:text-near-white-blue"
+            className="absolute bottom-4 left-4 z-10 px-3 py-2"
             href="https://www.instagram.com/photos.andi/"
+            primaryHover="black-blue"
             rel="noopener noreferrer"
             target="_blank"
           >
             <PixelIcon className="h-6 w-6 shrink-0" name="camera-circle" />
             <span>Andi @photos.andi</span>
-          </a>
+          </ButtonLink>
         </div>
         <div className="px-8 py-20 sm:px-12 lg:px-20 md:flex md:items-center">
           <div className="max-w-xl">
@@ -248,14 +252,15 @@ export default function Home() {
               Join us in the fight for democracy, reason, and progress. The
               fight isn&apos;t over - it&apos;s ours to win.
             </p>
-            <a
-              className="type-button mt-8 inline-flex bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-brandtext-brand-blue"
+            <ButtonLink
+              className="mt-8"
               href="https://discord.gg/digitalgroundgame"
+              primaryHover="blue-black"
               rel="noopener noreferrer"
               target="_blank"
             >
               Join Discord
-            </a>
+            </ButtonLink>
           </div>
           <div className="grid w-full max-w-sm place-items-center bg-near-white-blue p-6 text-charcoal">
             <div className="w-fit max-w-full">

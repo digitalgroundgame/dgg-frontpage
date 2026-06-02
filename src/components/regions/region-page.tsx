@@ -1,4 +1,5 @@
 import { Article } from "@/components/page-blocks/article";
+import { ButtonLink } from "@/components/widgets/button-link";
 import { DispatchPreviewGrid } from "@/components/page-blocks/dispatch-preview-grid";
 import { PixelIcon } from "@/components/widgets/pixel-icon";
 import { RegionMap } from "@/components/regions/region-map";
@@ -40,16 +41,17 @@ export function RegionPage({ region }: RegionPageProps) {
 
       <section className="px-8 pb-20 sm:px-12 lg:px-20">
         <div className="mx-auto flex w-full max-w-4xl justify-center">
-          <a
-            className="type-button flex w-full max-w-md items-center justify-center gap-2 bg-brand-blue px-5 py-3 text-center text-near-white-blue transition hover:bg-accent-red sm:w-auto sm:min-w-xs sm:max-w-full"
+          <ButtonLink
+            className="flex w-full max-w-md justify-center text-center sm:w-auto sm:min-w-xs sm:max-w-full"
             href={`mailto:${region.email}`}
+            primaryHover="blue-black"
           >
             <PixelIcon
               className="h-5 w-5 shrink-0"
               name="email-envelope-close"
             />
             {region.emailLabel}
-          </a>
+          </ButtonLink>
         </div>
       </section>
 
