@@ -56,17 +56,21 @@ export function SiteHeader() {
       <nav
         aria-label="Primary"
         className={`mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-5 px-8 transition-[padding] duration-300 sm:px-12 lg:px-20 min-[960px]:justify-between ${
-          isScrolled ? "py-2" : "py-5"
+          isScrolled ? "py-0" : "py-5"
         }`}
       >
         <Link
           aria-label="Digital Ground Game home"
-          className={`block w-[215px] shrink-0 text-brand-blue transition-[height,margin] duration-300 ${
-            isScrolled ? "h-28 min-[960px]:-my-5" : "h-32"
+          className={`relative block w-[215px] shrink-0 overflow-visible text-brand-blue transition-[height] duration-300 ${
+            isScrolled ? "h-28" : "h-32"
           }`}
           href="/"
         >
-          <Logo className="h-full w-full" />
+          <Logo
+            className={`w-full transition-[height] duration-300 ${
+              isScrolled ? "h-full min-[960px]:h-32" : "h-full"
+            }`}
+          />
           <span className="sr-only">Digital Ground Game</span>
         </Link>
 
@@ -166,9 +170,15 @@ export function SiteHeader() {
           </div>
         </details>
 
-        <div className="hidden w-full shrink-0 justify-stretch gap-3 min-[960px]:grid min-[960px]:w-40">
+        <div
+          className={`hidden w-full shrink-0 justify-stretch transition-[gap,width] duration-300 min-[960px]:grid ${
+            isScrolled ? "gap-2 min-[960px]:w-36" : "gap-3 min-[960px]:w-40"
+          }`}
+        >
           <ButtonLink
-            className="w-full justify-start"
+            className={`w-full justify-start transition-[padding] duration-300 ${
+              isScrolled ? "!px-4 !py-2" : ""
+            }`}
             href="https://discord.gg/digitalgroundgame"
             primaryHover="blue-black"
             rel="noopener noreferrer"
@@ -178,7 +188,9 @@ export function SiteHeader() {
             Join In
           </ButtonLink>
           <ButtonLink
-            className="w-full justify-start"
+            className={`w-full justify-start transition-[padding] duration-300 ${
+              isScrolled ? "!px-4 !py-2" : ""
+            }`}
             href="https://secure.actblue.com/donate/dgg"
             primaryHover="red-black"
             rel="noopener noreferrer"
