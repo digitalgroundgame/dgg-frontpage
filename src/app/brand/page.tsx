@@ -138,16 +138,12 @@ This paragraph includes **bold text**, _italic text_, ~~struck text~~, \`inline 
 
 - [x] Completed task
 - [ ] Open task
-
+---
 | Syntax | Rendered result |
 | --- | --- |
 | **Bold** | Strong emphasis |
 | _Italic_ | Light emphasis |
-| \`code\` | Inline code |
-
----
-
-![DGG group photo](/group-wide.webp)`;
+| \`code\` | Inline code |`;
 
 export default function BrandPage() {
   return (
