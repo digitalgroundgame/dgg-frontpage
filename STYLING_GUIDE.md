@@ -6,7 +6,7 @@ Use the CSS variables in `src/app/globals.css` for all routine color choices.
 
 - `--color-brand-blue`: `#1144FF`
 - `--color-dark-blue`: `#123EDE`
-- `--color-near-white-blue`: `#EEF2FF`
+- `--color-near-white-blue`
 - `--color-accent-red`: `#FF0F43`
 - `--color-charcoal`: `#242424`
 - `--color-light-charcoal`: `#333333`

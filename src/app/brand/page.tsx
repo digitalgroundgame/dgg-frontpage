@@ -26,7 +26,7 @@ const colors = [
   },
   {
     name: "Near White Blue",
-    hex: "#EEF2FF",
+    hex: "#FBFCFF",
     variable: "--color-near-white-blue",
     textClass: "text-near-white-blue",
     bgClass: "bg-near-white-blue",

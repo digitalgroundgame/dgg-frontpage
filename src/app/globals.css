@@ -3,7 +3,7 @@
 :root {
     --color-brand-blue: #1144ff;
     --color-dark-blue: #123ede;
-    --color-near-white-blue: #eef2ff;
+    --color-near-white-blue: #fbfcff;
     --color-accent-red: #ff0f43;
     --color-charcoal: #242424;
     --color-light-charcoal: #333333;
@@ -23,12 +23,12 @@
     --color-charcoal: var(--color-charcoal);
     --color-light-charcoal: var(--color-light-charcoal);
     --color-black: var(--color-black);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-roboto-condensed);
-  --font-mono: var(--font-roboto-condensed);
-  --font-button: var(--font-button-active);
-  --font-roboto: var(--font-roboto);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-roboto-condensed);
+    --font-mono: var(--font-roboto-condensed);
+    --font-button: var(--font-button-active);
+    --font-roboto: var(--font-roboto);
 }
 
 body {
@@ -93,33 +93,34 @@ p {
 }
 
 .type-label {
-  font-family: var(--font-roboto-condensed), Helvetica, sans-serif;
-  font-size: 1.25rem;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+    font-family: var(--font-roboto-condensed), Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 .type-button {
-  font-family: var(--font-button-active), var(--font-roboto-condensed),
-    Helvetica, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: 1.5rem;
+    font-family:
+        var(--font-button-active), var(--font-roboto-condensed), Helvetica,
+        sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5rem;
 }
 
 .overflow-wrap-anywhere {
-  overflow-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .social-embed-card iframe[src*="tiktok.com"] {
-  display: block !important;
-  height: 480px !important;
-  max-width: 40rem !important;
-  margin-inline: auto !important;
-  position: static !important;
-  visibility: visible !important;
-  width: min(100%, 40rem) !important;
+    display: block !important;
+    height: 480px !important;
+    max-width: 40rem !important;
+    margin-inline: auto !important;
+    position: static !important;
+    visibility: visible !important;
+    width: min(100%, 40rem) !important;
 }
 
 @media (min-width: 40rem) {
