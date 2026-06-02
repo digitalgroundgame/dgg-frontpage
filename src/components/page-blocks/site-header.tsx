@@ -55,18 +55,18 @@ export function SiteHeader() {
     <header className="relative z-40 bg-near-white-blue">
       <nav
         aria-label="Primary"
-        className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-5 px-8 py-5 sm:px-12 lg:px-20 min-[960px]:justify-between"
+        className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-5 px-8 py-5 sm:px-12 lg:px-20 header-desktop:justify-between"
       >
         <Link
           aria-label="Digital Ground Game home"
-          className="flex h-32 w-[215px] shrink-0 items-center text-brand-blue"
+          className="flex h-32 w-fit shrink-0 items-center text-brand-blue"
           href="/"
         >
-          <Logo className="h-[calc(100%-1rem)] w-full" />
+          <Logo className="h-[calc(100%-1rem)] w-auto" />
           <span className="sr-only">Digital Ground Game</span>
         </Link>
 
-        <div className="hidden gap-2 min-[960px]:grid min-[960px]:flex-1">
+        <div className="hidden gap-2 header-desktop:grid header-desktop:flex-1">
           <div className="grid text-xl font-bold text-charcoal xl:text-2xl">
             {primaryNavRows.map((row, index) => (
               <div
@@ -104,7 +104,7 @@ export function SiteHeader() {
 
         <details
           className={`group fixed right-6 top-6 z-50 ${
-            isScrolled ? "min-[960px]:block" : "min-[960px]:hidden"
+            isScrolled ? "header-desktop:block" : "header-desktop:hidden"
           }`}
           ref={mobileMenuRef}
         >
@@ -164,9 +164,7 @@ export function SiteHeader() {
           </div>
         </details>
 
-        <div
-          className="hidden w-full shrink-0 justify-stretch gap-3 min-[960px]:grid min-[960px]:w-40"
-        >
+        <div className="hidden w-full shrink-0 justify-stretch gap-3 header-desktop:grid header-desktop:w-40">
           <ButtonLink
             className="w-full justify-start"
             href="https://discord.gg/digitalgroundgame"
