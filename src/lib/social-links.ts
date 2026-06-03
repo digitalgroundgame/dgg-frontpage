@@ -27,6 +27,10 @@ export const socialLinks = [
     icon: "logo-linkedin",
   },
   {
+    label: "Bluesky",
+    href: "https://bsky.app/profile/digitalgroundgame.org",
+  },
+  {
     label: "Threads",
     href: "https://www.threads.com/@digitalgroundgame",
   },

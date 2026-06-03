@@ -13,6 +13,7 @@ const socialLinks: { label: string; href: string; icon: SocialIconName }[] = [
   { label: "YouTube", href: "https://www.youtube.com/@DigitalGroundGame", icon: "youtube" },
   { label: "Instagram", href: "https://www.instagram.com/digitalgroundgame", icon: "instagram" },
   { label: "LinkedIn", href: "https://digitalgroundgame.org/website/social/linkedin", icon: "linkedin" },
+  { label: "Bluesky", href: "https://bsky.app/profile/digitalgroundgame.org", icon: "bluesky" },
   { label: "Threads", href: "https://www.threads.com/@digitalgroundgame", icon: "threads" },
 ];
 

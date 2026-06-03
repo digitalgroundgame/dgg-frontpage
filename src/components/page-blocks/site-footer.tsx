@@ -7,6 +7,7 @@ const followLinks = [
   { label: "Instagram", href: "https://www.instagram.com/digitalgroundgame" },
   { label: "TikTok", href: "https://www.tiktok.com/@digitalgroundgame" },
   { label: "LinkedIn", href: "https://digitalgroundgame.org/website/social/linkedin" },
+  { label: "Bluesky", href: "https://bsky.app/profile/digitalgroundgame.org" },
   { label: "Threads", href: "https://www.threads.com/@digitalgroundgame" },
 ];
 
