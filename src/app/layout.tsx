@@ -42,6 +42,9 @@ export const metadata: Metadata = {
   title: "Digital Ground Game",
   description:
     "Digital Ground Game is a national, community-driven movement defending democracy through practical political action.",
+  openGraph: {
+    images: "/dgg-og-image.png",
+  },
 };
 
 export default function RootLayout({
