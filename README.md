@@ -22,21 +22,14 @@ Install dependencies:
 pnpm install
 ```
 
-Run the Next.js app:
+Run the Next.js and admin apps:
 
 ```bash
-pnpm dev
+pnpm dev:all
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
 
-Run the Decap CMS local backend in a second terminal when editing content locally:
-
-```bash
-pnpm cms
-```
-
-Then open [http://localhost:3000/admin/](http://localhost:3000/admin/).
 
 ## Checks
 
