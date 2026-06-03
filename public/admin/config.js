@@ -214,6 +214,26 @@ const collections = [
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
     fields: photoFields,
   },
+  {
+    name: "links",
+    label: "Links Page",
+    folder: "content/links",
+    create: true,
+    slug: "{{slug}}",
+    identifier_field: "title",
+    summary: "{{title}}",
+    fields: [
+      { label: "Title", name: "title", widget: "string" },
+      { label: "URL", name: "href", widget: "string" },
+      {
+        label: "Sort Order",
+        name: "order",
+        widget: "number",
+        required: false,
+        default: 0,
+      },
+    ],
+  },
 ].sort((a, b) => a.label.localeCompare(b.label));
 
 const productionHosts = ["digitalgroundgame.org", "beta.digitalgroundgame.org"];
