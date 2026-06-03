@@ -1,9 +1,10 @@
 import { BrandCtaSection } from "@/components/page-blocks/brand-cta-section";
 import { ButtonLink } from "@/components/widgets/button-link";
-import { PixelIcon, type PixelIconName } from "@/components/widgets/pixel-icon";
+import { PixelIcon } from "@/components/widgets/pixel-icon";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
 import { TikTokCreatorEmbed } from "@/components/widgets/tiktok-creator-embed";
+import { socialLinks } from "@/lib/social-links";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -37,42 +38,6 @@ const initiatives = [
       "Every effort contributes to real, tangible results in defending democracy and advancing liberal values.",
   },
 ];
-
-const socialFeeds = [
-  {
-    label: "Facebook",
-    href: "https://www.facebook.com/digitalgroundgame",
-    icon: "logo-social-media-facebook-circle",
-  },
-  {
-    label: "X",
-    href: "https://x.com/digitalgroundg/",
-    icon: "logo-social-media-twitter-circle",
-  },
-  {
-    label: "YouTube",
-    href: "https://www.youtube.com/@DigitalGroundGame",
-    icon: "logo-social-media-youtube",
-  },
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/digitalgroundgame",
-    icon: "logo-social-media-instagram",
-  },
-  {
-    label: "LinkedIn",
-    href: "https://digitalgroundgame.org/website/social/linkedin",
-    icon: "logo-linkedin",
-  },
-  {
-    label: "Threads",
-    href: "https://www.threads.com/@digitalgroundgame",
-  },
-] satisfies {
-  label: string;
-  href: string;
-  icon?: PixelIconName;
-}[];
 
 export default function Home() {
   return (
@@ -178,7 +143,7 @@ export default function Home() {
           <div className="mt-10 grid justify-items-center gap-6">
             <TikTokCreatorEmbed />
             <div className="flex flex-wrap justify-center gap-3">
-              {socialFeeds.map((feed) => (
+              {socialLinks.map((feed) => (
                 <ButtonLink
                   className="px-4"
                   href={feed.href}

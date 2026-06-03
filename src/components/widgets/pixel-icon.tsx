@@ -16,6 +16,7 @@ type PixelIconName =
   | "logo-linkedin"
   | "logo-social-media-facebook-circle"
   | "logo-social-media-instagram"
+  | "logo-social-media-tiktok"
   | "logo-social-media-twitter-circle"
   | "logo-social-media-youtube"
   | "user-man-love";
@@ -129,6 +130,24 @@ const pixelIconPaths: Record<
       "M27.42 4.57H25.9V3.05H6.09v1.52H4.57v1.52H3.04V25.9h1.53v1.53h1.52v1.52H25.9v-1.52h1.52V25.9h1.53V6.09h-1.53ZM25.9 24.38h-1.52v1.52H7.61v-1.52H6.09V7.62h1.52V6.09h16.77v1.53h1.52Z",
       "M21.33 7.62h3.05v3.05h-3.05Z",
       "M21.33 12.19h-1.52v-1.52h-7.62v1.52h-1.53v1.52H9.14v7.62h1.52v1.53h1.53v1.52h7.62v-1.52h1.52v-1.53h1.52v-7.62h-1.52Zm-1.52 7.62h-1.53v1.52h-4.57v-1.52h-1.52v-4.57h1.52v-1.53h4.57v1.53h1.53Z",
+      "M3.04 0h25.91v1.52H3.04Z",
+      "M1.52 28.95h1.52v1.53H1.52Z",
+      "M1.52 1.52h1.52v1.53H1.52Z",
+      "M0 3.05h1.52v25.9H0Z",
+    ],
+  },
+  "logo-social-media-tiktok": {
+    title: "logo-social-media-tiktok",
+    desc: "Logo Social Media Tiktok Streamline Icon: https://streamlinehq.com",
+    paths: [
+      "M30.47 3.05H32v25.9h-1.53Z",
+      "M28.95 28.95h1.52v1.53h-1.52Z",
+      "M28.95 1.52h1.52v1.53h-1.52Z",
+      "M3.04 30.48h25.91V32H3.04Z",
+      "M27.42 9.14h-3.04v1.53h-1.53V9.14h-1.52V7.62h-1.52V6.09h1.52V4.57h-1.52V3.05h-3.05v1.52h-1.53v18.29h-1.52v1.52h-3.05v-1.52H9.14v-6.1h1.52v-1.52h1.53v-4.57H7.61v1.52H6.09v1.52H4.57v1.53H3.04v7.62h1.53v-6.1h1.52v-1.52h1.52v-1.53h1.53v1.53H7.61v1.52H6.09v6.1H4.57v3.04h1.52v-1.52h1.52v1.52h1.53v1.53H7.61v1.52h9.15v-1.52h1.52V25.9h1.53v-1.52h1.52V13.71h1.52v1.53h4.57v-1.53h1.53v-3.04h-1.53Zm-7.61 13.72h-1.53V12.19h1.53Z",
+      "M22.85 7.62h1.53v1.52h-1.53Z",
+      "M21.33 6.09h1.52v1.53h-1.52Z",
+      "M6.09 25.9h1.52v1.53H6.09Z",
       "M3.04 0h25.91v1.52H3.04Z",
       "M1.52 28.95h1.52v1.53H1.52Z",
       "M1.52 1.52h1.52v1.53H1.52Z",
