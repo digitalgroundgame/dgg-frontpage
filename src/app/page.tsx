@@ -1,6 +1,6 @@
 import { BrandCtaSection } from "@/components/page-blocks/brand-cta-section";
 import { ButtonLink } from "@/components/widgets/button-link";
-import { PixelIcon } from "@/components/widgets/pixel-icon";
+import { PixelIcon, type PixelIconName } from "@/components/widgets/pixel-icon";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
 import { TikTokCreatorEmbed } from "@/components/widgets/tiktok-creator-embed";

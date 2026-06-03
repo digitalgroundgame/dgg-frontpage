@@ -1,11 +1,15 @@
 import { ButtonLink } from "@/components/widgets/button-link";
 import { Logo } from "@/components/widgets/logo";
-import { PixelIcon } from "@/components/widgets/pixel-icon";
+import { PixelIcon, type PixelIconName } from "@/components/widgets/pixel-icon";
 import { getCallToActionDispatchEntries } from "@/lib/call-to-action-dispatch";
 import { socialLinks } from "@/lib/social-links";
 import type { Metadata } from "next";
 
-const linkInBioSocialLinks = [
+const linkInBioSocialLinks: {
+  label: string;
+  href: string;
+  icon?: PixelIconName;
+}[] = [
   {
     label: "TikTok",
     href: "https://www.tiktok.com/@digitalgroundgame",
