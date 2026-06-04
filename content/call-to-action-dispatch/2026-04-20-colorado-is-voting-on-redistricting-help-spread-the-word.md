@@ -14,7 +14,7 @@ authors:
 
 [Learn more about CO-ERRA](https://www.redistrict.co/about)
 
-![Colorado Election Rigging Response Act graphic](/uploads/co-redistrict-1.png)
+![Colorado Election Rigging Response Act graphic](/uploads/co-redistrict-1.webp)
 
 ## Are You a Resident of Colorado? Getting Involved is Easy!
 
@@ -22,7 +22,7 @@ Contact your representatives. Follow the link below to use [Redistrict Colorado'
 
 [Get involved here](https://www.redistrict.co/contactreps)
 
-![Redistrict Colorado representative outreach graphic](/uploads/co-redistrict-2.png)
+![Redistrict Colorado representative outreach graphic](/uploads/co-redistrict-2.webp)
 
 ## Don't Live in Colorado? We Need You to Spread the Word!
 
@@ -35,7 +35,7 @@ Follow [Redistrict Colorado's](https://www.tiktok.com/@redistrict.co) social med
 - [Instagram](https://www.instagram.com/redistrict.co)
 - [Facebook](https://www.facebook.com/people/Colorado-Election-Rigging-Response-Act/61583368126371/)
 
-![Redistrict Colorado social media graphic](/uploads/co-redistrict-3.png)
+![Redistrict Colorado social media graphic](/uploads/co-redistrict-3.webp)
 
 ## Redistrict Colorado is Hard at Work on the Streets Working to Get This Passed.
 
