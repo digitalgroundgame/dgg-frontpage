@@ -1,5 +1,5 @@
 ---
 title: Register to vote from abroad →
 href: /vote
-order: 0
+order: 3
 ---
