@@ -4,7 +4,7 @@ date: 2026-06-03T12:53:00.000-07:00
 heroFilter: true
 heroTextDark: false
 ---
-# **🌎 West Region Dispatch – Regional & Organizational Update**
+# **🌎 West Region Dispatch**
 
 ---
 
