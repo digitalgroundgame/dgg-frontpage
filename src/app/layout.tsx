@@ -69,7 +69,9 @@ export default function RootLayout({
           gtag('config', 'G-1980CC3Z00');
         `}
       </Script>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <div className="mx-auto w-full max-w-[1440px]">{children}</div>
+      </body>
     </html>
   );
 }
