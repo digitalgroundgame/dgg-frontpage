@@ -203,7 +203,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden px-8 py-16 text-near-white-blue sm:px-12 lg:px-20">
+      <section className="relative overflow-hidden px-8 py-28 md:py-32 text-near-white-blue sm:px-12 lg:px-20">
         <div
           aria-hidden="true"
           className="absolute inset-0 bg-charcoal [clip-path:polygon(0_0,100%_0,100%_67%,0_100%)]"

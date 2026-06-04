@@ -22,10 +22,10 @@ export function BrandCtaSection({
   cta,
 }: BrandCtaSectionProps) {
   return (
-    <section className="relative overflow-hidden bg-brand-blue px-8 py-16 text-near-white-blue sm:px-12 lg:px-20">
+    <section className="relative overflow-hidden bg-brand-blue px-8 py-16 sm:py-28 text-near-white-blue sm:px-12 lg:px-20">
       <div
         aria-hidden="true"
-        className="absolute -bottom-[78%] -left-48 aspect-square h-[180%] min-h-[36rem] rounded-full bg-dark-blue"
+        className="absolute -bottom-[88%] -left-68 aspect-square h-[180%] min-h-[36rem] rounded-full bg-dark-blue"
       />
       <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-start">
         <div>
