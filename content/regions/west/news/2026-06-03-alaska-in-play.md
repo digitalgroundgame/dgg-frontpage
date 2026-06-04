@@ -193,12 +193,12 @@ Primaries took place last night across 6 states including California which our n
 
 ## **🏛️ Dan Sullivan Ethics Questions**
 
-Senator Dan Sullivan has come under criticism after allegations of self-enrichment tied to a reported $5 million stake in a chemical company that may have benefited from votes he supported.
+Senator Dan Sullivan has come under criticism after [allegations of self-enrichment](https://americanjournalnews.com/new-memo-accuses-gop-senate-hopefuls-of-self-enrichment/) tied to a reported $5 million stake in a chemical company that may have benefited from votes he supported.
 
 
 ## **🎤 Tom Begich Virtual Town Hall**
 
-A virtual town hall featuring gubernatorial candidate Tom Begich is scheduled for June 4.
+A [virtual town hall](https://alaskademocrats.org/event/tom-begich-virtual-townhall-meet-the-lt-gov/) featuring gubernatorial candidate Tom Begich is scheduled for June 4.
 
 
 ## **🗳️ Alaska Primary Information**
@@ -207,8 +207,7 @@ Important dates:
 
 - Voter Registration Deadline: July 19
 - Primary Election: August 18
-
-Now is a good time for Alaskans to verify registration status and begin reviewing candidates.
+- You can find a list of candidates [here](https://www.elections.alaska.gov/candidates/?election=26prim)
 
 
 ## **🏳️ Pride Events**
@@ -229,7 +228,7 @@ Utah primaries for contested races not decided at convention are approaching on 
 
 Key dates:
 
-- Registration deadline: June 12
+- [Registration](https://vote.utah.gov/current-election-information/) deadline: June 12
 - Mail ballots begin arriving June 2
 
 Same-day registration remains available with proper identification.
@@ -259,7 +258,7 @@ The race for Utah’s new blue Salt Lake City congressional district is entering
 
 Recent developments include:
 
-- Candidate debates
+- Candidate [debate](youtube.com/watch?v=xCAyQ9wiaPA&list=PLJLCCRyZhkaY7c3JUre4fGbQ3VGRwdFdS&index=4&themeRefresh=1) on May 27 (Thank You Utah Debate Comission!)
 - Increased campaigning
 - Calls for progressive consolidation
 - The usual late-primary mudslinging
@@ -268,9 +267,7 @@ Recent developments include:
 
 ## **😂 Utah Oddity of the Week**
 
-A surprisingly dramatic Lego theft saga is currently unfolding in Utah County.
-
-Some stories are simply too Utah not to mention.
+There’s a [lego heist](https://www.ksl.com/article/51505848/viral-videos-allege-pricey-lego-theft-heres-how-utah-police-entered-the-conversation) playing out down in Happy Valley (Utah County) which feels like a fairly Utah coded thing to be going down 
 
 ---
 
@@ -278,7 +275,7 @@ Some stories are simply too Utah not to mention.
 
 ## **⚖️ DOJ Lawsuit**
 
-Washington is one of four states currently facing federal lawsuits related to restrictions on undercover license plates.
+[Washington](https://www.spokesman.com/stories/2026/may/28/trump-administration-sues-washington-over-refusal-/) is one of [four states](https://www.pbs.org/newshour/politics/trumps-doj-sues-4-democratic-run-states-over-denying-undercover-license-plates-for-federal-agents)  currently facing federal lawsuits related to restrictions on undercover license plates.
 
 
 
@@ -286,13 +283,13 @@ Washington is one of four states currently facing federal lawsuits related to re
 
 Washington’s Health Benefit Exchange has seen approximately a 13% decline in enrollment.
 
-Rural communities appear to be experiencing the largest impacts.
+Rural communities appear to be [experiencing the largest impacts](https://washingtonstatestandard.com/2026/06/01/where-affordable-care-act-insurance-coverage-has-dropped-most-in-wa/).
 
 
 
 ## **⚖️ Spokane 3 Verdict**
 
-The remaining defendants from the original Spokane 9 case were recently convicted on various conspiracy-related charges after a lengthy legal process.
+The remaining defendants from the [original Spokane 9](https://www.spokesman.com/stories/2025/sep/21/the-arrest-of-the-spokane-9-stained-by-accusations/) case were [recently convicted](https://www.rangemedia.co/spokane-3-trial-protesters-federal-conspiracy-political-prosecution/) on various conspiracy-related charges after a lengthy legal process.
 
 ---
 
