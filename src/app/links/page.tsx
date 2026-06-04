@@ -7,14 +7,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 const socialLinks: { label: string; href: string; icon: SocialIconName }[] = [
+  { label: "Instagram", href: "https://www.instagram.com/digitalgroundgame", icon: "instagram" },
+  { label: "X", href: "https://x.com/digitalgroundg/", icon: "x" },
+  { label: "Threads", href: "https://www.threads.com/@digitalgroundgame", icon: "threads" },
+  { label: "Bluesky", href: "https://bsky.app/profile/digitalgroundgame.org", icon: "bluesky" },
   { label: "TikTok", href: "https://www.tiktok.com/@digitalgroundgame", icon: "tiktok" },
   { label: "Facebook", href: "https://www.facebook.com/digitalgroundgame", icon: "facebook" },
-  { label: "X", href: "https://x.com/digitalgroundg/", icon: "x" },
-  { label: "YouTube", href: "https://www.youtube.com/@DigitalGroundGame", icon: "youtube" },
-  { label: "Instagram", href: "https://www.instagram.com/digitalgroundgame", icon: "instagram" },
   { label: "LinkedIn", href: "https://digitalgroundgame.org/website/social/linkedin", icon: "linkedin" },
-  { label: "Bluesky", href: "https://bsky.app/profile/digitalgroundgame.org", icon: "bluesky" },
-  { label: "Threads", href: "https://www.threads.com/@digitalgroundgame", icon: "threads" },
+  { label: "Discord", href: "https://discord.gg/digitalgroundgame", icon: "discord" },
+  { label: "YouTube", href: "https://www.youtube.com/@DigitalGroundGame", icon: "youtube" },
+  { label: "Twitch", href: "https://www.twitch.tv/digitalgroundgame", icon: "twitch" },
 ];
 
 export const metadata: Metadata = {
@@ -63,7 +65,7 @@ export default function LinkInBioPage() {
           ))}
         </div>
 
-        <div className="mt-8 flex items-center justify-center gap-4">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           {socialLinks.map(({ label, href, icon }) => (
             <a
               aria-label={label}
