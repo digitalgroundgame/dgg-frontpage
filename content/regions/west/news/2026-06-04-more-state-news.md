@@ -1,10 +1,10 @@
 ---
 title: More State News!
-date: 2026-06-03T19:53:00.000-07:00
+date: 2026-06-03T12:53:00.000-07:00
 heroFilter: true
 heroTextDark: false
 ---
-# **🌎 West Region Dispatch – Regional & Organizational Update**
+# **🌎 West Region Dispatch**
 
 ---
 
@@ -45,7 +45,6 @@ Recent highlights:
 
 The Media Team is currently looking for another social media manager to help execute content strategy on BlueSky.
 
----
 
 ## **🏳️ Pride Month Content**
 
@@ -64,7 +63,6 @@ Current focus:
 	- Looking for volunteers to assist with the research process
 	- Targeting a **mid-June move-in date** for both locations.
 
----
 
 ## **🤝 Relational Organizing Team**
 
@@ -77,7 +75,6 @@ The team is still recruiting members with experience in:
 - Database systems
 - Software development
 
----
 
 ## **📊 Project MAD**
 
@@ -116,7 +113,6 @@ These server event citizen panels are meant to be a test run for real live citiz
 
 Long-term goal is to have them regularly and they're targeting to have their first live one in August.
 
----
 
 ## **🎓 Workshops in Development**
 
@@ -126,7 +122,6 @@ Several educational workshops are currently being developed:
 - How to Phonebank
 - Resume Builder Workshop
 
----
 
 ## **🩸 Blood on the Clocktower**
 
@@ -136,7 +131,6 @@ Current schedule is Friday through Sunday depending on player availability
 
 More players are welcome!
 
----
 
 ## **🎬 Movie Nights**
 
@@ -188,7 +182,6 @@ Even the mayor of a relatively small Southern California city says he regularly 
 
 🔥 One memorable voter interaction involved a Hispanic voter who joked that if Trump’s proposed $250 bill ever became real and someone handed him one, he would rather burn it than actually spend it.
 
----
 
 ## **🗳️ Primary Elections**
 
@@ -202,13 +195,11 @@ Primaries took place last night across 6 states including California which our n
 
 Senator Dan Sullivan has come under criticism after allegations of self-enrichment tied to a reported $5 million stake in a chemical company that may have benefited from votes he supported.
 
----
 
 ## **🎤 Tom Begich Virtual Town Hall**
 
 A virtual town hall featuring gubernatorial candidate Tom Begich is scheduled for June 4.
 
----
 
 ## **🗳️ Alaska Primary Information**
 
@@ -219,7 +210,6 @@ Important dates:
 
 Now is a good time for Alaskans to verify registration status and begin reviewing candidates.
 
----
 
 ## **🏳️ Pride Events**
 
@@ -244,7 +234,6 @@ Key dates:
 
 Same-day registration remains available with proper identification.
 
----
 
 ## **📰 Salt Lake Tribune**
 
@@ -254,7 +243,7 @@ The Salt Lake Tribune has removed its paywall and is transitioning toward a supp
 
 If you value independent journalism and are able to contribute, consider supporting their work.
 
----
+
 
 ## **🏗️ Stratos Data Center**
 
@@ -262,7 +251,7 @@ Debates, investigations, and protests surrounding the proposed Stratos data cent
 
 Despite ongoing controversy, the project currently remains on track.
 
----
+
 
 ## **🏛️ CD1 Race Heats Up**
 
@@ -275,7 +264,7 @@ Recent developments include:
 - Calls for progressive consolidation
 - The usual late-primary mudslinging
 
----
+
 
 ## **😂 Utah Oddity of the Week**
 
@@ -291,7 +280,7 @@ Some stories are simply too Utah not to mention.
 
 Washington is one of four states currently facing federal lawsuits related to restrictions on undercover license plates.
 
----
+
 
 ## **🏥 Health Coverage Declines**
 
@@ -299,7 +288,7 @@ Washington’s Health Benefit Exchange has seen approximately a 13% decline in e
 
 Rural communities appear to be experiencing the largest impacts.
 
----
+
 
 ## **⚖️ Spokane 3 Verdict**
 
