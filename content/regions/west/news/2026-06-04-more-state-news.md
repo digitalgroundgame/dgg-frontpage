@@ -22,7 +22,7 @@ One of the goals of this newsletter has been to turn it a useful source of infor
 
 ### ☀️ California Contributor – Forward-Form93
 
-- California already receives significant organizing attention from the West Region but we now he'll be helping to provide regular updates as well on on state politics, elections, legislation, and organizing opportunities that Californians should know about.
+- California already receives significant organizing attention from the West Region but now he'll be helping to provide regular updates as well on state politics, elections, legislation, and organizing opportunities that Californians should know about.
 - He's been wanting to help with organizing in person but isn't able to at the moment so he decided to volunteer to help with the newsletter. Just shows that contributing can come in whatever form best fits our circumstances.
 
 Thank you both for stepping up!
@@ -95,7 +95,7 @@ Special shoutout to Emily from our West Region, who has done tremendous work ide
 
 As you can probably tell from looking at this page, the Digital Ground Game website recently received another visual refresh.
 
-This work is happening alongside a broader migration to a new tech stack on the backend
+This work is happening alongside a broader migration to a new tech stack on the backend.
 
 ---
 
@@ -111,7 +111,7 @@ Interested participants should contact PJ.
 
 These server event citizen panels are meant to be a test run for real live citizen panels featuring Americans across the country.
 
-Long-term goal is to have them regularly and they're targeting to have their first live one in August.
+Long-term goal is to have them regularly, and they're targeting to have their first live one in August.
 
 
 ## **🎓 Workshops in Development**
@@ -125,7 +125,7 @@ Several educational workshops are currently being developed:
 
 ## **🩸 Blood on the Clocktower**
 
-A limited-run Blood on the Clocktower event is underway.
+A limited-run **Blood on the Clocktower** event is underway.
 
 Current schedule is Friday through Sunday depending on player availability
 
@@ -146,8 +146,8 @@ The Outreach Team has officially been renamed to **Partnerships Team**
 - Recent successes include arranging interviews with Dylan and UkrainianAna
 - A new [**Project Intake Form**](https://forms.clickup.com/90141229985/f/2kydc0x1-4274/BLAZW1B7XB8S30LGJV) is now available.
 - Creator develoment meetings are ongoing
-	- Ryan Geddie has high support for us. Will be doing a fundraiser for Libcon which many of us will be attending
-	- Kraut also is working with us and may be mentioning us in an upcoming video
+  - Ryan Geddie has high support for us. Will be doing a fundraiser for Libcon which many of us will be attending
+  - Kraut also is working with us and may be mentioning us in an upcoming video
 
 ### **🎯 Current Outreach Targets**
 
@@ -172,9 +172,9 @@ Four members from the server attended another canvassing event for Derek Tran in
 
 📸 We were able to take a group photo with Derek Tran himself.
 
-There’s a decent chance the campaign will end up posting it somewhere.
+Guessing the campaign will end up posting it somewhere on their site or in email/media updates.
 
-🏛️ We also met the Mayor of Cypress while canvassing.
+🏛️ We also met the Mayor of Cypress who was also volunteering to canvass.
 
 One funny takeaway:
 
