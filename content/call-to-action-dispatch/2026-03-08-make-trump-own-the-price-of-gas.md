@@ -16,7 +16,7 @@ Learn how to quickly make and order stickers!
 
 Just right click on the image and select "save image" to get what you want!
 
-![Trump gas sticker - color version](/uploads/trump-gas-sticker-color.png)
+![Trump gas sticker - color version](/uploads/trump-gas-sticker-color.webp)
 
 ![Decrepit Trump sticker](/uploads/decrepit-trump-sticker.png)
 
