@@ -1,5 +1,5 @@
 ---
-title: Vote From Abroad
-href: /call-to-action/2026-05-02-register-to-vote-from-abroad-dgg-x-democrats-abroad-partnership
+title: Register to vote from abroad →
+href: /vote
 order: 0
 ---
