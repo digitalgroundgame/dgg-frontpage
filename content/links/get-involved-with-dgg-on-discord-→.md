@@ -1,5 +1,5 @@
 ---
 title: Get involved with DGG on Discord! →
 href: discord.gg/digitalgroundgame
-order: 0
+order: 4
 ---
