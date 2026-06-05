@@ -55,6 +55,9 @@ export function markdownComponents(invert = false): Components {
     blockquote: ({ children }) => (
       <blockquote className={blockquoteClass}>{children}</blockquote>
     ),
+    hr: () => (
+      <hr className="mb-9 mt-8 mx-30 border-0 border-t-1 border-[#A6B9FF]" />
+    ),
     table: ({ children }) => (
       <div className="mt-6 w-full overflow-x-auto">
         <table className="mx-auto w-auto border-separate border-spacing-0 text-left text-base leading-7">
@@ -71,9 +74,7 @@ export function markdownComponents(invert = false): Components {
       </th>
     ),
     td: ({ children }) => (
-      <td className="px-4 py-3 align-top first:pl-0 last:pr-0">
-        {children}
-      </td>
+      <td className="px-4 py-3 align-top first:pl-0 last:pr-0">{children}</td>
     ),
     a: ({ children, href }) => (
       <a
