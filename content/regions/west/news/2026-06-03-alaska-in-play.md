@@ -3,6 +3,8 @@ title: Alaska in Play
 date: 2026-06-03T12:27:00.000-07:00
 heroFilter: true
 heroTextDark: false
+authors:
+  - daniel-lee
 ---
 # **🏛️ Serverwide Updates**
 
