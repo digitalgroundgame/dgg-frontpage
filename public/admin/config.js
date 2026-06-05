@@ -232,6 +232,7 @@ const collections = [
         required: false,
         default: 0,
       },
+      { label: "Body", name: "body", widget: "hidden", default: "" },
     ],
   },
 ].sort((a, b) => a.label.localeCompare(b.label));
