@@ -1,5 +1,6 @@
 import { AuthorAvatar } from "@/components/widgets/author-avatar";
 import { BlogMarkdown } from "@/components/page-blocks/blog-markdown";
+import { LocalDate } from "@/components/widgets/local-date";
 import type { Author } from "@/lib/authors";
 import Image from "next/image";
 
@@ -69,12 +70,11 @@ export function Article({
             <div
               className={`absolute inset-x-0 bottom-0 p-5 sm:p-6 ${heroTextClassName}`}
             >
-              <time
+              <LocalDate
                 className={`type-label ${heroDateClassName}`}
                 dateTime={dateTime}
-              >
-                {formattedDate}
-              </time>
+                fallback={formattedDate}
+              />
               <TitleTag className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
                 {title}
               </TitleTag>
@@ -82,12 +82,11 @@ export function Article({
           </div>
         ) : (
           <div>
-            <time
+            <LocalDate
               className="type-label text-light-charcoal"
               dateTime={dateTime}
-            >
-              {formattedDate}
-            </time>
+              fallback={formattedDate}
+            />
             <TitleTag className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
               {title}
             </TitleTag>

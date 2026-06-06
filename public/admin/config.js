@@ -1,6 +1,12 @@
 const dispatchFields = [
   { label: "Title", name: "title", widget: "string" },
-  { label: "Publish Date", name: "date", widget: "datetime" },
+  {
+    label: "Publish Date",
+    name: "date",
+    widget: "datetime",
+    format: "YYYY-MM-DDTHH:mm:ss.SSSZ",
+    picker_utc: false,
+  },
   {
     label: "Hero Photo",
     name: "heroPhoto",
