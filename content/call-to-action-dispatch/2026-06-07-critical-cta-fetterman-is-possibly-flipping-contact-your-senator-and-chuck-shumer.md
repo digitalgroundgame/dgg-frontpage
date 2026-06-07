@@ -2,7 +2,7 @@
 title: "Critical CTA: Fetterman is possibly flipping! Contact your Senator and
   Chuck Shumer!"
 date: 2026-06-07T12:00:00.000-05:00
-heroPhoto: /uploads/fetterman_1200x630.png
+heroPhoto: /uploads/fetterman_1200x630.webp
 heroFilter: true
 heroTextDark: false
 authors:
@@ -14,11 +14,11 @@ authors:
 
 ## Morning Joe covers Politico reporting on Republicans trying to flip Fetterman R
 
-{% two-column image="/uploads/keep_the_party_together.png" alt="" layout="image-left" %}
+{% two-column image="/uploads/keep_the_party_together.webp" alt="" layout="image-left" %}
 Reports have been circulating that Fetterman has been courted by two Republican senators, and Donald Trump has promised Fetterman an endorsement if he flips over to being a Republican! This can not be allowed to stand! We must contact our Democratic senators and ask them to socialize with Senator Fetterman as much as possible as to keep him part of the fold from now till 2028!
 {% /two-column %}
 
-{% two-column image="/uploads/better_with_us.png" alt="" layout="image-right" %}
+{% two-column image="/uploads/better_with_us.webp" alt="" layout="image-right" %}
 Even if we win the required 4 seats in the midterms, for the senate, we still need to make sure that we maintain our hold on the senate, and that does mean that we **HAVE** to cater to Fetterman in some way, whether that means we ask our senators to take him out to dinner/lunch, invite him out to extra-curricular events, etc... we need to keep him in the party, regardless of the feeling Democrats have of Fetterman.
 {% /two-column %}
 
