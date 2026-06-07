@@ -33,7 +33,7 @@ Even if we win the required 4 seats in the midterms, for the senate, we still ne
 
 \    1b.  When you are phone calling Schumer that you are using his Washington D.C. phone: [(202) 224-6542](tel:+12022246542)
 
-2. Phone call and Email your US Democratic senator to let them know that you want them to engage more with Fetterman both inside and outside of the office to make sure he stays a Democrat!
+2. Phone call and Email your US Democratic senator(s) to let them know that you want them to engage more with Fetterman both inside and outside of the office to make sure he stays a Democrat!
 
 \    2a. To find your senator if you don't know your own Democratic senators, use this link: <https://www.senate.gov/senators/senators-contact.htm>
 
