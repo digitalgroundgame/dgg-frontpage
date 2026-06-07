@@ -12,6 +12,8 @@ authors:
 
 ## Morning Joe covers Politico reporting on Republicans trying to flip Fetterman
 
+{% video url="https://www.youtube.com/watch?v=K-xV7AxmgMI" title="[Morning Joe speaks about Politico's article on the Fetterman flip]" %}
+
 {% two-column image="/uploads/keep_the_party_together.webp" alt="" layout="image-left" %}
 Reports have been circulating that Fetterman has been courted by two Republican senators, and Donald Trump has promised Fetterman an endorsement if he flips over to being a Republican! This can not be allowed to stand! We must contact our Democratic senators and ask them to socialize with Senator Fetterman as much as possible as to keep him part of the fold from now till 2028!
 {% /two-column %}
