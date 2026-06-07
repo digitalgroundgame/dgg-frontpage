@@ -50,4 +50,6 @@ Today I write you with both hope yet concern. I have hope that we will win the 2
 
 Best regards,
 
-Ulysses
+Ulysses\
+\
+To sum up, reach out to Chuck Schumer and your Senator and make sure they keep Fetterman a Democrat! We here at Digital Ground Game thank you for your effort in helping with your contribution to these CTA's. Image assets for this CTA created by our own digital team user maxwell!
