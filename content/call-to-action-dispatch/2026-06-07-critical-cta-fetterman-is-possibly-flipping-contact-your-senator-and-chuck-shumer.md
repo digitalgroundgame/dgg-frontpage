@@ -1,6 +1,6 @@
 ---
 title: "Critical CTA: Fetterman is possibly flipping! Contact your Senator and
-  Chuck Shumer!"
+  Chuck Schumer!"
 date: 2026-06-07T12:00:00.000-05:00
 heroPhoto: /uploads/fetterman_1200x630.webp
 heroFilter: true
