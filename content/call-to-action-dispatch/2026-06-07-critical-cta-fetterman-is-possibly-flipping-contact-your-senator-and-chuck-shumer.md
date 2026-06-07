@@ -55,3 +55,11 @@ Best regards,
 Ulysses\
 \
 To sum up, reach out to Chuck Schumer and your Senator and make sure they keep Fetterman a Democrat! We here at Digital Ground Game thank you for your effort in helping with your contribution to these CTA's. Image assets for this CTA created by our own digital team user maxwell!
+
+
+
+## Sample Phone call/voice mail
+
+Here is a sample voice mail/phone call script you can leave your senator/Chuck Schumer, **PLEASE DO NOT COPY THIS SAMPLE.** Your senator should hear from you, their constituent. Write it out in your own words and rehearse if you need to so it's clear, concise and to the point.
+
+Hi, my name is \[Your Name]. I'm calling to ask you to reach out to Senator Fetterman directly. Republicans are actively trying to flip him right now — Trump's offering endorsement and money. If Fetterman switches or goes independent, we lose Senate control in the midterms even if we win our target seats.Please contact him personally. Take him to dinner, invite him to events, keep him engaged with the party. We need to hold onto him.Thank you for your work on this.
