@@ -2,9 +2,9 @@ import type { PixelIconName } from "@/components/widgets/pixel-icon";
 
 export const socialLinks = [
   {
-    label: "Facebook",
-    href: "https://www.facebook.com/digitalgroundgame",
-    icon: "logo-social-media-facebook-circle",
+    label: "Instagram",
+    href: "https://www.instagram.com/digitalgroundgame",
+    icon: "logo-social-media-instagram",
   },
   {
     label: "X",
@@ -12,14 +12,17 @@ export const socialLinks = [
     icon: "logo-social-media-twitter-circle",
   },
   {
-    label: "YouTube",
-    href: "https://www.youtube.com/@DigitalGroundGame",
-    icon: "logo-social-media-youtube",
+    label: "Threads",
+    href: "https://www.threads.com/@digitalgroundgame",
   },
   {
-    label: "Instagram",
-    href: "https://www.instagram.com/digitalgroundgame",
-    icon: "logo-social-media-instagram",
+    label: "Bluesky",
+    href: "https://bsky.app/profile/digitalgroundgame.org",
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/digitalgroundgame",
+    icon: "logo-social-media-facebook-circle",
   },
   {
     label: "LinkedIn",
@@ -27,12 +30,14 @@ export const socialLinks = [
     icon: "logo-linkedin",
   },
   {
-    label: "Bluesky",
-    href: "https://bsky.app/profile/digitalgroundgame.org",
+    label: "YouTube",
+    href: "https://www.youtube.com/@DigitalGroundGame",
+    icon: "logo-social-media-youtube",
   },
   {
-    label: "Threads",
-    href: "https://www.threads.com/@digitalgroundgame",
+    label: "Twitch",
+    href: "https://www.twitch.tv/digitalgroundgame",
+    icon: "logo-social-media-twitch",
   },
 ] satisfies {
   label: string;
