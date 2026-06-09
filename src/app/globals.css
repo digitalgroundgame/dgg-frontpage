@@ -111,6 +111,14 @@ p {
     line-height: 1.5rem;
 }
 
+.type-button-condensed {
+    font-family: var(--font-roboto-condensed), Helvetica, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+
 .overflow-wrap-anywhere {
     overflow-wrap: break-word;
 }

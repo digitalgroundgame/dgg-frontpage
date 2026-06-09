@@ -45,6 +45,7 @@ export default function LinkInBioPage() {
         <div className="mt-8 grid gap-3">
           <ButtonLink
             className="w-full justify-center px-4"
+            condensed
             href="/call-to-action"
             primaryHover="red-black"
           >
@@ -54,6 +55,7 @@ export default function LinkInBioPage() {
           {linkEntries.map((entry) => (
             <ButtonLink
               className="w-full justify-center px-4"
+              condensed
               href={entry.href}
               key={entry.slug}
               primaryHover="blue-black"

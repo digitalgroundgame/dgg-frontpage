@@ -8,6 +8,7 @@ type PrimaryHover = "blue-black" | "black-blue" | "red-black";
 type ButtonLinkProps = {
   children: ReactNode;
   className?: string;
+  condensed?: boolean;
   href: string;
   primaryHover?: PrimaryHover;
 } & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "className" | "href">;
@@ -21,6 +22,7 @@ const primaryHoverClasses: Record<PrimaryHover, string> = {
 export function ButtonLink({
   children,
   className,
+  condensed,
   href,
   primaryHover = "blue-black",
   ...props
@@ -36,7 +38,8 @@ export function ButtonLink({
     <span className="col-span-2 whitespace-nowrap">{children}</span>
   );
   const classes = [
-    "type-button inline-grid grid-cols-[1.75rem_auto] items-center gap-2 px-5 py-3 transition",
+    "inline-grid grid-cols-[1.75rem_auto] items-center gap-2 px-5 py-3 transition",
+    condensed ? "type-button-condensed" : "type-button",
     primaryHoverClasses[primaryHover],
     className,
   ]
