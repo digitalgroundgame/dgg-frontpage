@@ -18,8 +18,6 @@ authors:
 Reports have been circulating that Fetterman has been courted by two Republican senators, and Donald Trump has promised Fetterman an endorsement if he flips over to being a Republican! This can not be allowed to stand! We must contact our Democratic senators and ask them to socialize with Senator Fetterman as much as possible as to keep him part of the fold from now till 2028!
 {% /two-column %}
 
-
-
 ## Here is what we must do to help keep Fetterman a Democrat.
 
 1. Email and call Minority Leader Chuck Shumer. He is the Democratic party leader and he will field calls from people who aren't his constituents as a result. You can reach Chuck using this link: <https://www.schumer.senate.gov/contact>.
@@ -28,7 +26,7 @@ Reports have been circulating that Fetterman has been courted by two Republican 
 
 \    1b.  When you are phone calling Schumer that you are using his Washington D.C. phone: [(202) 224-6542](tel:+12022246542)
 
-2. Phone call and Email your US Democratic senator(s) to let them know that you want them to engage more with Fetterman both inside and outside of the office to make sure he stays a Democrat!
+\    2. Phone call and Email your US Democratic senator(s) to let them know that you want them to engage more with Fetterman both inside and outside of the office to make sure he stays a Democrat!
 
 \    2a. To find your senator if you don't know your own Democratic senators, use this link: <https://www.senate.gov/senators/senators-contact.htm>
 
