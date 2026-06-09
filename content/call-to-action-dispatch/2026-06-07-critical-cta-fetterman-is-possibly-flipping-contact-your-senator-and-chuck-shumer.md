@@ -18,12 +18,7 @@ authors:
 Reports have been circulating that Fetterman has been courted by two Republican senators, and Donald Trump has promised Fetterman an endorsement if he flips over to being a Republican! This can not be allowed to stand! We must contact our Democratic senators and ask them to socialize with Senator Fetterman as much as possible as to keep him part of the fold from now till 2028!
 {% /two-column %}
 
-{% two-column image="/uploads/better_with_us.webp" alt="" layout="image-right" %}
-Even if we win the required 4 seats in the midterms, for the senate, we still need to make sure that we maintain our hold on the senate, and that does mean that we **HAVE** to cater to Fetterman in some way, whether that means we ask our senators to take him out to dinner/lunch, invite him out to extra-curricular events, etc... we need to keep him in the party, regardless of the feeling Democrats have of Fetterman.
-{% /two-column %}
 
-\
-Even if we win the required 4 seats in the midterms, for the senate, we still need to make sure that we maintain our hold on the senate, and that does mean that we **HAVE** to cater to Fetterman in some way, whether that means we ask our senators to take him out to dinner/lunch, invite him out to extra-curricular events, etc... we need to keep him in the party, regardless of the feeling Democrats have of Fetterman.
 
 ## Here is what we must do to help keep Fetterman a Democrat.
 
@@ -55,8 +50,6 @@ Best regards,
 Ulysses\
 \
 To sum up, reach out to Chuck Schumer and your Senator and make sure they keep Fetterman a Democrat! We here at Digital Ground Game thank you for your effort in helping with your contribution to these CTA's. Image assets for this CTA created by our own digital team user maxwell!
-
-
 
 ## Sample Phone call/voice mail
 
