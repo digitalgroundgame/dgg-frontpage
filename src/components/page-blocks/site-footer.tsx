@@ -62,21 +62,38 @@ export function SiteFooter() {
           <h3 className="font-black uppercase tracking-[0.18em] text-near-white-blue">
             Follow us
           </h3>
-          <ul className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
-            {followLinks.map(({ label, href, icon }) => (
-              <li key={label}>
-                <a
-                  aria-label={label}
-                  className="text-near-white-blue transition hover:text-accent-red"
-                  href={href}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <IconSocial className="h-6 w-6" name={icon} />
-                </a>
-              </li>
-            ))}
-          </ul>
+          <div className="mt-4 flex flex-col gap-2">
+            <ul className="flex items-center gap-x-4">
+              {followLinks.slice(0, Math.ceil(followLinks.length / 2)).map(({ label, href, icon }) => (
+                <li key={label}>
+                  <a
+                    aria-label={label}
+                    className="text-near-white-blue transition hover:text-accent-red"
+                    href={href}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <IconSocial className="h-6 w-6" name={icon} />
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <ul className="flex items-center gap-x-4">
+              {followLinks.slice(Math.ceil(followLinks.length / 2)).map(({ label, href, icon }) => (
+                <li key={label}>
+                  <a
+                    aria-label={label}
+                    className="text-near-white-blue transition hover:text-accent-red"
+                    href={href}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <IconSocial className="h-6 w-6" name={icon} />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
       <div className="mx-auto w-full max-w-6xl py-4 text-center text-sm">

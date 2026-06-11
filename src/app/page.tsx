@@ -172,22 +172,41 @@ export default function Home() {
 
           <div className="mt-10 grid justify-items-center gap-6">
             <TikTokCreatorEmbed />
-            <div className="flex flex-wrap justify-center gap-3">
-              {socialLinks.map((feed) => (
-                <ButtonLink
-                  className="px-4"
-                  href={feed.href}
-                  key={feed.label}
-                  primaryHover="blue-black"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  {feed.icon ? (
-                    <PixelIcon className="h-5 w-5 shrink-0" name={feed.icon} />
-                  ) : null}
-                  {feed.label}
-                </ButtonLink>
-              ))}
+            <div className="flex flex-col items-center gap-3">
+              <div className="flex flex-wrap justify-center gap-3">
+                {socialLinks.slice(0, Math.ceil(socialLinks.length / 2)).map((feed) => (
+                  <ButtonLink
+                    className="px-4"
+                    href={feed.href}
+                    key={feed.label}
+                    primaryHover="blue-black"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {feed.icon ? (
+                      <PixelIcon className="h-5 w-5 shrink-0" name={feed.icon} />
+                    ) : null}
+                    {feed.label}
+                  </ButtonLink>
+                ))}
+              </div>
+              <div className="flex flex-wrap justify-center gap-3">
+                {socialLinks.slice(Math.ceil(socialLinks.length / 2)).map((feed) => (
+                  <ButtonLink
+                    className="px-4"
+                    href={feed.href}
+                    key={feed.label}
+                    primaryHover="blue-black"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    {feed.icon ? (
+                      <PixelIcon className="h-5 w-5 shrink-0" name={feed.icon} />
+                    ) : null}
+                    {feed.label}
+                  </ButtonLink>
+                ))}
+              </div>
             </div>
           </div>
         </div>

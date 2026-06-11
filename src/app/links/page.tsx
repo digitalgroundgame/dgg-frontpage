@@ -67,19 +67,35 @@ export default function LinkInBioPage() {
           ))}
         </div>
 
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-          {socialLinks.map(({ label, href, icon }) => (
-            <a
-              aria-label={label}
-              className="text-charcoal transition hover:text-brand-blue"
-              href={href}
-              key={label}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <IconSocial className="h-7 w-7" name={icon} />
-            </a>
-          ))}
+        <div className="mt-8 flex flex-col items-center gap-4">
+          <div className="flex items-center justify-center gap-4">
+            {socialLinks.slice(0, Math.ceil(socialLinks.length / 2)).map(({ label, href, icon }) => (
+              <a
+                aria-label={label}
+                className="text-charcoal transition hover:text-brand-blue"
+                href={href}
+                key={label}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <IconSocial className="h-7 w-7" name={icon} />
+              </a>
+            ))}
+          </div>
+          <div className="flex items-center justify-center gap-4">
+            {socialLinks.slice(Math.ceil(socialLinks.length / 2)).map(({ label, href, icon }) => (
+              <a
+                aria-label={label}
+                className="text-charcoal transition hover:text-brand-blue"
+                href={href}
+                key={label}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <IconSocial className="h-7 w-7" name={icon} />
+              </a>
+            ))}
+          </div>
         </div>
       </section>
     </main>
