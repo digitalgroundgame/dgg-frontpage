@@ -55,7 +55,7 @@ export function SiteHeader() {
     <header className="relative z-40 bg-near-white-blue">
       <nav
         aria-label="Primary"
-        className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-center gap-5 px-8 py-5 sm:px-12 lg:px-20 header-desktop:justify-between"
+        className="mx-auto flex w-full flex-wrap items-center justify-center gap-5 px-8 py-5 sm:px-12 lg:px-20 header-desktop:justify-between"
       >
         <Link
           aria-label="Digital Ground Game home"
