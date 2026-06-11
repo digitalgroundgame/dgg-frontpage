@@ -1,14 +1,16 @@
+import { IconSocial, type SocialIconName } from "@/components/icons/icon-social";
 import { ButtonLink } from "@/components/widgets/button-link";
 
-const followLinks = [
-  { label: "Facebook", href: "https://www.facebook.com/digitalgroundgame" },
-  { label: "X", href: "https://x.com/digitalgroundg/" },
-  { label: "YouTube", href: "https://www.youtube.com/@DigitalGroundGame" },
-  { label: "Instagram", href: "https://www.instagram.com/digitalgroundgame" },
-  { label: "TikTok", href: "https://www.tiktok.com/@digitalgroundgame" },
-  { label: "LinkedIn", href: "https://digitalgroundgame.org/website/social/linkedin" },
-  { label: "Bluesky", href: "https://bsky.app/profile/digitalgroundgame.org" },
-  { label: "Threads", href: "https://www.threads.com/@digitalgroundgame" },
+const followLinks: { label: string; href: string; icon: SocialIconName }[] = [
+  { label: "Instagram", href: "https://www.instagram.com/digitalgroundgame", icon: "instagram" },
+  { label: "X", href: "https://x.com/digitalgroundg/", icon: "x" },
+  { label: "Threads", href: "https://www.threads.com/@digitalgroundgame", icon: "threads" },
+  { label: "Bluesky", href: "https://bsky.app/profile/digitalgroundgame.org", icon: "bluesky" },
+  { label: "TikTok", href: "https://www.tiktok.com/@digitalgroundgame", icon: "tiktok" },
+  { label: "Facebook", href: "https://www.facebook.com/digitalgroundgame", icon: "facebook" },
+  { label: "LinkedIn", href: "https://digitalgroundgame.org/website/social/linkedin", icon: "linkedin" },
+  { label: "YouTube", href: "https://www.youtube.com/@DigitalGroundGame", icon: "youtube" },
+  { label: "Twitch", href: "https://www.twitch.tv/digitalgroundgame", icon: "twitch" },
 ];
 
 export function SiteFooter() {
@@ -37,12 +39,13 @@ export function SiteFooter() {
           <ul className="mt-4 grid gap-2">
             <li>
               <a
-                className="transition hover:text-accent-red"
+                aria-label="Discord"
+                className="text-near-white-blue transition hover:text-accent-red"
                 href="https://discord.gg/digitalgroundgame"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Discord
+                <IconSocial className="h-6 w-6" name="discord" />
               </a>
             </li>
             <li>
@@ -59,16 +62,17 @@ export function SiteFooter() {
           <h3 className="font-black uppercase tracking-[0.18em] text-near-white-blue">
             Follow us
           </h3>
-          <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
-            {followLinks.map((item) => (
-              <li key={item.label}>
+          <ul className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+            {followLinks.map(({ label, href, icon }) => (
+              <li key={label}>
                 <a
-                  className="transition hover:text-accent-red"
-                  href={item.href}
+                  aria-label={label}
+                  className="text-near-white-blue transition hover:text-accent-red"
+                  href={href}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  {item.label}
+                  <IconSocial className="h-6 w-6" name={icon} />
                 </a>
               </li>
             ))}
