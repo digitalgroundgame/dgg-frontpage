@@ -7,7 +7,6 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const primaryNavItems = [
-  { label: "About Us", href: "/about-us" },
   { label: "Call to Action", href: "/call-to-action" },
   { label: "Talking Points", href: "/talking-points-repo" },
   { label: "Merch", href: "/merch" },
@@ -17,7 +16,7 @@ const primaryNavItems = [
 
 const primaryNavRows = [
   primaryNavItems.slice(0, 3),
-  primaryNavItems.slice(3, 6),
+  primaryNavItems.slice(3, 5),
 ];
 
 const regionItems = [
