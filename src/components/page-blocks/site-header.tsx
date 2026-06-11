@@ -8,15 +8,16 @@ import { useEffect, useRef, useState } from "react";
 
 const primaryNavItems = [
   { label: "Call to Action", href: "/call-to-action" },
-  { label: "Talking Points", href: "/talking-points-repo" },
-  { label: "Merch", href: "/merch" },
-  { label: "Resources", href: "/resources" },
+  { label: "Creator Corner", href: "/creator-corner" },
   { label: "Register to Vote", href: "/register" },
+  { label: "Talking Points", href: "/talking-points-repo" },
+  { label: "Resources", href: "/resources" },
+  { label: "Merch", href: "/merch" },
 ];
 
 const primaryNavRows = [
   primaryNavItems.slice(0, 3),
-  primaryNavItems.slice(3, 5),
+  primaryNavItems.slice(3, 6),
 ];
 
 const regionItems = [
