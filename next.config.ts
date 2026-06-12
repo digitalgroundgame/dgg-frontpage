@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
+const devHostname = process.env.DEV_HOSTNAME?.trim();
+
 const nextConfig: NextConfig = {
   output: "standalone",
+  ...(devHostname ? { allowedDevOrigins: [devHostname] } : {}),
   async redirects() {
     return [
       {

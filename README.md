@@ -30,6 +30,15 @@ pnpm dev:all
 
 Open [http://localhost:3000](http://localhost:3000).
 
+To serve the development app from another hostname on your network, set
+`DEV_HOSTNAME` before starting the app:
+
+```bash
+DEV_HOSTNAME=your-dev-host.example pnpm dev:all
+```
+
+When using `/admin` from a network hostname, keep `pnpm dev:all` running so the
+Decap local backend proxy is available on the same hostname at port `8081`.
 
 ## Checks
 

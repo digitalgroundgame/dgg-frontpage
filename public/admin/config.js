@@ -245,6 +245,7 @@ const collections = [
 
 const productionHosts = ["digitalgroundgame.org", "beta.digitalgroundgame.org"];
 const isProduction = productionHosts.includes(window.location.hostname);
+const localProxyUrl = `${window.location.protocol}//${window.location.hostname}:8081/api/v1`;
 
 const backend = isProduction
   ? {
@@ -256,7 +257,7 @@ const backend = isProduction
     }
   : {
       name: "proxy",
-      proxy_url: "http://localhost:8081/api/v1",
+      proxy_url: localProxyUrl,
     };
 
 window.CMS.init({
