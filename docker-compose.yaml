@@ -15,6 +15,11 @@ services:
       HOSTNAME: 0.0.0.0
     expose:
       - "3000"
+    labels:
+      - "traefik.http.middlewares.dgg-redirect-non-www.redirectregex.regex=^(http|https)://www\\.(.+)"
+      - "traefik.http.middlewares.dgg-redirect-non-www.redirectregex.replacement=$${1}://$${2}"
+      - "traefik.http.middlewares.dgg-redirect-non-www.redirectregex.permanent=true"
+      - "coolify.traefik.middlewares=dgg-redirect-non-www"
     healthcheck:
       test: ["CMD-SHELL", "node -e \"require('node:http').get('http://127.0.0.1:3000/', (res) => process.exit(res.statusCode < 500 ? 0 : 1)).on('error', () => process.exit(1))\""]
       interval: 30s
