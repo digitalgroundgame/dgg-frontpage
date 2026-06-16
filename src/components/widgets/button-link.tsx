@@ -27,8 +27,11 @@ export function ButtonLink({
   primaryHover = "blue-black",
   ...props
 }: ButtonLinkProps) {
-  const childArray = Children.toArray(children);
-  const hasIcon = isValidElement(childArray[0]) && childArray[0].type === PixelIcon;
+  const childArray = Children.toArray(children).filter(
+    (child) => typeof child !== "string" || child.trim().length > 0,
+  );
+  const hasIcon =
+    isValidElement(childArray[0]) && childArray[0].type === PixelIcon;
   const content = hasIcon ? (
     <>
       <span className="grid w-7 place-items-center">{childArray[0]}</span>

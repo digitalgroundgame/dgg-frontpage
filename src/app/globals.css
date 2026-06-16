@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @custom-variant header-desktop (@media (min-width: 900px));
+/*@custom-variant header-wide (@media (min-width: 1096px));*/
 
 :root {
     --color-brand-blue: #1144ff;

@@ -2,22 +2,39 @@
 
 import { Logo } from "@/components/widgets/logo";
 import { ButtonLink } from "@/components/widgets/button-link";
-import { PixelIcon } from "@/components/widgets/pixel-icon";
+import { PixelIcon, type PixelIconName } from "@/components/widgets/pixel-icon";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
-const primaryNavItems = [
-  { label: "Call to Action", href: "/call-to-action" },
-  { label: "Creator Corner", href: "/creator-corner" },
-  { label: "Register to Vote", href: "/register" },
-  { label: "Talking Points", href: "/talking-points-repo" },
-  { label: "Resources", href: "/resources" },
-  { label: "Merch", href: "/merch" },
-];
-
-const primaryNavRows = [
-  primaryNavItems.slice(0, 3),
-  primaryNavItems.slice(3, 6),
+const primaryNavItems: {
+  label: string;
+  href: string;
+  iconName: PixelIconName;
+  iconClassName?: string;
+}[] = [
+  {
+    label: "Call to Action",
+    href: "/call-to-action",
+    iconName: "interface-essential-alert-triangle",
+    iconClassName: "text-accent-red",
+  },
+  {
+    label: "Creator Corner",
+    href: "/creator-corner",
+    iconName: "user-woman-increasing-arrow",
+  },
+  {
+    label: "Register to Vote",
+    href: "/register",
+    iconName: "hand-writing",
+  },
+  {
+    label: "Talking Points",
+    href: "/talking-points-repo",
+    iconName: "content-files-newspaper",
+  },
+  { label: "Resources", href: "/resources", iconName: "flip-vertical-down" },
+  { label: "Merch", href: "/merch", iconName: "business-product-price-tag" },
 ];
 
 const regionItems = [
@@ -55,7 +72,7 @@ export function SiteHeader() {
     <header className="relative z-40 bg-near-white-blue">
       <nav
         aria-label="Primary"
-        className="mx-auto flex w-full flex-wrap items-center justify-center gap-5 px-8 py-5 sm:px-12 lg:px-20 header-desktop:justify-between"
+        className="mx-auto flex w-full flex-wrap items-center justify-center gap-5 px-3 sm:px-6 xl:px-25  py-5 header-desktop:justify-between "
       >
         <Link
           aria-label="Digital Ground Game home"
@@ -67,29 +84,24 @@ export function SiteHeader() {
         </Link>
 
         <div className="hidden gap-2 header-desktop:grid header-desktop:flex-1">
-          <div className="grid text-xl font-bold text-charcoal xl:text-2xl">
-            {primaryNavRows.map((row, index) => (
-              <div
-                className="grid grid-cols-[max-content_max-content_max-content] gap-x-7 gap-y-1"
-                key={index}
+          <div className="grid grid-cols-3 lg:px-5 xl:px-7 lg:gap-x-7 gap-y-2 text-lg lg:text-xl xl:text-2xl font-bold text-charcoal ">
+            {primaryNavItems.map((item) => (
+              <Link
+                className="inline-flex min-w-0 items-center justify-start gap-2 text-left transition hover:text-brand-blue"
+                href={item.href}
+                key={item.label}
               >
-                {row.map((item) =>
-                  item ? (
-                    <Link
-                      className="transition hover:text-brand-blue"
-                      href={item.href}
-                      key={item.label}
-                    >
-                      {item.label}
-                    </Link>
-                  ) : (
-                    <span aria-hidden="true" key="empty" />
-                  ),
-                )}
-              </div>
+                <PixelIcon
+                  className={`h-5 w-5 shrink-0 xl:h-6 xl:w-6 ${
+                    item.iconClassName ?? ""
+                  }`}
+                  name={item.iconName}
+                />
+                <span>{item.label}</span>
+              </Link>
             ))}
           </div>
-          <div className="flex flex-nowrap gap-x-7 gap-y-2 whitespace-nowrap text-lg">
+          <div className="flex flex-nowrap lg:justify-center gap-x-7 gap-y-2 whitespace-nowrap text-lg">
             {regionItems.map((item) => (
               <Link
                 className="transition hover:text-brand-blue"
@@ -117,12 +129,16 @@ export function SiteHeader() {
               <div className="grid gap-5 text-4xl font-black uppercase leading-none">
                 {primaryNavItems.map((item) => (
                   <Link
-                    className="transition hover:text-accent-red"
+                    className="inline-flex items-center gap-3 text-left transition hover:text-accent-red"
                     href={item.href}
                     key={item.label}
                     onClick={closeMobileMenu}
                   >
-                    {item.label}
+                    <PixelIcon
+                      className={`h-7 w-7 shrink-0 ${item.iconClassName ?? ""}`}
+                      name={item.iconName}
+                    />
+                    <span>{item.label}</span>
                   </Link>
                 ))}
               </div>
@@ -164,9 +180,9 @@ export function SiteHeader() {
           </div>
         </details>
 
-        <div className="hidden w-full shrink-0 justify-stretch gap-3 header-desktop:grid header-desktop:w-40">
+        <div className="hidden w-full shrink-0 justify-stretch gap-3 header-desktop:grid header-desktop:w-44">
           <ButtonLink
-            className="w-full justify-start"
+            className="w-full justify-start whitespace-nowrap"
             href="https://discord.gg/digitalgroundgame"
             primaryHover="blue-black"
             rel="noopener noreferrer"
@@ -176,7 +192,7 @@ export function SiteHeader() {
             Join In
           </ButtonLink>
           <ButtonLink
-            className="w-full justify-start"
+            className="w-full justify-start whitespace-nowrap"
             href="https://secure.actblue.com/donate/dgg"
             primaryHover="red-black"
             rel="noopener noreferrer"
