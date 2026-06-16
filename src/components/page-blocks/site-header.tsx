@@ -4,6 +4,7 @@ import { Logo } from "@/components/widgets/logo";
 import { ButtonLink } from "@/components/widgets/button-link";
 import { PixelIcon, type PixelIconName } from "@/components/widgets/pixel-icon";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 const primaryNavItems: {
@@ -47,6 +48,7 @@ const regionItems = [
 
 export function SiteHeader() {
   const mobileMenuRef = useRef<HTMLDetailsElement>(null);
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -68,6 +70,10 @@ export function SiteHeader() {
     }
   }
 
+  function isActiveLink(href: string) {
+    return pathname === href || pathname.startsWith(`${href}/`);
+  }
+
   return (
     <header className="relative z-40 bg-near-white-blue">
       <nav
@@ -87,7 +93,10 @@ export function SiteHeader() {
           <div className="grid grid-cols-3 lg:px-5 xl:px-7 lg:gap-x-7 gap-y-2 text-lg lg:text-xl xl:text-2xl font-bold text-charcoal ">
             {primaryNavItems.map((item) => (
               <Link
-                className="inline-flex min-w-0 items-center justify-start gap-2 text-left transition hover:text-brand-blue"
+                aria-current={isActiveLink(item.href) ? "page" : undefined}
+                className={`inline-flex min-w-0 items-center justify-start gap-2 text-left transition hover:text-brand-blue ${
+                  isActiveLink(item.href) ? "text-brand-blue" : ""
+                }`}
                 href={item.href}
                 key={item.label}
               >
@@ -104,7 +113,10 @@ export function SiteHeader() {
           <div className="flex flex-nowrap lg:justify-center gap-x-7 gap-y-2 whitespace-nowrap text-lg">
             {regionItems.map((item) => (
               <Link
-                className="transition hover:text-brand-blue"
+                aria-current={isActiveLink(item.href) ? "page" : undefined}
+                className={`transition hover:text-brand-blue ${
+                  isActiveLink(item.href) ? "font-bold text-brand-blue" : ""
+                }`}
                 href={item.href}
                 key={item.label}
               >
@@ -129,7 +141,10 @@ export function SiteHeader() {
               <div className="grid gap-5 text-4xl font-black uppercase leading-none">
                 {primaryNavItems.map((item) => (
                   <Link
-                    className="inline-flex items-center gap-3 text-left transition hover:text-accent-red"
+                    aria-current={isActiveLink(item.href) ? "page" : undefined}
+                    className={`inline-flex items-center gap-3 text-left transition hover:text-accent-red ${
+                      isActiveLink(item.href) ? "text-brand-blue" : ""
+                    }`}
                     href={item.href}
                     key={item.label}
                     onClick={closeMobileMenu}
@@ -145,7 +160,10 @@ export function SiteHeader() {
               <div className="grid gap-3 text-2xl font-bold">
                 {regionItems.map((item) => (
                   <Link
-                    className="transition hover:text-accent-red"
+                    aria-current={isActiveLink(item.href) ? "page" : undefined}
+                    className={`transition hover:text-accent-red ${
+                      isActiveLink(item.href) ? "text-brand-blue" : ""
+                    }`}
                     href={item.href}
                     key={item.label}
                     onClick={closeMobileMenu}
