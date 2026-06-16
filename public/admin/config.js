@@ -87,7 +87,7 @@ const collections = [
     slug: "{{slug}}",
     fields: [
       { label: "Name", name: "name", widget: "string" },
-      { label: "Picture", name: "picture", widget: "image" },
+      { label: "Picture", name: "picture", widget: "image", required: false },
       { label: "Org Title", name: "orgTitle", widget: "string" },
       { label: "Bio", name: "bio", widget: "text", required: false },
     ],
