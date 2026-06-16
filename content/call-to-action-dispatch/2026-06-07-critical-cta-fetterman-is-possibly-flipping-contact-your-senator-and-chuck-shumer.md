@@ -1,6 +1,7 @@
 ---
-title: "Critical CTA: Fetterman is possibly flipping! Contact your Senator and
-  Chuck Schumer!"
+title: "Critical CTA: UPDATED Fetterman is possibly flipping! Contact your
+  Senator and Chuck Schumer! Spread the word and contact your Democratic
+  representatives too!!"
 date: 2026-06-07T12:00:00.000-05:00
 heroPhoto: /uploads/fetterman_1200x630.webp
 heroFilter: true
@@ -22,15 +23,19 @@ Reports have been circulating that Fetterman has been courted by two Republican 
 
 1. Email and call Minority Leader Chuck Shumer. He is the Democratic party leader and he will field calls from people who aren't his constituents as a result. You can reach Chuck using this link: <https://www.schumer.senate.gov/contact>.
 
-\    1a. Make sure you are "leaving a comment"
+   * Make sure you are "leaving a comment"
+   * When you are phone calling Schumer that you are using his Washington D.C. phone: [(202) 224-6542](tel:+12022246542)
+2. Phone call and Email your US Democratic senator(s) to let them know that you want them to engage more with Fetterman both inside and outside of the office to make sure he stays a Democrat!
 
-\    1b.  When you are phone calling Schumer that you are using his Washington D.C. phone: [(202) 224-6542](tel:+12022246542)
+   * To find your senator if you don't know your own Democratic senators, use this link: <https://www.senate.gov/senators/senators-contact.htm>
+   * Make sure to both Email them and give them a phone call just so we can doubly make sure that your senator knows your serious.
 
-\    2. Phone call and Email your US Democratic senator(s) to let them know that you want them to engage more with Fetterman both inside and outside of the office to make sure he stays a Democrat!
+### UPDATE of what we can do:
 
-\    2a. To find your senator if you don't know your own Democratic senators, use this link: <https://www.senate.gov/senators/senators-contact.htm>
+1.  Email and call Minority Leader Jeffries and your local Democratic representatives.
 
-\    2b. Make sure to both Email them and give them a phone call just so we can doubly make sure that your senator knows your serious.
+   * Find their contact information on the US House of Representatives website: [Find Your Representative | house.gov](https://www.house.gov/representatives/find-your-representative)
+2. Get your friends and family involved with the CTA. Get people to call their Democratic Senators, Schumer, and Representatives to keep Fetterman a Democrat!
 
 ## Sample Email
 
