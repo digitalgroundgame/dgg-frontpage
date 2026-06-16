@@ -1,4 +1,6 @@
 ---
 title: West People
-authors: []
+authors:
+  - ken
+  - daniel-lee
 ---
