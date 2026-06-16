@@ -76,9 +76,7 @@ export default async function CallToActionPage({ params }: PageProps) {
               dateTime={entry.date}
               formattedDate={formatDispatchDate(entry.date)}
               headingLevel="h1"
-              heroFilter={entry.heroFilter}
               heroPhoto={entry.heroPhoto}
-              heroTextDark={entry.heroTextDark}
               title={entry.title}
             />
           </div>

@@ -3,7 +3,6 @@ title: Time to Make Some Money!
 date: 2026-04-07T00:00:00.000-07:00
 authors:
   - daniel-lee
-heroTextDark: false
 ---
 
 We had our leadership meeting cancelled on Sunday for Easter, so there aren't as many top-down updates to go through so I'm going to take the opportunity to give a list of highlights from the LA meetup centered around the UFA event at UCLA.

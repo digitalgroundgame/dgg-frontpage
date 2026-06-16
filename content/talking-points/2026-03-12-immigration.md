@@ -4,8 +4,6 @@ date: 2026-03-12T00:00:00.000-07:00
 authors:
   - cameron-tomaino
 heroPhoto: ""
-heroFilter: true
-heroTextDark: false
 ---
 
 ## Why is this important?

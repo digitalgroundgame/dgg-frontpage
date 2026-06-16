@@ -2,8 +2,6 @@
 title: Register to Vote From Abroad - DGG x Democrats Abroad Partnership!!!
 date: 2026-05-02T12:00:00.000-07:00
 heroPhoto: /uploads/vote-abroad-dgg-democrats-abroad-cover.webp
-heroFilter: true
-heroTextDark: false
 authors:
   - ulysses
 ---

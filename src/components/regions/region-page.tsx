@@ -89,9 +89,7 @@ export function RegionPage({ region }: RegionPageProps) {
                   body={latestDispatch.body}
                   dateTime={latestDispatch.date}
                   formattedDate={formatDispatchDate(latestDispatch.date)}
-                  heroFilter={latestDispatch.heroFilter}
                   heroPhoto={latestDispatch.heroPhoto}
-                  heroTextDark={latestDispatch.heroTextDark}
                   title={latestDispatch.title}
                 />
               </div>

@@ -4,8 +4,6 @@ title: "Critical CTA: UPDATED Fetterman is possibly flipping! Contact your
   representatives too!!"
 date: 2026-06-07T12:00:00.000-05:00
 heroPhoto: /uploads/fetterman_1200x630.webp
-heroFilter: true
-heroTextDark: false
 authors:
   - ulysses
 ---
@@ -32,7 +30,7 @@ Reports have been circulating that Fetterman has been courted by two Republican 
 
 ### UPDATE of what we can do:
 
-1.  Email and call Minority Leader Jeffries and your local Democratic representatives.
+1. Email and call Minority Leader Jeffries and your local Democratic representatives.
 
    * Find their contact information on the US House of Representatives website: [Find Your Representative | house.gov](https://www.house.gov/representatives/find-your-representative)
 2. Get your friends and family involved with the CTA. Get people to call their Democratic Senators, Schumer, and Representatives to keep Fetterman a Democrat!

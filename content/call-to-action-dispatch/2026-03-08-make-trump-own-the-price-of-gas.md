@@ -2,8 +2,6 @@
 title: Make Trump Own The Price Of Gas!!!
 date: 2026-03-08T00:00:00.000-07:00
 heroPhoto: /uploads/gas-pump-cover.webp
-heroFilter: true
-heroTextDark: false
 authors:
   - jacob-mills
 ---

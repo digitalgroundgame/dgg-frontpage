@@ -14,20 +14,6 @@ const dispatchFields = [
     required: false,
   },
   {
-    label: "Hero Filter",
-    name: "heroFilter",
-    widget: "boolean",
-    required: false,
-    default: true,
-  },
-  {
-    label: "Dark Hero Text",
-    name: "heroTextDark",
-    widget: "boolean",
-    required: false,
-    default: false,
-  },
-  {
     label: "Authors",
     name: "authors",
     widget: "relation",

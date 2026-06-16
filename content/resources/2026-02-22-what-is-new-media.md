@@ -4,8 +4,6 @@ date: 2026-02-22T00:00:00.000-08:00
 authors:
   - jacob-mills
 heroPhoto: ""
-heroFilter: true
-heroTextDark: false
 ---
 
 This section is designed for people who are largely unfamiliar with the space. If you know what a skibidi toilet is, you can skip it.

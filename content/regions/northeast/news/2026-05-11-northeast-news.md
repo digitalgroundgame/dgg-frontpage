@@ -3,7 +3,6 @@ title: "Northeast News #10"
 date: 2026-05-11T00:00:00.000-04:00
 authors:
   - sam-koved
-heroTextDark: false
 ---
 
 ## Updates

@@ -2,8 +2,6 @@
 title: Colorado is Voting on Redistricting! Help Spread the Word!
 date: 2026-04-20T12:00:00.000-07:00
 heroPhoto: /uploads/co-erra-square-logo.webp
-heroFilter: true
-heroTextDark: false
 authors:
   - jacob-mills
 ---

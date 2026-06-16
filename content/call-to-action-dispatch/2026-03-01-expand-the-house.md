@@ -2,8 +2,6 @@
 title: Expand The House!
 date: 2026-03-01T00:00:00.000-08:00
 heroPhoto: ""
-heroFilter: true
-heroTextDark: false
 authors:
   - jacob-mills
 ---

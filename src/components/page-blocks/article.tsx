@@ -9,8 +9,6 @@ type ArticleProps = {
   formattedDate: string;
   title: string;
   heroPhoto?: string;
-  heroFilter?: boolean;
-  heroTextDark?: boolean;
   authorSlugs?: string[];
   authors?: Author[];
   body: string;
@@ -22,8 +20,6 @@ export function Article({
   formattedDate,
   title,
   heroPhoto,
-  heroFilter = false,
-  heroTextDark = false,
   authorSlugs = [],
   authors = [],
   body,
@@ -44,34 +40,25 @@ export function Article({
   const shouldShowPhotoAuthors = authors.length > 1 && photoAuthors.length > 0;
   const shouldShowFallbackAvatar =
     authors.length > 1 && photoAuthors.length === 0 && Boolean(authorName);
-  const heroTextClassName = heroTextDark
-    ? "text-charcoal"
-    : "text-near-white-blue";
-  const heroDateClassName = heroTextDark
-    ? "text-light-charcoal"
-    : "text-near-white-blue/85";
 
   return (
     <article className="text-charcoal">
       <header>
         {heroPhoto ? (
-          <div className="relative -mx-8 aspect-[1200/630] overflow-hidden bg-charcoal sm:-mx-12 md:mx-0">
-            <Image
-              alt=""
-              className="object-cover"
-              fill
-              priority={headingLevel === "h1"}
-              sizes="(min-width: 768px) 48rem, 100vw"
-              src={heroPhoto}
-            />
-            {heroFilter ? (
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-blue via-brand-blue/55 to-transparent" />
-            ) : null}
-            <div
-              className={`absolute inset-x-0 bottom-0 p-5 sm:p-6 ${heroTextClassName}`}
-            >
+          <>
+            <div className="relative -mx-8 aspect-[1200/630] overflow-hidden bg-charcoal sm:-mx-12 md:mx-0">
+              <Image
+                alt=""
+                className="object-cover"
+                fill
+                priority={headingLevel === "h1"}
+                sizes="(min-width: 768px) 48rem, 100vw"
+                src={heroPhoto}
+              />
+            </div>
+            <div className="mt-5">
               <LocalDate
-                className={`type-label ${heroDateClassName}`}
+                className="type-label text-light-charcoal"
                 dateTime={dateTime}
                 fallback={formattedDate}
               />
@@ -79,7 +66,7 @@ export function Article({
                 {title}
               </TitleTag>
             </div>
-          </div>
+          </>
         ) : (
           <div>
             <LocalDate

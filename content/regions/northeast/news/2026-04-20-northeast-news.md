@@ -3,7 +3,6 @@ title: "Northeast News #7"
 date: 2026-04-20T00:00:00.000-04:00
 authors:
   - sam-koved
-heroTextDark: false
 ---
 
 ## Updates

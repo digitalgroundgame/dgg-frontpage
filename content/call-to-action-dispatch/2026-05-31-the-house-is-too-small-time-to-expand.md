@@ -2,8 +2,6 @@
 title: The House is too small! Time to Expand!
 date: 2026-05-31T00:00:00.000-07:00
 heroPhoto: /uploads/house-too-small-cover.webp
-heroFilter: true
-heroTextDark: false
 authors:
   - ulysses
 ---

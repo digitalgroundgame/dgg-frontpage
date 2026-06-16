@@ -2,8 +2,6 @@
 title: Verify Your Voter Registration With Rally!
 date: 2026-05-10T17:30:38.000-07:00
 heroPhoto: /uploads/rally-voter-registration-cover.webp
-heroFilter: true
-heroTextDark: false
 authors:
   - ulysses
 ---

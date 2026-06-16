@@ -5,8 +5,6 @@ authors:
   - jack-darko
   - goob
 heroPhoto: ""
-heroFilter: true
-heroTextDark: false
 ---
 
 # Climate, Environment, Renewable Energy, and Fossil Fuels

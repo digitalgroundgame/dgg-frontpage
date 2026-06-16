@@ -69,9 +69,7 @@ export default async function TalkingPointArticlePage({ params }: PageProps) {
               dateTime={entry.date}
               formattedDate={formatTalkingPointDate(entry.date)}
               headingLevel="h1"
-              heroFilter={entry.heroFilter}
               heroPhoto={entry.heroPhoto}
-              heroTextDark={entry.heroTextDark}
               title={entry.title}
             />
           </div>

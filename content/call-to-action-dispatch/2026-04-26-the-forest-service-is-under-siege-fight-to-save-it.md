@@ -2,8 +2,6 @@
 title: The Forest Service is Under Siege! Fight to Save it!
 date: 2026-04-26T12:00:00.000-07:00
 heroPhoto: /uploads/forest-fire-cover.webp
-heroFilter: true
-heroTextDark: false
 authors:
   - ulysses
 ---

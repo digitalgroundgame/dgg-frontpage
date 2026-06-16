@@ -66,9 +66,6 @@ export default function CallToActionPage() {
                 </span>
               </h2>
             </div>
-            <p className="type-body">
-              A running blog for weekly CTAs, and ways to get involved.
-            </p>
           </div>
 
           {latestDispatch ? (
@@ -79,9 +76,7 @@ export default function CallToActionPage() {
                 body={latestDispatch.body}
                 dateTime={latestDispatch.date}
                 formattedDate={formatDispatchDate(latestDispatch.date)}
-                heroFilter={latestDispatch.heroFilter}
                 heroPhoto={latestDispatch.heroPhoto}
-                heroTextDark={latestDispatch.heroTextDark}
                 title={latestDispatch.title}
               />
             </div>

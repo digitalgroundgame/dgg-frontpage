@@ -6,8 +6,6 @@ authors:
   - marlow-kurtz
   - tseawright
 heroPhoto: ""
-heroFilter: true
-heroTextDark: false
 ---
 
 General Guide for Persuasion, Rhetoric, and Debate Applicable to All Topics

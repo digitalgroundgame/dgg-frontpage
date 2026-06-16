@@ -2,8 +2,6 @@
 title: SAVE ACT RAISE THE ALARM
 date: 2026-02-22T00:00:00.000-08:00
 heroPhoto: /uploads/save-act-raise-alarm-cover.webp
-heroFilter: true
-heroTextDark: false
 authors:
   - jacob-mills
 ---
