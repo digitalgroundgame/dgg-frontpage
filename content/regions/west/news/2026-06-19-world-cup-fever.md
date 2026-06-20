@@ -199,9 +199,9 @@ Also side note, while Derek Tran as a Congressman is more of a national figure, 
 
 ## **📰  News**
 
-- Salt Lake City, Salt Lake County and a new non-profit are [attempting to sue to halt a new ICE detention warehouse]([https://sports.ksl.com/watch/utah-group-to-sue-to-halt-detention-center-plans-paralleling-salt-lake-city-county-effort/019eaeeb-5980-8008-ecc4-b2486a991c10](https://sports.ksl.com/watch/utah-group-to-sue-to-halt-detention-center-plans-paralleling-salt-lake-city-county-effort/019eaeeb-5980-8008-ecc4-b2486a991c10 "https://sports.ksl.com/watch/utah-group-to-sue-to-halt-detention-center-plans-paralleling-salt-lake-city-county-effort/019eaeeb-5980-8008-ecc4-b2486a991c10")
-- Defense Dept. [excluded Latter-day Saints]([https://www.abc4.com/news/religion/church-jesus-christ-reclassification/](https://www.abc4.com/news/religion/church-jesus-christ-reclassification/ "https://www.abc4.com/news/religion/church-jesus-christ-reclassification/") from ‘Christian’ category
-- [Tensions are rising]([https://www.nytimes.com/2026/06/15/climate/colorado-river-drought-states.html](https://www.nytimes.com/2026/06/15/climate/colorado-river-drought-states.html "https://www.nytimes.com/2026/06/15/climate/colorado-river-drought-states.html") among states that rely on the Colorado river
+- Salt Lake City, Salt Lake County and a new non-profit are [attempting to sue to halt a new ICE detention warehouse](https://sports.ksl.com/watch/utah-group-to-sue-to-halt-detention-center-plans-paralleling-salt-lake-city-county-effort/019eaeeb-5980-8008-ecc4-b2486a991c10)
+- Defense Dept. [excluded Latter-day Saints](https://www.abc4.com/news/religion/church-jesus-christ-reclassification/) from ‘Christian’ category
+- [Tensions are rising](https://www.nytimes.com/2026/06/15/climate/colorado-river-drought-states.html) among states that rely on the Colorado river
 
 
 ---
