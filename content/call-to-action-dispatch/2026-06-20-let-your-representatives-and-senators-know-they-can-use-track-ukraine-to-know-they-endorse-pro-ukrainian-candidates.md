@@ -2,7 +2,7 @@
 title: Let your Representatives and Senators know they can use Track Ukraine to
   know they endorse pro-Ukrainian candidates
 date: 2026-06-20T12:00:00.000-05:00
-heroPhoto: /uploads/dgg-cta-track-ukraine-header_1.jpg
+heroPhoto: /uploads/dgg-cta-track-ukraine-header_1.webp
 heroFilter: true
 heroTextDark: false
 authors:
