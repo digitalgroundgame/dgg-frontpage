@@ -32,6 +32,8 @@ Ukrainians have been fighting for the liberty, justice and honor of their countr
 
    * [Click here to find your Senator](https://www.congress.gov/members/find-your-member)
 
+**Do not worry if your representative(s) is anti-Ukraine. Still contact them. Putting it on their radar puts pressure on them and helps draw more attention to Track Ukraine. The more eyes the better.** 
+
 ## Example Email:
 
 **The email should make the request for your representative to do the following:**
