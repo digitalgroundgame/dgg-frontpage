@@ -1,5 +1,5 @@
 ---
-title: Get your Representatives and Senators to use Track Ukraine!
+title: Get your Representatives and Senators to use Track Ukraine and sign the pledge!
 date: 2026-06-20T12:00:00.000-05:00
 heroPhoto: /uploads/dgg-cta-track-ukraine-header_1.webp
 heroFilter: true
@@ -40,7 +40,10 @@ Hello Representative Pocan,
 
 I am a constituent of yours and I am reaching out with concern that there are candidates in Wisconsin that are anti-Ukraine that should not receive your endorsement. Now I know that you co-sponsored H.R.3104 which was the Ukrainian Adjustment Act of 2025 and that you have supported many aid packages to Ukraine. I would like you to consider using a tool I found that will have you determine which candidates hold a Pro-Ukrainian position and who doesn't. The website is called trackukraine.com/ed-usd
 
-I ask that you please spread this resource to your other pro-Ukrainian colleagues so that they have tools to figure out which candidates they would endorse that are closest to what they believe.
+I ask of you the following:
+
+1. Please sign the Track Ukraine Pledge to show your support for what Track Ukraine does and for you to show support for the Ukrainian people
+2. Please speak out on the invasion as much as you can to show you support the Ukrainian people and so that the invasions much visibility as possible.
 
 Regards,
 
