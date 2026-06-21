@@ -9,7 +9,7 @@ authors:
 ---
 ## **Ukraine is under siege from Russians on the frontline, and abroad in America with anti-Ukrainian politicians and candidates!**
 
-![](/uploads/dgg-cta-track-ukraine_2_new.jpg)
+![](/uploads/dgg-cta-track-ukraine_2_new.webp)
 
 February 24th 2026, marked the 4th full year of Russia's "special military operation" into Ukraine. The invasion of Ukraine has been a cornerstone of Democratic messaging ever since it began with the Biden administration focusing many aid packages to the Ukrainian government and its military to fend off the Russ advance. However, even during the administration and into the Trump administration there continues to be a increase in anti-Ukrainian congress people as well as candidates on either side of the isle. We must stop them through voicing our concern to our Representatives and Senators!
 
