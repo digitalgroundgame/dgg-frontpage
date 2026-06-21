@@ -47,3 +47,11 @@ Regards,
 Ulysses
 
 D2 Wisconsin Resident
+
+## Example Phone call script:
+
+Hi, my name is \[Your name] and I'm from \[Your city/state].
+
+I'm calling to ask you to endorse and support pro-Ukrainian candidates in upcoming elections.Ukraine has been fighting for 4 years. They need Congress to back them with strong allies who support their fight for freedom. 
+
+That starts with endorsing candidates who take the pro-Ukraine pledge and using TrackUkraine in order to figure out who to endorse. Please make this a priority. Thank you.
