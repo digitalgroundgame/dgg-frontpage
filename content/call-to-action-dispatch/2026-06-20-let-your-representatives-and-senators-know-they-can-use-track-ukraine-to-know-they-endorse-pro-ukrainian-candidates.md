@@ -58,6 +58,11 @@ D2 Wisconsin Resident
 
 ## Example Phone call script:
 
+**In your phone call make the following requests to your reps:**
+
+1. Please sign the Track Ukraine Pledge to show your support for what Track Ukraine does and for you to show support for the Ukrainian people
+2. Please speak out on the invasion as much as you can to show you support the Ukrainian people and so that the invasions much visibility as possible.
+
 Hi, my name is \[Your name] and I'm from \[Your city/state].
 
 I'm calling to ask you to endorse and support pro-Ukrainian candidates in upcoming elections.Ukraine has been fighting for 4 years. They need Congress to back them with strong allies who support their fight for freedom. 
