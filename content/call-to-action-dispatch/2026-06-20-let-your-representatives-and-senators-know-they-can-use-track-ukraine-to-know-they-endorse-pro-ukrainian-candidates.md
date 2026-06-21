@@ -1,6 +1,5 @@
 ---
-title: Let your Representatives and Senators know they can use Track Ukraine to
-  know they endorse pro-Ukrainian candidates
+title: Get your Representatives and Senators to use Track Ukraine!
 date: 2026-06-20T12:00:00.000-05:00
 heroPhoto: /uploads/dgg-cta-track-ukraine-header_1.webp
 heroFilter: true
@@ -32,3 +31,19 @@ Ukrainians have been fighting for the liberty, justice and honor of their countr
 2. Contact your senator by[ ](https://www.commoncause.org/find-your-representative/?source=adwords&gad_source=1&gad_campaignid=1494728290&gbraid=0AAAAADyMmbyqqHkxoUpLKNwn03DeaukGW&gclid=CjwKCAjw9NjRBhATEiwA_p2J8bRyjIQhIxDnpZ6eQ-ZtI7fQ9iHvmGkDpMyMDsu-aqWY_33gIP7c3hoC0uAQAvD_BwE)**both calling and emailing them!** We must let them know that they must endorse those that take the pledge to support Ukraine! **Please attempt to do this daily!**
 
    * [Click here to find your Senator](https://www.congress.gov/members/find-your-member)
+
+## Example Email: 
+
+The following is a sample email I created to speak to Mark Pocan of D-2 Wisconsin. **PLEASE DO NOT COPY MY SAMPLE!** Your email should reflect you as a constituent of theirs in your own words, copy and pasting my sample will only be ignored as mass spam or as a bot template, so make sure to create your own when writing emails to your democratic representatives and senators\
+\
+Hello Representative Pocan,
+
+I am a constituent of yours and I am reaching out with concern that there are candidates in Wisconsin that are anti-Ukraine that should not receive your endorsement. Now I know that you co-sponsored H.R.3104 which was the Ukrainian Adjustment Act of 2025 and that you have supported many aid packages to Ukraine. I would like you to consider using a tool I found that will have you determine which candidates hold a Pro-Ukrainian position and who doesn't. The website is called trackukraine.com/ed-usd
+
+I ask that you please spread this resource to your other pro-Ukrainian colleagues so that they have tools to figure out which candidates they would endorse that are closest to what they believe.
+
+Regards,
+
+Ulysses
+
+D2 Wisconsin Resident
