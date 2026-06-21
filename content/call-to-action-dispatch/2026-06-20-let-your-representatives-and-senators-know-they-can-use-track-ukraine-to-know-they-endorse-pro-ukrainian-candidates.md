@@ -21,7 +21,7 @@ Below is the link to Track Ukraine, a tool created by a group of Ukrainian's, sp
 ### **[Click to figure out who does and doesn't support Ukraine!](https://trackukraine.com/en-usd)**
 
 {% two-column image="/uploads/dgg-cta-track-ukraine_3.webp" alt="" layout="image-left" %}
-Ukrainians have been fighting for the liberty, justice and honor of their country with such tremendous resolve, we as Democrats need to make sure that not only do we support primary challengers that support Ukraine as a country, but also the people who have fought with such resolve so as to lay their own bodies on the line for the Democracy that the future generations of Ukrainians will be provided thanks to their sacrifice.
+Ukrainians have been fighting for the liberty, justice and honor of their country with such tremendous resolve, valor, and strength, we as Democrats need to make sure that not only do we support primary challengers that support Ukraine as a country, but also the people who have fought with such strength so as to lay their own bodies on the line for the Democracy that the future generations of Ukrainians will be provided thanks to their service.
 {% /two-column %}
 
 ## **We ask you to do the following:**
