@@ -9,7 +9,7 @@ authors:
 ---
 ## **Ukraine is under siege from Russians on the frontline, and abroad in America with anti-Ukrainian politicians and candidates!**
 
-![](/uploads/dgg-cta-track-ukraine_2.webp)
+![](/uploads/dgg-cta-track-ukraine_2_new.jpg)
 
 February 24th 2026, marked the 4th full year of Russia's "special military operation" into Ukraine. The invasion of Ukraine has been a cornerstone of Democratic messaging ever since it began with the Biden administration focusing many aid packages to the Ukrainian government and its military to fend off the Russ advance. However, even during the administration and into the Trump administration there continues to be a increase in anti-Ukrainian congress people as well as candidates on either side of the isle. We must stop them through voicing our concern to our Representatives and Senators!
 
@@ -32,7 +32,7 @@ Ukrainians have been fighting for the liberty, justice and honor of their countr
 
    * [Click here to find your Senator](https://www.congress.gov/members/find-your-member)
 
-## Example Email: 
+## Example Email:
 
 The following is a sample email I created to speak to Mark Pocan of D-2 Wisconsin. **PLEASE DO NOT COPY MY SAMPLE!** Your email should reflect you as a constituent of theirs in your own words, copy and pasting my sample will only be ignored as mass spam or as a bot template, so make sure to create your own when writing emails to your democratic representatives and senators\
 \
