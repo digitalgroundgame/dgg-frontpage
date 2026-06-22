@@ -37,6 +37,8 @@ This project is a Next.js 16 App Router site with Decap CMS content stored in th
 
 ## Verification
 
+Don't start your own server, and check if there is already a server running.
+
 If code change is risky run:
 
 ```bash
@@ -49,3 +51,4 @@ For Docker-related changes, also run:
 ```bash
 docker compose build
 ```
+
