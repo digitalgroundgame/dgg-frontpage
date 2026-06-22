@@ -108,15 +108,23 @@ export const regions = {
     name: "Midwest",
     tagline:
       '"Because it is the Midwest, no one really glitters because no one has to, it\'s more of a dull shine, like frequently used silverware." - Charles Baxter',
+    dispatchName: "Midwest News",
+    dispatchDescription:
+      "A running blog for regional updates and practical ways to get involved.",
     email: "midwest-squad@digitalgroundgame.org",
     emailLabel: "Midwest Squad Email",
+    contentCollection: "regions/midwest/news",
     stateIds: midwestStateIds,
   },
   south: {
     slug: "south",
     name: "South",
+    dispatchName: "South News",
+    dispatchDescription:
+      "A running blog for regional updates and practical ways to get involved.",
     email: "south-squad@digitalgroundgame.org",
     emailLabel: "South Squad Email",
+    contentCollection: "regions/south/news",
     stateIds: southStateIds,
   },
 } satisfies Record<string, RegionConfig>;
