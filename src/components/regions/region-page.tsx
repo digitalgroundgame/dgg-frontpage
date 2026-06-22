@@ -63,7 +63,7 @@ export function RegionPage({ region }: RegionPageProps) {
                 className="h-5 w-5 shrink-0"
                 name="logo-social-media-instagram"
               />
-              Instagram
+              {region.name} Insta
             </ButtonLink>
           ) : null}
         </div>
