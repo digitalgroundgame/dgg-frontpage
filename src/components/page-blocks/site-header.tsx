@@ -142,9 +142,7 @@ export function SiteHeader() {
                 {primaryNavItems.map((item) => (
                   <Link
                     aria-current={isActiveLink(item.href) ? "page" : undefined}
-                    className={`inline-flex items-center gap-3 text-left transition hover:text-accent-red ${
-                      isActiveLink(item.href) ? "text-brand-blue" : ""
-                    }`}
+                    className="inline-flex items-center gap-3 text-left transition hover:text-accent-red"
                     href={item.href}
                     key={item.label}
                     onClick={closeMobileMenu}
@@ -161,9 +159,7 @@ export function SiteHeader() {
                 {regionItems.map((item) => (
                   <Link
                     aria-current={isActiveLink(item.href) ? "page" : undefined}
-                    className={`transition hover:text-accent-red ${
-                      isActiveLink(item.href) ? "text-brand-blue" : ""
-                    }`}
+                    className="transition hover:text-accent-red"
                     href={item.href}
                     key={item.label}
                     onClick={closeMobileMenu}
