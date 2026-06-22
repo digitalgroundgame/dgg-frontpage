@@ -37,6 +37,9 @@ To serve the development app from another hostname on your network, set
 DEV_HOSTNAME=your-dev-host.example pnpm dev:all
 ```
 
+The app remains available at [http://localhost:3000](http://localhost:3000)
+when `DEV_HOSTNAME` is set.
+
 When using `/admin` from a network hostname, keep `pnpm dev:all` running so the
 Decap local backend proxy is available on the same hostname at port `8081`.
 
