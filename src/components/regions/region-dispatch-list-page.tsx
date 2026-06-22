@@ -66,14 +66,7 @@ export function RegionDispatchListPage({
                 />
               ))}
             </div>
-          ) : (
-            <div className="mt-10 bg-charcoal p-6 text-near-white-blue">
-              <p className="type-body">
-                {region.dispatchName} entries will appear here once they are
-                published in the CMS.
-              </p>
-            </div>
-          )}
+          ) : null}
         </div>
       </section>
 

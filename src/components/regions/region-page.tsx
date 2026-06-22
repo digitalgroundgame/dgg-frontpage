@@ -73,7 +73,8 @@ export function RegionPage({ region }: RegionPageProps) {
 
       {region.contentCollection &&
       region.dispatchName &&
-      region.dispatchDescription ? (
+      region.dispatchDescription &&
+      latestDispatch ? (
         <section
           className="px-8 pt-8 pb-16 sm:px-12 lg:px-20"
           id={`${region.slug}-dispatch`}
@@ -95,26 +96,17 @@ export function RegionPage({ region }: RegionPageProps) {
               </p>
             </div>
 
-            {latestDispatch ? (
-              <div className="mt-10">
-                <Article
-                  authors={latestDispatch.authors}
-                  authorSlugs={latestDispatch.authorSlugs}
-                  body={latestDispatch.body}
-                  dateTime={latestDispatch.date}
-                  formattedDate={formatDispatchDate(latestDispatch.date)}
-                  heroPhoto={latestDispatch.heroPhoto}
-                  title={latestDispatch.title}
-                />
-              </div>
-            ) : (
-              <div className="mt-10 bg-charcoal p-6 text-near-white-blue">
-                <p className="type-body">
-                  {region.dispatchName} entries will appear here once they are
-                  published in the CMS.
-                </p>
-              </div>
-            )}
+            <div className="mt-10">
+              <Article
+                authors={latestDispatch.authors}
+                authorSlugs={latestDispatch.authorSlugs}
+                body={latestDispatch.body}
+                dateTime={latestDispatch.date}
+                formattedDate={formatDispatchDate(latestDispatch.date)}
+                heroPhoto={latestDispatch.heroPhoto}
+                title={latestDispatch.title}
+              />
+            </div>
           </div>
 
           {olderDispatches.length > 0 ? (
