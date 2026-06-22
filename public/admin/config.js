@@ -31,21 +31,6 @@ const talkingPointFields = dispatchFields;
 
 const resourceFields = dispatchFields;
 
-const peopleFields = [
-  { label: "Title", name: "title", widget: "string" },
-  {
-    label: "People",
-    name: "authors",
-    widget: "relation",
-    collection: "people",
-    search_fields: ["name"],
-    value_field: "{{slug}}",
-    display_fields: ["name"],
-    multiple: true,
-    required: false,
-  },
-];
-
 const photoFields = [
   { label: "Photo", name: "image", widget: "image" },
   { label: "Alt Text", name: "alt", widget: "string" },
@@ -61,6 +46,39 @@ const photoFields = [
     widget: "number",
     required: false,
     default: 0,
+  },
+];
+
+const regionFields = [
+  { label: "Title", name: "title", widget: "string" },
+  {
+    label: "Instagram URL",
+    name: "instagramHref",
+    widget: "string",
+    required: false,
+    pattern: [
+      "^https://(www\\.)?instagram\\.com/.+",
+      "Enter a valid Instagram URL starting with https://www.instagram.com/",
+    ],
+  },
+  {
+    label: "People",
+    name: "authors",
+    widget: "relation",
+    collection: "people",
+    search_fields: ["name"],
+    value_field: "{{slug}}",
+    display_fields: ["name"],
+    multiple: true,
+    required: false,
+  },
+  {
+    label: "Photos",
+    name: "photos",
+    widget: "list",
+    summary: "{{fields.alt}}",
+    required: false,
+    fields: photoFields,
   },
 ];
 
@@ -103,6 +121,36 @@ const collections = [
     fields: resourceFields,
   },
   {
+    name: "regions",
+    label: "Regions",
+    files: [
+      {
+        label: "Midwest",
+        name: "midwest",
+        file: "content/regions/midwest/index.md",
+        fields: regionFields,
+      },
+      {
+        label: "Northeast",
+        name: "northeast",
+        file: "content/regions/northeast/index.md",
+        fields: regionFields,
+      },
+      {
+        label: "South",
+        name: "south",
+        file: "content/regions/south/index.md",
+        fields: regionFields,
+      },
+      {
+        label: "West",
+        name: "west",
+        file: "content/regions/west/index.md",
+        fields: regionFields,
+      },
+    ],
+  },
+  {
     name: "northeast_news",
     label: "Northeast > Northeast News",
     folder: "content/regions/northeast/news",
@@ -111,100 +159,12 @@ const collections = [
     fields: dispatchFields,
   },
   {
-    name: "northeast_people",
-    label: "Northeast > People",
-    files: [
-      {
-        label: "People",
-        name: "people",
-        file: "content/regions/northeast/people/index.md",
-        fields: peopleFields,
-      },
-    ],
-  },
-  {
-    name: "northeast_photos",
-    label: "Northeast > Photos",
-    folder: "content/regions/northeast/photos",
-    create: true,
-    identifier_field: "alt",
-    summary: "{{alt}}",
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-    fields: photoFields,
-  },
-  {
     name: "west_news",
     label: "West > West Region Dispatch",
     folder: "content/regions/west/news",
     create: true,
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
     fields: dispatchFields,
-  },
-  {
-    name: "west_people",
-    label: "West > People",
-    files: [
-      {
-        label: "People",
-        name: "people",
-        file: "content/regions/west/people/index.md",
-        fields: peopleFields,
-      },
-    ],
-  },
-  {
-    name: "west_photos",
-    label: "West > Photos",
-    folder: "content/regions/west/photos",
-    create: true,
-    identifier_field: "alt",
-    summary: "{{alt}}",
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-    fields: photoFields,
-  },
-  {
-    name: "midwest_people",
-    label: "Midwest > People",
-    files: [
-      {
-        label: "People",
-        name: "people",
-        file: "content/regions/midwest/people/index.md",
-        fields: peopleFields,
-      },
-    ],
-  },
-  {
-    name: "midwest_photos",
-    label: "Midwest > Photos",
-    folder: "content/regions/midwest/photos",
-    create: true,
-    identifier_field: "alt",
-    summary: "{{alt}}",
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-    fields: photoFields,
-  },
-  {
-    name: "south_people",
-    label: "South > People",
-    files: [
-      {
-        label: "People",
-        name: "people",
-        file: "content/regions/south/people/index.md",
-        fields: peopleFields,
-      },
-    ],
-  },
-  {
-    name: "south_photos",
-    label: "South > Photos",
-    folder: "content/regions/south/photos",
-    create: true,
-    identifier_field: "alt",
-    summary: "{{alt}}",
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-    fields: photoFields,
   },
   {
     name: "links",

@@ -7,7 +7,7 @@ import { PeopleGrid } from "@/components/regions/people-grid";
 import { PhotoList } from "@/components/regions/photo-list";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
-import { getRegionPeople, getRegionPhotos } from "@/lib/region-content";
+import { getRegionContent } from "@/lib/region-content";
 import type { RegionConfig } from "@/lib/regions";
 import {
   formatDispatchDate,
@@ -26,8 +26,7 @@ export function RegionPage({ region }: RegionPageProps) {
   const latestDispatch = dispatchEntries[0];
   const olderDispatches = dispatchEntries.slice(1, 4);
   const dispatchListHref = `/regions/${region.slug}/dispatch`;
-  const people = getRegionPeople(region.slug);
-  const photos = getRegionPhotos(region.slug);
+  const { instagramLink, people, photos } = getRegionContent(region.slug);
 
   return (
     <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
@@ -40,7 +39,7 @@ export function RegionPage({ region }: RegionPageProps) {
       />
 
       <section className="px-8 pb-20 sm:px-12 lg:px-20">
-        <div className="mx-auto flex w-full max-w-4xl justify-center">
+        <div className="mx-auto flex w-full max-w-4xl flex-wrap justify-center gap-4">
           <ButtonLink
             className="flex w-full max-w-md justify-center text-center sm:w-auto sm:min-w-xs sm:max-w-full"
             href={`mailto:${region.email}`}
@@ -52,6 +51,21 @@ export function RegionPage({ region }: RegionPageProps) {
             />
             {region.emailLabel}
           </ButtonLink>
+          {instagramLink ? (
+            <ButtonLink
+              className="flex w-full max-w-md justify-center text-center sm:w-auto sm:min-w-xs sm:max-w-full"
+              href={instagramLink.href}
+              primaryHover="black-blue"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <PixelIcon
+                className="h-5 w-5 shrink-0"
+                name="logo-social-media-instagram"
+              />
+              Instagram
+            </ButtonLink>
+          ) : null}
         </div>
       </section>
 
