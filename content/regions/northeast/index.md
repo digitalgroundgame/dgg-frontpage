@@ -8,6 +8,7 @@ authors:
   - paul
   - sam-koved
   - shea
+  - map-name-kmav-picture-uploads-kmav-png-orgtitle-philly-city-organizer-bio-knower-of-ball-pragmatic-radical-liberal-ww2-enthusiast-italianx-latinx-minority-ff7-fan-semi-pro-minecrafter
 photos:
   - image: /uploads/northeast-about-us-team.webp
     alt: Digital Ground Game team members together
