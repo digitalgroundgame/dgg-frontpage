@@ -1,5 +1,5 @@
 ---
-title: Get involved with DGG on Discord! →
+title: Get involved to defeat Trump! →
 href: https://discord.gg/digitalgroundgame
 order: 4
 ---
