@@ -1,6 +1,6 @@
 ---
 title: Midwest Region
-instagramHref: ""
+instagramHref: https://www.instagram.com/digitalgroundgame.midwest
 authors:
   - kyle-e
   - ulysses
