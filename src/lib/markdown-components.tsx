@@ -89,7 +89,7 @@ export function markdownComponents(invert = false): Components {
     img: ({ alt, src }) => (
       <Image
         alt={alt ?? ""}
-        className="mt-6 h-auto w-full border border-charcoal/10"
+        className="mx-3 my-14 h-auto w-[calc(100%-1.5rem)]"
         height={643}
         src={String(src ?? "")}
         width={680}

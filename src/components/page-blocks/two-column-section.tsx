@@ -19,19 +19,20 @@ export function TwoColumnSection({
   invert = false,
 }: TwoColumnSectionProps) {
   const imageColumn = (
-    <div className="relative aspect-[4/3] overflow-hidden rounded">
+    <div className="overflow-hidden rounded">
       <Image
         alt={alt}
-        className="object-contain"
-        fill
+        className="h-auto w-full"
+        height={900}
         sizes="(min-width: 768px) 50vw, 100vw"
         src={image}
+        width={1200}
       />
     </div>
   );
 
   const textColumn = (
-    <div>
+    <div className="[&>*:first-child]:mt-0">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={markdownComponents(invert)}
