@@ -1,6 +1,6 @@
 ---
 title: Northeast Region
-instagramHref: ""
+instagramHref: https://www.instagram.com/digitalgroundgame.northeast
 authors:
   - ben
   - elias
