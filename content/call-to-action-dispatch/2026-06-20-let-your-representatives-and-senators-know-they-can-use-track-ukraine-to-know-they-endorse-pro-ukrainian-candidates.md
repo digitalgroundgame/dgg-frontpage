@@ -41,6 +41,14 @@ Ukrainians have been fighting for the liberty, justice and honor of their countr
 1. Please sign the Track Ukraine Pledge to show your support for what Track Ukraine does and for you to show support for the Ukrainian people
 2. Please speak out on the invasion as much as you can to show you support the Ukrainian people and so that the invasions much visibility as possible.
 
+Bellow is a template you can use for either your House Rep or your Senators. Preferably we would like you to write your own but the template it totally usable: 
+
+Hello \[Representative/Senator Name],
+
+I am one of your constituents and I am concerned with the 
+
+
+
 The following is a sample email I created to speak to Mark Pocan of D-2 Wisconsin. **PLEASE DO NOT COPY MY SAMPLE!** Your email should reflect you as a constituent of theirs in your own words, copy and pasting my sample will only be ignored as mass spam or as a bot template, so make sure to create your own when writing emails to your democratic representatives and senators\
 \
 Hello Representative Pocan,
