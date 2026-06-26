@@ -47,9 +47,7 @@ Hello \[Representative/Senator Name],
 
 I am one of your constituents and I am concerned with the 
 
-
-
-The following is a sample email I created to speak to Mark Pocan of D-2 Wisconsin. **PLEASE DO NOT COPY MY SAMPLE!** Your email should reflect you as a constituent of theirs in your own words, copy and pasting my sample will only be ignored as mass spam or as a bot template, so make sure to create your own when writing emails to your democratic representatives and senators\
+\
 \
 Hello Representative Pocan,
 
