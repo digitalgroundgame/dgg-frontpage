@@ -41,22 +41,19 @@ Ukrainians have been fighting for the liberty, justice and honor of their countr
 1. Please sign the Track Ukraine Pledge to show your support for what Track Ukraine does and for you to show support for the Ukrainian people
 2. Please speak out on the invasion as much as you can to show you support the Ukrainian people and so that the invasions much visibility as possible.
 
-The following is a sample email I created to speak to Mark Pocan of D-2 Wisconsin. **PLEASE DO NOT COPY MY SAMPLE!** Your email should reflect you as a constituent of theirs in your own words, copy and pasting my sample will only be ignored as mass spam or as a bot template, so make sure to create your own when writing emails to your democratic representatives and senators\
-\
-Hello Representative Pocan,
+Bellow is a template you can use for either your House Rep or your Senators. Preferably we would like you to write your own but the template it totally usable: 
 
-I am a constituent of yours and I am reaching out with concern that there are candidates in Wisconsin that are anti-Ukraine that should not receive your endorsement. Now I know that you co-sponsored H.R.3104 which was the Ukrainian Adjustment Act of 2025 and that you have supported many aid packages to Ukraine. I would like you to consider using a tool I found that will have you determine which candidates hold a Pro-Ukrainian position and who doesn't. The website is called trackukraine.com/ed-usd
+Hello \[Representative/Senator Name],
 
-I ask of you the following:
+I am one of your constituents, and I am writing because I am concerned about how our government is responding to Russia’s invasion of Ukraine. Too many of our elected officials and prospective candidates are apathetic, and some are outright hostile to Ukraine’s cause.
 
-1. Please sign the Track Ukraine Pledge to show your support for what Track Ukraine does and for you to show support for the Ukrainian people
-2. Please speak out on the invasion as much as you can to show you support the Ukrainian people and so that the invasions much visibility as possible.
+This is the largest war Europe has seen since 1945. Ukraine has held the line against an expansionist Russia whose conduct stands against the values our nation claims to defend. The outcome will shape the credibility of every commitment we make for a generation.
 
-Regards,
+I ask two things of you. First, please sign the Track Ukraine Pledge (trackukraine.com) to show your support for the Ukrainian people. Second, please be vocal about the invasion, and vocal in support of candidates in the coming elections who are willing to back aid and support for Ukraine.
 
-Ulysses
+Best wishes,
 
-D2 Wisconsin Resident
+\[Your Name]
 
 ## Example Phone call script:
 
@@ -65,8 +62,14 @@ D2 Wisconsin Resident
 1. Please sign the Track Ukraine Pledge to show your support for what Track Ukraine does and for you to show support for the Ukrainian people
 2. Please speak out on the invasion as much as you can to show you support the Ukrainian people and so that the invasions much visibility as possible.
 
-Hi, my name is \[Your name] and I'm from \[Your city/state].
+**Example Phone Call:**
 
-I'm calling to ask you to endorse and support pro-Ukrainian candidates in upcoming elections.Ukraine has been fighting for 4 years. They need Congress to back them with strong allies who support their fight for freedom. 
+Example Phone Call:
 
-That starts with endorsing candidates who take the pro-Ukraine pledge and using TrackUkraine in order to figure out who to endorse. Please make this a priority. Thank you.
+Hi, my name is \[Your Name] and I’m a constituent calling from \[Your city/state].
+
+I’m calling because I’m concerned about how our government is responding to Russia’s invasion of Ukraine. Ukraine has held the line for four years against an expansionist Russia whose conduct stands against the values our nation claims to defend.
+
+I’m asking for two things. First, please sign the Track Ukraine Pledge to show your support for the Ukrainian people. Second, please endorse and support candidates in the coming elections who are willing to back aid for Ukraine. TrackUkraine.com can help identify which candidates have taken the pledge.
+
+Please make this a priority. Thank you.
