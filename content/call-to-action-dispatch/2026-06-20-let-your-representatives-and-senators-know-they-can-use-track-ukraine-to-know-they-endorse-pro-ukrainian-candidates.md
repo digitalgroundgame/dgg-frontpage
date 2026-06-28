@@ -38,7 +38,7 @@ Ukrainians have been fighting for the liberty, justice and honor of their countr
 
 **The email should make the request for your representative to do the following:**
 
-1. Please sign the Track Ukraine Pledge to show your support for what Track Ukraine does and for you to show support for the Ukrainian people
+1. Please sign the [Track Ukraine Pledge](https://trackukraine.com/pages/pledge) to show your support for what Track Ukraine does and for you to show support for the Ukrainian people
 2. Please speak out on the invasion as much as you can to show you support the Ukrainian people and so that the invasions much visibility as possible.
 
 **Bellow is a template you can use for either your House Rep or your Senators. Preferably we would like you to write your own but the template it totally usable:** 
@@ -49,7 +49,7 @@ I am one of your constituents, and I am writing because I am concerned about how
 
 This is the largest war Europe has seen since 1945. Ukraine has held the line against an expansionist Russia whose conduct stands against the values our nation claims to defend. The outcome will shape the credibility of every commitment we make for a generation.
 
-I ask two things of you. First, please sign the Track Ukraine Pledge (trackukraine.com) to show your support for the Ukrainian people. Second, please be vocal about the invasion, and vocal in support of candidates in the coming elections who are willing to back aid and support for Ukraine.
+I ask two things of you. First, please sign the Track Ukraine Pledge (https://trackukraine.com/pages/pledge) to show your support for the Ukrainian people. Second, please be vocal about the invasion, and vocal in support of candidates in the coming elections who are willing to back aid and support for Ukraine.
 
 Best wishes,
 
@@ -59,7 +59,7 @@ Best wishes,
 
 **In your phone call make the following requests to your reps:**
 
-1. Please sign the Track Ukraine Pledge to show your support for what Track Ukraine does and for you to show support for the Ukrainian people
+1. Please sign the [Track Ukraine Pledge](https://trackukraine.com/pages/pledge) to show your support for what Track Ukraine does and for you to show support for the Ukrainian people
 2. Please speak out on the invasion as much as you can to show you support the Ukrainian people and so that the invasions much visibility as possible.
 
 **Example Phone Call:**
