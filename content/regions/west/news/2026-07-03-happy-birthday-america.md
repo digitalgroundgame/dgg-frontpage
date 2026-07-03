@@ -47,7 +47,7 @@ The goal remains to build a comprehensive outreach resource for campaigns, organ
 
 ## **📊 Project MAD**
 
-Project MAD has completed its **Preliminary State Legislative Seat Target Spreadsheet**. They met with regional squad leaders to discuss organizing to help flip the targeted state legislative seats.
+Project MAD has completed its preliminary state legislative seat targets spreadsheet. They met with regional squad leaders to discuss organizing to help flip the targeted seats.
 
 ---
 
@@ -210,9 +210,7 @@ Beyond the primary, Colorado continues to face major wildfire and emergency-resp
 
 Seattle members recently held a Happy Hour and are having another one today. 
 
-If team USA wins their next game, they'll be playing in Seattle for their next World Cup match, so the Seattle crew might also be putting up anti-Trump posters like was done in LA.
-
-
+Team USA will also be in Seattle for their next World Cup match, so just like in LA, the Seattle crew might be putting up anti-Trump posters near the stadium where they'll be playing.
 
 ## **🏛️ Washington State Democratic Convention**
 
