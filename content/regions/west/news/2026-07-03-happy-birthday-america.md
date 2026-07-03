@@ -5,7 +5,7 @@ authors:
   - daniel-lee
 ---
 
-Small note but been busy this week so the general server updates are a bit lighter this week. Fortunately our state news contributors have been on top of things and have their usual fill of updates for you all to read heading into this holiday weekend.
+Quick disclaimer but been busy this week so the general server updates are a bit lighter this week. Fortunately our state news contributors have been on top of things and have their usual fill of updates for you all to read heading into this holiday weekend.
 
 On that note, as America approaches its 250th birthday, I just want to highlight the World Cup again for giving us all these stories and images of people from all over the world coming together in celebration of the tournament and sharing in their excitement for the games across the country (and Canada and Mexico).
 
