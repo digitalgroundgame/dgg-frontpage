@@ -1,6 +1,6 @@
 ---
 title: Happy Birthday America!
-date: 2026-07-02T21:11:00.000-07:00
+date: 2026-07-03T01:08:00.000-07:00
 authors:
   - daniel-lee
 ---
@@ -208,7 +208,7 @@ Beyond the primary, Colorado continues to face major wildfire and emergency-resp
 
 ## **🍻 Seattle Meetups**
 
-Seattle members recently held a Happy Hour and are having another one today. 
+Seattle members have been meeting up for happy hours and will likely be biweekly going forward so if you're in the area, be on the lookout for another one in two weeks! 
 
 Team USA will also be in Seattle for their next World Cup match, so just like in LA, the Seattle crew might be putting up anti-Trump posters near the stadium where they'll be playing.
 
