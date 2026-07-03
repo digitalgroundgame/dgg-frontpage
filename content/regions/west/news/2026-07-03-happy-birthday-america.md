@@ -1,6 +1,6 @@
 ---
 title: Happy Birthday America!
-date: 2026-07-02T21:11:00.000-07:00
+date: 2026-07-03T01:08:00.000-07:00
 authors:
   - daniel-lee
 ---
