@@ -214,10 +214,10 @@ Team USA will also be in Seattle for their next World Cup match, so just like in
 
 ## **🏛️ Washington State Democratic Convention**
 
-Several West Region members attended this year’s Washington State Democratic Convention.
+Several Washington members attended this year’s Washington State Democratic Convention.
 
 At our last regional meeting, Innami shared a detailed recap of his experience and the convention proceedings.
 
-The biggest takeaway was that further left factions are actively working to increase their influence within the state party structure. I think this is something we as an org should be aware of and should be a wake up call for those of us more on the center left. 
+The biggest takeaway was that further left factions are actively and increasingly successfully working to increase their influence within the state party structure. I think this is something we as an org should be aware of and should be a wake up call for the party at large.
 
 The next state convention is in two years, so if you’re a Washington member interested in helping shape the future of the party, it’s worth keeping on your radar. Let's send an even larger delegation next time!
