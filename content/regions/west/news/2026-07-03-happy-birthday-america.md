@@ -9,7 +9,7 @@ Quick disclaimer but been busy this week so the general server updates are a bit
 
 On that note, as America approaches its 250th birthday, I just want to highlight the World Cup again for giving us all these stories and images of people from all over the world coming together in celebration of the tournament and sharing in their excitement for the games across the country (and Canada and Mexico!).
 
-Whether it's the people of Lawrence, Kansas warmly adopting the Algerian national team as their own, Bostonians teaching the Scottish about baseball and hating on the Yankees, or Mexican and Korean fans becoming bros in LA, I think it presents a version of America that is welcoming, multicultural, and optimistic.
+Whether it's the people of Lawrence, Kansas warmly adopting the Algerian national team as their own, Bostonians teaching the Scottish about baseball and to hate on the Yankees, or Mexican and Korean fans becoming bros in LA, I think it presents a version of America that is welcoming, multicultural, and optimistic.
 
 Of course that stands in stark contrast to the awfulness of this administration, but it's good to be reminded of the good parts of this country and why so many people from around the world still want to come here.
 
