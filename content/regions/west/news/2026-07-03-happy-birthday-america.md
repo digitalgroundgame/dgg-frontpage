@@ -7,7 +7,7 @@ authors:
 
 Quick disclaimer but been busy this week so the general server updates are a bit lighter this week. Fortunately our state news contributors have been on top of things and have their usual fill of updates for you all to read heading into this holiday weekend.
 
-On that note, as America approaches its 250th birthday, I just want to highlight the World Cup again for giving us all these stories and images of people from all over the world coming together in celebration of the tournament and sharing in their excitement for the games across the country (and Canada and Mexico).
+On that note, as America approaches its 250th birthday, I just want to highlight the World Cup again for giving us all these stories and images of people from all over the world coming together in celebration of the tournament and sharing in their excitement for the games across the country (and Canada and Mexico!).
 
 Whether it's the people of Lawrence, Kansas warmly adopting the Algerian national team as their own, Bostonians teaching the Scottish about baseball and hating on the Yankees, or Mexican and Korean fans becoming bros in LA, I think it presents a version of America that is welcoming, multicultural, and optimistic.
 
