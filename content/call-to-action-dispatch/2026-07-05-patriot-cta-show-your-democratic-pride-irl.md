@@ -5,7 +5,7 @@ heroPhoto: /uploads/patriot-truck.jpg
 authors:
   - ulysses
 ---
-## Freedoms greetings American patriots! Show us your patriotism by decorating your person and house!
+## Freedom's greetings American patriots! Show us your patriotism by decorating your person and house!
 
 ![](/uploads/flag_fire_behind.jpg)
 
