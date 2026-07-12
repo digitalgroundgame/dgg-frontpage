@@ -1,7 +1,7 @@
 ---
 title: Stop the OMB from Destroying Scientific grants!
 date: 2026-07-12T12:00:00.000-05:00
-heroPhoto: /uploads/dgg-science.jpg
+heroPhoto: /uploads/dgg-science.webp
 authors:
   - ulysses
 ---
@@ -51,8 +51,8 @@ What we are asking for you to do is the following:
 
 ● Close with an ask. "I urge OMB to withdraw this provision" or this section is sufficient. 
 
-![](/uploads/threat.png)
+![](/uploads/threat.webp)
 
-![](/uploads/asddssaf.png)
+![](/uploads/asddssaf.webp)
 
 *Images credited by Matt*
