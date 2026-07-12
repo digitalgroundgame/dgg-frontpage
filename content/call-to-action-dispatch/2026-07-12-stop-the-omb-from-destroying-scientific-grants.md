@@ -7,11 +7,9 @@ authors:
 ---
 ## The OMB is rewriting 2 CFR part 200! We must stop them!
 
-
-
 2 CFR Part 200, known as the "Uniform Guidance," is the foundational rulebook for managing U.S. federal grants and cooperative agreements. Maintained by the Office of Management and Budget, it standardizes administrative requirements, cost principles, and single-audit rules for all non-federal entities receiving federal funds.
 
-What the OMB is trying to do is to rewrite this so as to allow political appointments to be able veto any grants proposed, **AND ANY EXISTING GRANTS,** without the ability for those decisions to be appealed! What can this affect? well: 
+What the OMB is trying to do is to rewrite this so as to allow political appointees to be able veto any grants proposed, **AND ANY EXISTING GRANTS,** without the ability for those decisions to be appealed! What can this affect? well: 
 
 ● Head Start classrooms and childcare that parents rely on to work 
 
