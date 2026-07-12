@@ -1,5 +1,5 @@
 ---
-title: Stop the OMB from Destroying Scientific grants!
+title: Stop the OMB from destroying scientific grants!
 date: 2026-07-12T12:00:00.000-05:00
 heroPhoto: /uploads/dgg-science.webp
 authors:
