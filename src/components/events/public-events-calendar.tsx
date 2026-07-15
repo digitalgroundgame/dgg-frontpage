@@ -138,7 +138,7 @@ function CalendarNavigation({
         aria-hidden={previous ? undefined : true}
         aria-label={previous ? `Previous ${period}` : undefined}
         className={`grid h-10 w-10 place-items-center bg-near-white-blue text-2xl font-black text-charcoal transition hover:bg-brand-blue hover:text-near-white-blue ${
-          previous ? "" : "pointer-events-none invisible"
+          previous ? "cursor-pointer" : "pointer-events-none invisible"
         }`}
         onClick={previous}
         tabIndex={previous ? undefined : -1}
@@ -147,7 +147,7 @@ function CalendarNavigation({
         ‹
       </button>
       <button
-        className="bg-near-white-blue px-4 py-2 font-bold text-charcoal transition hover:bg-brand-blue hover:text-near-white-blue"
+        className="cursor-pointer bg-near-white-blue px-4 py-2 font-bold text-charcoal transition hover:bg-brand-blue hover:text-near-white-blue"
         onClick={today}
         type="button"
       >
@@ -155,7 +155,7 @@ function CalendarNavigation({
       </button>
       <button
         aria-label={`Next ${period}`}
-        className="grid h-10 w-10 place-items-center bg-near-white-blue text-2xl font-black text-charcoal transition hover:bg-brand-blue hover:text-near-white-blue"
+        className="grid h-10 w-10 cursor-pointer place-items-center bg-near-white-blue text-2xl font-black text-charcoal transition hover:bg-brand-blue hover:text-near-white-blue"
         onClick={next}
         type="button"
       >
@@ -176,7 +176,7 @@ function EventButton({
 }) {
   return (
     <button
-      className={`flex w-full min-w-0 bg-brand-blue text-left leading-tight text-near-white-blue transition hover:bg-black focus-visible:bg-black ${
+      className={`flex w-full min-w-0 cursor-pointer bg-brand-blue text-left leading-tight text-near-white-blue transition hover:bg-black focus-visible:bg-black ${
         large
           ? "flex-col items-start gap-1 px-3 py-2 text-sm"
           : "items-baseline gap-1 px-2 py-1 text-xs"
@@ -227,7 +227,7 @@ function EventDetails({
         <div className="flex flex-wrap gap-3">
           {event.links.map((href, index) => (
             <a
-              className="bg-brand-blue px-5 py-3 font-black uppercase text-near-white-blue transition hover:bg-accent-red"
+              className="cursor-pointer bg-brand-blue px-5 py-3 font-black uppercase text-near-white-blue transition hover:bg-accent-red"
               href={href}
               key={href}
               rel="noopener noreferrer"
@@ -256,6 +256,9 @@ export function PublicEventsCalendar({
   const [view, setView] = useState<CalendarView>("week");
   const [selectedEvent, setSelectedEvent] =
     useState<PublicCalendarEvent | null>(null);
+  const [expandedAgendaEventIds, setExpandedAgendaEventIds] = useState<Set<string>>(
+    () => new Set(),
+  );
   const [popoverPosition, setPopoverPosition] = useState<{
     left: number;
     top: number;
@@ -289,6 +292,7 @@ export function PublicEventsCalendar({
 
   function goToDate(value: Date) {
     setSelectedEvent(null);
+    setExpandedAgendaEventIds(new Set());
     setPopoverPosition(null);
     setCursor(value);
   }
@@ -300,6 +304,7 @@ export function PublicEventsCalendar({
 
   function closeEventDetails() {
     setSelectedEvent(null);
+    setExpandedAgendaEventIds(new Set());
     setPopoverPosition(null);
   }
 
@@ -343,9 +348,16 @@ export function PublicEventsCalendar({
     });
   }
 
-  function selectAgendaEvent(event: PublicCalendarEvent) {
-    setPopoverPosition(null);
-    setSelectedEvent((current) => (current?.id === event.id ? null : event));
+  function toggleAgendaEvent(eventId: string) {
+    setExpandedAgendaEventIds((current) => {
+      const next = new Set(current);
+      if (next.has(eventId)) {
+        next.delete(eventId);
+      } else {
+        next.add(eventId);
+      }
+      return next;
+    });
   }
 
   const todayKey = dateKey(new Date());
@@ -406,7 +418,7 @@ export function PublicEventsCalendar({
           {(["week", "month"] as const).map((option) => (
             <button
               aria-selected={view === option}
-              className={`px-4 py-2 font-black uppercase transition ${
+              className={`cursor-pointer px-4 py-2 font-black uppercase transition ${
                 view === option
                   ? "bg-brand-blue text-near-white-blue"
                   : "text-charcoal hover:bg-charcoal hover:text-near-white-blue"
@@ -527,9 +539,9 @@ export function PublicEventsCalendar({
               agendaEvents.map((event) => (
                 <div key={event.id}>
                   <button
-                    aria-expanded={selectedEvent?.id === event.id}
-                    className="grid w-full grid-cols-[4.5rem_1fr] bg-near-white-blue text-left transition hover:bg-charcoal hover:text-near-white-blue"
-                    onClick={() => selectAgendaEvent(event)}
+                    aria-expanded={expandedAgendaEventIds.has(event.id)}
+                    className="grid w-full cursor-pointer grid-cols-[4.5rem_1fr] bg-near-white-blue text-left transition hover:bg-charcoal hover:text-near-white-blue"
+                    onClick={() => toggleAgendaEvent(event.id)}
                     type="button"
                   >
                     <span className="grid content-center bg-brand-blue px-3 py-4 text-center font-black uppercase text-near-white-blue">
@@ -547,7 +559,7 @@ export function PublicEventsCalendar({
                       <span className="text-lg font-black">{event.title}</span>
                     </span>
                   </button>
-                  {selectedEvent?.id === event.id && (
+                  {expandedAgendaEventIds.has(event.id) && (
                     <EventDetails
                       event={event}
                       inline
