@@ -57,7 +57,7 @@ export default async function EventsPage() {
             </div>
           </div>
 
-          <div className="mx-auto mt-10 w-full max-w-[1440px] px-6 sm:px-12 lg:px-6 xl:px-0">
+          <div className="mx-auto mt-10 w-full max-w-[1440px] px-6">
             <PublicEventsCalendar
               initialDate={now.toISOString().slice(0, 10)}
               initialEvents={initialEvents}
