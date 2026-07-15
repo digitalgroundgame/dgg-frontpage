@@ -254,17 +254,13 @@ export function PublicEventsCalendar({
   const firstDate = useMemo(() => localDateFromKey(initialDate), [initialDate]);
   const [cursor, setCursor] = useState(firstDate);
   const [view, setView] = useState<CalendarView>("week");
-  const [events, setEvents] = useState<PublicCalendarEvent[]>(initialEvents);
   const [selectedEvent, setSelectedEvent] =
     useState<PublicCalendarEvent | null>(null);
   const [popoverPosition, setPopoverPosition] = useState<{
     left: number;
     top: number;
   } | null>(null);
-  const [loading, setLoading] = useState(!initialLoadSucceeded);
-  const [error, setError] = useState("");
   const popoverRef = useRef<HTMLDivElement>(null);
-  const skipInitialFetch = useRef(initialLoadSucceeded);
   const hasHydrated = useSyncExternalStore(
     subscribeToHydration,
     () => true,
@@ -275,70 +271,23 @@ export function PublicEventsCalendar({
   const weekDays = useMemo(() => getWeekDays(cursor), [cursor]);
   const firstWeek = useMemo(() => getWeekDays(firstDate), [firstDate]);
 
-  useEffect(() => {
-    if (skipInitialFetch.current) {
-      skipInitialFetch.current = false;
-      return;
-    }
-
-    const controller = new AbortController();
-    const rangeEnd = addDays(days[days.length - 1], 1);
-    const params = new URLSearchParams({
-      start: days[0].toISOString(),
-      end: rangeEnd.toISOString(),
-    });
-
-    fetch(`/api/events?${params}`, { signal: controller.signal })
-      .then(async (response) => {
-        const body = (await response.json()) as {
-          error?: string;
-          events?: PublicCalendarEvent[];
-        };
-        if (!response.ok || !body.events) {
-          throw new Error(body.error || "Unable to load events.");
-        }
-        setEvents(body.events);
-      })
-      .catch((reason: unknown) => {
-        if (reason instanceof DOMException && reason.name === "AbortError") return;
-        setEvents([]);
-        setError(
-          reason instanceof Error ? reason.message : "Unable to load events.",
-        );
-      })
-      .finally(() => {
-        if (!controller.signal.aborted) setLoading(false);
-      });
-
-    return () => controller.abort();
-  }, [cursor, days]);
-
   const eventsByDay = useMemo(() => {
     const grouped = new Map<string, PublicCalendarEvent[]>();
-    for (const event of hasHydrated ? events : []) {
+    for (const event of hasHydrated ? initialEvents : []) {
       const key = eventDateKey(event);
       grouped.set(key, [...(grouped.get(key) || []), event]);
     }
     return grouped;
-  }, [events, hasHydrated]);
+  }, [initialEvents, hasHydrated]);
 
   const agendaEvents = useMemo(() => {
     const weekKeys = new Set(weekDays.map(dateKey));
-    return (hasHydrated ? events : []).filter((event) =>
+    return (hasHydrated ? initialEvents : []).filter((event) =>
       weekKeys.has(eventDateKey(event)),
     );
-  }, [events, hasHydrated, weekDays]);
+  }, [initialEvents, hasHydrated, weekDays]);
 
   function goToDate(value: Date) {
-    const changesMonth =
-      value.getFullYear() !== cursor.getFullYear() ||
-      value.getMonth() !== cursor.getMonth();
-
-    if (changesMonth) {
-      setLoading(true);
-      setError("");
-      setEvents([]);
-    }
     setSelectedEvent(null);
     setPopoverPosition(null);
     setCursor(value);
@@ -473,9 +422,9 @@ export function PublicEventsCalendar({
         </div>
       </div>
 
-      {error ? (
+      {!initialLoadSucceeded ? (
         <div className="bg-accent-red px-6 py-12 text-center text-xl font-bold text-near-white-blue">
-          {error}
+          The events calendar is temporarily unavailable.
         </div>
       ) : (
         <>
@@ -570,9 +519,7 @@ export function PublicEventsCalendar({
           </div>
 
           <div className="grid gap-3 bg-brand-blue/5 p-4 md:hidden">
-            {loading ? (
-              <p className="type-body py-10 text-center">Loading events…</p>
-            ) : agendaEvents.length === 0 ? (
+            {agendaEvents.length === 0 ? (
               <p className="type-body py-10 text-center">
                 No events are scheduled this week.
               </p>
@@ -611,11 +558,6 @@ export function PublicEventsCalendar({
             )}
           </div>
 
-          {loading && (
-            <div className="hidden bg-brand-blue/10 px-6 py-12 text-center text-lg font-bold md:block">
-              Loading events…
-            </div>
-          )}
         </>
       )}
 

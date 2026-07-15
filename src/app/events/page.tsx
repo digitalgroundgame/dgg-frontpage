@@ -8,6 +8,16 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Events | Digital Ground Game",
   description: "Join Digital Ground Game events and organize with our community.",
+  openGraph: {
+    images: [
+      {
+        url: "/events-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Digital Ground Game Events",
+      },
+    ],
+  },
 };
 
 export default async function EventsPage() {
@@ -15,7 +25,7 @@ export default async function EventsPage() {
   const initialRangeStart = new Date(now);
   const initialRangeEnd = new Date(now);
   initialRangeStart.setUTCDate(initialRangeStart.getUTCDate() - 45);
-  initialRangeEnd.setUTCDate(initialRangeEnd.getUTCDate() + 45);
+  initialRangeEnd.setUTCFullYear(initialRangeEnd.getUTCFullYear() + 1);
 
   let initialEvents: PublicCalendarEvent[] = [];
   let initialLoadSucceeded = false;
