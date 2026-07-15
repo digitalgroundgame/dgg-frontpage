@@ -34,7 +34,11 @@ const primaryNavItems: {
     href: "/talking-points-repo",
     iconName: "content-files-newspaper",
   },
-  { label: "Resources", href: "/resources", iconName: "flip-vertical-down" },
+  {
+    label: "Events",
+    href: "/events",
+    iconName: "interface-essential-calendar-appointment",
+  },
   { label: "Merch", href: "/merch", iconName: "business-product-price-tag" },
 ];
 

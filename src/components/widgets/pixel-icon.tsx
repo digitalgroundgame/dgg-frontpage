@@ -4,6 +4,7 @@ type PixelIconName =
   | "content-files-newspaper"
   | "flip-vertical-down"
   | "hand-writing"
+  | "interface-essential-calendar-appointment"
   | "interface-essential-alert-triangle"
   | "navigation-menu"
   | "user-woman-increasing-arrow"
@@ -199,6 +200,26 @@ const pixelIconPaths: Record<
       "M3.81 16.76h1.52v1.53H3.81Z",
       "M3.81 13.71h1.52v1.53H3.81Z",
       "M2.29 15.24h1.52v1.52H2.29Z",
+    ],
+  },
+  "interface-essential-calendar-appointment": {
+    title: "interface-essential-calendar-appointment",
+    desc: "Interface Essential Calendar Appointment Streamline Icon: https://streamlinehq.com",
+    paths: [
+      "m2.285 10.67 27.43 0 0 19.81 1.52 0 0 -24.38 -1.52 0 0 3.04 -27.43 0 0 -3.04 -1.52 0 0 24.38 1.52 0 0 -19.81z",
+      "M28.195 4.57h1.52V6.1h-1.52Z",
+      "M2.285 30.48h27.43V32H2.285Z",
+      "m25.145 18.29 -3.05 0 0 1.52 -1.52 0 0 -1.52 -3.05 0 0 1.52 -1.52 0 0 3.05 1.52 0 0 1.52 1.52 0 0 1.52 1.53 0 0 1.53 1.52 0 0 -1.53 1.52 0 0 -1.52 1.53 0 0 -1.52 1.52 0 0 -3.05 -1.52 0 0 -1.52z",
+      "M23.615 13.71h1.53v1.53h-1.53Z",
+      "M17.525 13.71h1.52v1.53h-1.52Z",
+      "M11.425 25.9h1.53v1.53h-1.53Z",
+      "M11.425 19.81h1.53v1.52h-1.53Z",
+      "M11.425 13.71h1.53v1.53h-1.53Z",
+      "M5.335 25.9h1.52v1.53h-1.52Z",
+      "M5.335 19.81h1.52v1.52h-1.52Z",
+      "M5.335 13.71h1.52v1.53h-1.52Z",
+      "m8.385 4.57 0 1.53 1.52 0 0 -1.53 12.19 0 0 1.53 1.52 0 0 -1.53 4.58 0 0 -1.52 -4.58 0 0 -3.05 -1.52 0 0 3.05 -12.19 0 0 -3.05 -1.52 0 0 3.05 -4.57 0 0 1.52 4.57 0z",
+      "M2.285 4.57h1.53V6.1h-1.53Z",
     ],
   },
   "interface-essential-alert-triangle": {

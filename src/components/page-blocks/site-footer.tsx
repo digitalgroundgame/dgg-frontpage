@@ -1,5 +1,6 @@
 import { IconSocial, type SocialIconName } from "@/components/icons/icon-social";
 import { ButtonLink } from "@/components/widgets/button-link";
+import Link from "next/link";
 
 const followLinks: { label: string; href: string; icon: SocialIconName }[] = [
   { label: "Instagram", href: "https://www.instagram.com/digitalgroundgame", icon: "instagram" },
@@ -16,7 +17,7 @@ const followLinks: { label: string; href: string; icon: SocialIconName }[] = [
 export function SiteFooter() {
   return (
     <footer className="mt-auto bg-charcoal px-8 text-near-white-blue sm:px-12 lg:px-20">
-      <div className="mx-auto grid w-full max-w-6xl gap-8 py-10 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto grid w-full max-w-6xl gap-8 py-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <h2 className="text-xl font-black">Digital Ground Game</h2>
           <p className="mt-3 leading-7">
@@ -60,6 +61,21 @@ export function SiteFooter() {
         </div>
         <div>
           <h3 className="font-black uppercase tracking-[0.18em] text-near-white-blue">
+            Extras
+          </h3>
+          <ul className="mt-4 grid gap-2">
+            <li>
+              <Link
+                className="text-near-white-blue/70 transition hover:text-accent-red"
+                href="/resources"
+              >
+                Resources
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-black uppercase tracking-[0.18em] text-near-white-blue">
             Follow us
           </h3>
           <div className="mt-4 flex flex-col gap-2">
@@ -96,7 +112,7 @@ export function SiteFooter() {
           </div>
         </div>
       </div>
-      <div className="mx-auto w-full max-w-6xl py-4 text-center text-sm">
+      <div className="mx-auto w-full max-w-6xl py-4 text-center text-sm text-near-white-blue/70">
         Copyright © Digital Ground Game
       </div>
     </footer>
