@@ -66,7 +66,7 @@ export function SiteFooter() {
           <ul className="mt-4 grid gap-2">
             <li>
               <Link
-                className="text-near-white-blue/70 transition hover:text-accent-red"
+                className="text-near-white-blue transition hover:text-accent-red"
                 href="/resources"
               >
                 Resources
