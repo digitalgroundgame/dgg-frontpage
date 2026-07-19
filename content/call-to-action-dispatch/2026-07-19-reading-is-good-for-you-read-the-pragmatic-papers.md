@@ -1,7 +1,7 @@
 ---
-title: Reading is good for you! Read the Pragmatic Papers!
+title: Reading is good for you! Help the Pragmatic Papers!
 date: 2026-07-19T12:00:00.000-05:00
-heroPhoto: /uploads/p_emb.webp
+heroPhoto: /uploads/p_emb.png
 authors:
   - ulysses
 ---
@@ -16,4 +16,4 @@ What are they asking you to do?
 
 Pragmatic Papers doesn't just keep you staying in the know, it helps the Pragmatic Papers expand their reach!
 
-![](/uploads/back_black_prag.webp)
+![](/uploads/back_black_prag.png)
