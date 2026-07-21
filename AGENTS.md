@@ -2,6 +2,10 @@
 
 This project is a Next.js 16 App Router site with Decap CMS content stored in the repository.
 
+## Commits and Branches
+
+Do not make a new branch unless asked to make one or when creating a PR.
+
 ## Styles
 
 @STYLING_GUIDE.md
