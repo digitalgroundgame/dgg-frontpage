@@ -39,7 +39,11 @@ const primaryNavItems: {
     href: "/events",
     iconName: "interface-essential-calendar-appointment",
   },
-  { label: "Merch", href: "/merch", iconName: "business-product-price-tag" },
+  {
+    label: "Sustainers",
+    href: "/sustainers",
+    iconName: "business-product-piggy-bank",
+  },
 ];
 
 const regionItems = [

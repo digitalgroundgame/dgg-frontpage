@@ -72,6 +72,14 @@ export function SiteFooter() {
                 Resources
               </Link>
             </li>
+            <li>
+              <Link
+                className="text-near-white-blue transition hover:text-accent-red"
+                href="/merch"
+              >
+                Merch
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
