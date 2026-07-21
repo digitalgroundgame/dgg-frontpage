@@ -98,7 +98,7 @@ export function SiteHeader() {
         </Link>
 
         <div className="hidden gap-2 header-desktop:grid header-desktop:flex-1">
-          <div className="grid grid-cols-3 lg:px-5 xl:px-7 lg:gap-x-7 gap-y-2 text-lg lg:text-xl xl:text-2xl font-bold text-charcoal ">
+          <div className="header-links-grid grid grid-cols-3 gap-y-2 text-lg font-bold text-charcoal lg:gap-x-7 lg:text-xl xl:text-2xl">
             {primaryNavItems.map((item) => (
               <Link
                 aria-current={isActiveLink(item.href) ? "page" : undefined}
@@ -118,7 +118,7 @@ export function SiteHeader() {
               </Link>
             ))}
           </div>
-          <div className="flex flex-nowrap lg:justify-center gap-x-7 gap-y-2 whitespace-nowrap text-lg">
+          <div className="flex flex-nowrap gap-x-7 gap-y-2 whitespace-nowrap text-lg header-desktop:justify-center">
             {regionItems.map((item) => (
               <Link
                 aria-current={isActiveLink(item.href) ? "page" : undefined}

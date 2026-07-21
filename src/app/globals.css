@@ -124,6 +124,22 @@ p {
     overflow-wrap: break-word;
 }
 
+.header-links-grid {
+    padding-left: calc((100vw - 900px) * 0.17);
+}
+
+@media (min-width: 1024px) {
+    .header-links-grid {
+        padding-left: calc((100vw - 1024px) * 0.22);
+    }
+}
+
+@media (min-width: 1280px) {
+    .header-links-grid {
+        padding-left: calc((min(100vw, 1440px) - 1280px) * 0.20);
+    }
+}
+
 .social-embed-card iframe[src*="tiktok.com"] {
     display: block !important;
     height: 480px !important;
