@@ -93,3 +93,27 @@ DECAP_GITHUB_SCOPE=public_repo,user
 ```
 
 The OAuth route builds its GitHub callback URL from forwarded proxy headers, so production deploys must preserve `x-forwarded-host` and `x-forwarded-proto`.
+
+## Action Network Sustainers
+
+The sustainers page can display the names in an Action Network saved report. In
+Action Network, create a report that targets active Tier IV sustainers who have
+agreed to public recognition. Then set:
+
+```bash
+ACTION_NETWORK_API_KEY=...
+ACTION_NETWORK_TIER_IV_LIST_ID=...
+```
+
+Use the report's UUID from its Action Network API list URL, without the
+`action_network:` prefix. For local development, put these values in the
+gitignored `.env.local` file. In production, configure them as runtime
+environment variables on the Coolify application. The Docker image does not
+need the API key at build time.
+
+Only a person's nonblank `Website_Credit_Name` custom field is published; the
+site never falls back to their account name. The backend serves names from its
+persistent cache and revalidates that cache against Action Network every 24
+hours. It also checks the report's `modified_date` and logs a warning when the
+report is more than 24 hours old. Action Network reports are read-only through
+the API, so a stale report must be rerun in Action Network.
