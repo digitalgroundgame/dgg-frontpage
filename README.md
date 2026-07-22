@@ -55,14 +55,19 @@ pnpm build
 Build and run the production image:
 
 ```bash
-docker compose up --build
+docker build --tag dgg-frontpage .
+docker run --rm --publish 3000:3000 \
+  --env-file .env.local \
+  dgg-frontpage
 ```
 
-Stop it:
+The image exposes port `3000`, listens on all interfaces, and includes a health
+check at `/api/health`.
 
-```bash
-docker compose down
-```
+The Coolify production application uses the Dockerfile build pack with
+`/Dockerfile`, port `3000`, and the `/api/health` health check. Configure both
+`https://digitalgroundgame.org` and `https://www.digitalgroundgame.org`, with
+the redirect direction set to non-www, in Coolify.
 
 ## Content
 
