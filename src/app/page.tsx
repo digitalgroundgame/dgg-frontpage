@@ -228,7 +228,7 @@ export default function Home() {
 
       <section className="bg-near-white-blue px-8 py-16 text-charcoal sm:px-12 lg:px-20">
         <div className="mx-auto w-full max-w-6xl">
-          <p className="type-statement max-w-4xl">
+          <p className="type-statement">
             We are dedicated to free expression, equality under the law, and the
             power of markets to drive prosperity through practical,
             action-oriented organizing.
