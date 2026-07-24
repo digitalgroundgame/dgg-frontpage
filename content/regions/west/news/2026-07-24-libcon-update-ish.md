@@ -41,7 +41,6 @@ The finale of the debate night tournament concluded with over 50 people in atten
 
 ## **📌 Important Dates**
 
-- Voter Registration Deadline: **July 19th**
 - Primary Date: **August 18th**
 	- List of Candidates: **[https://www.elections.alaska.gov/candidates/?election=26prim](https://www.elections.alaska.gov/candidates/?election=26prim)**
 - Weekend of **Action July 25-26**
