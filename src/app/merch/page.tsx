@@ -30,7 +30,7 @@ export default function MerchPage() {
       <section className="bg-brand-blue px-8 py-16 text-near-white-blue sm:px-12 lg:px-20">
         <div className="mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-[minmax(0,42rem)_1fr] md:items-center">
           <div>
-            <p className="type-kicker text-near-white-blue/80">
+            <p className="type-kicker text-near-white-blue/90">
               In The Meantime
             </p>
             <h2 className="type-section-title mt-4">

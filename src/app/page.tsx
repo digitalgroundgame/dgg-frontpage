@@ -41,7 +41,7 @@ const initiatives = [
 
 const accomplishments = [
   {
-    value: "360,000+",
+    value: "360k+",
     label: "Door knocks",
     description: "Completed during the 2024 election cycle.",
   },
@@ -162,7 +162,7 @@ export default function Home() {
       <section className="bg-charcoal px-8 py-16 text-near-white-blue sm:px-12 lg:px-20">
         <div className="mx-auto w-full max-w-6xl">
           <div className="max-w-2xl">
-            <p className="type-kicker text-near-white-blue/80">
+            <p className="type-kicker text-near-white-blue/90">
               What&apos;s New
             </p>
             <h2 className="type-section-title mt-4">
@@ -279,7 +279,7 @@ export default function Home() {
       <section className="relative overflow-hidden px-8 py-28 md:py-32 text-near-white-blue sm:px-12 lg:px-20">
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-charcoal [clip-path:polygon(0_0,100%_0,100%_67%,0_100%)]"
+          className="absolute inset-0 bg-charcoal md:[clip-path:polygon(0_0,100%_13%,100%_100%,0_100%)]"
         />
         <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-[minmax(0,1fr)_minmax(20rem,24rem)] md:items-start">
           <div className="max-w-2xl">
@@ -325,7 +325,7 @@ export default function Home() {
               className="bg-near-white-blue p-5 text-charcoal"
               key={initiative.label}
             >
-              <p className="text-5xl font-black text-brand-blue">
+              <p className="text-5xl !font-black text-brand-blue">
                 {initiative.value}
               </p>
               <h3 className="mt-4 text-xl font-black">{initiative.label}</h3>
@@ -339,7 +339,7 @@ export default function Home() {
         <div className="relative min-h-[22rem] md:min-h-[36rem]">
           <Image
             alt="Digital Ground Game members gathered together"
-            className="object-cover"
+            className="block object-cover"
             fill
             priority
             sizes="(min-width: 768px) 50vw, 100vw"
@@ -362,16 +362,6 @@ export default function Home() {
               future: building lasting political power and developing the next
               generation of leaders.
             </p>
-            <ButtonLink
-              className="mt-8"
-              href="https://secure.actblue.com/donate/dgg"
-              primaryHover="red-black"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <PixelIcon className="h-5 w-5 shrink-0" name="money-bag" />
-              Donate Now
-            </ButtonLink>
           </div>
         </div>
       </section>
@@ -379,11 +369,11 @@ export default function Home() {
       <section className="relative overflow-hidden px-8 py-28 md:py-32 text-near-white-blue sm:px-12 lg:px-20">
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-charcoal [clip-path:polygon(0_0,100%_0,100%_76%,0_100%)]"
+          className="absolute inset-0 bg-charcoal [clip-path:polygon(0_5%,100%_0,100%_86%,0_100%)]"
         />
         <div className="relative z-10 mx-auto w-full max-w-6xl">
           <div className="max-w-3xl">
-            <p className="font-sans text-[1.85rem] font-black uppercase leading-none text-near-white-blue/80 min-[390px]:text-[2.15rem] sm:text-5xl md:text-6xl">
+            <p className="type-kicker !text-[2rem] text-near-white-blue/90 min-[390px]:!text-[2.15rem] sm:!text-5xl md:!text-6xl">
               Our <span className="block">Accomplishments</span>
             </p>
             <h2 className="type-section-title mt-4">
@@ -396,7 +386,7 @@ export default function Home() {
                 className="bg-near-white-blue p-5 text-charcoal"
                 key={item.label}
               >
-                <p className="text-5xl font-black text-brand-blue">
+                <p className="text-5xl !font-black text-brand-blue">
                   {item.value}
                 </p>
                 <h3 className="mt-4 text-xl font-black">{item.label}</h3>
@@ -414,7 +404,7 @@ export default function Home() {
         />
         <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-start">
           <div>
-            <p className="type-kicker text-near-white-blue/80">Our Teams</p>
+            <p className="type-kicker text-near-white-blue/90">Our Teams</p>
             <h2 className="mt-4 text-5xl font-black leading-tight">
               Specialized teams turn energy into action.
             </h2>
