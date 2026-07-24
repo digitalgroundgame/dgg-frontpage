@@ -40,7 +40,7 @@ export default function MerchPage() {
           <div className="flex justify-center md:justify-end">
             <ButtonLink
               className="px-6"
-              href="https://secure.actblue.com/donate/dgg"
+              href="https://secure.actblue.com/donate/dggsubscriber"
               primaryHover="red-black"
               rel="noopener noreferrer"
               target="_blank"
