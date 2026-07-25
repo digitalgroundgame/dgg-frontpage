@@ -135,7 +135,7 @@ export function SiteHeader() {
         </div>
 
         <details
-          className={`group fixed right-6 top-6 z-50 ${
+          className={`group fixed left-6 top-6 z-50 ${
             isScrolled ? "header-desktop:block" : "header-desktop:hidden"
           }`}
           ref={mobileMenuRef}
@@ -144,13 +144,13 @@ export function SiteHeader() {
             <span className="sr-only">Menu</span>
             <PixelIcon name="navigation-menu" />
           </summary>
-          <div className="fixed inset-0 z-40 grid min-h-dvh content-center gap-10 overflow-y-auto bg-light-charcoal px-6 py-28 text-near-white-blue">
+          <div className="fixed inset-0 z-40 grid h-dvh content-start gap-10 overflow-y-auto bg-light-charcoal px-6 pb-6 pt-24 text-near-white-blue sm:left-0 sm:right-auto sm:w-md">
             <div className="mx-auto grid w-full max-w-md gap-8">
               <div className="grid gap-5 text-4xl font-black uppercase leading-none">
                 {primaryNavItems.map((item) => (
                   <Link
                     aria-current={isActiveLink(item.href) ? "page" : undefined}
-                    className="inline-flex items-center gap-3 text-left transition hover:text-accent-red"
+                    className="inline-flex items-center gap-3 text-left"
                     href={item.href}
                     key={item.label}
                     onClick={closeMobileMenu}
@@ -163,11 +163,10 @@ export function SiteHeader() {
                   </Link>
                 ))}
               </div>
-              <div className="grid gap-3 text-2xl font-bold">
+              <div className="grid gap-2 text-2xl font-bold">
                 {regionItems.map((item) => (
                   <Link
                     aria-current={isActiveLink(item.href) ? "page" : undefined}
-                    className="transition hover:text-accent-red"
                     href={item.href}
                     key={item.label}
                     onClick={closeMobileMenu}
@@ -176,9 +175,9 @@ export function SiteHeader() {
                   </Link>
                 ))}
               </div>
-              <div className="grid gap-3 pt-2 text-2xl font-bold">
+              <div className="grid gap-3 pt-1 text-2xl font-bold">
                 <ButtonLink
-                  className="w-full justify-start py-4 text-left"
+                  className="w-44 justify-self-start py-4 text-left"
                   href="https://discord.gg/digitalgroundgame"
                   primaryHover="blue-black"
                   rel="noopener noreferrer"
@@ -188,7 +187,7 @@ export function SiteHeader() {
                   Join In
                 </ButtonLink>
                 <ButtonLink
-                  className="w-full justify-start py-4 text-left"
+                  className="w-44 justify-self-start py-4 text-left"
                   href="https://secure.actblue.com/donate/dggsubscriber"
                   primaryHover="red-black"
                   rel="noopener noreferrer"
