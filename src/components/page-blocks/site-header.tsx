@@ -86,11 +86,11 @@ export function SiteHeader() {
     <header className="relative z-40 bg-near-white-blue">
       <nav
         aria-label="Primary"
-        className="mx-auto flex w-full flex-wrap items-center justify-center gap-5 px-3 sm:px-6 xl:px-25  py-5 header-desktop:justify-between "
+        className="mx-auto flex w-full flex-wrap items-center justify-center gap-5 px-3 py-3 sm:px-6 sm:py-5 xl:px-25 header-desktop:justify-between"
       >
         <Link
           aria-label="Digital Ground Game home"
-          className="flex h-32 w-fit shrink-0 items-center text-brand-blue"
+          className="flex h-27 w-fit shrink-0 items-center text-brand-blue sm:h-32"
           href="/"
         >
           <Logo className="h-[calc(100%-1rem)] w-auto" />

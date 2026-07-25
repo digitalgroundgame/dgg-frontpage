@@ -57,9 +57,9 @@ export default async function CallToActionPage({ params }: PageProps) {
     <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
       <SiteHeader />
 
-      <article className="px-8 py-16 sm:px-12 lg:px-20">
+      <article className="px-8 pb-16 sm:px-12 lg:pt-16 lg:px-20">
         <div className="mx-auto w-full max-w-3xl">
-          <p className="type-label text-light-charcoal">
+          <p className="type-label !text-2xl text-light-charcoal">
             <Link
               className="transition hover:text-brand-blue"
               href="/call-to-action"
@@ -73,6 +73,7 @@ export default async function CallToActionPage({ params }: PageProps) {
               authors={entry.authors}
               authorSlugs={entry.authorSlugs}
               body={entry.body}
+              bodyClassName="mt-12"
               dateTime={entry.date}
               formattedDate={formatDispatchDate(entry.date)}
               headingLevel="h1"

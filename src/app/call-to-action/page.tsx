@@ -50,17 +50,17 @@ export default function CallToActionPage() {
     <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
       <SiteHeader />
       <section
-        className="px-8 pt-8 pb-16 sm:px-12 lg:px-20"
+        className="px-8 pb-16 sm:px-12 md:pt-8 lg:px-20"
         id="call-to-action-dispatch"
       >
         <div className="mx-auto w-full max-w-3xl">
-          <div className="mx-auto grid w-fit max-w-full gap-4 text-center md:mx-0 md:text-left">
+          <div className="mx-auto grid w-fit max-w-full gap-4 text-center">
             <div>
-              <h2 className="type-kicker text-light-charcoal">
+              <h2 className="type-kicker max-sm:!text-4xl text-light-charcoal">
                 <span>
                   Call to Action
                   <PixelIcon
-                    className="ml-1.5 inline h-16 w-16 align-middle"
+                    className="ml-1.5 inline h-10 w-10 align-middle sm:h-15 sm:w-15"
                     name="interface-essential-speaker-announce"
                   />
                 </span>
@@ -69,7 +69,7 @@ export default function CallToActionPage() {
           </div>
 
           {latestDispatch ? (
-            <div className="mt-10">
+            <div className="mt-4">
               <Article
                 authors={latestDispatch.authors}
                 authorSlugs={latestDispatch.authorSlugs}

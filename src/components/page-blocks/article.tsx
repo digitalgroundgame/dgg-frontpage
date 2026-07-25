@@ -12,6 +12,7 @@ type ArticleProps = {
   authorSlugs?: string[];
   authors?: Author[];
   body: string;
+  bodyClassName?: string;
   headingLevel?: "h1" | "h2";
 };
 
@@ -23,6 +24,7 @@ export function Article({
   authorSlugs = [],
   authors = [],
   body,
+  bodyClassName = "mt-12",
   headingLevel = "h2",
 }: ArticleProps) {
   const TitleTag = headingLevel;
@@ -114,7 +116,7 @@ export function Article({
         </div>
       </header>
 
-      <div className="mt-20">
+      <div className={bodyClassName}>
         {body ? <BlogMarkdown>{body}</BlogMarkdown> : null}
       </div>
     </article>
