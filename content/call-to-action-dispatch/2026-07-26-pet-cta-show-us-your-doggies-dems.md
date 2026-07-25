@@ -1,7 +1,7 @@
 ---
 title: "Pet CTA: Show us your Doggie's Dem's!"
 date: 2026-07-26T12:00:00.000-05:00
-heroPhoto: /uploads/doggie_dems.png
+heroPhoto: /uploads/doggie_dems.webp
 ---
 ## Who let the Dem's out! Woof, woof woof woof!
 
