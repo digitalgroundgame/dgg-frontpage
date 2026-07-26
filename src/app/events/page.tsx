@@ -1,6 +1,7 @@
 import { PublicEventsCalendar } from "@/components/events/public-events-calendar";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
+import { ButtonLink } from "@/components/widgets/button-link";
 import { PixelIcon } from "@/components/widgets/pixel-icon";
 import { loadPublicCalendar, type PublicCalendarEvent } from "@/lib/events-calendar";
 import type { Metadata } from "next";
@@ -42,19 +43,19 @@ export default async function EventsPage() {
       <SiteHeader />
       <main className="flex-1">
         <section className="py-8 sm:py-10">
-          <div className="mx-auto flex max-w-6xl items-start gap-5 px-6 sm:px-12 lg:px-20">
-            <PixelIcon
-              className="mt-1 h-12 w-12 shrink-0 sm:h-14 sm:w-14"
-              name="interface-essential-calendar-appointment"
-            />
-            <div className="max-w-3xl">
+          <div className="mx-auto flex max-w-3xl flex-col items-center px-6 text-center sm:px-12 lg:px-20">
+            <div className="flex items-center justify-center gap-4 sm:gap-5">
+              <PixelIcon
+                className="h-12 w-12 shrink-0 sm:h-14 sm:w-14"
+                name="interface-essential-calendar-appointment"
+              />
               <h1 className="type-hero uppercase">Events</h1>
-              <p className="type-body mt-5">
-                Join Digital Ground Game meetings, workshops, community events,
-                and organizing opportunities. Select an event for details and
-                its Discord link.
-              </p>
             </div>
+            <p className="type-body mt-5">
+              Join Digital Ground Game meetings, workshops, community events,
+              and organizing opportunities. Select an event for details and its
+              Discord link.
+            </p>
           </div>
 
           <div className="mx-auto mt-10 w-full max-w-[1440px] px-6">
@@ -63,6 +64,23 @@ export default async function EventsPage() {
               initialEvents={initialEvents}
               initialLoadSucceeded={initialLoadSucceeded}
             />
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <ButtonLink
+                href="https://calendar.google.com/calendar/u/0/r?cid=c_558b7955537810ad93b69f714c889e6a5773ae520471dcfea3d84bf233bd6d28%40group.calendar.google.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Add to Google Calendar
+              </ButtonLink>
+              <ButtonLink
+                href="https://calendar.google.com/calendar/ical/c_558b7955537810ad93b69f714c889e6a5773ae520471dcfea3d84bf233bd6d28%40group.calendar.google.com/public/basic.ics"
+                primaryHover="black-blue"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Add to Apple Calendar
+              </ButtonLink>
+            </div>
           </div>
         </section>
       </main>

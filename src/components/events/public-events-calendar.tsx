@@ -344,7 +344,7 @@ export function PublicEventsCalendar({
     setSelectedEvent(event);
     setPopoverPosition({
       left,
-      top: window.scrollY + rect.bottom + gap,
+      top: window.scrollY + rect.top - gap,
     });
   }
 
@@ -440,7 +440,7 @@ export function PublicEventsCalendar({
         </div>
       ) : (
         <>
-          <div className="hidden overflow-hidden bg-charcoal/15 md:block">
+          <div className="hidden overflow-hidden bg-charcoal/15 px-px pb-px md:block">
             {view === "month" ? (
               <div className="grid grid-cols-7 gap-px">
                 {weekdays.map((weekday) => (
@@ -575,7 +575,7 @@ export function PublicEventsCalendar({
 
       {selectedEvent && popoverPosition && (
         <div
-          className="absolute z-50 hidden md:block"
+          className="absolute z-50 hidden -translate-y-full md:block"
           ref={popoverRef}
           style={popoverPosition}
         >
