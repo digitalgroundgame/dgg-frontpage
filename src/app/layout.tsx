@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Press_Start_2P, Roboto_Condensed, Roboto } from "next/font/google";
 import Script from "next/script";
 import localFont from "next/font/local";
@@ -45,6 +45,11 @@ export const metadata: Metadata = {
   openGraph: {
     images: "/dgg-og-image.png",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#fbfcff",
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

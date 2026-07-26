@@ -34,8 +34,17 @@
     --font-roboto: var(--font-roboto);
 }
 
+html,
 body {
     background: var(--background);
+}
+
+html.mobile-menu-open,
+body.mobile-menu-open {
+    background: var(--color-light-charcoal);
+}
+
+body {
     color: var(--foreground);
     font-family: var(--font-roboto-condensed), Helvetica, sans-serif;
 }
