@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/uploads/vote-from-abroad-cta-cover.png",
+        url: "/uploads/vote-from-abroad-cta-cover.webp",
         width: 800,
         height: 418,
         alt: "Register to vote from abroad with Digital Ground Game",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Register to Vote From Abroad!",
     description: "",
-    images: ["/uploads/vote-from-abroad-cta-cover.png"],
+    images: ["/uploads/vote-from-abroad-cta-cover.webp"],
   },
   robots: {
     index: false,
