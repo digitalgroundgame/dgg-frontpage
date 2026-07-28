@@ -7,7 +7,7 @@ authors:
 ## College Democrats organizers were left to answer for the national board's decision to feature Hasan Piker at the 2026 convention, one they had no part in, and we want their firsthand accounts.
 
 
-### [**Share Your Account: Fill Out The Form**](https://forms.gle/znBfMhagwWnWchvv6)
+## [**Share Your Account: Fill Out The Form Here**](https://forms.gle/znBfMhagwWnWchvv6)
 
 
 On Saturday, the College Democrats of America (CDA) national board announced Hasan Piker as a speaker at CDA's 2026 convention, the organization's first in years. Piker opened by calling himself "an outsider currently pushing for an insurgency" inside the Democratic Party, used the speech to tell the room "we don't need those Democrats anymore," meaning the ones "who compromise, who conciliate, and who betray us," and delivered it in a Mao suit.
@@ -33,4 +33,4 @@ We are collecting firsthand accounts from current and former CDA members, chapte
 You may speak publicly or anonymously. We will not publish identifying information without permission. College Democrats are far more than the actions of a national board, and we want to amplify the organizers doing serious on-the-ground work. Share your account using the form below:
 
 
-### [Fill Out The Form](https://forms.gle/znBfMhagwWnWchvv6)
+## [Fill Out The Form Here](https://forms.gle/znBfMhagwWnWchvv6)
