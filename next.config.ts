@@ -1,10 +1,14 @@
 import type { NextConfig } from "next";
 
 const devHostname = process.env.DEV_HOSTNAME?.trim();
+const allowedDevOrigins = [
+  "127.0.0.1",
+  ...(devHostname ? [devHostname] : []),
+];
 
 const nextConfig: NextConfig = {
   output: "standalone",
-  ...(devHostname ? { allowedDevOrigins: [devHostname] } : {}),
+  allowedDevOrigins,
   async headers() {
     return [
       {
