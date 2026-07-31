@@ -1,5 +1,4 @@
 import { IconSocial, type SocialIconName } from "@/components/icons/icon-social";
-import { ButtonLink } from "@/components/widgets/button-link";
 import Link from "next/link";
 
 const followLinks: { label: string; href: string; icon: SocialIconName }[] = [
@@ -35,9 +34,9 @@ export function SiteFooter() {
             <li>
               <Link
                 className="text-near-white-blue transition hover:text-accent-red"
-                href="/merch"
+                href="/creator-corner"
               >
-                Merch
+                Creator Corner
               </Link>
             </li>
           </ul>

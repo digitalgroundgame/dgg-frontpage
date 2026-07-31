@@ -21,9 +21,9 @@ const primaryNavItems: {
     iconClassName: "text-accent-red",
   },
   {
-    label: "Creator Corner",
-    href: "/creator-corner",
-    iconName: "user-woman-increasing-arrow",
+    label: "Merch",
+    href: "https://store.digitalgroundgame.org/",
+    iconName: "business-product-price-tag",
   },
   {
     label: "Register to Vote",
@@ -251,6 +251,8 @@ export function SiteHeader() {
                 }`}
                 href={item.href}
                 key={item.label}
+                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                target={item.href.startsWith("http") ? "_blank" : undefined}
               >
                 <PixelIcon
                   className={`h-5 w-5 shrink-0 xl:h-6 xl:w-6 ${
@@ -307,6 +309,12 @@ export function SiteHeader() {
                           href={item.href}
                           key={item.label}
                           onClick={closeMobileMenu}
+                          rel={
+                            item.href.startsWith("http")
+                              ? "noopener noreferrer"
+                              : undefined
+                          }
+                          target={item.href.startsWith("http") ? "_blank" : undefined}
                         >
                           <PixelIcon
                             className={`h-7 w-7 shrink-0 ${item.iconClassName ?? ""}`}
