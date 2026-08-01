@@ -172,18 +172,18 @@ export default async function SustainersPage() {
       </section>
 
       {tierIvSustainerNames.length > 0 ? (
-        <section className="bg-brand-blue px-6 py-12 text-near-white-blue sm:px-12 lg:px-20 lg:py-16">
+        <section className="bg-near-white-blue px-6 py-12 text-black sm:px-12 lg:px-20 lg:py-16">
           <div className="mx-auto grid w-full max-w-6xl gap-8 lg:grid-cols-[minmax(0,0.7fr)_minmax(0,1.3fr)] lg:items-start">
             <div>
               <h2 className="type-section-title mt-3 uppercase">Founding Sustainers</h2>
-              <p className="type-body mt-4 max-w-xl text-near-white-blue">
+              <p className="type-body mt-4 max-w-xl text-black">
                 A special thank you to our Tier IV supporters. Your incredible support drives our core field operations and keeps our organizers on the ground.
               </p>
             </div>
             <ul className="grid gap-3 sm:grid-cols-2" aria-label="Founding Sustainers">
               {tierIvSustainerNames.map((name) => (
                 <li
-                  className="bg-dark-blue px-5 py-4 font-roboto-condensed text-xl font-black"
+                  className="bg-brand-blue px-5 py-4 text-center font-roboto-condensed text-xl font-black text-near-white-blue"
                   key={name}
                 >
                   {name}
