@@ -31,14 +31,14 @@ const primaryNavItems: {
     iconName: "hand-writing",
   },
   {
-    label: "Talking Points",
-    href: "/talking-points-repo",
-    iconName: "content-files-newspaper",
-  },
-  {
     label: "Events",
     href: "/events",
     iconName: "interface-essential-calendar-appointment",
+  },
+  {
+    label: "Talking Points",
+    href: "/talking-points-repo",
+    iconName: "content-files-newspaper",
   },
   {
     label: "Sustainers",
@@ -241,7 +241,7 @@ export function SiteHeader() {
           <span className="sr-only">Digital Ground Game</span>
         </Link>
 
-        <div className="hidden gap-2 header-desktop:grid header-desktop:flex-1">
+        <div className="hidden gap-2 header-desktop:grid header-desktop:flex-1 header-desktop:translate-y-[10px]">
           <div className="header-links-grid grid grid-cols-3 gap-y-2 text-lg font-bold text-charcoal lg:gap-x-7 lg:text-xl xl:text-2xl">
             {primaryNavItems.map((item) => (
               <Link
