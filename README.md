@@ -111,6 +111,9 @@ gitignored `.env.local` file. In production, configure them as runtime
 environment variables on the Coolify application. The Docker image does not
 need the API key at build time.
 
+When either variable is missing, the page displays a small test seed so the
+Founding Sustainers section remains visible during local development.
+
 Only a person's nonblank `Website_Credit_Name` custom field is published; the
 site never falls back to their account name. The backend serves names from its
 persistent cache and revalidates that cache against Action Network every 24

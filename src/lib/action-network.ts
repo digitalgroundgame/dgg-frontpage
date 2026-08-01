@@ -8,6 +8,11 @@ const MAX_COLLECTION_PAGES = 100;
 const PERSON_FETCH_CONCURRENCY = 4;
 const REPORT_STALE_AFTER_MS = 24 * 60 * 60 * 1_000;
 const SUSTAINER_CACHE_SECONDS = 24 * 60 * 60;
+const TEST_TIER_IV_SUSTAINER_NAMES = [
+  "Test Sustainer One",
+  "Test Sustainer Two",
+  "Test Sustainer Three",
+] as const;
 
 type ActionNetworkLink = {
   href?: unknown;
@@ -220,7 +225,7 @@ export async function getTierIvSustainerNames(): Promise<string[]> {
   const listId = process.env.ACTION_NETWORK_TIER_IV_LIST_ID?.trim();
 
   if (!apiKey || !listId) {
-    return [];
+    return [...TEST_TIER_IV_SUSTAINER_NAMES];
   }
 
   if (
