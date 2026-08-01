@@ -142,12 +142,6 @@ export function RegionMap({ title, tagline, stateIds }: RegionMapProps) {
           </h1>
         </div>
 
-        {tagline ? (
-          <p className="type-body mx-auto mt-8 max-w-3xl px-8 text-center text-light-charcoal sm:px-12 lg:px-20">
-            {tagline}
-          </p>
-        ) : null}
-
         <div className="overflow-x-clip overflow-y-visible px-3 pb-10 pt-2 sm:-mt-6 sm:px-8">
           <div className="mx-auto max-w-5xl min-w-0 [perspective-origin:center_12%] [perspective:1400px]">
             <svg
@@ -176,6 +170,12 @@ export function RegionMap({ title, tagline, stateIds }: RegionMapProps) {
         </div>
 
         <StateRow className="-mt-8" states={highlightedStates} />
+
+        {tagline ? (
+          <p className="type-body mx-auto mt-8 max-w-3xl px-8 text-center text-light-charcoal italic sm:px-12 lg:px-20">
+            {tagline}
+          </p>
+        ) : null}
       </div>
     </section>
   );
