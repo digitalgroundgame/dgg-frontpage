@@ -132,7 +132,7 @@ That connection we made with Derek Tran paid off as we helped his campaign set u
 
 ---
 
-# **Utah
+# Utah
 
 ## **📰  News**
 
