@@ -34,7 +34,7 @@ A new public messaging team is being formed so if you have any PR experience at 
 
 ## 📊 Election Model
 
-The research team is looking into creating an election model the likes of 538 so if that interests you, they'll be meeting on Sunday at 1pm Pacific to discuss.
+The research team is looking into creating an election model the likes of 538 so if that interests you, they'll be meeting on Sunday at 10am Pacific to discuss.
 
 ---
 # **💻 Dev Team Updates**
