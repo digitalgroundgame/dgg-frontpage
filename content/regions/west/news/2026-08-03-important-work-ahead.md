@@ -18,7 +18,7 @@ However you may feel about Bill Kristol or James Carville, at the very least hop
 
 ## **🚪 New Canvassing Locations**
 
-Digital Ground Game has selected 2 new sites to hold canvassing events in Phoenix AZ and San Antonio TX! Unlike Lansing, and Toledo, which host the Michigan and Ohio canvassing houses who are doing work all the way until the midterms, Phoenix and San Antonio will just be hosting a single large canvassing event during one weekend weekend. We're currently looking for venues in these two cities so if you or know anyone who could help scout locations, reach out to the research team!
+Digital Ground Game has selected 2 new sites to hold canvassing events in Phoenix AZ and San Antonio TX! Unlike Lansing, and Toledo, which host the Michigan and Ohio canvassing houses who are doing work all the way until the midterms, Phoenix and San Antonio will just be hosting a single large canvassing event during one weekend. We're currently looking for venues in these two cities so if you or know anyone who could help scout locations, reach out to the research team!
 
 ---
 
