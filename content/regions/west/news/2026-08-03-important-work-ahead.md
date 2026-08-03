@@ -88,6 +88,7 @@ That connection we made with Derek Tran paid off as we helped his campaign set u
 - **The state legislature attempts to pass a cut to property tax regarding the Alaska LNG megaproject. Legislation is currently stalled over debate regarding adding a corporate income tax increase to make up for the lost property tax revenue.**
   - **[https://www.adn.com/politics/alaska-legislature/2026/07/27/3rd-alaska-lng-special-session-starts-with-no-bill-from-governor-4-lawmakers-present/](https://www.adn.com/politics/alaska-legislature/2026/07/27/3rd-alaska-lng-special-session-starts-with-no-bill-from-governor-4-lawmakers-present/)**
 
+---
 
 # **California**
 
