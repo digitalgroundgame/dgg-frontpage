@@ -22,7 +22,7 @@ const primaryNavItems: {
   },
   {
     label: "Merch",
-    href: "https://store.digitalgroundgame.org/",
+    href: "/merch",
     iconName: "business-product-price-tag",
   },
   {
