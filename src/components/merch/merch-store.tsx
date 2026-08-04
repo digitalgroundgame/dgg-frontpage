@@ -46,14 +46,14 @@ export type CartLine = {
   merchandise: {
     title: string;
     price: { amount: string; currencyCode: string };
-    product: { title: string; featuredImage: { url: string; altText: string | null } | null };
+    product: { title: string; handle: string; featuredImage: { url: string; altText: string | null } | null };
   };
 };
 
 const endpoint = "https://store.digitalgroundgame.org/api/2025-01/graphql.json";
 const storefrontToken = process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN;
 
-export const cartFields = `id checkoutUrl totalQuantity cost { totalAmount { amount currencyCode } } lines(first: 100) { nodes { id quantity merchandise { ... on ProductVariant { title price { amount currencyCode } product { title featuredImage { url altText } } } } } }`;
+export const cartFields = `id checkoutUrl totalQuantity cost { totalAmount { amount currencyCode } } lines(first: 100) { nodes { id quantity merchandise { ... on ProductVariant { title price { amount currencyCode } product { title handle featuredImage { url altText } } } } } }`;
 
 const productsQuery = `query Products {
   products(first: 24, sortKey: TITLE) {
