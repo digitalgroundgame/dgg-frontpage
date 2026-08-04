@@ -8,6 +8,9 @@ const allowedDevOrigins = [
 
 const nextConfig: NextConfig = {
   output: "standalone",
+  images: {
+    remotePatterns: [{ protocol: "https", hostname: "cdn.shopify.com" }],
+  },
   allowedDevOrigins,
   async headers() {
     return [
