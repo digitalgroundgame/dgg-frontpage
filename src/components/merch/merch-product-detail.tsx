@@ -70,16 +70,23 @@ export function MerchProductDetail({ handle }: { handle: string }) {
     setAdding(true);
     setError(null);
     try {
-      const result = await shopifyRequest<{ cartCreate: { cart: { id: string; checkoutUrl: string } | null; userErrors: { message: string }[] } }>(
-        `mutation AddToCart($lines: [CartLineInput!]!) { cartCreate(input: { lines: $lines }) { cart { id checkoutUrl } userErrors { message } } }`,
-        { lines: [{ merchandiseId: variant.id, quantity: 1 }] },
-      );
-      if (result.cartCreate.userErrors.length) throw new Error(result.cartCreate.userErrors[0].message);
-      const nextCheckoutUrl = result.cartCreate.cart?.checkoutUrl ?? null;
+      const existingCartId = window.localStorage.getItem("dgg-shopify-cart-id");
+      const result = existingCartId
+        ? await shopifyRequest<{ cartLinesAdd: { cart: { id: string; checkoutUrl: string; totalQuantity: number } | null; userErrors: { message: string }[] } }>(
+            `mutation AddToCart($cartId: ID!, $lines: [CartLineInput!]!) { cartLinesAdd(cartId: $cartId, lines: $lines) { cart { id checkoutUrl totalQuantity } userErrors { message } } }`,
+            { cartId: existingCartId, lines: [{ merchandiseId: variant.id, quantity: 1 }] },
+          )
+        : await shopifyRequest<{ cartCreate: { cart: { id: string; checkoutUrl: string; totalQuantity: number } | null; userErrors: { message: string }[] } }>(
+            `mutation AddToCart($lines: [CartLineInput!]!) { cartCreate(input: { lines: $lines }) { cart { id checkoutUrl totalQuantity } userErrors { message } } }`,
+            { lines: [{ merchandiseId: variant.id, quantity: 1 }] },
+          );
+      const mutation = "cartLinesAdd" in result ? result.cartLinesAdd : result.cartCreate;
+      if (mutation.userErrors.length) throw new Error(mutation.userErrors[0].message);
+      const nextCheckoutUrl = mutation.cart?.checkoutUrl ?? null;
       setCheckoutUrl(nextCheckoutUrl);
-      if (result.cartCreate.cart) {
-        persistCartSummary({ id: result.cartCreate.cart.id, totalQuantity: 1 });
-        setBagCount(1);
+      if (mutation.cart) {
+        persistCartSummary(mutation.cart);
+        setBagCount(mutation.cart.totalQuantity);
       }
     } catch (requestError) {
       setError(requestError instanceof Error ? requestError.message : "Unable to add that item.");

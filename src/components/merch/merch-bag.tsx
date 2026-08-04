@@ -47,8 +47,10 @@ export function MerchBag() {
           );
       const mutation = "cartLinesRemove" in result ? result.cartLinesRemove : result.cartLinesUpdate;
       if (mutation.userErrors.length) throw new Error(mutation.userErrors[0].message);
-      if (mutation.cart?.totalQuantity) setCart(mutation.cart);
-      else {
+      if (mutation.cart?.totalQuantity) {
+        setCart(mutation.cart);
+        persistCartSummary(mutation.cart);
+      } else {
         setCart(null);
         persistCartSummary(null);
       }
