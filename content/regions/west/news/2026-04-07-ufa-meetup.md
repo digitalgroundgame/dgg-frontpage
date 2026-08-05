@@ -15,11 +15,11 @@ The April 10th fundraiser stream for the midterms is shaping up nicely. Confirme
 
 You can lock in your contribution to the midterms canvassing funding now by donating to:
 
-[https://secure.actblue.com/donate/midterms-launch?refcode=DGGLAUNCH](https://secure.actblue.com/donate/midterms-launch?refcode=DGGLAUNCH)
+[https://secure.actblue.com/donate/midterms-launch?refcode=DGGLAUNCH&recurring=1](https://secure.actblue.com/donate/midterms-launch?refcode=DGGLAUNCH&recurring=1)
 
 👉 We also have an official ActBlue fundraising link for the org in general.
 
-For reference that link is here: [https://secure.actblue.com/donate/dgg](https://secure.actblue.com/donate/dgg)
+For reference that link is here: [https://secure.actblue.com/donate/dgg?recurring=1](https://secure.actblue.com/donate/dgg?recurring=1)
 
 You can find more information on the stream from the pinned reddit post [**here**](https://www.reddit.com/r/Destiny/comments/1s8wxon/dgg_canvass_house_fundraiser_stream_410_donate/)
 

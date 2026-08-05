@@ -119,7 +119,7 @@ export default async function SustainersPage() {
           </p>
           <div className="flex justify-center pt-2">
             <ButtonLink
-              href="https://secure.actblue.com/donate/dggsubscriber"
+              href="https://secure.actblue.com/donate/dggsubscriber?recurring=1"
               primaryHover="black-blue"
               rel="noopener noreferrer"
               target="_blank"

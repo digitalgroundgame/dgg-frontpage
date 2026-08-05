@@ -354,7 +354,7 @@ export function SiteHeader() {
                       </ButtonLink>
                       <ButtonLink
                         className="w-44 justify-self-start py-4 text-left"
-                        href="https://secure.actblue.com/donate/dggsubscriber"
+                        href="https://secure.actblue.com/donate/dggsubscriber?recurring=1"
                         primaryHover="red-black"
                         rel="noopener noreferrer"
                         target="_blank"
@@ -386,7 +386,7 @@ export function SiteHeader() {
           </ButtonLink>
           <ButtonLink
             className="w-full justify-start whitespace-nowrap"
-            href="https://secure.actblue.com/donate/dggsubscriber"
+            href="https://secure.actblue.com/donate/dggsubscriber?recurring=1"
             primaryHover="red-black"
             rel="noopener noreferrer"
             target="_blank"
