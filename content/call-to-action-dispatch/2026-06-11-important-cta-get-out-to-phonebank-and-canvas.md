@@ -1,6 +1,6 @@
 ---
 title: "Important CTA: Get out to Phonebank and Canvas!"
-date: 2026-06-11T12:00:00.000-05:00
+date: 2026-08-11T12:00:00.000-05:00
 heroPhoto: /uploads/link_place_holder.2_2.png
 ---
 ## Primary season is now over! It's time to back the candidates and show your support!
