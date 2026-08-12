@@ -50,7 +50,7 @@ export type CartLine = {
   };
 };
 
-const endpoint = "https://store.digitalgroundgame.org/api/2025-01/graphql.json";
+const endpoint = "https://store.digitalgroundgame.org/api/2026-07/graphql.json";
 const storefrontToken = process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN;
 
 export const cartFields = `id checkoutUrl totalQuantity cost { totalAmount { amount currencyCode } } lines(first: 100) { nodes { id quantity merchandise { ... on ProductVariant { title price { amount currencyCode } product { title handle featuredImage { url altText } } } } } }`;
