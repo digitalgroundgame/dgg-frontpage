@@ -1,7 +1,7 @@
 ---
 title: "Regional Midwest CTA: This land is OUR land!"
 date: 2026-08-16T12:00:00.000-05:00
-heroPhoto: /uploads/soph4ig_1.png
+heroPhoto: /uploads/soph4ig_1.webp
 authors:
   - ulysses
 ---
@@ -11,4 +11,4 @@ Over the past decade, Ohio’s fracking industry has exploded along its eastern 
 2. Spread the word on fracking by printing and spreading out an infographic created for general education on fracking and its effects on Ohioans! [Click here to get a copy!](https://saveohioparks.org/wp-content/uploads/2025/06/NewSaveOhioParksBrochureMay2025.pdf)
 3. Sign up for the Save Ohio Parks' email list to be sent their own CTA's regarding fracking on public lands! [Click here to sign up!](https://saveohioparks.org/join-us/)
 
-   ![](/uploads/infograph_1.png)
+   ![](/uploads/infograph_1.webp)
