@@ -1,7 +1,7 @@
 ---
 title: "Regional Midwest CTA: This land is OUR land!"
 date: 2026-08-16T12:00:00.000-05:00
-heroPhoto: /uploads/soph4ig_1.png
+heroPhoto: /uploads/soph4ig_1.webp
 authors:
   - ulysses
 ---
