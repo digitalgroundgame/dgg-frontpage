@@ -116,6 +116,8 @@ Reminder that the Happy Hour date and venue has been chosen
 
 More details are in the [meetup thread](https://discord.com/channels/1345532745463496717/1533655991001022727) on discord. We'd also like gather preferences for future meetups so if you haven't filled out the form you can do so [here](https://docs.google.com/forms/d/1kyXRU3o-j48-rHLWwJ-xErp8rmFbHldXXD75LvE61nw) 
 
+Also have an [eventbright link](https://www.eventbrite.com/e/dgg-la-happy-hour-tickets-1997510279016) where you can RSVP
+
 ## **📣 Derek Tran Interview Feedback**
 If you know anyone who lives in [CA-45](https://en.wikipedia.org/wiki/California's_45th_congressional_district), send them the [video](https://www.youtube.com/live/9Iv3ZANsAJ0) we mentioned earlier of their congressman and let us know if they have any feedback!
 
