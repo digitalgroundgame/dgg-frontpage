@@ -136,7 +136,7 @@ export function EmailSignupPopup() {
                 We’ll keep you posted on practical ways to defend democracy.
               </p>
               <button
-                className="type-button mt-7 bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-black"
+                className="type-button mt-7 cursor-pointer bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-black"
                 onClick={() => setIsOpen(false)}
                 type="button"
               >
@@ -150,14 +150,14 @@ export function EmailSignupPopup() {
                 Weekly calls to action and regional squad updates, straight to your inbox.
               </p>
 
-              <form className="mt-6 grid w-full max-w-sm gap-3" onSubmit={handleSubmit}>
+              <form className="mt-6 grid w-full gap-3" onSubmit={handleSubmit}>
                 <label className="type-label" htmlFor="email-signup-email">
                   Email address
                 </label>
                 <input
                   aria-describedby="email-signup-status"
                   autoComplete="email"
-                  className="min-h-12 w-full bg-white px-4 py-2 text-lg outline-2 outline-brand-blue placeholder:text-charcoal/60"
+                  className="min-h-12 w-full border-2 border-brand-blue bg-white px-4 py-2 text-lg placeholder:text-charcoal/60"
                   id="email-signup-email"
                   name="email"
                   onChange={(event) => setEmail(event.target.value)}
@@ -168,7 +168,7 @@ export function EmailSignupPopup() {
                   value={email}
                 />
                 <button
-                  className="type-button mt-2 w-full bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-black disabled:cursor-wait disabled:opacity-60"
+                  className="type-button mt-2 w-full cursor-pointer bg-brand-blue px-5 py-3 text-near-white-blue transition hover:bg-black disabled:cursor-wait disabled:opacity-60"
                   disabled={submissionState === "submitting"}
                   type="submit"
                 >
