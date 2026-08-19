@@ -39,6 +39,14 @@ export function SiteFooter() {
                 Creator Corner
               </Link>
             </li>
+            <li>
+              <Link
+                className="text-near-white-blue transition hover:text-accent-red"
+                href="/talking-points-repo"
+              >
+                Talking Points
+              </Link>
+            </li>
           </ul>
         </div>
         <div>

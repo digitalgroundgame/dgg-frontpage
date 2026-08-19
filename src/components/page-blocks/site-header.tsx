@@ -2,6 +2,7 @@
 
 import { Logo } from "@/components/widgets/logo";
 import { ButtonLink } from "@/components/widgets/button-link";
+import { openEmailSignupPopup } from "@/components/widgets/email-signup-popup";
 import { PixelIcon, type PixelIconName } from "@/components/widgets/pixel-icon";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -34,11 +35,6 @@ const primaryNavItems: {
     label: "Events",
     href: "/events",
     iconName: "interface-essential-calendar-appointment",
-  },
-  {
-    label: "Talking Points",
-    href: "/talking-points-repo",
-    iconName: "content-files-newspaper",
   },
   {
     label: "Sustainers",
@@ -263,6 +259,18 @@ export function SiteHeader() {
                 <span>{item.label}</span>
               </Link>
             ))}
+            <button
+              aria-haspopup="dialog"
+              className="inline-flex min-w-0 cursor-pointer items-center justify-start gap-2 text-left transition hover:text-brand-blue"
+              onClick={openEmailSignupPopup}
+              type="button"
+            >
+              <PixelIcon
+                className="h-5 w-5 shrink-0 xl:h-6 xl:w-6"
+                name="email-envelope-close"
+              />
+              <span>Mailing List</span>
+            </button>
           </div>
           <div className="flex flex-nowrap gap-x-7 gap-y-2 whitespace-nowrap text-lg header-desktop:justify-center">
             {regionItems.map((item) => (
@@ -323,6 +331,21 @@ export function SiteHeader() {
                           <span>{item.label}</span>
                         </Link>
                       ))}
+                      <button
+                        aria-haspopup="dialog"
+                        className="inline-flex cursor-pointer items-center gap-3 text-4xl font-black uppercase leading-none text-left"
+                        onClick={() => {
+                          closeMobileMenu();
+                          openEmailSignupPopup();
+                        }}
+                        type="button"
+                      >
+                        <PixelIcon
+                          className="h-7 w-7 shrink-0"
+                          name="email-envelope-close"
+                        />
+                        <span>Mailing List</span>
+                      </button>
                     </div>
                     <div className="grid gap-1 text-2xl font-bold">
                       {regionItems.map((item) => (

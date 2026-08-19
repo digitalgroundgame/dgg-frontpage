@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { EmailSignupPopup } from "@/components/widgets/email-signup-popup";
 import { Press_Start_2P, Roboto_Condensed, Roboto } from "next/font/google";
 import Script from "next/script";
 import localFont from "next/font/local";
@@ -76,6 +77,7 @@ export default function RootLayout({
       </Script>
       <body className="min-h-full flex flex-col">
         <div className="mx-auto w-full max-w-[1440px]">{children}</div>
+        <EmailSignupPopup />
       </body>
     </html>
   );
