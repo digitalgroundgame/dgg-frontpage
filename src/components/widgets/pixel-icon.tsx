@@ -9,6 +9,7 @@ type PixelIconName =
   | "hand-writing"
   | "interface-essential-calendar-appointment"
   | "interface-essential-alert-triangle"
+  | "interface-essential-signout-logout"
   | "navigation-menu"
   | "user-woman-increasing-arrow"
   | "hierarchy"
@@ -339,6 +340,24 @@ const pixelIconPaths: Record<
       "M3.05 21.33h1.52v3.05H3.05Z",
       "M1.52 24.38h1.53v3.05H1.52Z",
       "M0 27.43h1.52v3.05H0Z",
+    ],
+  },
+  "interface-essential-signout-logout": {
+    title: "interface-essential-signout-logout",
+    desc: "Interface Essential Signout Logout Streamline Icon: https://streamlinehq.com",
+    paths: [
+      "m25.145 9.14 0 4.57 -6.1 0 0 3.05 6.1 0 0 4.57 1.52 0 0 -1.52 1.53 0 0 -1.52 1.52 0 0 -1.53 1.52 0 0 -3.05 -1.52 0 0 -1.52 -1.52 0 0 -1.52 -1.53 0 0 -1.53 -1.52 0z",
+      "M20.575 21.33h1.52v6.1h-1.52Z",
+      "M20.575 1.52h1.52v7.62h-1.52Z",
+      "m14.475 30.48 0 -1.53 6.1 0 0 -1.52 -6.1 0 0 -19.81 -1.52 0 0 22.86 1.52 0z",
+      "M8.385 30.48h4.57V32h-4.57Z",
+      "M9.905 16.76h1.52v3.05h-1.52Z",
+      "M9.905 6.1h3.05v1.52h-3.05Z",
+      "M5.335 28.95h3.05v1.53h-3.05Z",
+      "M6.855 4.57h3.05V6.1h-3.05Z",
+      "M2.285 27.43h3.05v1.52h-3.05Z",
+      "M3.815 3.05h3.04v1.52h-3.04Z",
+      "m2.285 0 0 1.52 -1.52 0 0 25.91 1.52 0 0 -24.38 1.53 0 0 -1.53 16.76 0 0 -1.52 -18.29 0z",
     ],
   },
   "navigation-menu": {

@@ -91,6 +91,20 @@ const teams: {
     description:
       "Produces content that informs and mobilizes voters while coordinating with creators who support liberal and Democratic messaging.",
   },
+  {
+    name: "Events Team",
+    focus: "Events & Community",
+    icon: "interface-essential-calendar-appointment",
+    description:
+      "Organizes social events, civics workshops, and organizing events while helping regional squads with event logistics.",
+  },
+  {
+    name: "Welcome Team",
+    focus: "Community Onboarding",
+    icon: "interface-essential-signout-logout",
+    description:
+      "Helps new members navigate the server, connect with teams, and find ways to get involved with Digital Ground Game.",
+  },
 ];
 
 export default function Home() {
@@ -402,14 +416,14 @@ export default function Home() {
           aria-hidden="true"
           className="absolute -bottom-64 -left-48 aspect-square h-[42rem] rounded-full bg-dark-blue"
         />
-        <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-start">
+        <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-10">
           <div>
             <p className="type-kicker text-near-white-blue/90">Our Teams</p>
             <h2 className="mt-4 text-5xl font-black leading-tight">
               Specialized teams turn energy into action.
             </h2>
           </div>
-          <div className="grid gap-5">
+          <div className="grid gap-5 lg:grid-cols-2">
             {teams.map((team) => (
               <article
                 className="bg-near-white-blue p-5 text-charcoal"
