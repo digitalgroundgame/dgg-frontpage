@@ -228,6 +228,15 @@ window.CMS.init({
     backend,
     media_folder: "public/uploads",
     public_folder: "/uploads",
+    media_processing: {
+      enabled: true,
+      format: {
+        enabled: true,
+        default: "webp",
+      },
+      quality: 82,
+      strip_metadata: true,
+    },
     collections,
   },
 });

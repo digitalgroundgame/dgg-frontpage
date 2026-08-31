@@ -13,13 +13,11 @@
     "dev:all": "concurrently \"pnpm dev\" \"pnpm cms\"",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "optimize-images": "node scripts/optimize-images.mjs",
-    "optimize-images:check": "node scripts/optimize-images.mjs --check"
+    "lint": "eslint"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",
-    "decap-cms": "^3.15.1",
+    "decap-cms": "^3.16.0",
     "gray-matter": "^4.0.3",
     "ical.js": "^2.2.1",
     "next": "16.2.6",
@@ -40,10 +38,9 @@
     "@types/topojson-client": "^3.1.5",
     "@types/topojson-specification": "^1.0.5",
     "concurrently": "^10.0.0",
-    "decap-server": "^3.10.0",
+    "decap-server": "^3.11.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
-    "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
