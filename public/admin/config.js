@@ -22,6 +22,7 @@ const dispatchFields = [
     value_field: "{{slug}}",
     display_fields: ["name"],
     multiple: true,
+    options_length: 100,
     required: false,
   },
   { label: "Body", name: "body", widget: "markdown" },
