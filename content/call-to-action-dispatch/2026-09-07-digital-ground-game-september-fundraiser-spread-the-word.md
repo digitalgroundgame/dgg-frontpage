@@ -7,7 +7,7 @@ authors:
 ---
 ## You already give and you already knock. This time we need the people who listen to you!
 
-This Friday (September 11th) we are hosting our second fundraising livestream on [**Destiny's channel**]((https://www.youtube.com/destiny))! What we are asking is for you to spread the word!
+This Friday (September 11th) we are hosting our second fundraising livestream on **[Destiny's channel]((https://www.youtube.com/destiny))**! What we are asking is for you to spread the word!
 
 ### We want you to tell someone who hasn't heard of us to tune in!
 
@@ -19,4 +19,4 @@ The fundraiser is us making the case for whey people should donate to us so look
 
 ![](/uploads/dgg-canvass-events.webp)
 
-### [**Tune in on Friday, 12pm to 9pm Eastern, at youtube.com/destiny**](https://www.youtube.com/destiny)
+### **[Tune in on Friday, 12pm to 9pm Eastern, at youtube.com/destiny](https://www.youtube.com/destiny)**
