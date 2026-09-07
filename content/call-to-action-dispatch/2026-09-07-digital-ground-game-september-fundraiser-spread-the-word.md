@@ -5,7 +5,7 @@ heroPhoto: /uploads/dgg-sept11-cover.webp
 authors:
   - jacob-mills
 ---
-## You already give and you already knock. This time we need the people who listen to you.
+## You already give and you already knock. This time we need the people who listen to you!
 
 This Friday (September 11th) we are hosting our second fundraising livestream on Destiny's channel! What we are asking is for you to spread the word!
 
