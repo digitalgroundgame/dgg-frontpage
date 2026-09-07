@@ -5,17 +5,18 @@ heroPhoto: /uploads/dgg-sept11-cover.webp
 authors:
   - jacob-mills
 ---
+
 ## You already give and you already knock. This time we need the people who listen to you!
 
-This Friday (September 11th) we are hosting our second fundraising livestream on **[Destiny's channel]((https://www.youtube.com/destiny))**! What we are asking is for you to spread the word!
+This Friday (September 11th) we are hosting our second fundraising livestream on **[Destiny's channel](https://www.youtube.com/destiny)**! What we are asking is for you to spread the word!
 
 ### We want you to tell someone who hasn't heard of us to tune in!
 
-The fundraiser is us making the case for whey people should donate to us so look at our event schedule and share with them a few you think they would enjoy! We have some awesome guests, fun panels, and some cool fundraising goals!
+The fundraiser is us making the case for why people should donate to us, so look at our event schedule and share with them a few you think they would enjoy! We have some awesome guests, fun panels, and some cool fundraising goals!
 
 ![](/uploads/dgg-run-of-show.webp)
 
-## Remember too our Canvasing Events between now and November!
+### Remember our Canvassing Events between now and November too!
 
 ![](/uploads/dgg-canvass-events.webp)
 
