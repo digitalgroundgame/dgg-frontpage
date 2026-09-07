@@ -11,4 +11,10 @@ This Friday (September 11th) we are hosting our second fundraising livestream on
 
 ### We want you to tell someone who hasn't heard of us to tune in!
 
-The fundraiser is us making the case for whey people should donate to us so look at our event schedule and tell th 
+The fundraiser is us making the case for whey people should donate to us so look at our event schedule and share with them a few you think they would enjoy!
+
+![](/uploads/dgg-run-of-show.webp)
+
+## Remember too our Canvasing Events between now and November!
+
+![](/uploads/dgg-canvass-events.webp)
