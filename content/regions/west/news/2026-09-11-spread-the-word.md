@@ -5,7 +5,7 @@ authors:
   - daniel-lee
 ---
 
-There's been a lot of discussion about the formation of local Digital Ground Game chapters the past couple of weeks, and as well as subsequent follow through with lots of people stepping up in their own cities. Slowly but surely, but I really believe we're going to become a major organizing force/institution across cities all across the country. The timing couldn't be better either as after this fundraiser we have tomorrow, regional squads should be getting money to use in building out these chapters and to use in whatever other projects we see fit!
+There's been a lot of discussion about the formation of local Digital Ground Game chapters the past couple of weeks, as well as subsequent follow through with lots of people stepping up in their own cities. Slowly but surely, but I really believe we're going to become a major organizing force/institution across cities all across the country. The timing couldn't be better either as after this fundraiser we have tomorrow, regional squads should be getting money to use in building out these chapters and to use in whatever other projects we see fit!
 
 ---
 
