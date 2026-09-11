@@ -100,7 +100,7 @@ As mentioned in previous editions, one of the official Digital Ground Game spons
 ## **🚪 Canvassing for Derek Tran 9/19**
 - We will be organizing again to canvass for Derek Tran on [Saturday 9/19](https://www.mobilize.us/cadems/event/1019318/).
 - At the last canvassing event we met with the executive director for Grassroots Democrats who said that this will be the biggest canvassing event for them this month.
-- We want to send a sold number so that our presence is felt. If we send enough we can probably get Digital Ground Game as a sponsor for the next canvassing event so join us if you have any time between 930am and 130pm!
+- We want to send a solid number so that our presence is felt. If we send enough we can probably get Digital Ground Game as a sponsor for the next canvassing event so join us if you have any time between 930am and 130pm!
 - We'll also probably be getting food afterwards as well so if you only have time in the afternoon, feel free to join us for lunch!
 - An additional sidenote but we were also told that Grassroots Democrats can send a lot of volunteers to Phoenix for our canvassing event if we can provide transportation funds. That's all the more reason for us to hit our fundraising targets tomorrow!
 
