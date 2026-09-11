@@ -37,8 +37,8 @@ const primaryNavItems: {
     iconName: "interface-essential-calendar-appointment",
   },
   {
-    label: "Sustainers",
-    href: "/sustainers",
+    label: "Supporters",
+    href: "/supporters",
     iconName: "business-product-piggy-bank",
   },
 ];

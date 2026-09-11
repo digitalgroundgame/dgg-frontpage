@@ -41,7 +41,7 @@ The research team is looking into creating an election model the likes of 538 so
 
 ## **📰 Digital Ground Game Site**
 
-- The Digital Ground Game site now has a [Sustainer Program](https://digitalgroundgame.org/sustainers) page
+- The Digital Ground Game site now has a [Supporter Program](https://digitalgroundgame.org/supporters) page
   - Help power the work we do all year long with monthly donations and you'll get special perks for doing so
 - We also launched our [Merch Store ](https://store.digitalgroundgame.org/) starting off with those coveted "Iberia" shirts
   - This also helps fund our org so feel free to buy for yourself and friends and family

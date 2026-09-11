@@ -94,10 +94,10 @@ DECAP_GITHUB_SCOPE=public_repo,user
 
 The OAuth route builds its GitHub callback URL from forwarded proxy headers, so production deploys must preserve `x-forwarded-host` and `x-forwarded-proto`.
 
-## Action Network Sustainers
+## Action Network Supporters
 
-The sustainers page can display the names in an Action Network saved report. In
-Action Network, create a report that targets active Tier IV sustainers who have
+The supporters page can display the names in an Action Network saved report. In
+Action Network, create a report that targets active Tier IV supporters who have
 agreed to public recognition. Then set:
 
 ```bash
@@ -112,7 +112,7 @@ environment variables on the Coolify application. The Docker image does not
 need the API key at build time.
 
 When either variable is missing, the page displays a small test seed so the
-Founding Sustainers section remains visible during local development.
+Founding Supporters section remains visible during local development.
 
 Only a person's nonblank `Website_Credit_Name` custom field is published; the
 site never falls back to their account name. The backend serves names from its

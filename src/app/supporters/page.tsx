@@ -2,14 +2,14 @@ import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
 import { ButtonLink } from "@/components/widgets/button-link";
 import { PixelIcon } from "@/components/widgets/pixel-icon";
-import { getTierIvSustainerNames } from "@/lib/action-network";
+import { getTierIvSupporterNames } from "@/lib/action-network";
 import type { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Sustainers | Digital Ground Game",
-  description: "Digital Ground Game Sustainer Program membership tiers and benefits.",
+  title: "Supporters | Digital Ground Game",
+  description: "Digital Ground Game Supporter Program membership tiers and benefits.",
 };
 
 const tiers = [
@@ -58,7 +58,7 @@ const tiers = [
     perks: [
       {
         title: "Anniversary merch.",
-        description: "Exclusive Sustainer T-shirt at your 6-month milestone.",
+        description: "Exclusive Supporter T-shirt at your 6-month milestone.",
       },
       {
         title: "Priority input.",
@@ -85,7 +85,7 @@ const tiers = [
       },
       {
         title: "Public recognition.",
-        description: 'Listed as a “Founding Sustainer” on our website.',
+        description: 'Listed as a “Founding Supporter” on our website.',
       },
       {
         title: "VIP access.",
@@ -95,8 +95,8 @@ const tiers = [
   },
 ];
 
-export default async function SustainersPage() {
-  const tierIvSustainerNames = await getTierIvSustainerNames();
+export default async function SupportersPage() {
+  const tierIvSupporterNames = await getTierIvSupporterNames();
 
   return (
     <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
@@ -105,7 +105,7 @@ export default async function SustainersPage() {
       <section className="px-6 py-10 sm:px-12 lg:px-20 lg:py-12">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-4 text-center">
           <h1 className="type-hero flex max-w-4xl flex-wrap items-center justify-center gap-x-4 text-black uppercase">
-            <span>Sustainer</span>
+            <span>Supporter</span>
             <span className="max-[32rem]:flex max-[32rem]:w-full max-[32rem]:justify-center">
               <PixelIcon
                 className="h-10 w-10 shrink-0 sm:h-12 sm:w-12"
@@ -128,7 +128,7 @@ export default async function SustainersPage() {
                 className="h-5 w-5 shrink-0"
                 name="interface-essential-cursor-click-point"
               />
-              Become a Sustainer
+              Become a Supporter
             </ButtonLink>
           </div>
         </div>
@@ -171,17 +171,17 @@ export default async function SustainersPage() {
         </div>
       </section>
 
-      {tierIvSustainerNames.length > 0 ? (
+      {tierIvSupporterNames.length > 0 ? (
         <section className="bg-near-white-blue px-6 py-12 text-black sm:px-12 lg:px-20 lg:py-16">
           <div className="mx-auto grid w-full max-w-6xl gap-8 lg:grid-cols-[minmax(0,0.7fr)_minmax(0,1.3fr)] lg:items-start">
             <div>
-              <h2 className="type-section-title mt-3 uppercase">Founding Sustainers</h2>
+              <h2 className="type-section-title mt-3 uppercase">Founding Supporters</h2>
               <p className="type-body mt-4 max-w-xl text-black">
                 A special thank you to our Tier IV supporters. Your incredible support drives our core field operations and keeps our organizers on the ground.
               </p>
             </div>
-            <ul className="grid gap-3 sm:grid-cols-2" aria-label="Founding Sustainers">
-              {tierIvSustainerNames.map((name) => (
+            <ul className="grid gap-3 sm:grid-cols-2" aria-label="Founding Supporters">
+              {tierIvSupporterNames.map((name) => (
                 <li
                   className="bg-brand-blue px-5 py-4 text-center font-roboto-condensed text-xl font-black text-near-white-blue"
                   key={name}

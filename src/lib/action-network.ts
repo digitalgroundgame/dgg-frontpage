@@ -7,11 +7,11 @@ const ACTION_NETWORK_API_PATH = "/api/v2/";
 const MAX_COLLECTION_PAGES = 100;
 const PERSON_FETCH_CONCURRENCY = 4;
 const REPORT_STALE_AFTER_MS = 24 * 60 * 60 * 1_000;
-const SUSTAINER_CACHE_SECONDS = 24 * 60 * 60;
-const TEST_TIER_IV_SUSTAINER_NAMES = [
-  "Test Sustainer One",
-  "Test Sustainer Two",
-  "Test Sustainer Three",
+const SUPPORTER_CACHE_SECONDS = 24 * 60 * 60;
+const TEST_TIER_IV_SUPPORTER_NAMES = [
+  "Test Supporter One",
+  "Test Supporter Two",
+  "Test Supporter Three",
 ] as const;
 
 type ActionNetworkLink = {
@@ -186,7 +186,7 @@ async function fetchNamesInBatches(
   return names;
 }
 
-const getCachedTierIvSustainerNames = unstable_cache(
+const getCachedTierIvSupporterNames = unstable_cache(
   async (): Promise<string[]> => {
     const apiKey = process.env.ACTION_NETWORK_API_KEY?.trim();
     const listId = process.env.ACTION_NETWORK_TIER_IV_LIST_ID?.trim();
@@ -216,16 +216,16 @@ const getCachedTierIvSustainerNames = unstable_cache(
       left.localeCompare(right, "en-US"),
     );
   },
-  ["action-network-tier-iv-sustainer-names"],
-  { revalidate: SUSTAINER_CACHE_SECONDS },
+  ["action-network-tier-iv-supporter-names"],
+  { revalidate: SUPPORTER_CACHE_SECONDS },
 );
 
-export async function getTierIvSustainerNames(): Promise<string[]> {
+export async function getTierIvSupporterNames(): Promise<string[]> {
   const apiKey = process.env.ACTION_NETWORK_API_KEY?.trim();
   const listId = process.env.ACTION_NETWORK_TIER_IV_LIST_ID?.trim();
 
   if (!apiKey || !listId) {
-    return [...TEST_TIER_IV_SUSTAINER_NAMES];
+    return [...TEST_TIER_IV_SUPPORTER_NAMES];
   }
 
   if (
@@ -238,9 +238,9 @@ export async function getTierIvSustainerNames(): Promise<string[]> {
   }
 
   try {
-    return await getCachedTierIvSustainerNames();
+    return await getCachedTierIvSupporterNames();
   } catch (error) {
-    console.error("Unable to load Tier IV sustainers from Action Network.", error);
+    console.error("Unable to load Tier IV supporters from Action Network.", error);
     return [];
   }
 }
