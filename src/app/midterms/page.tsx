@@ -45,10 +45,7 @@ export default function MidtermsPage() {
       <section className="px-8 py-10 text-center sm:px-12 lg:px-20 lg:py-20">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center">
           <h1 className="type-hero uppercase max-w-5xl">2026 Midterms Canvassing Events</h1>
-          <p className="type-body mt-5 max-w-xl">
-            Join us for a weekend of midterm canvassing and organizing in one
-            of four cities.
-          </p>
+
         </div>
       </section>
 
