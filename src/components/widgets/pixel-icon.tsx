@@ -8,6 +8,7 @@ type PixelIconName =
   | "flip-vertical-down"
   | "hand-writing"
   | "interface-essential-calendar-appointment"
+  | "real-estate-building-1"
   | "interface-essential-alert-triangle"
   | "interface-essential-signout-logout"
   | "navigation-menu"
@@ -310,6 +311,17 @@ const pixelIconPaths: Record<
       "M5.335 13.71h1.52v1.53h-1.52Z",
       "m8.385 4.57 0 1.53 1.52 0 0 -1.53 12.19 0 0 1.53 1.52 0 0 -1.53 4.58 0 0 -1.52 -4.58 0 0 -3.05 -1.52 0 0 3.05 -12.19 0 0 -3.05 -1.52 0 0 3.05 -4.57 0 0 1.52 4.57 0z",
       "M2.285 4.57h1.53V6.1h-1.53Z",
+    ],
+  },
+  "real-estate-building-1": {
+    title: "real-estate-building-1",
+    desc: "Real Estate Building 1 Streamline Icon: https://streamlinehq.com",
+    paths: [
+      "M0 0v3.04h1.53V1.52h19.81v1.52H1.53v12.2H0v3.04h1.53v-1.52h19.81v1.52H1.53v12.19H0V32h32v-1.53h-1.52V18.28h-7.62v-1.52h7.62v1.52H32v-3.04h-1.52V3.04h-7.62V1.52h7.62v1.52H32V0Zm6.1 30.47v-7.62h4.57v7.62Zm6.09 0v-9.14H4.58v9.14H3.05V19.81h18.29v10.66Zm16.77-10.66v10.66h-6.1V19.81ZM3.05 15.24V4.57h18.29v10.67ZM28.96 4.57v10.67h-6.1V4.57Z",
+      "M13.72 21.33v7.62h6.09v-7.62Zm4.57 3.05h-1.52v1.52h-1.53v-3.05h3.05v1.53Z",
+      "M16.77 6.09h-3.05v7.62h6.09V6.09Zm1.52 3.05h-1.52v1.52h-1.53V7.62h3.05v1.52Z",
+      "m7.62 27.43 1.53 0 0 -1.53 -1.53 0 0 1.53z",
+      "M4.58 6.09v7.62h6.09V6.09Zm4.57 3.05H7.62v1.52H6.1V7.62h3.05v1.52Z",
     ],
   },
   "interface-essential-alert-triangle": {

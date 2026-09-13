@@ -27,9 +27,9 @@ const primaryNavItems: {
     iconName: "business-product-price-tag",
   },
   {
-    label: "Register to Vote",
-    href: "/register",
-    iconName: "hand-writing",
+    label: "Midterms",
+    href: "/midterms",
+    iconName: "real-estate-building-1",
   },
   {
     label: "Events",
