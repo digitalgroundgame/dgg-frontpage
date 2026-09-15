@@ -30,7 +30,7 @@ const midtermEvents = [
     location: "Bucks County, Pennsylvania",
     dates: "October 24",
     signupUrl:
-      "https://docs.google.com/forms/d/1iOZFO0vqzqLfnmUamkWm8kYUW5mm5UDScpfS82o8pfY/edit",
+      "https://forms.gle/nJrmY88fjEtU7Q386",
   },
   {
     location: "San Antonio, Texas",
