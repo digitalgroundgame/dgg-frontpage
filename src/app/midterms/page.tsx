@@ -7,31 +7,33 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Midterms Canvassing Events | Digital Ground Game",
   description:
-    "Sign up for midterm canvassing weekends in Cleveland, Phoenix, Detroit, and San Antonio.",
+    "Sign up for midterm canvassing events in Cleveland, Phoenix, Detroit, San Antonio, and Pennsylvania.",
 };
 
 const midtermEvents = [
   {
-    city: "Cleveland",
-    state: "Ohio",
+    location: "Cleveland, Ohio",
     dates: "September 26 + 27",
     signupUrl: "https://forms.gle/Wdg9y2E8s8w2NT738",
   },
   {
-    city: "Phoenix",
-    state: "Arizona",
+    location: "Phoenix, Arizona",
     dates: "October 3 + 4",
     signupUrl: "https://forms.gle/HTvE6N4vWJ7jKim56",
   },
   {
-    city: "Detroit",
-    state: "Michigan",
+    location: "Detroit, Michigan",
     dates: "October 17 + 18",
     signupUrl: "https://forms.gle/SQMq2C9Hheex3KfRA",
   },
   {
-    city: "San Antonio",
-    state: "Texas",
+    location: "Bucks County, Pennsylvania",
+    dates: "October 24",
+    signupUrl:
+      "https://docs.google.com/forms/d/1iOZFO0vqzqLfnmUamkWm8kYUW5mm5UDScpfS82o8pfY/edit",
+  },
+  {
+    location: "San Antonio, Texas",
     dates: "October 31 + November 1",
     signupUrl: "https://forms.gle/GeC5q5YhKZwbyB7g8",
   },
@@ -56,19 +58,17 @@ export default function MidtermsPage() {
             {midtermEvents.map((event) => (
               <article
                 className="grid gap-4 py-4 sm:py-6"
-                key={event.city}
+                key={event.location}
               >
                 <div>
                   <h3 className="type-section-title">
-                    {event.city}, {event.state}
+                    {event.location}
                   </h3>
-                  <p className="type-label mt-2 text-charcoal">
-                    {event.dates}
-                  </p>
+                  <p className="type-label mt-2 text-charcoal">{event.dates}</p>
                 </div>
 
                 <ButtonLink
-                  className="justify-self-start"
+                  className="justify-self-start self-start"
                   href={event.signupUrl}
                   rel="noopener noreferrer"
                   target="_blank"
