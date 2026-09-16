@@ -28,7 +28,9 @@ Run the Next.js and admin apps:
 pnpm dev:all
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [https://localhost:3000](https://localhost:3000). The dev command creates
+an untracked, self-signed development certificate; accept the browser warning
+on each device you use for development.
 
 To serve the development app from another hostname on your network, set
 `DEV_HOSTNAME` before starting the app:
@@ -37,11 +39,22 @@ To serve the development app from another hostname on your network, set
 DEV_HOSTNAME=your-dev-host.example pnpm dev:all
 ```
 
-The app remains available at [http://localhost:3000](http://localhost:3000)
+The app remains available at [https://localhost:3000](https://localhost:3000)
 when `DEV_HOSTNAME` is set.
 
-When using `/admin` from a network hostname, keep `pnpm dev:all` running so the
-Decap local backend proxy is available on the same hostname at port `8081`.
+When using `/admin` from a network hostname, keep `pnpm dev:all` running. The
+Next.js app proxies CMS requests to the local Decap backend, so only port `3000`
+needs to be reachable from the network. Use the HTTPS hostname or IP address
+for the remote browser and accept its self-signed certificate warning. To add
+the Tailscale hostname and IP to the generated certificate, set them when
+starting the app:
+
+```bash
+DEV_HOSTNAME=your-machine.your-tailnet.ts.net DEV_TAILSCALE_IP=100.x.y.z pnpm dev:all
+```
+
+Delete `certificates/localhost.pem` and `certificates/localhost-key.pem` if
+you change either value and need a new certificate.
 
 ## Checks
 
@@ -80,7 +93,7 @@ The CMS uses Decap's GitHub backend for production.
 Create a GitHub OAuth app with these callback URLs:
 
 ```text
-http://localhost:3000/api/cms/callback
+https://localhost:3000/api/cms/callback
 https://YOUR_PRODUCTION_DOMAIN/api/cms/callback
 ```
 
