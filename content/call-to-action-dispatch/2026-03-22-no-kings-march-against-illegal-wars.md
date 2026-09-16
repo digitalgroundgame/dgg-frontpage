@@ -1,5 +1,6 @@
 ---
 title: No Kings March 28th! March Against Illegal Wars!!!
+description: Join a local No Kings protest and use DGG’s printable cards, stickers, and posters to support the event.
 date: 2026-03-22T00:00:00.000-07:00
 heroPhoto: /uploads/no-gods-no-kings-no-malarkeys.webp
 authors:

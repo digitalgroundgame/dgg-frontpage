@@ -1,5 +1,6 @@
 ---
 title: College Democrats Testimonies on the 2026 Convention
+description: Share firsthand accounts about how the College Democrats of America convention speaker decision affected local chapters and organizers.
 date: 2026-07-28T15:52:00.000-07:00
 authors:
   - jacob-mills

@@ -34,10 +34,16 @@ export async function generateMetadata({
     return { title: "CTA not found | Digital Ground Game" };
   }
 
+  const postImageMetadata = getPostImageMetadata(entry.heroPhoto, entry.title);
+
   return {
     title: `${entry.title} | Call to Action`,
-    description: `Call to Action: ${entry.title}.`,
-    ...getPostImageMetadata(entry.heroPhoto, entry.title),
+    description: entry.description,
+    ...postImageMetadata,
+    openGraph: {
+      ...postImageMetadata.openGraph,
+      description: entry.description,
+    },
   };
 }
 

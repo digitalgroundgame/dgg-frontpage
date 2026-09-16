@@ -28,6 +28,17 @@ const dispatchFields = [
   { label: "Body", name: "body", widget: "markdown" },
 ];
 
+const callToActionFields = [
+  dispatchFields[0],
+  {
+    label: "Description",
+    name: "description",
+    widget: "string",
+    required: true,
+  },
+  ...dispatchFields.slice(1),
+];
+
 const talkingPointFields = dispatchFields;
 
 const resourceFields = dispatchFields;
@@ -103,7 +114,7 @@ const collections = [
     folder: "content/call-to-action-dispatch",
     create: true,
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
-    fields: dispatchFields,
+    fields: callToActionFields,
   },
   {
     name: "talking_points",

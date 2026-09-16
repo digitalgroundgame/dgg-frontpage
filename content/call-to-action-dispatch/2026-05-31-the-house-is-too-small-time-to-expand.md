@@ -1,5 +1,6 @@
 ---
 title: The House is too small! Time to Expand!
+description: Sign No Cap Fund’s petition and contact representatives about expanding the United States House before the 2030 census.
 date: 2026-05-31T00:00:00.000-07:00
 heroPhoto: /uploads/house-too-small-cover.webp
 authors:

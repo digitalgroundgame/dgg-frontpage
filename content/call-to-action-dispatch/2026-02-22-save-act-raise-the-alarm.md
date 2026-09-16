@@ -1,5 +1,6 @@
 ---
 title: SAVE ACT RAISE THE ALARM
+description: Share information about the SAVE Act and contact senators to oppose voter disenfranchisement and protect the 2026 elections.
 date: 2026-02-22T00:00:00.000-08:00
 heroPhoto: /uploads/save-act-raise-alarm-cover.webp
 authors:

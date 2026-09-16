@@ -1,5 +1,6 @@
 ---
 title: "Digital Ground Game September Fundraiser: Spread the Word!"
+description: Share DGG’s September fundraising livestream with people who have not heard of the organization.
 date: 2026-09-07T13:38:00.000-07:00
 heroPhoto: /uploads/dgg-sept11-cover.webp
 authors:

@@ -1,5 +1,6 @@
 ---
 title: "PATRIOT CTA: Show your Democratic pride IRL!"
+description: Show Democratic patriotism by sharing patriotic decorations and photos with the DGG community.
 date: 2026-07-05T12:00:00.000-05:00
 heroPhoto: /uploads/patriot-truck.webp
 authors:

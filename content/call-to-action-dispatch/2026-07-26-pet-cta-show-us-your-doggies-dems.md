@@ -1,5 +1,6 @@
 ---
 title: "Pet CTA: Show us your Doggies Dems!"
+description: Share photos of your dogs in the DGG Discord to celebrate Democratic activism and community.
 date: 2026-07-26T12:00:00.000-05:00
 heroPhoto: /uploads/doggie_dems.webp
 ---

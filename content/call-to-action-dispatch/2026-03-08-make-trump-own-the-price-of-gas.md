@@ -1,5 +1,6 @@
 ---
 title: Make Trump Own The Price Of Gas!!!
+description: Download, print, and legally place stickers that draw attention to high gas prices.
 date: 2026-03-08T00:00:00.000-07:00
 heroPhoto: /uploads/gas-pump-cover.webp
 authors:

@@ -6,6 +6,7 @@ import { type Author, getAuthors } from "@/lib/authors";
 export type CallToActionDispatchEntry = {
   slug: string;
   title: string;
+  description: string;
   date: string;
   heroPhoto: string;
   authorSlugs: string[];
@@ -53,6 +54,7 @@ function toDispatchEntry(
   return {
     slug,
     title: String(data.title ?? slug),
+    description: String(data.description ?? ""),
     date: String(date ?? ""),
     heroPhoto: String(data.heroPhoto ?? ""),
     authorSlugs,

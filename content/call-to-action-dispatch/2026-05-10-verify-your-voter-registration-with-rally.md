@@ -1,5 +1,6 @@
 ---
 title: Verify Your Voter Registration With Rally!
+description: Use Rally to verify your voter registration and encourage friends and family to check theirs.
 date: 2026-05-10T17:30:38.000-07:00
 heroPhoto: /uploads/rally-voter-registration-cover.webp
 authors:

@@ -1,5 +1,6 @@
 ---
 title: Expand The House!
+description: Sign No Cap Fund’s petition and contact your representative to support expanding the United States House before the 2030 census.
 date: 2026-03-01T00:00:00.000-08:00
 heroPhoto: ""
 authors:

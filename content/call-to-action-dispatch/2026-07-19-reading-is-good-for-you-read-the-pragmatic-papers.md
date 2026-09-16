@@ -1,5 +1,6 @@
 ---
 title: Reading is good for you! Help the Pragmatic Papers!
+description: Follow The Pragmatic Papers and subscribe to its newsletter for reporting on elections, policy, and global affairs.
 date: 2026-07-19T12:00:00.000-05:00
 heroPhoto: /uploads/p_emb.webp
 authors:

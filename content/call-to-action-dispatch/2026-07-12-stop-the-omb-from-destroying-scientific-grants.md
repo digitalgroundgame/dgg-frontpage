@@ -1,5 +1,6 @@
 ---
 title: Stop the OMB from destroying scientific grants!
+description: Submit a public comment and contact Congress to oppose proposed changes that would politicize federal grants and scientific funding.
 date: 2026-07-12T12:00:00.000-05:00
 heroPhoto: /uploads/dgg-science.webp
 authors:

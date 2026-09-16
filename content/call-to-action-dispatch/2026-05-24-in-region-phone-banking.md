@@ -1,5 +1,6 @@
 ---
 title: The midterms are coming! Do some in-region phone banking!
+description: Join a regional phone bank or canvassing effort to support Democratic candidates in the 2026 midterms.
 date: 2026-05-24T00:00:00.000-07:00
 heroPhoto: /uploads/phonebankcover.webp
 authors:

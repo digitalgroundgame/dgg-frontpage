@@ -1,5 +1,6 @@
 ---
 title: Colorado is Voting on Redistricting! Help Spread the Word!
+description: Help Redistrict Colorado pass CO-ERRA by contacting state leaders and sharing the campaign’s work.
 date: 2026-04-20T12:00:00.000-07:00
 heroPhoto: /uploads/co-erra-square-logo.webp
 authors:

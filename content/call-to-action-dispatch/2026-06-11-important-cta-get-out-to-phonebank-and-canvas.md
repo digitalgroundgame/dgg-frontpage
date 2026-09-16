@@ -1,5 +1,6 @@
 ---
 title: "Important CTA: Get out to Phonebank and Canvas!"
+description: Sign up for a phone-banking event and join a local Democratic canvassing effort.
 date: 2026-08-11T12:00:00.000-05:00
 heroPhoto: /uploads/link_place_holder.2_2.webp
 ---

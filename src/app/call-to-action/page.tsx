@@ -15,7 +15,7 @@ const CTA_BASE_HREF = "/call-to-action";
 
 export function generateMetadata(): Metadata {
   const latestDispatch = getCallToActionDispatchEntries()[0];
-  const latestDispatchTitle = latestDispatch && `CTA: ${latestDispatch.title}`;
+  const latestDispatchTitle = latestDispatch?.title;
   const latestDispatchMetadata =
     latestDispatch && latestDispatchTitle
       ? getPostImageMetadata(latestDispatch.heroPhoto, latestDispatchTitle)
@@ -23,14 +23,14 @@ export function generateMetadata(): Metadata {
 
   return {
     title: latestDispatchTitle ?? "Call to Action | Digital Ground Game",
-    description:
-      "Weekly Digital Ground Game calls to action and ways to get involved.",
+    description: latestDispatch?.description ?? "Our current unified effort",
     ...latestDispatchMetadata,
     ...(latestDispatch
       ? {
           openGraph: {
             ...latestDispatchMetadata.openGraph,
             title: latestDispatchTitle,
+            description: latestDispatch.description,
           },
           twitter: {
             ...latestDispatchMetadata.twitter,

@@ -2,6 +2,7 @@
 title: "Critical CTA: UPDATED Fetterman is possibly flipping! Contact your
   Senator and Chuck Schumer! Spread the word and contact your Democratic
   representatives too!!"
+description: Contact Senate Minority Leader Chuck Schumer and Democratic senators to encourage Senator Fetterman to remain with the Democratic Party.
 date: 2026-06-07T12:00:00.000-05:00
 heroPhoto: /uploads/fetterman_1200x630.webp
 authors:
