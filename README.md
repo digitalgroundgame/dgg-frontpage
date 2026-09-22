@@ -25,24 +25,26 @@ pnpm install
 Run the Next.js and admin apps:
 
 ```bash
-pnpm dev:all
+pnpm dev
 ```
 
-Open [https://localhost:3000](https://localhost:3000). The dev command creates
-an untracked, self-signed development certificate; accept the browser warning
-on each device you use for development.
+Open [http://localhost:3000](http://localhost:3000) for local development. It
+redirects to HTTPS on the same address. The dev command creates an untracked,
+self-signed development certificate; accept the browser warning on each device
+you use for development.
 
 To serve the development app from another hostname on your network, set
 `DEV_HOSTNAME` before starting the app:
 
 ```bash
-DEV_HOSTNAME=your-dev-host.example pnpm dev:all
+DEV_HOSTNAME=your-dev-host.example pnpm dev
 ```
 
-The app remains available at [https://localhost:3000](https://localhost:3000)
-when `DEV_HOSTNAME` is set.
+The app remains available at [https://localhost:3000](https://localhost:3000).
+When using another hostname or IP, open it over HTTPS; HTTP requests redirect
+to HTTPS on the same port.
 
-When using `/admin` from a network hostname, keep `pnpm dev:all` running. The
+When using `/admin` from a network hostname, keep `pnpm dev` running. The
 Next.js app proxies CMS requests to the local Decap backend, so only port `3000`
 needs to be reachable from the network. Use the HTTPS hostname or IP address
 for the remote browser and accept its self-signed certificate warning. To add
@@ -50,7 +52,7 @@ the Tailscale hostname and IP to the generated certificate, set them when
 starting the app:
 
 ```bash
-DEV_HOSTNAME=your-machine.your-tailnet.ts.net DEV_TAILSCALE_IP=100.x.y.z pnpm dev:all
+DEV_HOSTNAME=your-machine.your-tailnet.ts.net DEV_TAILSCALE_IP=100.x.y.z pnpm dev
 ```
 
 Delete `certificates/localhost.pem` and `certificates/localhost-key.pem` if

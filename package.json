@@ -8,9 +8,7 @@
     "pnpm": ">=10.27.0"
   },
   "scripts": {
-    "dev": "node scripts/generate-dev-cert.mjs && next dev --hostname 0.0.0.0 --experimental-https --experimental-https-key certificates/localhost-key.pem --experimental-https-cert certificates/localhost.pem",
-    "cms": "BIND_HOST=0.0.0.0 decap-server",
-    "dev:all": "concurrently \"pnpm dev\" \"pnpm cms\"",
+    "dev": "concurrently \"node scripts/dev.mjs\" \"BIND_HOST=0.0.0.0 decap-server\"",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
