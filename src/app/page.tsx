@@ -152,22 +152,20 @@ export default function Home() {
               2026 <span className="text-black">Canvassing</span>
             </p>
             <h2 className="type-section-title mt-4 max-w-4xl text-light-charcoal">
-              Register your interest in joining the program.
+              Sign up to canvass with us at our official events in Arizona, Michigan, Pennsylvania, and Texas.
             </h2>
           </div>
           <div className="flex justify-center md:h-full md:items-center">
             <ButtonLink
               className="px-6"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdZmxO4SWAD0ARyjik9jFxJsh2ioHgIGKwRVkLSifv2RgFZQQ/viewform"
+              href="/midterms"
               primaryHover="black-blue"
-              rel="noopener noreferrer"
-              target="_blank"
             >
               <PixelIcon
                 className="h-7 w-7 shrink-0"
                 name="business-product-check"
               />
-              Interest Form
+              Midterms Events
             </ButtonLink>
           </div>
         </div>

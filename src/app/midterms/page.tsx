@@ -11,11 +11,7 @@ export const metadata: Metadata = {
 };
 
 const midtermEvents = [
-  {
-    location: "Cleveland, Ohio",
-    dates: "September 26 + 27",
-    signupUrl: "https://forms.gle/Wdg9y2E8s8w2NT738",
-  },
+
   {
     location: "Phoenix, Arizona",
     dates: "October 3 + 4",
