@@ -9,7 +9,7 @@ authors:
 ---
 ## Knocking doors gets people to the polls. Poll watchers make sure those votes count!
 
-We are partnering with **[Defend 2026](https://defend2026.org)**, a voter protection organization that recruits, trains, and places poll watchers. Election Day is November 3rd. We told them Digital Ground Game could bring them volunteers from all over the country. Now we need you to prove us right!
+We are partnering with **[Defend 2026](https://defend2026.org)**, a voter protection organization that recruits, trains, and places poll watchers. Election Day is November 3rd. Finding ways and places to participate can be difficult or out of reach. Poll watching and election security is something you can do where you are NOW, and it's some of the most critical work you can participate in.
 
 ### **[Click here to sign up to protect the vote!](https://defendhub.org/interest/dgg)**
 
