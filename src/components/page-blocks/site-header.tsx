@@ -27,7 +27,7 @@ const primaryNavItems: {
     iconName: "business-product-price-tag",
   },
   {
-    label: "Midterms",
+    label: "Canvass",
     href: "/midterms",
     iconName: "real-estate-building-1",
   },
