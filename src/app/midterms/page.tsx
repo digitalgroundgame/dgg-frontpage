@@ -10,28 +10,43 @@ export const metadata: Metadata = {
     "Sign up for midterm canvassing events in Cleveland, Phoenix, Detroit, San Antonio, and Pennsylvania.",
 };
 
-const midtermEvents = [
+type MidtermEvent = {
+  location: string;
+  dates: string;
+} & (
+  | { completed: true; signupUrl?: never }
+  | { completed: false; signupUrl: string }
+);
 
-  {
-    location: "Phoenix, Arizona",
-    dates: "October 3 + 4",
-    signupUrl: "https://forms.gle/HTvE6N4vWJ7jKim56",
-  },
+const midtermEvents: MidtermEvent[] = [
   {
     location: "Detroit, Michigan",
     dates: "October 17 + 18",
+    completed: false,
     signupUrl: "https://forms.gle/SQMq2C9Hheex3KfRA",
   },
   {
     location: "Bucks County, Pennsylvania",
     dates: "October 24",
+    completed: false,
     signupUrl:
       "https://forms.gle/nJrmY88fjEtU7Q386",
   },
   {
     location: "San Antonio, Texas",
     dates: "October 31 + November 1",
+    completed: false,
     signupUrl: "https://forms.gle/GeC5q5YhKZwbyB7g8",
+  },
+  {
+    location: "Phoenix, Arizona",
+    dates: "October 3 + 4",
+    completed: true,
+  },
+  {
+    location: "Cleveland, Ohio",
+    dates: "September 26 + 27",
+    completed: true,
   },
 ];
 
@@ -53,28 +68,36 @@ export default function MidtermsPage() {
           <div className="grid gap-8 md:grid-cols-2 md:gap-x-12">
             {midtermEvents.map((event) => (
               <article
-                className="grid gap-4 py-4 sm:py-6"
+                className="grid gap-4 bg-charcoal/5 p-6 sm:py-6"
                 key={event.location}
               >
                 <div>
-                  <h3 className="type-section-title">
+                  <h3 className={`type-section-title ${event.completed ? "text-light-charcoal" : ""}`}>
                     {event.location}
                   </h3>
-                  <p className="type-label mt-2 text-charcoal">{event.dates}</p>
+                  <p className={`type-label mt-2 ${event.completed ? "text-light-charcoal" : "text-charcoal"}`}>
+                    {event.dates}
+                  </p>
                 </div>
 
-                <ButtonLink
-                  className="justify-self-start self-start"
-                  href={event.signupUrl}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <PixelIcon
-                    className="h-5 w-5 shrink-0"
-                    name="interface-essential-cursor-click-point"
-                  />
-                  Sign Up
-                </ButtonLink>
+                {event.completed ? (
+                  <span className="type-button-condensed justify-self-start bg-charcoal/10 px-4 py-2 text-charcoal">
+                    Completed
+                  </span>
+                ) : (
+                  <ButtonLink
+                    className="justify-self-start self-start"
+                    href={event.signupUrl}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <PixelIcon
+                      className="h-5 w-5 shrink-0"
+                      name="interface-essential-cursor-click-point"
+                    />
+                    Sign Up
+                  </ButtonLink>
+                )}
               </article>
             ))}
           </div>
