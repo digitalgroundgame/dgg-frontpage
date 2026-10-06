@@ -41,23 +41,33 @@ const initiatives = [
 
 const accomplishments = [
   {
+    id: "ohio-2026-door-knocks",
+    value: "12,726",
+    label: "Door knocks",
+    description: "During our 2026 two-day event in Ohio.",
+  },
+  {
+    id: "2024-door-knocks",
     value: "360k+",
     label: "Door knocks",
     description: "Completed during the 2024 election cycle.",
   },
   {
+    id: "ohio-historic-canvass",
     value: "Ohio",
     label: "Historic canvass",
     description:
       "Led the largest independent canvassing event in state history.",
   },
   {
+    id: "2024-states",
     value: "8",
     label: "States",
     description:
       "Supported by 7 canvassing houses and 4 large events last cycle.",
   },
   {
+    id: "2024-rookie-ground-game",
     value: "2024",
     label: "Largest rookie ground game",
     description: "Built the largest rookie ground game in the 2024 election.",
@@ -396,7 +406,7 @@ export default function Home() {
             {accomplishments.map((item) => (
               <article
                 className="bg-near-white-blue p-5 text-charcoal"
-                key={item.label}
+                key={item.id}
               >
                 <p className="text-5xl !font-black text-brand-blue">
                   {item.value}
