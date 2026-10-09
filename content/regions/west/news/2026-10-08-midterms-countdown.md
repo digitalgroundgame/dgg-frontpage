@@ -62,7 +62,7 @@ We have a new events team coordinator in Piporter! We also have a new game night
 
 ## **🎓 Workshops**
 - Workshop work sessions are on Thursdays 4pm PT
-- State government workship in development
+- State government workshop in development
 - How to get a job in politics workshop also in development
 
 ---
