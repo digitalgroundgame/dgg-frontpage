@@ -43,7 +43,7 @@ The research team has been rebranded to Democracy Lab for branding purposes. The
   - We’ll also have a leaderboard for tracking the top earners by week and month.
 
 ## **📋 Inhouse Management CRM**
-- Added more tools to automate pinging organizers who have not closed out an event
+- Added more tools to automate pinging organizers who have not closed out an event with:
   - link to message in discord
   - pre-written messages
   - status filtering
