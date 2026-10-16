@@ -153,6 +153,12 @@ function getWebsiteCreditName(person: ActionNetworkPerson): string | null {
   }
 
   const customFields = person.custom_fields as Record<string, unknown>;
+  const sustainerTier = customFields.Sustainer_Tier;
+
+  if (typeof sustainerTier !== "string" || sustainerTier.trim() !== "Tier IV") {
+    return null;
+  }
+
   const websiteCreditName = customFields.Website_Credit_Name;
 
   if (typeof websiteCreditName !== "string") {
@@ -216,7 +222,7 @@ const getCachedTierIvSupporterNames = unstable_cache(
       left.localeCompare(right, "en-US"),
     );
   },
-  ["action-network-tier-iv-supporter-names"],
+  ["action-network-tier-iv-supporter-names-filtered"],
   { revalidate: SUPPORTER_CACHE_SECONDS },
 );
 

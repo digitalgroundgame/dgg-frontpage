@@ -129,8 +129,10 @@ need the API key at build time.
 When either variable is missing, the page displays a small test seed so the
 Founding Supporters section remains visible during local development.
 
-Only a person's nonblank `Website_Credit_Name` custom field is published; the
-site never falls back to their account name. The backend serves names from its
+The site filters the report to people whose `Sustainer_Tier` custom field is
+`Tier IV`, excluding other tiers and missing tier values. Only a person's
+nonblank `Website_Credit_Name` custom field is published; the site never falls
+back to their account name. The backend serves names from its
 persistent cache and revalidates that cache against Action Network every 24
 hours. It also checks the report's `modified_date` and logs a warning when the
 report is more than 24 hours old. Action Network reports are read-only through
