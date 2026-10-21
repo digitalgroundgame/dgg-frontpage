@@ -22,7 +22,7 @@ const midtermEvents: MidtermEvent[] = [
   {
     location: "Detroit, Michigan",
     dates: "October 17 + 18",
-    completed: false,
+    completed: true,
     signupUrl: "https://forms.gle/SQMq2C9Hheex3KfRA",
   },
   {
