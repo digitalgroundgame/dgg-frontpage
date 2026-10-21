@@ -5,13 +5,13 @@ A Next.js 16 and Decap CMS frontpage project running on Node 24.
 ## Requirements
 
 - Node 24
-- pnpm 10.27 or newer
+- pnpm 10.34.7
 
 Use Corepack to install the pinned pnpm version:
 
 ```bash
 corepack enable
-corepack prepare pnpm@10.27.0 --activate
+corepack prepare pnpm@10.34.7 --activate
 ```
 
 ## Development
