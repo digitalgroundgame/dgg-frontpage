@@ -7,15 +7,14 @@ authors:
 ---
 ## Democracy's greetings fellow Hell-Lib, Democracy needs you!
 
-**THIS** is our final big CTA prior to the 2026 midterms! So, I wanted to make sure this was big enough to last us to the Midterms required to allow people to repeatedly participate with this CTA every week, and also **most importantly** this CTA will have multiple strategic CTA's added to it to aid in our mission to get to our goal! So without further textual explanation, here is our final CTA.
+**Children of America** listen up! Two years, two years it's been since upon the mountain side of Democracy, Liberals fell from power... two years of hard work, blood, sweat, and tears to get us to a point in which our vote comes to matter once more, and those two years have not been squandered! Since our 2024 defeat we hit the ground running, in Wisconsin we made Republicans the joke of April fools when Democrats held the Supreme Court of Wisconsin line by electing Susan Crawford to the Wisconsin Supreme Court by 10 points, we smashed Republicans in the 2025 elections in PA, VA, NJ, NY, MS, and so many others! In 2026 we redoubled our efforts and we DOUBLED our margins in the Wisconsin SCOWI elections once more winning by over 20 points! Here we are, two years later, all our effort, all the CTA's, all the fundraising, all of the Tylenol suppressed pain from canvasing, all the organizing all of the media creation, the events to keep us all engaged, it all comes down to this... this is my final CTA to you all, my dear reader, this is the Major CTA Order that I ask you to complete:
 
 ### Major CTA Order: Take back the House AND Senate!
 
 1. Canvas!
 2. Phone bank!
 3. Join your local DNC!
-
-
+4. VOTE!
 
 ## Canvas
 
