@@ -12,14 +12,16 @@ authors:
 
 ### Major CTA Order: Take back the House AND Senate!
 
-1. Canvas!
-2. Phone bank!
-3. Join your local DNC!
-4. VOTE!
+1. **Canvas!**
+2. **Phone bank!**
+3. **Join your local DNC!**
+4. **VOTE!**
 
 ## Canvas
 
-We have been in the middle of our canvasing efforts, from Ohio, to Arizona, to Michigan, we have been canvasing to get out the vote for people who need it the most! You job in this is to work with your local canvasing organizations and turn out the Democrat leaning populace, or at the very least anti-Trump populace, to get them to vote for Democrats! Your canvasing organizations can be found through your local DNC offices, and even your local DNC offices are canvasing massively on weekends, so if you are board, go out and canvas! Don't worry, they may or may not provide refreshments for you when you go out to canvas but do make sure to bring a water bottle and some protein bars because you are going to get some steps in and talk with the folks! If you haven't canvased before, [please utilize this resource!](https://www.ngpvan.com/blog/canvassing-dos-and-donts/)
+We have been in the middle of our canvasing efforts, from Ohio, to Arizona, to Michigan, we have been canvasing to get out the vote for people who need it the most! You job in this is to work with your local canvasing organizations and turn out the Democrat leaning populace, or at the very least anti-Trump populace, to get them to vote for Democrats! Your canvasing organizations can be found through your local DNC offices, and even your local DNC offices are canvasing massively on weekends, so if you are board, go out and canvas! Don't worry, they may or may not provide refreshments for you when you go out to canvas but do make sure to bring a water bottle and some protein bars because you are going to get some steps in and talk with the folks! If you haven't canvased before, **[please utilize this resource!](https://www.ngpvan.com/blog/canvassing-dos-and-donts/)**
+
+### [Remember to join us in San Antonio to knock Oct 31st - Nov 1st!!!](https://forms.gle/GeC5q5YhKZwbyB7g8)
 
 ![](/uploads/canvassing.webp)
 
