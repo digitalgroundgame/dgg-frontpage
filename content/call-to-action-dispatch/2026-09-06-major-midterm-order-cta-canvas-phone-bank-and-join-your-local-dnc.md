@@ -19,18 +19,31 @@ authors:
 
 ## Canvas
 
-We have been in the middle of our canvasing efforts, from Ohio, to Arizona, to Michigan, we have been canvasing to get out the vote for people who need it the most! You job in this is to work with your local canvasing organizations and turn out the Democrat leaning populace, or at the very least anti-Trump populace, to get them to vote for Democrats! Your canvasing organizations can be found through your local DNC offices, and even your local DNC offices are canvasing massivly on weekends, so if you are board, go out and canvas! Don't worry, they may or may not provide refreshments for you when you go out to canvas, but do make sure to bring a water bottle and some protein bars because you are going to get some steps in and talk with the folks!
+We have been in the middle of our canvasing efforts, from Ohio, to Arizona, to Michigan, we have been canvasing to get out the vote for people who need it the most! You job in this is to work with your local canvasing organizations and turn out the Democrat leaning populace, or at the very least anti-Trump populace, to get them to vote for Democrats! Your canvasing organizations can be found through your local DNC offices, and even your local DNC offices are canvasing massively on weekends, so if you are board, go out and canvas! Don't worry, they may or may not provide refreshments for you when you go out to canvas but do make sure to bring a water bottle and some protein bars because you are going to get some steps in and talk with the folks! If you haven't canvased before, [please utilize this resource!](https://www.ngpvan.com/blog/canvassing-dos-and-donts/)
+
+![](/uploads/canvassing.webp)
 
 ## Phone bank
 
-Phone banking is the universal cheap way to canvas. Where canvasing is meant to reach out to people in cities and towns, phone banking operations are to move people that exist out in more isolated places, like forests, back roads, and reservations. You can find phone banking operations through your local DNC chapters, but if you don't want to call or show up there to get that information, you can find phone banking operations through [Mobilize.us](https://www.mobilize.us/)
+Phone banking is the universal cheap way to canvas. Where canvasing is meant to reach out to people in cities and towns, phone banking operations are to move people that exist out in more isolated places, like forests, back roads, and reservations. You can find phone banking operations through your local DNC chapters, but if you don't want to call or show up there to get that information, you can find phone banking operations through [Mobilize.us!](https://www.mobilize.us/)
+
+If you have any questions about phone banking please consult these two articles:
+
+* [What is phonebanking?](https://www.ngpvan.com/blog/what-is-phonebanking/)
+* [Is phonebanking successful?](https://www.ngpvan.com/blog/is-phone-banking-effective-successful-strategies-and-software-options/)
+
+![](/uploads/phone_banking.webp)
 
 ## Join your local Democratic party
 
 Your local Democratic party is a great way for you to learn about state and local offices and ordinances that are on the ballot for local elections! They also are the ones that you would work on the ground within terms of canvasing and phone banking for local candidates! They usually require some sort of fee, however the fee tends to be on the small side (EX: $10 for one year membership for my Democratic party). Make sure you sign up for them because they will then also let you know when candidates are going to be in town so that way you can network and get to know your local representatives and congressional leaders!
 
+![](/uploads/check_voter_registration.webp)
+
 ## VOTE
 
 Vote early and vote often! Make sure to bring your friends and family out to vote! Everything is on the line, all the work put in over the last two years comes down to this. November 3rd is around the corner, early voting has already started in most, if not all, states, make sure that you make your voice known that Democrats are back and better than ever! Even if you know you won't be able to vote in a Demcrat for power still go vote! There are more things than federal offices that are up for grabs, local politicans, state and local ordinances are also up for a vote that can affect your life, so please please please make sure to make your voice known!
+
+![](/uploads/gotv.webp)
 
 This is it guys, our final Midterm CTA! Make it all count!
