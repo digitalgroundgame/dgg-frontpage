@@ -1,5 +1,6 @@
 ---
-title: "MAJOR MIDTERM ORDER CTA:  Canvas, Phone Bank, and join your local DNC!"
+title: "FINAL MAJOR MIDTERM ORDER CTA:  Canvas, Phone Bank, Join your local
+  Democrat party, and VOTE!"
 description: Final Midterm CTA
 date: 2026-09-06T12:00:00.000-05:00
 authors:
@@ -24,4 +25,6 @@ We have been in the middle of our canvasing efforts, from Ohio, to Arizona, to M
 
 Phone banking is the universal cheap way to canvas. Where canvasing is meant to reach out to people in cities and towns, phone banking operations are to move people that exist out in more isolated places, like forests, back roads, and reservations. You can find phone banking operations through your local DNC chapters, but if you don't want to call or show up there to get that information, you can find phone banking operations through [Mobilize.us](https://www.mobilize.us/)
 
-## Join your local DNC
+## Join your local Democratic party
+
+Your local Democratic party is a great way for you to learn about state and local offices and ordinances that are on the ballot for local elections! They also are the ones that you would work on the ground within terms of canvasing and phone banking for local candidates! They usually require some sort of fee, however the fee tends to be on the small side (EX: $10 for one year membership for my Democratic party). Make sure you sign up for them because they will then also let you know when candidates are going to be in town so that way you can network and get to know your local representatives and congressional leaders!
