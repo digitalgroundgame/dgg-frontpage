@@ -3,7 +3,7 @@ title: "FINAL MAJOR MIDTERM ORDER CTA:  Canvass, Phone Bank, Join Your Local
   Democratic Party, and VOTE!"
 description: Final Midterm CTA
 date: 2026-10-25T12:00:00.000-05:00
-heroPhoto: /uploads/20261024-dsc07302.webp
+heroPhoto: /uploads/20261024-dsc07302-2.webp
 authors:
   - ulysses
 ---
