@@ -85,7 +85,7 @@ const teams: {
     focus: "Development & Technology",
     icon: "coding-apps-websites-programming-hold-code",
     description:
-      "Handles programming and development for projects including websites, bots, and Digital Ground Game infrastructure.",
+      "Handles programming and development for projects including websites, apps, and Digital Ground Game infrastructure.",
   },
   {
     name: "Research Team",
