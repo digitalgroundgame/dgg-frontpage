@@ -43,6 +43,43 @@ const talkingPointFields = dispatchFields;
 
 const resourceFields = dispatchFields;
 
+const midtermEventFields = [
+  {
+    label: "Completed",
+    name: "completed",
+    widget: "boolean",
+    default: false,
+    hint: "Completed events appear after upcoming events on the midterms page.",
+  },
+  {
+    label: "Sign-up URL",
+    name: "signupUrl",
+    widget: "string",
+    required: false,
+    pattern: ["^https://.+", "Enter a URL starting with https://"],
+    hint: "Add a sign-up link for upcoming events.",
+  },
+];
+
+const canvassingDateField = (label, name) => ({
+  label,
+  name,
+  widget: "datetime",
+  date_format: "YYYY-MM-DD",
+  time_format: false,
+  picker_utc: true,
+  hint: "Calendar date at the event location. Use the same start and end date for a single-day event.",
+});
+
+const phonebankingTimeField = (label, name) => ({
+  label,
+  name,
+  widget: "datetime",
+  format: "YYYY-MM-DDTHH:mm:ssZ",
+  picker_utc: false,
+  hint: "Enter the time in your local timezone. Visitors will see it converted to their timezone.",
+});
+
 const photoFields = [
   { label: "Photo", name: "image", widget: "image" },
   { label: "Alt Text", name: "alt", widget: "string" },
@@ -95,6 +132,36 @@ const regionFields = [
 ];
 
 const collections = [
+  {
+    name: "midterms_canvassing",
+    label: "Midterms > Canvassing Events",
+    folder: "content/midterms-canvassing",
+    create: true,
+    slug: "{{fields.startDate}}-{{slug}}",
+    summary: "{{title}} — {{startDate}}",
+    sortable_fields: ["startDate", "title", "completed"],
+    fields: [
+      { label: "Location", name: "title", widget: "string" },
+      canvassingDateField("Start Date", "startDate"),
+      canvassingDateField("End Date", "endDate"),
+      ...midtermEventFields,
+    ],
+  },
+  {
+    name: "midterms_phonebanking",
+    label: "Midterms > Phonebanking Events",
+    folder: "content/midterms-phonebanking",
+    create: true,
+    slug: "{{fields.start}}-{{slug}}",
+    summary: "{{title}} — {{start}}",
+    sortable_fields: ["start", "title", "completed"],
+    fields: [
+      { label: "Candidate / Event Name", name: "title", widget: "string" },
+      phonebankingTimeField("Start Time", "start"),
+      phonebankingTimeField("End Time", "end"),
+      ...midtermEventFields,
+    ],
+  },
   {
     name: "people",
     label: "People",
