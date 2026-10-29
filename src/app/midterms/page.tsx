@@ -20,17 +20,15 @@ type MidtermEvent = {
 
 const midtermEvents: MidtermEvent[] = [
   {
-    location: "Bucks County, Pennsylvania",
-    dates: "October 24",
-    completed: false,
-    signupUrl:
-      "https://forms.gle/nJrmY88fjEtU7Q386",
-  },
-  {
     location: "San Antonio, Texas",
     dates: "October 31 + November 1",
     completed: false,
     signupUrl: "https://forms.gle/GeC5q5YhKZwbyB7g8",
+  },
+  {
+    location: "Bucks County, Pennsylvania",
+    dates: "October 24",
+    completed: true,
   },
   {
     location: "Detroit, Michigan",
