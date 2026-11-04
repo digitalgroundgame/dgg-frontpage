@@ -39,6 +39,11 @@ const nextConfig: NextConfig = {
         destination: "/admin/index.html",
         permanent: false,
       },
+      {
+        source: "/donate",
+        destination: "https://secure.actblue.com/donate/dggsubscriber?recurring=1",
+        permanent: false,
+      },
     ];
   },
 };
