@@ -46,6 +46,7 @@ const northeastStateIds = [
   "44",
   "50",
   "51",
+  "54",
 ];
 
 const midwestStateIds = [
@@ -61,7 +62,6 @@ const midwestStateIds = [
   "38",
   "39",
   "46",
-  "54",
   "55",
 ];
 
