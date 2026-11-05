@@ -48,7 +48,7 @@ export default function CallToActionPage() {
 
   return (
     <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
-      <SiteHeader />
+      <SiteHeader showBanner={false} />
       <section
         className="px-8 pb-16 sm:px-12 md:pt-8 lg:px-20"
         id="call-to-action-dispatch"

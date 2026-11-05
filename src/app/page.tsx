@@ -3,8 +3,6 @@ import { ButtonLink } from "@/components/widgets/button-link";
 import { PixelIcon, type PixelIconName } from "@/components/widgets/pixel-icon";
 import { SiteFooter } from "@/components/page-blocks/site-footer";
 import { SiteHeader } from "@/components/page-blocks/site-header";
-import { TikTokCreatorEmbed } from "@/components/widgets/tiktok-creator-embed";
-import { socialLinks } from "@/lib/social-links";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -155,81 +153,33 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-near-white-blue px-8 py-16 text-charcoal sm:px-12 lg:px-20">
-        <div className="mx-auto grid w-full max-w-6xl gap-8 md:grid-cols-[minmax(0,42rem)_1fr] md:items-center">
-          <div className="max-w-2xl">
-            <p className="type-kicker text-light-charcoal">
-              2026 <span className="text-black">Canvassing</span>
-            </p>
-            <h2 className="type-section-title mt-4 max-w-4xl text-light-charcoal">
-              Sign up to canvass with us at our official events in Arizona, Michigan, Pennsylvania, and Texas.
-            </h2>
-          </div>
-          <div className="flex justify-center md:h-full md:items-center">
-            <ButtonLink
-              className="px-6"
-              href="/midterms"
-              primaryHover="black-blue"
-            >
-              <PixelIcon
-                className="h-7 w-7 shrink-0"
-                name="business-product-check"
-              />
-              Midterms Events
-            </ButtonLink>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-charcoal px-8 py-16 text-near-white-blue sm:px-12 lg:px-20">
-        <div className="mx-auto w-full max-w-6xl">
-          <div className="max-w-2xl">
-            <p className="type-kicker text-near-white-blue/90">
-              What&apos;s New
+      <section className="relative overflow-hidden px-8 py-28 md:py-32 text-near-white-blue sm:px-12 lg:px-20">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-charcoal [clip-path:polygon(0_5%,100%_0,100%_86%,0_100%)]"
+        />
+        <div className="relative z-10 mx-auto w-full max-w-6xl">
+          <div className="max-w-3xl">
+            <p className="type-kicker !text-[2rem] text-near-white-blue/90 min-[390px]:!text-[2.15rem] sm:!text-5xl md:!text-6xl">
+              Our <span className="block">Accomplishments</span>
             </p>
             <h2 className="type-section-title mt-4">
-              Follow the latest from Digital Ground Game.
+              Practical organizing with measurable results.
             </h2>
           </div>
-
-          <div className="mt-10 grid justify-items-center gap-6">
-            <TikTokCreatorEmbed />
-            <div className="flex flex-col items-center gap-3">
-              <div className="flex flex-wrap justify-center gap-3">
-                {socialLinks.slice(0, Math.ceil(socialLinks.length / 2)).map((feed) => (
-                  <ButtonLink
-                    className="px-4"
-                    href={feed.href}
-                    key={feed.label}
-                    primaryHover="blue-black"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {feed.icon ? (
-                      <PixelIcon className="h-5 w-5 shrink-0" name={feed.icon} />
-                    ) : null}
-                    {feed.label}
-                  </ButtonLink>
-                ))}
-              </div>
-              <div className="flex flex-wrap justify-center gap-3">
-                {socialLinks.slice(Math.ceil(socialLinks.length / 2)).map((feed) => (
-                  <ButtonLink
-                    className="px-4"
-                    href={feed.href}
-                    key={feed.label}
-                    primaryHover="blue-black"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {feed.icon ? (
-                      <PixelIcon className="h-5 w-5 shrink-0" name={feed.icon} />
-                    ) : null}
-                    {feed.label}
-                  </ButtonLink>
-                ))}
-              </div>
-            </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {accomplishments.map((item) => (
+              <article
+                className="bg-near-white-blue p-5 text-charcoal"
+                key={item.id}
+              >
+                <p className="text-5xl !font-black text-brand-blue">
+                  {item.value}
+                </p>
+                <h3 className="mt-4 text-xl font-black">{item.label}</h3>
+                <p className="type-small-body mt-3">{item.description}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -384,37 +334,6 @@ export default function Home() {
               future: building lasting political power and developing the next
               generation of leaders.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="relative overflow-hidden px-8 py-28 md:py-32 text-near-white-blue sm:px-12 lg:px-20">
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-charcoal [clip-path:polygon(0_5%,100%_0,100%_86%,0_100%)]"
-        />
-        <div className="relative z-10 mx-auto w-full max-w-6xl">
-          <div className="max-w-3xl">
-            <p className="type-kicker !text-[2rem] text-near-white-blue/90 min-[390px]:!text-[2.15rem] sm:!text-5xl md:!text-6xl">
-              Our <span className="block">Accomplishments</span>
-            </p>
-            <h2 className="type-section-title mt-4">
-              Practical organizing with measurable results.
-            </h2>
-          </div>
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            {accomplishments.map((item) => (
-              <article
-                className="bg-near-white-blue p-5 text-charcoal"
-                key={item.id}
-              >
-                <p className="text-5xl !font-black text-brand-blue">
-                  {item.value}
-                </p>
-                <h3 className="mt-4 text-xl font-black">{item.label}</h3>
-                <p className="type-small-body mt-3">{item.description}</p>
-              </article>
-            ))}
           </div>
         </div>
       </section>

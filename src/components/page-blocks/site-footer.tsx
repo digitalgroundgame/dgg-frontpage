@@ -26,14 +26,6 @@ export function SiteFooter() {
             <li>
               <Link
                 className="text-near-white-blue transition hover:text-accent-red"
-                href="/register"
-              >
-                Register to Vote
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="text-near-white-blue transition hover:text-accent-red"
                 href="/resources"
               >
                 Resources
