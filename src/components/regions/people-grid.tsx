@@ -11,6 +11,7 @@ export function PeopleGrid({ people }: PeopleGridProps) {
   }
 
   const isCompact = people.length < 3;
+  const hasPhotos = people.some((person) => person.picture);
   const containerClassName =
     people.length === 1
       ? "mx-auto w-full max-w-sm"
@@ -33,17 +34,19 @@ export function PeopleGrid({ people }: PeopleGridProps) {
         <div className={gridClassName}>
           {people.map((person) => (
             <article
-              className="mx-auto grid max-w-sm justify-items-center gap-4 text-center text-charcoal"
+              className="mx-auto flex max-w-sm flex-col items-center gap-4 text-center text-charcoal"
               key={person.slug}
             >
               {person.picture ? (
                 <Image
                   alt={person.name}
-                  className="aspect-square w-44 rounded-full object-cover"
+                  className="aspect-square w-44 shrink-0 rounded-full object-cover"
                   height={176}
                   src={person.picture}
                   width={176}
                 />
+              ) : hasPhotos ? (
+                <div aria-hidden="true" className="hidden aspect-square w-44 shrink-0 sm:block" />
               ) : null}
               <div>
                 <h3 className="font-sans text-2xl font-black leading-tight">
