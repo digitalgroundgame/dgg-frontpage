@@ -6,6 +6,7 @@ import {
   midtermOutcomes,
   midtermReach,
   midtermResultGroups,
+  midtermResultsUpdated,
   statewideRaces,
   type MidtermResultGroup,
 } from "@/lib/midterm-results";
@@ -14,7 +15,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "2026 Midterms Results | Digital Ground Game",
   description:
-    "125,253 doors knocked across 42 races in 20 states. Explore Digital Ground Game’s 2026 midterms organizing and results as of November 4, 2026.",
+    `125,253 doors knocked across 42 races in 20 states. Explore Digital Ground Game’s 2026 midterms organizing and results updated ${midtermResultsUpdated}.`,
 };
 
 const formatNumber = (value: number) => value.toLocaleString("en-US");
@@ -38,7 +39,7 @@ function ResultsTable({ group }: { group: MidtermResultGroup }) {
         tabIndex={0}
       >
         <table className="w-full min-w-[40rem] text-left">
-          <caption className="sr-only">{group.name}: race results as of November 4, 2026</caption>
+          <caption className="sr-only">{group.name}: race results updated {midtermResultsUpdated}</caption>
           <thead className="bg-charcoal/10 text-sm uppercase tracking-wide">
             <tr>
               <th className="px-5 py-3 sm:px-6" scope="col">Race</th>
@@ -121,9 +122,8 @@ export default function MidtermsPage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-brand-blue px-8 py-14 text-near-white-blue sm:px-12 lg:px-20">
-        <div aria-hidden="true" className="absolute inset-y-0 right-0 w-1/3 bg-dark-blue" />
-        <div className="relative mx-auto w-full max-w-6xl">
+      <section className="px-8 py-14 sm:px-12 lg:px-20">
+        <div className="mx-auto w-full max-w-6xl">
           <div className="flex flex-wrap items-baseline justify-between gap-3">
             <h2 className="type-section-title">Races we helped in</h2>
           </div>
@@ -220,9 +220,10 @@ export default function MidtermsPage() {
           </div>
           <div className="mt-8 max-w-4xl space-y-3 text-light-charcoal">
             <p className="type-small-body">
-              All results are unofficial and reflect November 4, 2026. Asterisks
-              mark races that were leading but not yet called. Flip labels on
-              those races are also provisional.
+              All results are unofficial. Race calls checked {midtermResultsUpdated}.
+              {" "}Asterisks mark races listed as leading without a verified call.
+              Flip labels on those races are also provisional and are excluded
+              from the flip total.
             </p>
             <p className="type-small-body">
               Senate rows count the house and event doors in that state; those

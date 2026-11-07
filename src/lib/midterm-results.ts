@@ -1,6 +1,7 @@
-// Snapshot transcribed from the 2026 midterms graphics, as of November 4, 2026.
+// Organizing totals transcribed from the November 4, 2026 midterms graphics.
+export const midtermResultsUpdated = "November 7, 2026";
 export const midtermReach = { doors: 125253, races: 42, states: 20 };
-export const midtermOutcomes = { wins: 29, leading: 5, flips: 18, states: 14 };
+export const midtermOutcomes = { wins: 32, leading: 2, flips: 20, states: 14 };
 
 export const doorSources = [
   { label: "Fellowship houses", doors: 62254, detail: "2 houses", color: "bg-brand-blue" },
@@ -36,7 +37,7 @@ export type MidtermResultGroup = {
 
 export const midtermResultGroups: MidtermResultGroup[] = [
   {
-    name: "Houses + events", doors: 105848, summary: "7 wins · 1 leading",
+    name: "Houses + events", doors: 105848, summary: "8 wins",
     races: [
       { race: "MI Senate", candidate: "Abdul El-Sayed", organizing: "Lansing house + Detroit event", doors: 50525 },
       { race: "OH Senate", candidate: "Sherrod Brown", flip: true, organizing: "Toledo house + Cleveland event", doors: 41767 },
@@ -45,11 +46,12 @@ export const midtermResultGroups: MidtermResultGroup[] = [
       { race: "MI-10", candidate: "Christina Hines", flip: true, organizing: "Detroit event", doors: 17312 },
       { race: "OH-7", candidate: "Brian Poindexter", flip: true, organizing: "Cleveland event + Midwest squad", doors: 12726 },
       { race: "TX-35", candidate: "Johnny Garcia", organizing: "San Antonio event", doors: 10092 },
-      { race: "AZ-1", candidate: "Amish Shah", flip: true, leading: true, organizing: "Phoenix event", doors: 3464 },
+      // AP call, November 5: https://www.kjzz.org/elections/2026-11-05/democrat-amish-shah-wins-arizona-congressional-district-1-seat-over-jay-feely-elex
+      { race: "AZ-1", candidate: "Amish Shah", flip: true, organizing: "Phoenix event", doors: 3464 },
     ],
   },
   {
-    name: "Northeast squad", doors: 5975, summary: "12 wins · 1 leading",
+    name: "Northeast squad", doors: 5975, summary: "13 wins",
     races: [
       { race: "ME Senate", candidate: "Troy Jackson", flip: true },
       { race: "NH Senate", candidate: "Chris Pappas" },
@@ -63,7 +65,8 @@ export const midtermResultGroups: MidtermResultGroup[] = [
       { race: "VA-1", candidate: "Shannon Taylor", flip: true },
       { race: "VA-2", candidate: "Elaine Luria", flip: true },
       { race: "ME Governor", candidate: "Hannah Pingree", level: "state-local" },
-      { race: "ME House 98", candidate: "Kilton Webb", level: "state-local", leading: true, organizing: "DGG member" },
+      // Called result: https://www.multistate.us/elections/district?chamber=House&d=98&st=ME
+      { race: "ME House 98", candidate: "Kilton Webb", level: "state-local", organizing: "DGG member" },
     ],
   },
   {
@@ -85,11 +88,12 @@ export const midtermResultGroups: MidtermResultGroup[] = [
     ],
   },
   {
-    name: "West squad", doors: 4283, summary: "2 wins · 3 leading",
+    name: "West squad", doors: 4283, summary: "3 wins · 2 leading",
     races: [
       { race: "CA-22", candidate: "Randy Villegas", flip: true },
       { race: "CA-45", candidate: "Derek Tran" },
-      { race: "CO-5", candidate: "Jessica Killin", flip: true, leading: true },
+      // AP call, November 5: https://apnews.com/article/45f9fafe812c4128ac7b1e686d8166fc
+      { race: "CO-5", candidate: "Jessica Killin", flip: true },
       { race: "WA House 5", candidate: "Zach Hall & Lisa Callan", level: "state-local", leading: true, organizing: "Both seats" },
       { race: "WA House 12, Pos. 1", candidate: "Stacy Willoughby", level: "state-local", flip: true, leading: true },
     ],
