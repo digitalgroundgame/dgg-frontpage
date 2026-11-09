@@ -12,6 +12,6 @@ authors:
   - map-name-colin-f-orgtitle-central-il-city-organizer-bio-illinois-raised-volleyball-lover-dungeon-master
   - map-name-nate-orgtitle-bloomington-city-lead
   - map-name-nick-orgtitle-cleveland-city-organizer
-  - map-name-david-orgtitle-columbus-oh-lead-bio-small-town-kid-with-big-city-energy-philosophy-major-heading-to-law-school-picture-uploads-david-webp
+  - map-name-david-orgtitle-cincinnati-city-lead-bio-just-a-normal-guy-trying-to-do-his-part-for-our-democracy-picture-uploads-black-david-webp
 photos: []
 ---
