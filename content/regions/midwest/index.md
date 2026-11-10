@@ -13,5 +13,6 @@ authors:
   - map-name-nate-orgtitle-bloomington-city-lead
   - map-name-nick-orgtitle-cleveland-city-organizer
   - map-name-david-orgtitle-cincinnati-city-lead-bio-just-a-normal-guy-trying-to-do-his-part-for-our-democracy-picture-uploads-black-david-webp
+  - map-name-patty-orgtitle-cleveland-lead-bio-tea-enthusiast-picture-uploads-patty-webp
 photos: []
 ---
