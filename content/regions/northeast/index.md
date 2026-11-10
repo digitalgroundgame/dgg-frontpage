@@ -8,6 +8,7 @@ authors:
   - sam-koved
   - shea
   - map-name-sam-picture-uploads-sam-bing-webp-orgtitle-president-binghamton-university-chapter-bio-ny-raised-not-upstate-or-the-city-i-love-skateboarding-video-games-film-and-most-importantly-cats
+  - map-bio-born-and-raised-in-new-york-an-engineer-that-will-travel-anywhere-to-get-the-job-done-name-darius-p-orgtitle-twin-tier-lead-picture-uploads-darius-webp
 photos:
   - image: /uploads/northeast-about-us-team.webp
     alt: Digital Ground Game team members together
