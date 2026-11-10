@@ -1,5 +1,5 @@
 ---
-name: Dr. Shea
+name: Dr. Shea Harsh
 picture: /uploads/shea.webp
 orgTitle: Northeast Lead
 bio: Born and raised Pennsylvanian (Sheetz supremacy), highly educated, liberal
