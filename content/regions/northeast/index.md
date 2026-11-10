@@ -8,6 +8,7 @@ authors:
   - sam-koved
   - shea
   - map-name-kmav-picture-uploads-kmav-png-orgtitle-philly-city-organizer-bio-knower-of-ball-pragmatic-radical-liberal-ww2-enthusiast-italianx-latinx-minority-ff7-fan-semi-pro-minecrafter
+  - map-name-sam-picture-uploads-sam-bing-webp-orgtitle-president-binghamton-university-chapter-bio-ny-raised-not-upstate-or-the-city-i-love-skateboarding-video-games-film-and-most-importantly-cats
 photos:
   - image: /uploads/northeast-about-us-team.webp
     alt: Digital Ground Game team members together
