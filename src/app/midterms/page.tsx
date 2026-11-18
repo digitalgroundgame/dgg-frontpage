@@ -91,6 +91,8 @@ function ResultsTable({ group }: { group: MidtermResultGroup }) {
 }
 
 export default function MidtermsPage() {
+  const hasLeadingRaces = midtermOutcomes.leading > 0;
+
   return (
     <main className="flex min-h-screen flex-col bg-near-white-blue text-charcoal">
       <SiteHeader />
@@ -127,10 +129,10 @@ export default function MidtermsPage() {
           <div className="flex flex-wrap items-baseline justify-between gap-3">
             <h2 className="type-section-title">Races we helped in</h2>
           </div>
-          <dl className="mt-8 grid grid-cols-2 gap-x-8 gap-y-8 md:grid-cols-4">
+          <dl className={`mt-8 grid grid-cols-2 gap-x-8 gap-y-8 ${hasLeadingRaces ? "md:grid-cols-4" : "md:grid-cols-3"}`}>
             {[
               { value: midtermOutcomes.wins, label: "Won" },
-              { value: midtermOutcomes.leading, label: "Leading*" },
+              ...(hasLeadingRaces ? [{ value: midtermOutcomes.leading, label: "Leading*" }] : []),
               { value: midtermOutcomes.flips, label: "Flips" },
               { value: midtermOutcomes.states, label: "States in results" },
             ].map((stat) => (
@@ -213,17 +215,23 @@ export default function MidtermsPage() {
               <span className="bg-brand-blue px-2 py-0.5 text-xs uppercase text-near-white-blue">Flip</span>
               Taken from a Republican
             </span>
-            <span><span className="text-brand-blue">*</span> Leading, not yet called</span>
+            {hasLeadingRaces && (
+              <span><span className="text-brand-blue">*</span> Leading, not yet called</span>
+            )}
           </div>
           <div className="mt-8 grid gap-10">
             {midtermResultGroups.map((group) => <ResultsTable group={group} key={group.name} />)}
           </div>
           <div className="mt-8 max-w-4xl space-y-3 text-light-charcoal">
             <p className="type-small-body">
-              All results are unofficial. Race calls checked {midtermResultsUpdated}.
-              {" "}Asterisks mark races listed as leading without a verified call.
-              Flip labels on those races are also provisional and are excluded
-              from the flip total.
+              Race calls checked {midtermResultsUpdated}.
+              {hasLeadingRaces && (
+                <>
+                  {" "}Asterisks mark races listed as leading without a verified call.
+                  Flip labels on those races are provisional and count toward the
+                  flip total once the races are called.
+                </>
+              )}
             </p>
             <p className="type-small-body">
               Senate rows count the house and event doors in that state; those

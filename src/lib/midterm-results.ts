@@ -1,7 +1,7 @@
 // Organizing totals transcribed from the November 4, 2026 midterms graphics.
-export const midtermResultsUpdated = "November 7, 2026";
+export const midtermResultsUpdated = "November 18, 2026";
 export const midtermReach = { doors: 125253, races: 42, states: 20 };
-export const midtermOutcomes = { wins: 32, leading: 2, flips: 20, states: 14 };
+export const midtermOutcomes = { wins: 34, leading: 0, flips: 21, states: 14 };
 
 export const doorSources = [
   { label: "Fellowship houses", doors: 62254, detail: "2 houses", color: "bg-brand-blue" },
@@ -88,14 +88,16 @@ export const midtermResultGroups: MidtermResultGroup[] = [
     ],
   },
   {
-    name: "West squad", doors: 4283, summary: "3 wins · 2 leading",
+    name: "West squad", doors: 4283, summary: "5 wins",
     races: [
       { race: "CA-22", candidate: "Randy Villegas", flip: true },
       { race: "CA-45", candidate: "Derek Tran" },
       // AP call, November 5: https://apnews.com/article/45f9fafe812c4128ac7b1e686d8166fc
       { race: "CO-5", candidate: "Jessica Killin", flip: true },
-      { race: "WA House 5", candidate: "Zach Hall & Lisa Callan", level: "state-local", leading: true, organizing: "Both seats" },
-      { race: "WA House 12, Pos. 1", candidate: "Stacy Willoughby", level: "state-local", flip: true, leading: true },
+      // OPB lists both candidates as winners: https://www.opb.org/elections-2026/
+      { race: "WA House 5", candidate: "Zach Hall & Lisa Callan", level: "state-local", organizing: "Both seats" },
+      // KPQ reported Willoughby's win after Burnett conceded: https://kpq.com/stacy-willoughby-wins-12th-district/
+      { race: "WA House 12, Pos. 1", candidate: "Stacy Willoughby", level: "state-local", flip: true },
     ],
   },
 ];
